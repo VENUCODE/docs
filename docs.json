@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "willow",
-  "name": "Tars",
+  "name": "TARS Documentation",
   "colors": {
     "primary": "#D9B3FF",
     "light": "#FFD9B3",
@@ -11,53 +11,383 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Get Started",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Welcome to TARS",
             "pages": [
               "index",
+              "welcome-to-tars/what-is-tars",
+              "welcome-to-tars/who-uses-tars",
+              "welcome-to-tars/success-stories"
+            ]
+          },
+          {
+            "group": "Platform Fundamentals",
+            "pages": [
+              "platform-fundamentals/how-tars-works",
+              "platform-fundamentals/key-concepts",
+              "platform-fundamentals/choosing-your-path",
+              "platform-fundamentals/platform-tour",
+              "platform-fundamentals/decision-framework"
+            ]
+          },
+          {
+            "group": "Quickstart Tutorial",
+            "pages": [
               "quickstart",
-              "development"
+              "quickstart-tutorial/your-first-agent",
+              "quickstart-tutorial/understanding-your-agent",
+              "quickstart-tutorial/next-steps-guide"
             ]
           },
           {
-            "group": "Customization",
+            "group": "Getting Help",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
-            ]
-          },
-          {
-            "group": "Writing content",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
+              "getting-help/quick-faqs",
+              "getting-help/video-tutorials",
+              "getting-help/community-forum"
             ]
           }
         ]
       },
       {
-        "tab": "API reference",
+        "tab": "Core Platform",
         "groups": [
           {
-            "group": "API documentation",
+            "group": "AI Agents",
+            "pages": [
+              "ai-agents/understanding-ai-agents/what-are-ai-agents",
+              "ai-agents/understanding-ai-agents/vs-traditional-chatbots",
+              "ai-agents/understanding-ai-agents/when-to-use-agents",
+              "ai-agents/agent-configuration/creating-your-agent",
+              "ai-agents/agent-configuration/personality-settings",
+              "ai-agents/agent-configuration/response-optimization",
+              "ai-agents/testing-agents",
+              "ai-agents/faqs"
+            ]
+          },
+          {
+            "group": "Knowledge Bases",
+            "pages": [
+              "knowledge-bases/knowledge-fundamentals/what-are-knowledge-bases",
+              "knowledge-bases/knowledge-fundamentals/content-sources-overview",
+              "knowledge-bases/knowledge-fundamentals/quality-best-practices",
+              "knowledge-bases/content-ingestion/website-scraping",
+              "knowledge-bases/content-ingestion/document-upload",
+              "knowledge-bases/content-ingestion/structured-data",
+              "knowledge-bases/content-ingestion/manual-entry",
+              "knowledge-bases/knowledge-processing/data-fetching",
+              "knowledge-bases/knowledge-processing/training-process",
+              "knowledge-bases/knowledge-processing/training-parameters",
+              "knowledge-bases/knowledge-processing/training-optimization",
+              "knowledge-bases/using-with-agents/quick-integration-guide",
+              "knowledge-bases/using-with-agents/search-configuration",
+              "knowledge-bases/using-with-agents/response-customization",
+              "knowledge-bases/search-performance",
+              "knowledge-bases/faqs"
+            ]
+          },
+          {
+            "group": "Tools Integration",
+            "pages": [
+              "tools-integration/tools-fundamentals/what-are-tools",
+              "tools-integration/tools-fundamentals/available-tools-gallery",
+              "tools-integration/tools-fundamentals/common-tool-actions",
+              "tools-integration/individual-tools/hubspot/getting-credentials",
+              "tools-integration/individual-tools/hubspot/configuration-guide",
+              "tools-integration/individual-tools/hubspot/available-actions",
+              "tools-integration/individual-tools/google-sheets/getting-credentials",
+              "tools-integration/individual-tools/google-sheets/configuration-guide",
+              "tools-integration/individual-tools/google-sheets/available-actions",
+              "tools-integration/individual-tools/salesforce/getting-credentials",
+              "tools-integration/individual-tools/salesforce/configuration-guide",
+              "tools-integration/individual-tools/salesforce/available-actions",
+              "tools-integration/security-considerations",
+              "tools-integration/faqs"
+            ]
+          },
+          {
+            "group": "Live Chat Handoff",
+            "pages": [
+              "live-chat-handoff/when-to-use-handoff",
+              "live-chat-handoff/handoff-configuration/trigger-setup",
+              "live-chat-handoff/handoff-configuration/agent-assignment",
+              "live-chat-handoff/handoff-configuration/transition-messages",
+              "live-chat-handoff/handoff-configuration/agent-dashboard-basics",
+              "live-chat-handoff/faqs"
+            ]
+          },
+          {
+            "group": "WhatsApp Platform",
+            "pages": [
+              "whatsapp-platform/whatsapp-fundamentals/whatsapp-vs-web",
+              "whatsapp-platform/whatsapp-fundamentals/business-requirements",
+              "whatsapp-platform/whatsapp-fundamentals/credits-system",
+              "whatsapp-platform/setup-guide/business-number-setup",
+              "whatsapp-platform/setup-guide/verification-process",
+              "whatsapp-platform/setup-guide/agent-assignment",
+              "whatsapp-platform/setup-guide/testing-deployment",
+              "whatsapp-platform/whatsapp-features/media-messaging",
+              "whatsapp-platform/whatsapp-features/quick-replies",
+              "whatsapp-platform/whatsapp-features/broadcast-campaigns",
+              "whatsapp-platform/faqs"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Development Lifecycle",
+        "groups": [
+          {
+            "group": "Introduction to Development",
+            "pages": [
+              "introduction-to-development/development-lifecycle-overview",
+              "introduction-to-development/lifecycle-diagram",
+              "introduction-to-development/workflow-stages-explained",
+              "introduction-to-development/getting-started-with-workflow",
+              "introduction-to-development/faqs"
+            ]
+          },
+          {
+            "group": "Make",
+            "pages": [
+              "make/builder-interface/canvas-overview",
+              "make/builder-interface/nodes-panel-guide",
+              "make/builder-interface/properties-panel",
+              "make/builder-interface/version-management",
+              "make/gambits-mastery/gambits-fundamentals/what-are-gambits",
+              "make/gambits-mastery/gambits-fundamentals/gambit-types-overview",
+              "make/gambits-mastery/gambits-fundamentals/flow-logic-basics",
+              "make/gambits-mastery/gambits-fundamentals/conditional-branching",
+              "make/gambits-mastery/ai-gambits/intent-detection/configuration-guide",
+              "make/gambits-mastery/ai-gambits/data-extraction/configuration-guide",
+              "make/gambits-mastery/ai-gambits/q-and-a/configuration-guide",
+              "make/gambits-mastery/ai-gambits/ai-agent/configuration-guide",
+              "make/gambits-mastery/user-input-gambits/text-input/configuration-options",
+              "make/gambits-mastery/user-input-gambits/multiple-choice-buttons/button-configuration",
+              "make/gambits-mastery/user-input-gambits/cards-selection/card-design",
+              "make/gambits-mastery/user-input-gambits/file-upload/supported-formats",
+              "make/gambits-mastery/user-input-gambits/image-upload/image-formats",
+              "make/gambits-mastery/user-input-gambits/location-sharing/location-permissions",
+              "make/gambits-mastery/user-input-gambits/rating-collection/rating-scales",
+              "make/gambits-mastery/integration-gambits/api-gambit/api-configuration",
+              "make/gambits-mastery/faqs",
+              "make/conversation-design/flow-planning",
+              "make/conversation-design/user-journey-mapping",
+              "make/conversation-design/persona-development",
+              "make/conversation-design/script-writing",
+              "make/visual-customization/chat-interface-design/header-customization",
+              "make/visual-customization/chat-interface-design/body-styling",
+              "make/visual-customization/widget-customization/callout-messages",
+              "make/visual-customization/widget-customization/widget-icon",
+              "make/configuration-management/general-settings/agent-name-description",
+              "make/configuration-management/account-settings/profile-management",
+              "make/configuration-management/seo-optimization/meta-tags-setup",
+              "make/configuration-management/email-notifications/notification-triggers",
+              "make/configuration-management/goal-tracking/goal-definition",
+              "make/configuration-management/integrations-setup/google-analytics-integration",
+              "make/faqs"
+            ]
+          },
+          {
+            "group": "Test",
+            "pages": [
+              "test/testing-fundamentals/testing-importance",
+              "test/testing-fundamentals/testing-methodologies",
+              "test/testing-fundamentals/testing-best-practices",
+              "test/preview-testing/real-time-preview",
+              "test/preview-testing/conversation-simulation",
+              "test/preview-testing/mobile-testing",
+              "test/preview-testing/cross-browser-testing",
+              "test/functional-testing/gambit-functionality",
+              "test/functional-testing/conversation-flow-testing",
+              "test/functional-testing/integration-testing",
+              "test/functional-testing/error-scenario-testing",
+              "test/performance-testing/response-time-testing",
+              "test/performance-testing/load-testing",
+              "test/performance-testing/reliability-testing",
+              "test/user-acceptance-testing/stakeholder-review",
+              "test/user-acceptance-testing/beta-user-testing",
+              "test/user-acceptance-testing/feedback-incorporation",
+              "test/optimization-during-testing/prompt-optimization",
+              "test/optimization-during-testing/performance-parameters",
+              "test/optimization-during-testing/knowledge-base-integration",
+              "test/optimization-during-testing/output-formatting",
+              "test/faqs"
+            ]
+          },
+          {
+            "group": "Deploy",
+            "pages": [
+              "deploy/deployment-fundamentals/deployment-overview",
+              "deploy/deployment-fundamentals/deployment-strategies",
+              "deploy/deployment-fundamentals/deployment-best-practices",
+              "deploy/deployment-options/direct-link-sharing/link-generation",
+              "deploy/deployment-options/website-embedding/embed-code-generation",
+              "deploy/deployment-options/custom-domain-hosting/domain-setup",
+              "deploy/deployment-options/whatsapp-publishing/whatsapp-setup-process",
+              "deploy/pre-launch-checklist/final-testing",
+              "deploy/pre-launch-checklist/performance-verification",
+              "deploy/pre-launch-checklist/security-review",
+              "deploy/pre-launch-checklist/backup-strategies",
+              "deploy/launch-process/go-live-steps",
+              "deploy/launch-process/initial-monitoring",
+              "deploy/launch-process/user-communication",
+              "deploy/launch-process/rollback-procedures",
+              "deploy/post-launch-management/monitoring-setup",
+              "deploy/post-launch-management/alert-configuration",
+              "deploy/post-launch-management/maintenance-planning",
+              "deploy/faqs"
+            ]
+          },
+          {
+            "group": "Analyze",
+            "pages": [
+              "analyze/analytics-fundamentals/analytics-importance",
+              "analyze/analytics-fundamentals/key-metrics-overview",
+              "analyze/analytics-fundamentals/data-interpretation",
+              "analyze/conversation-analytics/conversation-history/full-chat-interface",
+              "analyze/conversation-analytics/user-interaction-patterns/user-journey-tracking",
+              "analyze/conversation-analytics/completion-rates/goal-achievement-tracking",
+              "analyze/conversation-analytics/user-feedback-analysis/rating-compilation",
+              "analyze/performance-metrics/response-accuracy/intent-recognition-accuracy",
+              "analyze/performance-metrics/technical-performance/response-time-analysis",
+              "analyze/performance-metrics/user-satisfaction/satisfaction-scores",
+              "analyze/performance-metrics/conversion-tracking/conversion-rate-analysis",
+              "analyze/gambit-execution-analysis/gambit-performance-overview",
+              "analyze/gambit-execution-analysis/input-output-mapping/data-flow-analysis",
+              "analyze/gambit-execution-analysis/bottleneck-identification/slow-performing-gambits",
+              "analyze/gambit-execution-analysis/error-analysis/error-categorization",
+              "analyze/business-intelligence/roi-analysis",
+              "analyze/business-intelligence/user-segmentation",
+              "analyze/business-intelligence/predictive-analytics",
+              "analyze/business-intelligence/competitive-analysis",
+              "analyze/faqs"
+            ]
+          },
+          {
+            "group": "Iterate",
+            "pages": [
+              "iterate/improvement-fundamentals/iteration-importance",
+              "iterate/improvement-fundamentals/data-driven-decisions",
+              "iterate/improvement-fundamentals/improvement-methodologies",
+              "iterate/improvement-identification/data-driven-insights/performance-gap-analysis",
+              "iterate/improvement-identification/user-feedback-integration/feedback-collection-methods",
+              "iterate/improvement-identification/competitive-analysis/competitor-benchmarking",
+              "iterate/optimization-strategies/conversation-improvements/flow-redesign",
+              "iterate/optimization-strategies/response-quality-enhancement/prompt-refinement",
+              "iterate/optimization-strategies/performance-optimization/speed-optimization",
+              "iterate/optimization-strategies/integration-optimization/api-optimization",
+              "iterate/change-management/change-planning/priority-setting",
+              "iterate/change-management/version-control/change-tracking",
+              "iterate/change-management/a-b-testing/test-design",
+              "iterate/change-management/rollout-strategies/gradual-rollout",
+              "iterate/success-measurement/improvement-tracking",
+              "iterate/success-measurement/before-after-analysis",
+              "iterate/success-measurement/continuous-monitoring",
+              "iterate/faqs"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Technical Deep Dive",
+        "groups": [
+          {
+            "group": "AI Technology",
+            "pages": [
+              "ai-technology/understanding-llms",
+              "ai-technology/prompt-engineering",
+              "ai-technology/context-management",
+              "ai-technology/model-selection"
+            ]
+          },
+          {
+            "group": "Knowledge Processing",
+            "pages": [
+              "knowledge-processing/semantic-search",
+              "knowledge-processing/vector-embeddings",
+              "knowledge-processing/retrieval-optimization"
+            ]
+          },
+          {
+            "group": "Integration Architecture",
+            "pages": [
+              "integration-architecture/api-design-patterns",
+              "integration-architecture/data-transformation",
+              "integration-architecture/security-implementation"
+            ]
+          },
+          {
+            "group": "Platform Architecture",
+            "pages": [
+              "platform-architecture/system-design",
+              "platform-architecture/data-flow",
+              "platform-architecture/security-model"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Resources & Community",
+        "groups": [
+          {
+            "group": "Use Case Examples",
+            "pages": [
+              "use-case-examples/customer-support/helpdesk-automation",
+              "use-case-examples/customer-support/faq-chatbots",
+              "use-case-examples/customer-support/escalation-workflows",
+              "use-case-examples/lead-generation/qualification-bots",
+              "use-case-examples/lead-generation/booking-systems",
+              "use-case-examples/lead-generation/conversion-optimization",
+              "use-case-examples/e-commerce/product-recommendations",
+              "use-case-examples/e-commerce/order-tracking",
+              "use-case-examples/e-commerce/abandoned-cart-recovery",
+              "use-case-examples/other-industries/healthcare-applications",
+              "use-case-examples/other-industries/education-implementations",
+              "use-case-examples/other-industries/financial-services",
+              "use-case-examples/other-industries/real-estate-solutions"
+            ]
+          },
+          {
+            "group": "Troubleshooting",
+            "pages": [
+              "troubleshooting/common-issues/setup-problems",
+              "troubleshooting/common-issues/integration-issues",
+              "troubleshooting/common-issues/deployment-challenges",
+              "troubleshooting/common-issues/performance-problems",
+              "troubleshooting/error-reference/error-codes",
+              "troubleshooting/error-reference/diagnostic-tools",
+              "troubleshooting/error-reference/resolution-steps",
+              "troubleshooting/advanced-troubleshooting/complex-scenarios",
+              "troubleshooting/advanced-troubleshooting/integration-debugging",
+              "troubleshooting/advanced-troubleshooting/performance-debugging"
+            ]
+          },
+          {
+            "group": "Community Support",
+            "pages": [
+              "community-support/community-forum",
+              "community-support/feature-requests",
+              "community-support/user-showcase",
+              "community-support/events-webinars",
+              "community-support/contact-support"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "API Documentation",
             "pages": [
               "api-reference/introduction"
             ]
           },
           {
-            "group": "Endpoint examples",
+            "group": "Endpoint Examples",
             "pages": [
               "api-reference/endpoint/get",
               "api-reference/endpoint/create",
@@ -71,19 +401,19 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
+          "anchor": "TARS Platform",
+          "href": "https://tars.com",
+          "icon": "robot"
         },
         {
           "anchor": "Community",
-          "href": "https://mintlify.com/community",
+          "href": "https://community.tars.com",
           "icon": "slack"
         },
         {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "anchor": "Support",
+          "href": "https://support.tars.com",
+          "icon": "life-ring"
         }
       ]
     }
@@ -102,7 +432,7 @@
     "primary": {
       "type": "button",
       "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "href": "https://dashboard.tars.com"
     }
   },
   "contextual": {
@@ -119,9 +449,9 @@
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "x": "https://x.com/tars",
+      "github": "https://github.com/tars",
+      "linkedin": "https://linkedin.com/company/tars"
     }
   }
 }

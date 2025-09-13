@@ -1,80 +1,152 @@
 ---
-title: "Quickstart"
-description: "Start building awesome documentation in minutes"
+title: "Your First AI Agent"
+description: "Create and deploy your first TARS AI agent in 15 minutes"
 ---
 
-## Get started in three steps
+## Build Your First Agent in 15 Minutes
 
-Get your documentation site running locally and make your first customization.
+Follow this hands-on tutorial to create, configure, and deploy your first intelligent AI agent. No coding required!
 
-### Step 1: Set up your local environment
+### Step 1: Account Setup & Workspace
 
 <AccordionGroup>
-  <Accordion icon="copy" title="Clone your docs locally">
-    During the onboarding process, you created a GitHub repository with your docs content if you didn't already have one. You can find a link to this repository in your [dashboard](https://dashboard.mintlify.com).
+  <Accordion icon="user-plus" title="Create your TARS account">
+    1. Visit [https://tars.com/signup](https://tars.com/signup) to create your free account
+    2. Verify your email address to activate your account
+    3. Complete the onboarding wizard to set up your workspace
     
-    To clone the repository locally so that you can make and preview changes to your docs, follow the [Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) guide in the GitHub docs.
+    <Tip>Choose your workspace name carefully - this will be used in your agent URLs!</Tip>
   </Accordion>
-  <Accordion icon="rectangle-terminal" title="Start the preview server">
-    1. Install the Mintlify CLI: `npm i -g mint`
-    2. Navigate to your docs directory and run: `mint dev`
-    3. Open `http://localhost:3000` to see your docs live!
+  <Accordion icon="settings" title="Configure workspace settings">
+    1. Set your default timezone and language preferences
+    2. Choose your primary use case (Customer Support, Lead Generation, etc.)
+    3. Invite team members if you're working collaboratively
     
-    <Tip>Your preview updates automatically as you edit files.</Tip>
+    <Note>You can change these settings anytime from the workspace dashboard.</Note>
   </Accordion>
 </AccordionGroup>
 
-### Step 2: Deploy your changes
+### Step 2: Choose Your Starting Point
 
 <AccordionGroup>
-  <Accordion icon="github" title="Install our GitHub app">
-    Install the Mintlify GitHub app from your [dashboard](https://dashboard.mintlify.com/settings/organization/github-app).
+  <Accordion icon="template" title="Select a template (Recommended)">
+    1. Browse our collection of pre-built templates
+    2. Choose based on your use case:
+       - **Customer Support Bot** - Handle FAQs and support tickets
+       - **Lead Qualification Agent** - Capture and qualify potential customers
+       - **Booking Assistant** - Schedule appointments and meetings
+       - **E-commerce Helper** - Product recommendations and order assistance
+    3. Click "Use This Template" to start customizing
     
-    Our GitHub app automatically deploys your changes to your docs site, so you don't need to manage deployments yourself.
-</Accordion>
-<Accordion icon="palette" title="Update your site name and colors">
-    For a first change, let's update the name and colors of your docs site.
-
-    1. Open `docs.json` in your editor.
-    2. Change the `"name"` field to your project name.
-    3. Update the `"colors"` to match your brand.
-    4. Save and see your changes instantly at `http://localhost:3000`.
-
-    <Tip>Try changing the primary color to see an immediate difference!</Tip>
+    <Tip>Templates include pre-configured conversation flows and best practices!</Tip>
+  </Accordion>
+  <Accordion icon="hammer" title="Build from scratch (Advanced)">
+    1. Click "Create New Agent" from your dashboard
+    2. Choose "Blank Agent" to start with a clean slate
+    3. You'll begin with the visual conversation builder
+    
+    <Warning>Building from scratch requires understanding of conversation design principles.</Warning>
   </Accordion>
 </AccordionGroup>
 
-### Step 3: Go live
+### Step 3: Basic Configuration
 
-<Accordion icon="rocket" title="Publish your docs">
-  1. Commit and push your changes.
-  2. Your docs will update and be live in moments!
+<AccordionGroup>
+<Accordion icon="robot" title="Set agent personality and behavior">
+    1. **Agent Name**: Give your agent a memorable name
+    2. **Description**: Explain what your agent does
+    3. **Tone & Style**: Choose from professional, friendly, casual, or custom
+    4. **Response Length**: Set preferred response length (concise, detailed, adaptive)
+    
+    <Tip>A well-defined personality makes conversations feel more natural!</Tip>
+  </Accordion>
+  <Accordion icon="brain" title="Connect knowledge sources">
+    1. **Website Scraping**: Add your website URL to import content automatically
+    2. **Document Upload**: Upload PDFs, Word docs, or text files
+    3. **Manual Entry**: Add specific FAQs and responses
+    4. **Structured Data**: Import from CSV files or databases
+    
+    <Note>The more relevant information you provide, the better your agent's responses will be.</Note>
+  </Accordion>
+</AccordionGroup>
+
+### Step 4: Test Your Agent
+
+<Accordion icon="flask" title="Test in real-time preview">
+  1. Click the "Preview" button in the top-right corner
+  2. Test different conversation scenarios:
+     - Ask questions your customers might ask
+     - Try edge cases and unexpected inputs
+     - Verify the agent stays on topic
+  3. Make adjustments based on testing results
+  4. Use the "Reset Conversation" button to test different user journeys
+  
+  <Tip>Test early and often! Small issues become big problems if not caught early.</Tip>
 </Accordion>
 
-## Next steps
+### Step 5: Deploy & Share
 
-Now that you have your docs running, explore these key features:
+<AccordionGroup>
+  <Accordion icon="link" title="Get your agent link">
+    1. Click "Deploy" from the agent dashboard
+    2. Choose "Direct Link" for the quickest deployment
+    3. Copy the generated URL to share with others
+    4. Optionally customize the URL with your own domain
+    
+    <Tip>Direct links are perfect for testing and sharing with stakeholders!</Tip>
+  </Accordion>
+  <Accordion icon="code" title="Embed on your website">
+    1. Click "Get Embed Code" from the deployment options
+    2. Copy the provided HTML snippet
+    3. Paste it before the closing `</body>` tag on your website
+    4. Customize the widget appearance and positioning
+    
+    <Note>The widget will appear as a chat bubble in the bottom-right corner by default.</Note>
+  </Accordion>
+</AccordionGroup>
+
+## Congratulations! 🎉
+
+You've successfully created and deployed your first TARS AI agent! Your agent is now live and ready to engage with users.
+
+## Next Steps
+
+Now that your agent is running, explore these advanced features:
 
 <CardGroup cols={2}>
 
-<Card title="Write Content" icon="pen-to-square" href="/essentials/markdown">
-  Learn MDX syntax and start writing your documentation.
+<Card title="Advanced AI Configuration" icon="brain" href="/ai-agents/agent-configuration/personality-settings">
+  Fine-tune your agent's personality, response style, and behavior patterns.
 </Card>
 
-<Card title="Customize style" icon="palette" href="/essentials/settings">
-  Make your docs match your brand perfectly.
+<Card title="Integration Setup" icon="plug" href="/tools-integration/tools-fundamentals/what-are-tools">
+  Connect with CRM systems, databases, and third-party tools.
 </Card>
 
-<Card title="Add code examples" icon="square-code" href="/essentials/code">
-  Include syntax-highlighted code blocks.
+<Card title="Analytics & Optimization" icon="chart-line" href="/analyze/analytics-fundamentals/analytics-importance">
+  Monitor performance and optimize based on real user interactions.
 </Card>
 
-<Card title="API documentation" icon="code" href="/api-reference/introduction">
-  Auto-generate API docs from OpenAPI specs.
+<Card title="Advanced Testing" icon="vial" href="/test/testing-fundamentals/testing-importance">
+  Implement comprehensive testing strategies for production deployment.
 </Card>
 
 </CardGroup>
 
+## Get More Help
+
+<Columns cols={3}>
+  <Card title="Video Tutorials" icon="play" href="/getting-help/video-tutorials">
+    Watch step-by-step video guides for visual learners.
+  </Card>
+  <Card title="Community Forum" icon="users" href="/getting-help/community-forum">
+    Connect with other TARS users and get expert advice.
+  </Card>
+  <Card title="Support Center" icon="life-ring" href="/community-support/contact-support">
+    Get direct help from our support team.
+  </Card>
+</Columns>
+
 <Note>
-  **Need help?** See our [full documentation](https://mintlify.com/docs) or join our [community](https://mintlify.com/community).
+  **Ready for production?** Check out our [deployment best practices](/deploy/deployment-fundamentals/deployment-best-practices) before going live with real users.
 </Note>
