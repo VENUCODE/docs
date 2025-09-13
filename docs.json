@@ -1,13 +1,22 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "willow",
-  "name": "TARS Documentation",
+  "theme": "almond",
+  "name": "TARS Docs",
   "colors": {
-    "primary": "#D9B3FF",
-    "light": "#FFD9B3",
-    "dark": "#B3FFD9"
+    "primary": "#6D33AA",
+    "light": "#BFA3E6",
+    "dark": "#4A1F75"
   },
   "favicon": "/favicon.svg",
+  "head": [
+    {
+      "tag": "link",
+      "attributes": {
+        "rel": "stylesheet",
+        "href": "/style.css"
+      }
+    }
+  ],
   "navigation": {
     "tabs": [
       {
@@ -402,18 +411,18 @@
       "anchors": [
         {
           "anchor": "TARS Platform",
-          "href": "https://tars.com",
+          "href": "https://hellotars.com",
           "icon": "robot"
         },
         {
-          "anchor": "Community",
-          "href": "https://community.tars.com",
-          "icon": "slack"
+          "anchor": "Help Center",
+          "href": "https://help.hellotars.com",
+          "icon": "life-ring"
         },
         {
-          "anchor": "Support",
-          "href": "https://support.tars.com",
-          "icon": "life-ring"
+          "anchor": "Get Started",
+          "href": "https://hellotars.com/signup",
+          "icon": "rocket"
         }
       ]
     }
@@ -431,8 +440,8 @@
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.tars.com"
+      "label": "Get Started",
+      "href": "https://app.hellotars.com"
     }
   },
   "contextual": {
@@ -449,9 +458,9 @@
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/tars",
-      "github": "https://github.com/tars",
-      "linkedin": "https://linkedin.com/company/tars"
+      "x": "https://x.com/hellotars",
+      "linkedin": "https://linkedin.com/company/hellotars",
+      "youtube": "https://youtube.com/@hellotars"
     }
   }
 }
