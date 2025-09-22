@@ -39,11 +39,11 @@ graph TB
 
 ---
 
-## **📖 TARS DOCUMENTATION**
+## **📖 Tars DOCUMENTATION**
 
 ### **🚀 Get Started**
 
-*[Foundation Phase - Building Confidence & Understanding]*
+_[Foundation Phase - Building Confidence & Understanding]_
 
 ```
 ├── welcome-to-tars/                    # Landing page with value proposition
@@ -89,7 +89,7 @@ graph TB
 
 ### **🏗️ Core Platform**
 
-*[Learning Phase - Understanding Components]*
+_[Learning Phase - Understanding Components]_
 
 ```
 ├── ai-agents/                         # Intelligent conversation handling
@@ -140,7 +140,7 @@ graph TB
 │   ├── individual-tools/             # Tool-specific guides
 │   │   ├── hubspot/
 │   │   │   ├── getting-credentials   # API key setup
-│   │   │   ├── configuration-guide   # TARS integration setup
+│   │   │   ├── configuration-guide   # Tars integration setup
 │   │   │   └── available-actions     # What HubSpot tool can do
 │   │   ├── google-sheets/
 │   │   │   ├── getting-credentials   # OAuth setup
@@ -148,7 +148,7 @@ graph TB
 │   │   │   └── available-actions     # Read/write operations
 │   │   ├── salesforce/
 │   │   │   ├── getting-credentials   # API access setup
-│   │   │   ├── configuration-guide   # TARS integration
+│   │   │   ├── configuration-guide   # Tars integration
 │   │   │   └── available-actions     # CRM operations
 │   │   └── [other-tools]/            # Additional integrations
 │   ├── security-considerations/      # Best practices & compliance
@@ -182,7 +182,7 @@ graph TB
 
 ### **🔄 Agent Development Lifecycle**
 
-*[Implementation Phase - Complete Development Process]*
+_[Implementation Phase - Complete Development Process]_
 
 ```
 ├── introduction-to-development/       # Understanding the workflow
@@ -508,7 +508,7 @@ graph TB
 
 ### **🔍 Technical Deep Dive**
 
-*[Advanced Understanding & Implementation]*
+_[Advanced Understanding & Implementation]_
 
 ```
 ├── ai-technology/
@@ -533,7 +533,7 @@ graph TB
 
 ### **📚 Resources & Community**
 
-*[Support Phase - Ongoing Success]*
+_[Support Phase - Ongoing Success]_
 
 ```
 ├── use-case-examples/                # Industry-specific implementations

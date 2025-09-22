@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "almond",
-  "name": "TARS Docs",
+  "name": "Tars Docs",
   "colors": {
     "primary": "#6D33AA",
     "light": "#BFA3E6",
@@ -23,7 +23,7 @@
         "tab": "Get Started",
         "groups": [
           {
-            "group": "Welcome to TARS",
+            "group": "Welcome to Tars",
             "pages": [
               "index",
               "welcome-to-tars/what-is-tars",
@@ -410,7 +410,7 @@
     "global": {
       "anchors": [
         {
-          "anchor": "TARS Platform",
+          "anchor": "Tars Platform",
           "href": "https://hellotars.com",
           "icon": "robot"
         },
@@ -446,15 +446,15 @@
   },
   "contextual": {
     "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "mcp",
+      "cursor",
+      "vscode"
+    ]
   },
   "footer": {
     "socials": {
