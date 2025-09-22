@@ -383,6 +383,12 @@
               "community-support/events-webinars",
               "community-support/contact-support"
             ]
+          },
+          {
+            "group": "Resources & Updates",
+            "pages": [
+              "resources-community/changelog"
+            ]
           }
         ]
       },
