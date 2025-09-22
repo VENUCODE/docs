@@ -13,12 +13,12 @@ html[style*="color-scheme: light"] #content-container {
     font-family: 'Poppins', 'Manrope', sans-serif;
 }
 * {
-    scrollbar-width: thin;
+    scrollbar-width: none;
     scrollbar-color: rgba(190, 164, 196, 0.27) transparent;
 }
 
 *::-webkit-scrollbar {
-    width: thin;
+    width: none;
 }
 
 *::-webkit-scrollbar-track {
@@ -27,7 +27,7 @@ html[style*="color-scheme: light"] #content-container {
 
 *::-webkit-scrollbar-thumb {
     background-color: rgba(156, 163, 175, 0.5);
-    border-radius: thin;
+    border-radius: none;
 }
 
 *::-webkit-scrollbar-thumb:hover {
