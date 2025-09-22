@@ -23,10 +23,9 @@
         "tab": "Get Started",
         "groups": [
           {
-            "group": "Welcome to Tars",
+            "group": "About Tars",
             "pages": [
               "index",
-              "welcome-to-tars/what-is-tars",
               "welcome-to-tars/who-uses-tars",
               "welcome-to-tars/success-stories"
             ]
@@ -45,7 +44,6 @@
             "group": "Quickstart Tutorial",
             "pages": [
               "quickstart",
-              "quickstart-tutorial/your-first-agent",
               "quickstart-tutorial/understanding-your-agent",
               "quickstart-tutorial/next-steps-guide"
             ]
@@ -53,6 +51,7 @@
           {
             "group": "Getting Help",
             "pages": [
+              "getting-help/account-setup",
               "getting-help/quick-faqs",
               "getting-help/video-tutorials",
               "getting-help/community-forum"
@@ -161,6 +160,7 @@
           {
             "group": "Make",
             "pages": [
+              "make/overview",
               "make/builder-interface/canvas-overview",
               "make/builder-interface/nodes-panel-guide",
               "make/builder-interface/properties-panel",

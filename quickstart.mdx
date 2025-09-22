@@ -1,152 +1,414 @@
 ---
 title: "Your First AI Agent"
-description: "Create and deploy your first Tars AI agent in 15 minutes"
+description: "Create and deploy your first Tars AI agent in 15 minutes with this step-by-step tutorial - no coding required"
+icon: "rocket"
 ---
 
-## Build Your First Agent in 15 Minutes
+# Your First AI Agent
 
-Follow this hands-on tutorial to create, configure, and deploy your first intelligent AI agent. No coding required!
+Create, configure, and deploy your first intelligent AI agent in just **15 minutes**. This comprehensive tutorial guides you through the entire process with no coding experience required.
 
-### Step 1: Account Setup & Workspace
-
-<AccordionGroup>
-  <Accordion icon="user-plus" title="Create your Tars account">
-    1. Visit [https://tars.com/signup](https://tars.com/signup) to create your free account
-    2. Verify your email address to activate your account
-    3. Complete the onboarding wizard to set up your workspace
-    
-    <Tip>Choose your workspace name carefully - this will be used in your agent URLs!</Tip>
-  </Accordion>
-  <Accordion icon="settings" title="Configure workspace settings">
-    1. Set your default timezone and language preferences
-    2. Choose your primary use case (Customer Support, Lead Generation, etc.)
-    3. Invite team members if you're working collaboratively
-    
-    <Note>You can change these settings anytime from the workspace dashboard.</Note>
-  </Accordion>
-</AccordionGroup>
-
-### Step 2: Choose Your Starting Point
-
-<AccordionGroup>
-  <Accordion icon="template" title="Select a template (Recommended)">
-    1. Browse our collection of pre-built templates
-    2. Choose based on your use case:
-       - **Customer Support Bot** - Handle FAQs and support tickets
-       - **Lead Qualification Agent** - Capture and qualify potential customers
-       - **Booking Assistant** - Schedule appointments and meetings
-       - **E-commerce Helper** - Product recommendations and order assistance
-    3. Click "Use This Template" to start customizing
-    
-    <Tip>Templates include pre-configured conversation flows and best practices!</Tip>
-  </Accordion>
-  <Accordion icon="hammer" title="Build from scratch (Advanced)">
-    1. Click "Create New Agent" from your dashboard
-    2. Choose "Blank Agent" to start with a clean slate
-    3. You'll begin with the visual conversation builder
-    
-    <Warning>Building from scratch requires understanding of conversation design principles.</Warning>
-  </Accordion>
-</AccordionGroup>
-
-### Step 3: Basic Configuration
-
-<AccordionGroup>
-<Accordion icon="robot" title="Set agent personality and behavior">
-    1. **Agent Name**: Give your agent a memorable name
-    2. **Description**: Explain what your agent does
-    3. **Tone & Style**: Choose from professional, friendly, casual, or custom
-    4. **Response Length**: Set preferred response length (concise, detailed, adaptive)
-    
-    <Tip>A well-defined personality makes conversations feel more natural!</Tip>
-  </Accordion>
-  <Accordion icon="brain" title="Connect knowledge sources">
-    1. **Website Scraping**: Add your website URL to import content automatically
-    2. **Document Upload**: Upload PDFs, Word docs, or text files
-    3. **Manual Entry**: Add specific FAQs and responses
-    4. **Structured Data**: Import from CSV files or databases
-    
-    <Note>The more relevant information you provide, the better your agent's responses will be.</Note>
-  </Accordion>
-</AccordionGroup>
-
-### Step 4: Test Your Agent
-
-<Accordion icon="flask" title="Test in real-time preview">
-  1. Click the "Preview" button in the top-right corner
-  2. Test different conversation scenarios:
-     - Ask questions your customers might ask
-     - Try edge cases and unexpected inputs
-     - Verify the agent stays on topic
-  3. Make adjustments based on testing results
-  4. Use the "Reset Conversation" button to test different user journeys
-  
-  <Tip>Test early and often! Small issues become big problems if not caught early.</Tip>
-</Accordion>
-
-### Step 5: Deploy & Share
-
-<AccordionGroup>
-  <Accordion icon="link" title="Get your agent link">
-    1. Click "Deploy" from the agent dashboard
-    2. Choose "Direct Link" for the quickest deployment
-    3. Copy the generated URL to share with others
-    4. Optionally customize the URL with your own domain
-    
-    <Tip>Direct links are perfect for testing and sharing with stakeholders!</Tip>
-  </Accordion>
-  <Accordion icon="code" title="Embed on your website">
-    1. Click "Get Embed Code" from the deployment options
-    2. Copy the provided HTML snippet
-    3. Paste it before the closing `</body>` tag on your website
-    4. Customize the widget appearance and positioning
-    
-    <Note>The widget will appear as a chat bubble in the bottom-right corner by default.</Note>
-  </Accordion>
-</AccordionGroup>
-
-## Congratulations! 🎉
-
-You've successfully created and deployed your first Tars AI agent! Your agent is now live and ready to engage with users.
-
-## Next Steps
-
-Now that your agent is running, explore these advanced features:
-
-<CardGroup cols={2}>
-
-<Card title="Advanced AI Configuration" icon="brain" href="/ai-agents/agent-configuration/personality-settings">
-  Fine-tune your agent's personality, response style, and behavior patterns.
+<Card
+  title="What You'll Accomplish"
+  icon="target"
+  horizontal
+>
+  By the end of this tutorial, you'll have a **fully functional AI agent** deployed and ready to engage with users. You'll learn core concepts and best practices for building intelligent conversations.
 </Card>
 
-<Card title="Integration Setup" icon="plug" href="/tools-integration/tools-fundamentals/what-are-tools">
-  Connect with CRM systems, databases, and third-party tools.
+## 15-Minute Quick Start
+
+<Steps>
+  <Step title="Create Your Account">
+    Sign up for Tars and get familiar with the platform through our guided tour.
+    
+    ### Quick Account Setup
+    1. Visit [app.hellotars.com](https://app.hellotars.com) and create your account
+    2. Choose from multiple signup options: email, Google, LinkedIn, Outlook, or SSO
+    3. Verify your email address to activate your account
+    4. Complete the initial workspace setup
+    
+    <Note>
+      Need detailed signup help? Check our [complete account setup guide](/getting-help/account-setup) for step-by-step instructions and troubleshooting.
+    </Note>
+    
+    ### Platform Tour (Recommended)
+    Follow our interactive platform tour to create your first agent:
+    - The tour guides you through the entire agent creation process
+    - You'll have a fully functional agent by the end of the tour
+    - Perfect for first-time users to understand the platform
+    
+    <Check>
+      After completing the platform tour, you'll have your first agent created and ready to use.
+    </Check>
+    
+    <Tip>
+      The platform tour is the fastest way to get started - most users complete it in under 10 minutes.
+    </Tip>
+  </Step>
+
+  <Step title="Create Your Agent">
+    Choose how you want to build your agent using our flexible creation options.
+    
+    ### Agent Creation Methods
+    
+    Navigate to the **Agents** section and click **"Create Agent"**. Choose from these options:
+    
+    <Columns cols={2}>
+      <Card
+        title="Create from Template"
+        icon="layout-template"
+      >
+        **Fastest Option**: Choose from our template library with pre-built conversation flows
+      </Card>
+      <Card
+        title="Create from Knowledge Base"
+        icon="database"
+      >
+        **Data-Driven**: Build an agent powered by your existing content and documents
+      </Card>
+      <Card
+        title="Create from Tools"
+        icon="wrench"
+      >
+        **Integration-First**: Start with external tool integrations and build around them
+      </Card>
+      <Card
+        title="Create from Scratch"
+        icon="paintbrush"
+      >
+        **Full Control**: Build completely custom conversation flows from the ground up
+      </Card>
+    </Columns>
+    
+    ### Template Selection (Recommended)
+    
+    If you choose "Create from Template":
+    1. Browse the **Template** section
+    2. Select a template that matches your use case
+    3. Click on any template to preview its conversation flow
+    4. The template will automatically load into your **Builder Canvas**
+    
+    <Check>
+      Your selected template is now loaded in the Builder Canvas with all gambits and conversation flows ready to use.
+    </Check>
+    
+    <Note>
+      Templates include pre-configured gambits and conversation logic that you can customize to your needs.
+    </Note>
+  </Step>
+
+  <Step title="Customize Your Agent (Optional)">
+    Use the Builder Canvas to review and customize your agent's conversation flow.
+    
+    ### Builder Canvas Overview
+    
+    In the Builder Canvas, you can see:
+    - **Your agent** and all its settings
+    - **All gambits** used in your template
+    - **Conversation flow** and connections between gambits
+    
+    ### Customization Options
+    
+    <Columns cols={2}>
+      <Card
+        title="Configure Tab"
+        icon="settings"
+      >
+        **Agent Settings**: Customize chatbot appearance, behavior, and properties
+      </Card>
+      <Card
+        title="Agent Prompt"
+        icon="message-square"
+      >
+        **AI Behavior**: Modify base prompts and LLM model selection
+      </Card>
+      <Card
+        title="Knowledge Bases"
+        icon="database"
+      >
+        **Data Sources**: Add websites, documents, or CSV files to enhance responses
+      </Card>
+      <Card
+        title="Advanced Properties"
+        icon="wrench"
+      >
+        **Chat Settings**: Tool integrations, events, and advanced configurations
+      </Card>
+    </Columns>
+    
+    ### Adding Knowledge Sources
+    
+    To enhance your agent's knowledge:
+    1. Navigate to the **Knowledge Bases** section
+    2. Choose from these data source options:
+       - **Websites**: Automatically scrape website content
+       - **Documents**: Upload PDFs, Word docs, text files
+       - **CSV Files**: Import structured data
+       - **Manual Entry**: Add custom questions and answers
+    
+    <Check>
+      Your agent is now configured and ready for testing. You can always return to customize further.
+    </Check>
+    
+    <Note>
+      For your first agent, the template settings work well out-of-the-box. You can customize later based on testing results.
+    </Note>
+  </Step>
+
+  <Step title="Test Your Agent">
+    Test your agent using the built-in preview functionality before going live.
+    
+    ### Preview Testing
+    
+    In the Builder Canvas:
+    1. Click the **"Preview"** button to test your agent in real-time
+    2. Try different conversation scenarios and user inputs
+    3. Verify responses match your expectations
+    4. Test the complete conversation flow
+    
+    ### Launch for External Testing
+    
+    For more comprehensive testing:
+    1. Click the **"Launch"** button in the Builder Canvas
+    2. Your agent opens in a new tab for full testing
+    3. Share this link with team members for feedback
+    4. Test on different devices and browsers
+    
+    ### Review Conversations
+    
+    After testing, analyze your agent's performance:
+    - Visit the **Data View** section to see all conversations
+    - Review user interactions and agent responses
+    - Identify areas for improvement
+    - Export conversation data if needed
+    
+    <Check>
+      Test your agent with at least 5-10 different conversation scenarios to ensure it handles various user inputs appropriately.
+    </Check>
+    
+    <Tip>
+      The Preview and Launch features let you test immediately without deploying publicly. Use Launch for comprehensive testing with your team.
+    </Tip>
+  </Step>
+
+  <Step title="Publish & Deploy">
+    Make your agent live and accessible to users through various deployment options.
+    
+    ### Publish Your Agent
+    
+    Once you're satisfied with testing:
+    1. Click the **"Publish"** button in the Builder Canvas
+    2. Your agent is now live and ready for deployment
+    3. You'll receive confirmation that publishing was successful
+    
+    ### Deployment Options
+    
+    Choose how you want to make your agent accessible:
+    
+    <Columns cols={2}>
+      <Card
+        title="Website Embedding"
+        icon="globe"
+      >
+        **Most Popular**: Embed as a chat widget on your website for ongoing customer engagement
+      </Card>
+      <Card
+        title="WhatsApp Integration"
+        icon="message-square"
+      >
+        **Mobile-First**: Deploy on WhatsApp Business for messaging app engagement
+      </Card>
+      <Card
+        title="Direct Link Sharing"
+        icon="link"
+      >
+        **Quick Setup**: Share a direct link via email, social media, or messaging
+      </Card>
+      <Card
+        title="API Integration"
+        icon="code"
+      >
+        **Custom Solutions**: Integrate with existing systems using our API
 </Card>
+    </Columns>
+    
+    ### Monitor Performance
+    
+    After deployment, track your agent's success:
+    - **Data View**: Monitor all conversations and user interactions
+    - **Analytics**: Review performance metrics and engagement rates
+    - **Export Options**: Download conversation data for analysis
+    - **Optimization**: Make improvements based on real user feedback
+    
+    <Check>
+      Your agent is now published and deployed! Test the deployment to ensure it's working correctly for new users.
+    </Check>
+    
+    <Note>
+      You can always return to the Builder Canvas to make updates. Changes require republishing to take effect.
+    </Note>
+  </Step>
+</Steps>
 
-<Card title="Analytics & Optimization" icon="chart-line" href="/analyze/analytics-fundamentals/analytics-importance">
-  Monitor performance and optimize based on real user interactions.
-</Card>
+## Congratulations!
 
-<Card title="Advanced Testing" icon="vial" href="/test/testing-fundamentals/testing-importance">
-  Implement comprehensive testing strategies for production deployment.
-</Card>
+You've successfully created and deployed your first Tars AI agent! Your agent is now live and ready to engage with users, providing intelligent responses and handling customer interactions 24/7.
 
-</CardGroup>
+## What's Next?
 
-## Get More Help
+Now that your agent is live and running, take it to the next level with these advanced features:
 
-<Columns cols={3}>
-  <Card title="Video Tutorials" icon="play" href="/getting-help/video-tutorials">
-    Watch step-by-step video guides for visual learners.
+### Level Up Your Agent
+
+<Columns cols={2}>
+  <Card
+    title="Advanced AI Configuration"
+    icon="brain"
+    href="/ai-agents/agent-configuration/personality-settings"
+  >
+    **Fine-tune Intelligence**: Configure personality, response patterns, and advanced AI behaviors for more sophisticated conversations
   </Card>
-  <Card title="Community Forum" icon="users" href="/getting-help/community-forum">
-    Connect with other Tars users and get expert advice.
+  <Card
+    title="Knowledge Base Expansion"
+    icon="database"
+    href="/knowledge-bases/knowledge-fundamentals/what-are-knowledge-bases"
+  >
+    **Scale Your Knowledge**: Add multiple data sources, optimize search performance, and improve response accuracy
   </Card>
-  <Card title="Support Center" icon="life-ring" href="/community-support/contact-support">
-    Get direct help from our support team.
+  <Card
+    title="Integration Setup"
+    icon="plug"
+    href="/tools-integration/tools-fundamentals/what-are-tools"
+  >
+    **Connect Everything**: Integrate with CRM systems, databases, and 1000+ third-party tools for seamless workflows
+  </Card>
+  <Card
+    title="Advanced Testing"
+    icon="shield-check"
+    href="/test/testing-fundamentals/testing-importance"
+  >
+    **Production Ready**: Implement comprehensive testing strategies and quality assurance processes
   </Card>
 </Columns>
 
+### Monitor & Optimize Performance
+
+<Columns cols={2}>
+  <Card
+    title="Analytics Dashboard"
+    icon="chart-line"
+    href="/analyze/analytics-fundamentals/analytics-importance"
+  >
+    **Track Success**: Monitor conversations, measure performance, and identify optimization opportunities
+  </Card>
+  <Card
+    title="Continuous Improvement"
+    icon="refresh-cw"
+    href="/iterate/improvement-fundamentals/iteration-importance"
+  >
+    **Data-Driven Optimization**: Use analytics insights to continuously improve your agent's performance
+  </Card>
+</Columns>
+
+### Scale Your Deployment
+
+<Columns cols={2}>
+  <Card
+    title="Multi-Channel Deployment"
+    icon="smartphone"
+    href="/whatsapp-platform/whatsapp-fundamentals/whatsapp-vs-web"
+  >
+    **Expand Reach**: Deploy on WhatsApp, SMS, and other messaging platforms
+  </Card>
+  <Card
+    title="Enterprise Features"
+    icon="building"
+    href="/ai-technology/understanding-llms"
+  >
+    **Scale Globally**: Implement enterprise-grade security, compliance, and performance features
+  </Card>
+</Columns>
+
+---
+
+## Need Help Along the Way?
+
+Our comprehensive support ecosystem is here to guide you every step of the journey:
+
+### Learning Resources
+
+<Columns cols={3}>
+  <Card
+    title="Video Tutorials"
+    icon="play-circle"
+    href="/getting-help/video-tutorials"
+  >
+    **Visual Learning**: Step-by-step video guides for all experience levels
+  </Card>
+  <Card
+    title="Platform Fundamentals"
+    icon="book-open"
+    href="/platform-fundamentals/how-tars-works"
+  >
+    **Deep Understanding**: Learn core concepts and best practices
+  </Card>
+  <Card
+    title="Use Case Examples"
+    icon="lightbulb"
+    href="/use-case-examples/customer-support/helpdesk-automation"
+  >
+    **Real-World Examples**: Industry-specific implementations and strategies
+</Card>
+</Columns>
+
+### Community & Support
+
+<Columns cols={3}>
+  <Card
+    title="Community Forum"
+    icon="message-circle"
+    href="/getting-help/community-forum"
+  >
+    **Peer Learning**: Connect with 9,000+ bot creators worldwide
+  </Card>
+  <Card
+    title="Expert Support"
+    icon="headphones"
+    href="/community-support/contact-support"
+  >
+    **Direct Help**: Get assistance from our dedicated support team
+  </Card>
+  <Card
+    title="Success Stories"
+    icon="trophy"
+    href="/welcome-to-tars/success-stories"
+  >
+    **Proven Results**: Learn from 800+ successful brand implementations
+</Card>
+</Columns>
+
+---
+
+## Quick Access Resources
+
+<Card
+  title="Essential Documentation Hub"
+  icon="bookmark"
+  horizontal
+>
+  Bookmark these key resources for quick reference during your Tars journey:
+  
+  - [Make Guide](/make/overview) - Complete agent building reference
+  - [Testing Guide](/test/testing-fundamentals/testing-importance) - Quality assurance best practices  
+  - [Deployment Guide](/deploy/deployment-fundamentals/deployment-overview) - Go-live strategies
+  - [Analytics Guide](/analyze/analytics-fundamentals/analytics-importance) - Performance monitoring
+</Card>
+
+<Warning>
+  Going to Production? Before deploying to real users, review our [deployment best practices](/deploy/deployment-fundamentals/deployment-best-practices) to ensure optimal performance and user experience.
+</Warning>
+
 <Note>
-  **Ready for production?** Check out our [deployment best practices](/deploy/deployment-fundamentals/deployment-best-practices) before going live with real users.
+  Questions or Feedback? We're here to help! Reach out through our [community forum](/getting-help/community-forum) or [contact support](/community-support/contact-support) anytime.
 </Note>
