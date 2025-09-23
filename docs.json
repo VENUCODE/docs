@@ -8,6 +8,10 @@
     "dark": "#4A1F75"
   },
   "favicon": "/favicon.svg",
+  "thumbnails": {
+    "appearance": "light",
+    "background": "/images/background.png"
+  },
   "head": [
     {
       "tag": "link",
@@ -440,6 +444,16 @@
       "cursor",
       "vscode"
     ]
+  },
+  "background": {
+    "decoration": "grid",
+    "color": {
+      "light": "#F5F5F5",
+      "dark": "#1A1A1A"
+    }
+  },
+  "interation": {
+    "drilldown": false
   },
   "footer": {
     "socials": {
