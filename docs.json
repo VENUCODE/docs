@@ -23,38 +23,37 @@
         "tab": "Get Started",
         "groups": [
           {
-            "group": "About Tars",
+            "group": "Welcome & Overview",
             "pages": [
-              "index",
+              "welcome-to-tars/index",
               "welcome-to-tars/who-uses-tars",
               "welcome-to-tars/success-stories"
             ]
           },
           {
-            "group": "Platform Fundamentals",
+            "group": "Understanding Tars",
             "pages": [
               "platform-fundamentals/how-tars-works",
               "platform-fundamentals/key-concepts",
-              "platform-fundamentals/choosing-your-path",
-              "platform-fundamentals/platform-tour",
-              "platform-fundamentals/decision-framework"
+              "platform-fundamentals/platform-tour"
             ]
           },
           {
-            "group": "Quickstart Tutorial",
+            "group": "Your First Agent",
             "pages": [
-              "quickstart",
-              "quickstart-tutorial/understanding-your-agent",
-              "quickstart-tutorial/next-steps-guide"
+              "platform-fundamentals/choosing-your-path",
+              "quickstart/index",
+              "quickstart/understanding-your-agent",
+              "quickstart/next-steps-guide"
             ]
           },
           {
             "group": "Getting Help",
             "pages": [
-              "getting-help/account-setup",
               "getting-help/quick-faqs",
               "getting-help/video-tutorials",
-              "getting-help/community-forum"
+              "getting-help/community-forum",
+              "getting-help/account-setup"
             ]
           }
         ]
@@ -388,26 +387,6 @@
             "group": "Resources & Updates",
             "pages": [
               "resources-community/changelog"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API Reference",
-        "groups": [
-          {
-            "group": "API Documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint Examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
             ]
           }
         ]

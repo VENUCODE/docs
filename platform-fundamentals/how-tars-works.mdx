@@ -1,40 +1,30 @@
 ---
 title: "How Tars Works"
 description: "Understand the core architecture and technology behind Tars AI agents and conversational intelligence"
+icon: "question"
 ---
 
-## System Architecture Overview
-
-Tars combines multiple AI technologies to create intelligent conversational agents that understand context, access knowledge, and take actions on behalf of users. Here's how it all works together:
+Tars is a **comprehensive conversational AI platform** that enables you to build intelligent agents through a complete development lifecycle. The platform combines AI-powered conversation handling with visual flow building, extensive integrations, and robust analytics to create dynamic conversational experiences that replace static forms and landing pages.
 
 ```mermaid
 graph TB
-    subgraph "User Interface Layer"
+    subgraph "User Interfaces"
         A[Web Chat Widget]
         B[WhatsApp Business]
         C[Direct Links]
-        D[Custom Integrations]
+        D[Website Embedding]
     end
     
-    subgraph "AI Processing Engine"
-        E[Natural Language Understanding]
-        F[Intent Recognition]
-        G[Context Management]
-        H[Response Generation]
+    subgraph "Core Platform Components"
+        E[AI Agents]
+        F[Knowledge Bases]
+        G[Tools Integration]
     end
     
-    subgraph "Knowledge & Data Layer"
-        I[Vector Knowledge Base]
-        J[Semantic Search]
-        K[External Integrations]
-        L[Conversation Memory]
-    end
-    
-    subgraph "Action & Integration Layer"
-        M[Tool Execution]
-        N[API Calls]
-        O[Database Operations]
-        P[Workflow Automation]
+    subgraph "Conditional Workflows"
+        H[Live Chat Handoff]
+        I[API Integrations]
+        J[Custom Workflows]
     end
     
     A --> E
@@ -42,245 +32,294 @@ graph TB
     C --> E
     D --> E
     
-    E --> F
-    F --> G
-    G --> H
+    E <--> F
+    E <--> G
+    E -.-> H
+    E -.-> I
+    E -.-> J
     
-    H --> I
-    H --> K
-    I --> J
-    
-    H --> M
-    M --> N
-    N --> O
-    O --> P
-    
-    J --> H
-    L --> G
-    P --> H
+    style H fill:#f9f,stroke:#333,stroke-dasharray: 5 5
+    style I fill:#f9f,stroke:#333,stroke-dasharray: 5 5
+    style J fill:#f9f,stroke:#333,stroke-dasharray: 5 5
 ```
 
-## Core Components
+## Core Platform Components
 
-### 🧠 AI Processing Engine
+Tars operates through six main components that work together to deliver intelligent conversational experiences:
 
-**Natural Language Understanding (NLU)**
-- Processes user input to understand intent and extract entities
-- Handles multiple languages and dialects
-- Recognizes context from previous conversation turns
-- Adapts to different communication styles and tones
-
-**Intent Recognition**
-- Identifies what the user wants to accomplish
-- Maps requests to appropriate actions or responses
-- Handles ambiguous or complex multi-part requests
-- Learns from interactions to improve accuracy over time
-
-**Context Management**
-- Maintains conversation state across multiple turns
-- Remembers user preferences and previous interactions
-- Tracks conversation flow and current objectives
-- Manages session data and user authentication
-
-**Response Generation**
-- Creates natural, contextually appropriate responses
-- Adapts tone and style to match agent personality
-- Incorporates knowledge base information seamlessly
-- Generates follow-up questions to clarify intent
-
-### 📚 Knowledge & Data Layer
-
-**Vector Knowledge Base**
-- Stores information as semantic embeddings for intelligent retrieval
-- Supports multiple content types: text, documents, structured data
-- Updates automatically as new information is added
-- Maintains relevance scoring for accurate responses
-
-**Semantic Search**
-- Finds relevant information based on meaning, not just keywords
-- Handles synonyms, related concepts, and context
-- Ranks results by relevance and recency
-- Provides source attribution for transparency
-
-**External Integrations**
-- Real-time data access from CRM, databases, and APIs
-- Secure authentication and data handling
-- Cached responses for performance optimization
-- Error handling and fallback mechanisms
-
-**Conversation Memory**
-- Short-term memory for current conversation context
-- Long-term memory for user preferences and history
-- Privacy-compliant data storage and retention
-- Configurable memory depth and retention policies
-
-### 🔧 Action & Integration Layer
-
-**Tool Execution**
-- Executes actions based on user requests and agent logic
-- Handles complex workflows with multiple steps
-- Provides real-time status updates and confirmations
-- Manages transaction integrity and rollback capabilities
-
-**API Integrations**
-- Connects with 50+ popular business tools and platforms
-- Custom API support for proprietary systems
-- Rate limiting and quota management
-- Comprehensive error handling and retry logic
-
-**Workflow Automation**
-- Triggers automated processes based on conversation outcomes
-- Schedules follow-up actions and reminders
-- Manages complex business logic and decision trees
-- Provides audit trails for compliance and debugging
-
-## Data Flow Process
-
-### 1. Input Processing
-```
-User Message → Language Detection → Intent Classification → Entity Extraction → Context Integration
-```
-
-### 2. Knowledge Retrieval
-```
-Processed Intent → Semantic Search → Knowledge Ranking → Source Attribution → Content Preparation
-```
-
-### 3. Action Determination
-```
-Intent + Context → Action Planning → Tool Selection → Parameter Preparation → Execution Queue
-```
-
-### 4. Response Generation
-```
-Knowledge + Actions → Response Drafting → Personality Application → Quality Validation → Delivery
-```
-
-## AI Agent Conversation Flow
-
-Understanding how Tars agents handle conversations helps you design better user experiences:
-
-### Conversation Stages
-
-<Columns cols={2}>
-  <Card title="1. Greeting & Context" icon="handshake">
-    - Welcome message based on entry point
-    - Context gathering from previous sessions
-    - Personality and tone establishment
-    - User preference recognition
+<CardGroup cols={2}>
+  <Card title="AI Agents" icon="robot" href="/ai-agents/understanding-ai-agents/what-are-ai-agents">
+    **Intelligent Conversation Handlers**
+    - Human-like conversation understanding and context awareness
+    - Natural language processing with personality customization
+    - Multi-turn conversation management with memory
+    - Automatic tool selection and workflow execution
   </Card>
-  <Card title="2. Intent Understanding" icon="search">
-    - Natural language processing of user input
-    - Intent classification and confidence scoring
-    - Entity extraction and validation
-    - Context integration from conversation history
+
+  <Card title="Data Collector" icon="filter" href="/data-collector/overview">
+    **User Query Extraction**
+    - Extracts relevant information from user queries
+    - Enhances understanding of user intent
+    - Supports dynamic conversation routing
   </Card>
-  <Card title="3. Knowledge Retrieval" icon="database">
-    - Semantic search across knowledge sources
-    - Relevance scoring and ranking
-    - Multi-source information synthesis
-    - Real-time data integration when needed
+
+  <Card title="Categorizer" icon="split" href="/categorizer/overview">
+    **Query Categorization**
+    - Categorizes user queries into different branches
+    - Facilitates targeted response generation
+    - Improves conversation flow management
   </Card>
-  <Card title="4. Response Formulation" icon="message-circle">
-    - Natural response generation
-    - Personality and brand voice application
-    - Call-to-action integration
-    - Follow-up question preparation
+  
+  <Card title="Knowledge Bases" icon="database" href="/knowledge-bases/knowledge-fundamentals/what-are-knowledge-bases">
+    **Intelligent Information Retrieval**
+    - Vector-based semantic search using Weaviate and Qdrant
+    - Multiple content source support with automatic processing
+    - Context-aware answer generation with source attribution
+    - Real-time content updates and optimization
   </Card>
-</Columns>
+  
+  <Card title="Tools Integration" icon="wrench" href="/tools-integration/tools-fundamentals/what-are-tools">
+    **External System Connectivity**
+    - 600+ pre-built integrations for business platforms
+    - Custom API connections with secure authentication
+    - Real-time data synchronization and workflow automation
+    - Enterprise-grade security and compliance
+  </Card>
+    <Card title="User-input" icon="pen-field" href="/user-input/overview">
+    **User-input**
+    - Handles user input for different types of input
+  </Card>
+</CardGroup>
 
-### Conversation Management
 
-**Multi-turn Conversations**
-- Maintains context across multiple exchanges
-- Handles topic shifts and tangential questions
-- Manages complex requests requiring multiple steps
-- Provides conversation summaries when needed
+### Agentic workflow
 
-**Error Handling**
-- Graceful handling of unclear or ambiguous requests
-- Clarifying questions to resolve confusion
-- Fallback responses for unsupported scenarios
-- Escalation to human agents when appropriate
-
-**Conversation Optimization**
-- A/B testing of response variations
-- Performance monitoring and improvement suggestions
-- User satisfaction tracking and optimization
-- Continuous learning from successful interactions
-
-## Integration Workflow
-
-### How Tools Connect and Execute
+Tars agents handle conversations through sophisticated AI processing where the LMS brain internally manages all processing paths:
 
 ```mermaid
-sequenceDiagram
-    participant U as User
-    participant A as AI Agent
-    participant K as Knowledge Base
-    participant T as External Tool
-    participant S as System Response
+flowchart TD
+    A[User Input] --> B[AI Agent - LMS Brain]
     
-    U->>A: "Book me a meeting tomorrow"
-    A->>K: Search for scheduling preferences
-    K->>A: Return user timezone, availability
-    A->>T: Check calendar availability
-    T->>A: Return available time slots
-    A->>U: "I found 3 available slots..."
-    U->>A: "2 PM works"
-    A->>T: Create calendar event
-    T->>A: Confirmation details
-    A->>S: Log interaction for analytics
-    A->>U: "Meeting booked! Confirmation sent."
+    B --> C[Knowledge Retrieval]
+    B --> D[Action Execution]
+    
+    C --> E[Vector Database Search]
+    E --> F[Context & Information]
+    
+    D --> G[Tool Selection]
+    G --> H[600+ Native Tools]
+    G --> I[Custom Integrations]
+    H --> J[Action Results]
+    I --> J
+    
+    F --> K[Data Aggregation]
+    J --> K
+    K --> L[Response Generation]
+    L --> M[Contextual Response]
+    
+    style A fill:#e1f5fe
+    style B fill:#fff3e0
+    style C fill:#f3e5f5
+    style D fill:#e8f5e8
+    style K fill:#fce4ec
+    style L fill:#e3f2fd
+    style M fill:#e0f2f1
 ```
 
-### Security & Privacy
+### Question Answering Workflow
 
-**Data Protection**
-- End-to-end encryption for all data transmission
-- SOC 2 Type II compliance for data handling
-- GDPR and CCPA compliant privacy controls
-- Regular security audits and penetration testing
+The Question Answering Workflow uses the same agentic workflow but focuses only on knowledge retrieval:
 
-**Access Control**
-- Role-based permissions for team members
-- API key management and rotation
-- Integration-specific access scoping
-- Audit logs for all system activities
+```mermaid
+flowchart TD
+    A(User Input) --> B[AI Agent - LMS Brain]
+    
+    B --> C(Knowledge Required?)
+    
+    C -->|Yes| D[RAG Retrieval]
+    C -->|No| E[Skip Knowledge]
+    
+    D --> F[Retrieve]
+    F --> G[Augment]
+    G --> K[Response Generation]
+    K --> I[Contextual Response]
+    
+    E --> J[Data Aggregation]
+    J --> K[Response Generation]
+  
+    
+    style A fill:#e1f5fe
+    style B fill:#fff3e0
+    style C fill:#fff3e0
+    style D fill:#e8f5e8
+    style E fill:#e8f5e8
+    style F fill:#e8f5e8
+    style G fill:#e8f5e8
+    style I fill:#e0f2f1
+    style J fill:#fce4ec
+    style K fill:#e3f2fd
+```
 
-## Performance & Scalability
+<Steps>
+<Step title="User Input">
+  User asks a question or requests information through any interface (web, WhatsApp, direct link).
+</Step>
 
-### Response Time Optimization
-- **< 200ms** average response time for simple queries
-- **< 1 second** for complex knowledge retrieval
-- **< 3 seconds** for external API integration
-- Global CDN deployment for low latency worldwide
+<Step title="Retrieve">
+  Performs vector database search using semantic similarity to find relevant knowledge from the knowledge base.
+</Step>
 
-### Scalability Features
-- Auto-scaling infrastructure to handle traffic spikes
-- Load balancing across multiple data centers
-- Horizontal scaling for high-volume deployments
-- Performance monitoring and alerting
+<Step title="Augment">
+  Combines retrieved knowledge with conversation context and user history for comprehensive understanding.
+</Step>
+
+<Step title="Generate">
+  Creates accurate, knowledge-based responses with source attribution and contextual relevance.
+</Step>
+</Steps>
+
+### Conditional Workflows
+
+**Intelligent Escalation & Routing**
+- **Live Chat Handoff**: Seamless transition to human agents when AI cannot resolve queries
+- **Custom Workflows**: Conditional logic for complex business processes
+- **API Integrations**: Real-time data exchange with external systems
+
+<Note>
+Live chat handoff and custom workflows are conditional features that activate based on conversation context and business rules.
+</Note>
+
+## Knowledge Base Architecture
+
+### Vector Database Technology
+
+<CardGroup cols={2}>
+  <Card title="Knowledge Bases" icon="database" href="/knowledge-bases/knowledge-fundamentals/what-are-knowledge-bases">
+    **Semantic Search Technology**
+    - Content ingestion from multiple sources
+    - Vector embeddings for meaning-based search
+    - Context-aware retrieval and ranking
+    - Real-time knowledge access
+  </Card>
+  
+  <Card title="Vector Databases" icon="server" href="/ai-technology/understanding-llms">
+    **Weaviate & Qdrant Integration**
+    - Mathematical content representations
+    - Fast semantic search capabilities
+    - Scalable storage and retrieval
+    - Performance optimization
+  </Card>
+</CardGroup>
+
+### Knowledge Processing Workflow
+
+<Steps>
+<Step title="Data Import">
+  Content ingestion from websites, documents, APIs, and manual entry with automatic cleaning and formatting.
+</Step>
+
+<Step title="Indexing & Embedding">
+  Content conversion to searchable vector embeddings that capture semantic meaning and relationships.
+</Step>
+
+<Step title="Vector Database Storage">
+  Processed embeddings stored in Weaviate and Qdrant for fast, scalable semantic search.
+</Step>
+
+<Step title="Semantic Search">
+  Real-time retrieval of relevant content based on conversation context and user intent.
+</Step>
+
+<Step title="Contextual Response">
+  Integration of retrieved knowledge into natural agent responses with source attribution.
+</Step>
+</Steps>
+
+## Integration Framework
+
+### Platform Integration Types
+
+<CardGroup cols={2}>
+  <Card title="Pre-Built Tools (600+)" icon="plug" href="/tools-integration/tools-fundamentals/available-tools-gallery">
+    **Native Platform Integrations**
+    - CRM, productivity, and communication platforms
+    - One-click setup with guided configuration
+    - Multiple actions per platform
+    - Automatic updates and maintenance
+  </Card>
+  
+  <Card title="Custom & 3rd Party" icon="code" href="/tools-integration/individual-tools/api-gambit/api-configuration">
+    **API Integrations**
+    - REST API support for any system
+    - Secure credential storage (API keys, OAuth)
+    - Custom data transformation and mapping
+    - Webhook support for real-time updates
+  </Card>
+</CardGroup>
+
+## Multi-Platform Deployment
+
+### Channel Flexibility
+
+**Website Integration**
+- Embeddable chat widgets with full customization
+- Custom domain hosting for professional deployment
+- Cross-browser compatibility and mobile responsiveness
+
+**WhatsApp Business Platform**
+- Native WhatsApp Business API integration
+- Rich media messaging and broadcast capabilities
+- Business number setup and verification
+
+**Direct Access**
+- Shareable agent links for campaigns and social media
+- QR code generation for offline-to-online engagement
+- Custom branding and analytics tracking
+
+## Platform Architecture
+
+### Performance & Scalability
+
+**Infrastructure Design**
+- Auto-scaling for traffic spikes and high volume
+- Global CDN deployment for worldwide low latency
+- 99.9% uptime SLA with automatic failover
+- Real-time monitoring and performance alerts
+
+**Response Optimization**
+- < 200ms for simple conversations
+- < 1 second for knowledge base searches
+- < 3 seconds for complex integrations
+- Intelligent caching and performance tuning
+
+### Security & Compliance
+
+**Enterprise-Grade Protection**
+- End-to-end encryption for all communications
+- SOC 2 Type II certified security controls
+- GDPR and CCPA compliant data processing
+- Role-based access control with audit logging
 
 ## Next Steps
 
-Now that you understand how Tars works, explore these key concepts:
-
 <CardGroup cols={2}>
   <Card title="Key Concepts" icon="lightbulb" href="/platform-fundamentals/key-concepts">
-    Learn essential terminology and component relationships
+    Master essential terminology and platform relationships
   </Card>
-  <Card title="Choosing Your Path" icon="map" href="/platform-fundamentals/choosing-your-path">
-    Determine the best approach for your use case
+  
+  <Card title="Development Lifecycle" icon="cycle" href="/introduction-to-development/development-lifecycle-overview">
+    Understand the complete Make → Test → Deploy → Analyze → Iterate process
   </Card>
-  <Card title="Platform Tour" icon="compass" href="/platform-fundamentals/platform-tour">
-    Take an interactive walkthrough of the Tars interface
+  
+  <Card title="Start Building" icon="rocket" href="/quickstart">
+    Create your first agent with our step-by-step tutorial
   </Card>
-  <Card title="Start Building" icon="hammer" href="/quickstart">
-    Create your first agent with our step-by-step guide
+  
+  <Card title="Explore Components" icon="puzzle-piece" href="/ai-agents/understanding-ai-agents/what-are-ai-agents">
+    Dive deep into individual platform components
   </Card>
 </CardGroup>
 
 <Note>
-  **Technical Deep Dive:** For detailed technical information about AI models, vector embeddings, and system architecture, visit our [Technical Deep Dive](/ai-technology/understanding-llms) section.
+**Want technical details?** Visit our [Technical Deep Dive](/ai-technology/understanding-llms) section for in-depth information about AI models, vector embeddings, and system architecture.
 </Note>
