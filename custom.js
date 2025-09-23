@@ -1,4 +1,4 @@
-console.log("custom.js loaded");
+// console.log("custom.js loaded");
 
 function overrideFooterSecondDiv() {
     const footer = document.getElementById("footer");
@@ -8,11 +8,11 @@ function overrideFooterSecondDiv() {
     if (secondDiv) {
         const link = secondDiv.querySelector("a");
         if (link) {
-            console.log("Overriding footer link:", link);
+            // console.log("Overriding footer link:", link);
             link.textContent = "Powered by Tars";
             link.href = "https://hellotars.com";
         } else {
-            console.log("Footer link not found inside second div yet.");
+            // console.log("Footer link not found inside second div yet.");
         }
     }
 }
@@ -29,7 +29,7 @@ delayedOverride();
     const pushState = history.pushState;
     history.pushState = function () {
         const ret = pushState.apply(this, arguments);
-        console.log("[pushState called]", window.location.href);
+        // console.log("[pushState called]", window.location.href);
         delayedOverride();
         return ret;
     };
@@ -37,7 +37,7 @@ delayedOverride();
     const replaceState = history.replaceState;
     history.replaceState = function () {
         const ret = replaceState.apply(this, arguments);
-        console.log("[replaceState called]", window.location.href);
+        // console.log("[replaceState called]", window.location.href);
         delayedOverride();
         return ret;
     };
@@ -45,6 +45,6 @@ delayedOverride();
 
 // Handle back/forward navigation
 window.addEventListener("popstate", () => {
-    console.log("[popstate fired]", window.location.href);
+    // console.log("[popstate fired]", window.location.href);
     delayedOverride();
 });

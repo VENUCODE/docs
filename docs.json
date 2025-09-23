@@ -50,10 +50,10 @@
           {
             "group": "Getting Help",
             "pages": [
+              "getting-help/account-setup",
               "getting-help/quick-faqs",
               "getting-help/video-tutorials",
-              "getting-help/community-forum",
-              "getting-help/account-setup"
+              "getting-help/community-forum"
             ]
           }
         ]
