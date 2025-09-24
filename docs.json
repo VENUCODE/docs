@@ -454,6 +454,12 @@
   "interation": {
     "drilldown": false
   },
+  "integrations": {
+    "posthog": {
+      "apiKey": "phc_VS1g3T1Pzsy9ogSEe2jXprF1wPEcmMqtgZZH2kI12cN",
+      "apiHost": "https://us.i.posthog.com"
+    }
+  },
   "footer": {
     "socials": {
       "x": "https://x.com/hellotars",
