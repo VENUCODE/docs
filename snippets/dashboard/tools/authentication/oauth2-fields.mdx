@@ -1,0 +1,57 @@
+**OAuth 2.0 with Custom Fields**
+
+Advanced OAuth authentication with additional custom configuration fields.
+
+<Steps>
+<Step title="Configure OAuth settings">
+  - Go to Tools section in your Tars dashboard
+  - Find the tool you want to connect
+  - Click **"Connect"** or **"Add Integration"**
+  - Select **"OAuth 2.0 with Fields"** as authentication method
+</Step>
+
+<Step title="Enter custom fields">
+  - Fill in the required custom fields (varies by tool):
+    - **Client ID**: Your application's client identifier
+    - **Client Secret**: Your application's secret key
+    - **Authorization URL**: The OAuth authorization endpoint
+    - **Token URL**: The OAuth token exchange endpoint
+    - **Scope**: Permissions your application needs
+  - Click **"Save Configuration"**
+</Step>
+
+<Step title="Authorize access">
+  - You'll be redirected to the tool's authorization page
+  - Log in with your tool account credentials
+  - Review the permissions Tars is requesting
+  - Click **"Authorize"** or **"Allow"** to grant access
+</Step>
+
+<Step title="Complete setup">
+  - You'll be redirected back to Tars
+  - The system validates the custom configuration
+  - Connection is established with your custom settings
+</Step>
+</Steps>
+
+**When to use OAuth 2.0 with Fields:**
+- **Custom Applications**: When connecting to your own OAuth-enabled applications
+- **Enterprise Tools**: For tools that require specific OAuth configuration
+- **Advanced Integrations**: When you need custom scopes or endpoints
+- **Self-hosted Services**: For on-premises tools with custom OAuth setup
+
+**Common custom fields:**
+- **Client ID**: Unique identifier for your application
+- **Client Secret**: Secret key for your application
+- **Authorization URL**: Where users go to authorize access
+- **Token URL**: Where tokens are exchanged
+- **Scope**: Specific permissions requested
+- **Redirect URI**: Where users are sent after authorization
+
+<Note>
+**Advanced Setup**: This method requires technical knowledge of OAuth 2.0 configuration. Contact your system administrator if you need help with custom OAuth setup.
+</Note>
+
+<Warning>
+**Security**: Keep your Client Secret secure and never share it publicly. Store it safely as it provides access to your OAuth application.
+</Warning>

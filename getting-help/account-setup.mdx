@@ -4,6 +4,9 @@ description: "Create your Tars account or sign in to get started with AI agents"
 icon: "user-plus"
 ---
 
+import SocialSignup from '/snippets/account/social-signup.mdx';
+import SocialLogin from '/snippets/account/social-login.mdx';
+
 <Tabs>
 <Tab title="New user" icon="user-plus">
 ## Create your account
@@ -51,29 +54,8 @@ Choose your preferred signup method to get started with Tars.
 </Tab>
 
 <Tab title="Social signup">
-**Quick signup with existing accounts**
 
-<CardGroup cols={2}>
-<Card title="Google" icon="chrome" >
-Gmail or Google Workspace accounts
-</Card>
-
-<Card title="Outlook" icon="envelope" >
-Outlook.com or Office 365 accounts
-</Card>
-
-<Card title="LinkedIn" icon="linkedin" >
-Professional profile integration
-</Card>
-
-<Card title="SSO" icon="shield-check" >
-Enterprise single sign-on
-</Card>
-</CardGroup>
-
-<Note>
-Social signup creates your account instantly and redirects you to the dashboard.
-</Note>
+<SocialSignup />
 </Tab>
 </Tabs>
 </Tab>
@@ -121,13 +103,7 @@ Access your existing Tars workspace.
 </Tab>
 
 <Tab title="Social login">
-**One-click access**
-
-Use the same social account you signed up with:
-- **Google** - Continue with Google
-- **Outlook** - Continue with Outlook  
-- **LinkedIn** - Continue with LinkedIn
-- **SSO** - Continue with SSO
+<SocialLogin />
 </Tab>
 </Tabs>
 </Tab>

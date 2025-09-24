@@ -1,0 +1,52 @@
+**Basic Authentication**
+
+Traditional username and password authentication for tools that don't support modern OAuth.
+
+<Steps>
+<Step title="Prepare credentials">
+  - Ensure you have your tool account username and password
+  - Verify that your account has the necessary permissions
+  - Consider using a dedicated service account if available
+</Step>
+
+<Step title="Configure in Tars">
+  - Go to Tools section in your Tars dashboard
+  - Find the tool you want to connect
+  - Click **"Connect"** or **"Add Integration"**
+  - Select **"Basic Authentication"** as authentication method
+</Step>
+
+<Step title="Enter credentials">
+  - Enter your **Username** in the username field
+  - Enter your **Password** in the password field
+  - Add any additional required fields (if applicable)
+  - Click **"Test Connection"** to verify
+</Step>
+
+<Step title="Complete setup">
+  - Review the connection details
+  - Click **"Save"** to complete the integration
+  - Your tool is now connected and ready to use
+</Step>
+</Steps>
+
+**Common tools using Basic Authentication:**
+- **Legacy Systems**: Older applications that don't support OAuth
+- **Internal Tools**: Company-specific applications
+- **Database Connections**: Direct database access
+- **FTP/SFTP Services**: File transfer protocols
+- **Email Servers**: SMTP/IMAP connections
+
+**Security considerations:**
+- **Use Service Accounts**: Create dedicated accounts for integrations when possible
+- **Limit Permissions**: Only grant necessary permissions to the integration account
+- **Regular Rotation**: Change passwords regularly for enhanced security
+- **Monitor Access**: Keep track of which accounts are used for integrations
+
+<Warning>
+**Security Risk**: Basic authentication transmits credentials in each request. Only use this method when OAuth is not available, and ensure your connection is encrypted (HTTPS).
+</Warning>
+
+<Note>
+**Alternative**: If the tool supports OAuth 2.0, prefer that method over basic authentication for better security.
+</Note>
