@@ -98,10 +98,10 @@ Tars agents handle conversations through sophisticated AI processing where the L
 
 ```mermaid
 flowchart TD
-    A[User Input] --> B[AI Agent - LMS Brain]
+    A[User Input] --> B[AI Agent]
     
     B --> C[Knowledge Retrieval]
-    B --> D[Action Execution]
+    B --> D[Tool Action Execution]
     
     C --> E[Vector Database Search]
     E --> F[Context & Information]
@@ -132,7 +132,7 @@ The Question Answering Workflow uses the same agentic workflow but focuses only 
 
 ```mermaid
 flowchart TD
-    A(User Input) --> B[AI Agent - LMS Brain]
+    A(User Input) --> B[AI Agent]
     
     B --> C(Knowledge Required?)
     
@@ -185,9 +185,6 @@ flowchart TD
 - **Custom Workflows**: Conditional logic for complex business processes
 - **API Integrations**: Real-time data exchange with external systems
 
-<Note>
-Live chat handoff and custom workflows are conditional features that activate based on conversation context and business rules.
-</Note>
 
 ## Knowledge Base Architecture
 

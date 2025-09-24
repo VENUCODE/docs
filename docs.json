@@ -46,7 +46,6 @@
             "group": "Your First Agent",
             "pages": [
               "platform-fundamentals/choosing-your-path",
-              "quickstart/index",
               "quickstart/understanding-your-agent",
               "quickstart/next-steps-guide"
             ]
