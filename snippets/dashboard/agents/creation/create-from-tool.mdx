@@ -1,65 +1,80 @@
-## Create from tool
-
-**Build an agent around a specific tool or integration**
-
 Creating an agent from a tool allows you to quickly build an intelligent assistant that can perform specific actions using your existing tool integrations.
-
-<Frame>
-<img src="/images/dashboard/create-agent-tool.png" alt="Create agent from tool interface showing tool selection and agent configuration" />
-</Frame>
 
 ### What you get
 
 **Tool-powered automation**
 - **Pre-configured actions**: Your agent can immediately perform actions using the selected tool
 - **Smart workflows**: Automatically handles tool-specific processes and data flows
-- **Error handling**: Built-in error handling for common tool-related issues
 - **User-friendly interface**: Converts complex tool operations into simple conversations
 - **Integration expertise**: Leverages the tool's capabilities for optimal results
 
 ### Perfect for
 
-- **Process automation**: Automate repetitive tasks using specific tools
-- **Data management**: Help users interact with databases, CRMs, or other data systems
-- **Workflow assistance**: Guide users through complex tool-based processes
-- **Integration support**: Provide help with specific tool configurations
-- **Task delegation**: Allow users to perform actions through natural conversation
+- **Email management**: Send emails, schedule meetings, and manage contacts using Gmail integration
+- **CRM operations**: Create leads, update customer records, and track sales activities with HubSpot or Zoho
+- **Customer support**: Manage tickets, respond to queries, and track customer issues through Zendesk
+- **Marketing automation**: Create campaigns, manage subscribers, and track email performance with Mailchimp
+- **Google Workspace**: Manage documents, spreadsheets, and calendar events using Google Drive and Calendar
+- **Workflow assistance**: Guide users through complex tool-based processes and integrations
 
-### How it works
+## Step-by-step creation process
 
 <Steps>
-<Step title="Select your tool">
-  - Choose from your connected tools and integrations
-  - Review the tool's capabilities and available actions
-  - Understand what the agent will be able to do
+<Step title="Select Create from Tool">
+  Click on the `Create from Tool` card to begin creating a tool-powered agent.
+  
+  <Frame>
+  <img src="/images/dashboard/tool/step1.png" alt="Create Agent page showing Create from Tool card selection" />
+  </Frame>
 </Step>
 
-<Step title="Configure the agent">
-  - Set the agent's name and purpose
-  - Define how it should interact with users
-  - Choose the tone and style for responses
-  - Set up any specific instructions for tool usage
+<Step title="Select tool and configure agent">
+  A modal opens where you can select the tool you wish to use and change the agent's icon.
+  
+  <Frame>
+  <img src="/images/dashboard/tool/step-2-tool-selection.png" alt="Tool selection modal showing available tools and agent icon options" />
+  </Frame>
+  
+  **Available options:**
+  - **Tool selection**: Search and select from available tools and integrations
+  - **Agent icon**: Use the shuffle button at the top to change the agent's icon
 </Step>
 
-<Step title="Map user intents to actions">
-  - Define how user requests translate to tool actions
-  - Set up conversation flows for different scenarios
-  - Configure data collection for tool inputs
-  - Set up confirmation steps for important actions
+<Step title="Authenticate with the tool">
+  After selecting a tool, another modal opens for tool authentication with different authentication types.
+  
+  <Frame>
+  <img src="/images/dashboard/tool/step-3-tool-authentication.png" alt="Tool authentication modal showing different authentication methods" />
+  </Frame>
+  
+  **Authentication types:**
+  - **API Key/Bearer Token/Basic Auth**: Provide authentication details in input fields
+  - **OAuth 2**: Click the OAuth button to complete the OAuth authentication process
+  - **OAuth with input fields**: Provide required input fields and then use the OAuth button to complete the process
 </Step>
 
-<Step title="Test tool interactions">
-  - Try different user requests that should trigger tool actions
-  - Verify that data is being passed correctly to the tool
-  - Test error handling for invalid inputs or tool failures
-  - Ensure responses are clear and helpful
+<Step title="Tool connected and ready">
+  After successful authentication, you're redirected back to the page where the tool is connected.
+  
+  <Frame>
+  <img src="/images/dashboard/tool/step-4-tool-connected-create-agent.png" alt="Tool connected modal showing successful connection and Create Agent button enabled" />
+  </Frame>
+  
+  **Connection status:**
+  - **Tool connected**: The tool is successfully connected and ready
+  - **Create Agent button**: Enabled and ready to create your tool-powered agent
 </Step>
 
-<Step title="Deploy and monitor">
-  - Launch your tool-powered agent
-  - Monitor tool usage and performance
-  - Track user satisfaction with automated actions
-  - Continuously improve based on usage patterns
+<Step title="Agent created and ready">
+  After clicking Create Agent, your tool-powered agent is created and ready for interaction.
+  
+  <Frame>
+  <img src="/images/dashboard/tool/step-5-agent-created-in-canvas.png" alt="Completed agent creation showing tool-connected agent in canvas ready for interaction" />
+  </Frame>
+  
+  **Agent ready:**
+  - **Tool connected**: Agent is created with the tool connected
+  - **Interactive testing**: You can interact with the agent and test the tool connection
 </Step>
 </Steps>
 

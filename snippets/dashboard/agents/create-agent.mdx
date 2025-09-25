@@ -3,8 +3,7 @@ import CreateFromKnowledge from '/snippets/dashboard/agents/creation/create-from
 import CreateFromTool from '/snippets/dashboard/agents/creation/create-from-tool.mdx';
 import CreateFromTemplate from '/snippets/dashboard/agents/creation/create-from-template.mdx';
 
-<Tab title="Create agent">
-**Agent Creation Wizard**
+<Tab title="Create Agent" icon="plus" className="text-sm">
 
 The **Create Agent** section provides four powerful approaches to build your AI agent, each optimized for different use cases and skill levels.
 
@@ -12,22 +11,20 @@ The **Create Agent** section provides four powerful approaches to build your AI 
 <img src="/images/dashboard/create-agent.png" alt="Create Agent page showing four creation options: From Tool, From Knowledge, From Scratch, and Templates" />
 </Frame>
 
-### Creation methods
+### Agent creation methods
 
 <Tabs>
-<Tab title="Create from Tool">
-<CreateFromTool />
-</Tab>
-
-<Tab title="Create from Knowledge">
+<Tab title="With Knowledge">
 <CreateFromKnowledge />
 </Tab>
-
-<Tab title="Create from Scratch">
+<Tab title="With Tool">
+<CreateFromTool />
+</Tab>
+<Tab title="From Scratch">
 <CreateFromScratch />
 </Tab>
 
-<Tab title="Use Template">
+<Tab title="With Template">
 <CreateFromTemplate />
 </Tab>
 </Tabs>

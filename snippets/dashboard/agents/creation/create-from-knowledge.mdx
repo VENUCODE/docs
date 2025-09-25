@@ -1,14 +1,63 @@
-## Create from knowledge
+import CreateFromWebsite from '/snippets/dashboard/kbs/create-from-website.mdx';
+import WebSource from '/snippets/dashboard/agents/creation/kb-web-source.mdx';
+import PdfSource from '/snippets/dashboard/agents/creation/kb-pdf-source.mdx';
 
-**Leverage your existing knowledge to create a smart agent**
 
-Creating an agent from your knowledge base allows you to quickly build an intelligent assistant that can answer questions and provide information based on your existing content.
+Create powerful AI agents that can answer questions and provide information based on your existing knowledge content. This process automatically scrapes, processes, and trains your content to build a smart assistant.
 
-<Frame>
-<img src="/images/dashboard/create-agent-knowledge.png" alt="Create agent from knowledge base interface showing knowledge selection and agent configuration" />
-</Frame>
+### What you can do with this
 
-### What you get
+- **Build customer support agents** that answer questions using your help documentation
+- **Create internal knowledge assistants** to help employees find information quickly
+- **Develop product information bots** that provide detailed specs and features
+- **Design training assistants** for interactive learning experiences
+- **Ensure compliance** with accurate information delivery for regulatory requirements
+
+## Step-by-step creation process
+
+<Steps>
+<Step title="Click Create from Knowledge card">
+  Navigate to the Create Agent page and click on the `Create from Knowledge` card to begin the process.
+  
+  <Frame>
+  <img src="/images/kbs/create-from-kb-step-1.png" alt="Create Agent page showing the Create from Knowledge card option" />
+  </Frame>
+  
+  <Check>
+  This opens a modal dialog where you can configure your knowledge-powered agent.
+  </Check>
+</Step>
+
+<Step title="Select data source and customize agent">
+  In the modal, select the data source for training your agent's knowledge base and customize the agent's appearance:
+  
+  <Frame>
+  <img src="/images/kbs/create-from-kb-step-2.png" alt="Data source selection and agent customization options" />
+  </Frame>
+  
+  **Customization options:**
+  - **Data Source**: Choose the type of content to train your agent
+  - **Agent Icon**: Select or change the icon representing your agent
+  
+  <Info>
+  You can choose from various data sources and customize your agent's icon. Additional data source options will be introduced in future updates.
+  </Info>
+</Step>
+</Steps>
+<Tabs>
+  <Tab title="Website">
+<Steps>
+    <WebSource />
+  </Steps>
+  </Tab>
+  <Tab title="PDF">
+  <Steps>
+    <PdfSource />
+  </Steps>
+  </Tab>
+</Tabs>
+
+## What you get
 
 **Knowledge-powered intelligence**
 - **Instant expertise**: Your agent immediately knows your content and can answer related questions
@@ -17,7 +66,7 @@ Creating an agent from your knowledge base allows you to quickly build an intell
 - **Source citations**: Can reference specific documents or sections when answering
 - **Domain expertise**: Specialized knowledge in your specific field or industry
 
-### Perfect for
+## Perfect for
 
 - **Customer support**: Answer common questions using your help documentation
 - **Internal knowledge**: Help employees find information quickly
@@ -25,48 +74,19 @@ Creating an agent from your knowledge base allows you to quickly build an intell
 - **Training materials**: Create interactive learning experiences
 - **Compliance**: Ensure accurate information delivery for regulatory requirements
 
-### How it works
+## Next steps
 
-<Steps>
-<Step title="Select your knowledge base">
-  - Choose from your existing knowledge bases
-  - Or create a new knowledge base with your content
-  - Review the content that will power your agent
-</Step>
+After creating your knowledge-powered agent:
 
-<Step title="Configure the agent">
-  - Set the agent's name and purpose
-  - Define how it should interact with users
-  - Choose the tone and style for responses
-  - Set up any specific instructions or guidelines
-</Step>
-
-<Step title="Customize responses">
-  - Define how the agent should present information
-  - Set up fallback responses for questions not in your knowledge base
-  - Configure when to ask for clarification
-  - Add any specific formatting or presentation preferences
-</Step>
-
-<Step title="Test with your content">
-  - Try asking questions that should be answerable from your knowledge base
-  - Test edge cases and questions outside your content scope
-  - Refine the agent's behavior based on test results
-  - Ensure responses are accurate and helpful
-</Step>
-
-<Step title="Deploy and monitor">
-  - Launch your knowledge-powered agent
-  - Monitor which questions are being asked most frequently
-  - Update your knowledge base as needed
-  - Continuously improve based on user interactions
-</Step>
-</Steps>
+1. **Test your agent**: Ask questions to verify it can access and use your knowledge base effectively
+2. **Customize responses**: Adjust the agent's behavior and response style in the Make section
+3. **Monitor performance**: Track which questions are asked most frequently
+4. **Update content**: Refresh your knowledge base when your source content changes
 
 <Tip>
-**Quality Content**: The better your knowledge base content, the more effective your agent will be. Ensure your content is well-organized and comprehensive.
+**Content Quality**: The effectiveness of your agent depends on the quality and organization of your source content. Ensure your website or documents are well-structured and comprehensive.
 </Tip>
 
-<Note>
-**Automatic Updates**: Your agent will automatically reflect changes you make to your knowledge base, keeping responses current and accurate.
-</Note>
+<Warning>
+**Content Updates**: If your source website or documents change significantly, you may need to retrain your knowledge base to ensure the agent has access to the latest information.
+</Warning>

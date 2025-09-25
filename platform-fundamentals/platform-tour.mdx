@@ -1,5 +1,5 @@
 ---
-title: "Platform Tour"
+title: "Welcome to your Tars journey"
 sidebarTitle: "Platform Tour"
 description: "Discover the Tars platform step by step - from creating your account to building your first AI agent"
 icon: "map"
@@ -9,8 +9,9 @@ import AgentsSection from '/snippets/dashboard/agents/agents.mdx';
 import Navigation from '/snippets/dashboard/navigation.mdx';
 import ToolsOverview from '/snippets/dashboard/tools/tools-overview-simple.mdx';
 import FeaturedTools from '/snippets/dashboard/tools/featured-tools.mdx';
-
-## Welcome to your Tars journey
+import KBOverview from '/snippets/dashboard/kbs/kb-overview.mdx';
+import MyKnowledge from '/snippets/dashboard/kbs/my-knowledge.mdx';
+import AddKnowledge from '/snippets/dashboard/kbs/add-knowledge.mdx';
 
 You're about to discover a powerful platform where you can create intelligent AI agents that help your business. This tour will guide you through everything you need to know about Tars, showing you how to navigate and use all the features available to you.
 
@@ -19,7 +20,7 @@ You're about to discover a powerful platform where you can create intelligent AI
 </Note>
 
 
-## Step 1: Getting started - creating your account
+## Getting started - creating your account
 
 <Steps>
 <Step title="Your first visit to Tars">
@@ -66,11 +67,10 @@ You're about to discover a powerful platform where you can create intelligent AI
 </Step>
 </Steps>
 
-## Step 2: Exploring the dashboard
+## Exploring the dashboard
 
-### Welcome to your dashboard
 
-Congratulations on creating your account and logging in! You're now on the onboarding landing page, which introduces you to your personal workspace with a helpful video guide.
+🎉 **Congratulations** on creating your account and logging in! You're now on the onboarding landing page, which introduces you to your personal workspace with a helpful video guide.
 
 <Frame>
 <img src="/images/landing.png" alt="Onboarding landing page with video guide" />
@@ -80,62 +80,39 @@ Next, you'll see your main dashboard. This is your central hub where you can man
 
 
 
-### Dashboard sections
+### <Icon icon="grid-2-plus" size="30"/> Dashboard sections
 
 Your dashboard is divided into distinct sections, each designed for a specific function. Let's delve into each section to understand its role:
 Here, you'll have the opportunity to create AI agents, manage your knowledge base, and integrate various tools. We'll go through each component together to ensure you grasp how everything operates.
 
 <Tabs>
 
-<Tab title="Agents">
-**AI Agent Management Hub**
-Your Agents section is where you create, manage, and monitor all your AI agents.
-<Frame>
-<img src="/images/dashboard/create-agent.png" alt="Agents dashboard showing list of created AI agents with status indicators" />
-</Frame>  
+<Tab title="Agents" icon="user-robot">  
   <AgentsSection/>
 </Tab>
 
-<Tab title="Tools">
+<Tab title="Tools" icon="wrench">
 <Frame>
 <img src="/images/dashboard/tools-overview.png" alt="Tools overview dashboard showing all available tools" />
 </Frame>
 <ToolsOverview />
 </Tab>
 
-<Tab title="Knowledge Bases">
-**Content Management Library**
+<Tab title="Knowledge" icon="book">
+<KBOverview />
 
-Knowledge Bases store all your business information that AI agents use to provide accurate, helpful responses to your customers.
-
-<Frame>
-<img src="/images/knowledge-bases-dashboard.png" alt="Knowledge bases dashboard showing content library and training status" />
-</Frame>
-
-**What you can do here:**
-- **Store Information**: Upload documents, scrape websites, or manually enter Q&A pairs
-- **Organize Content**: Create multiple knowledge bases for different topics or departments
-- **Train AI Models**: Process and index your content for optimal search and retrieval
-- **Monitor Usage**: Track which information is accessed most frequently
-
-**Key subsections:**
-- **Content Library**: View all your knowledge bases with training status
-- **Upload Center**: Add content from websites, documents, or manual entry
-- **Training Status**: Monitor AI processing and indexing progress
-- **Search Analytics**: See which content is most accessed and effective
-
-**Available actions:**
-- Create new knowledge base
-- Upload documents (PDF, DOC, TXT, CSV)
-- Scrape website content
-- Add manual Q&A pairs
-- Edit existing content
-- Train and retrain knowledge bases
-- View search analytics
-- Export knowledge base data
+<Tabs>
+<Tab title="My Knowledge">
+  <MyKnowledge />
 </Tab>
 
-<Tab title="Profile Settings">
+<Tab title="Add Knowledge">
+  <AddKnowledge />
+</Tab>
+</Tabs>
+</Tab>
+
+<Tab title="Profile Settings" icon="user-gear">
 **Account & Team Management**
 
 Profile Settings is your control center for account management, team collaboration, and platform preferences.
@@ -168,7 +145,7 @@ Profile Settings is your control center for account management, team collaborati
 - Export account data
 </Tab>
 
-<Tab title="FAQs & Support">
+<Tab title="FAQs & Support" icon="circle-question">
 **Help & Learning Center**
 
 The FAQs & Support section provides comprehensive help resources, community access, and direct support channels.

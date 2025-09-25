@@ -1,0 +1,111 @@
+<Step title="Configure knowledge base settings" stepNumber={3}>
+  Enter the `Knowledge Base Name` and `Website Base URL`, then configure advanced scraping settings if needed.
+  
+  <Tabs>
+  <Tab title="Basic Configuration">
+    <Frame>
+    <img src="/images/kbs/create-from-kb-step-3-basic.png" alt="Basic knowledge base configuration showing name and URL fields" />
+    </Frame>
+  </Tab>
+  
+  <Tab title="Advanced Settings">
+    <Frame>
+    <img src="/images/kbs/create-from-kb-step-3-advanced.png" alt="Advanced settings showing scraping configuration options" />
+    </Frame>
+    
+    **Advanced configuration options:**
+    - **Number of URLs to scrape**: Set the maximum number of URLs to crawl (default: 200, maximum: 10,000)
+    - **Number of levels deep**: Define how deep the scraper should go into the website structure (default: 20, maximum: 100)
+    - **Custom user agent**: Optional custom user agent string for web requests
+    - **Crawl using only base URLs**: Ensures crawling goes only one level deep, ignoring the depth setting
+    - **Use browser**: Enable browser-rendered content in the background instead of raw HTML for dynamic content
+    - **Use legacy scraper**: Choose between Scrapy (legacy) and Crawl4AI (non-legacy) scraping engines
+  </Tab>
+  </Tabs>
+  
+  <Tip>
+  **Optimal Settings**: For most websites, the default settings (200 URLs, 20 levels deep) work well. Use the browser option for JavaScript-heavy sites, and choose legacy scraper if you encounter compatibility issues with the modern Crawl4AI engine.
+  </Tip>
+</Step>
+
+<Step title="Fetch and process content" stepNumber={4}>
+  Click the `Fetch Links` button to begin the web scraping process.
+  
+  <Tabs>
+  <Tab title="Pre-fetch">
+    <Frame>
+    <img src="/images/kbs/create-from-kb-step-3-pre-fetch.png" alt="Pre-fetch state showing configuration before starting the scraping process" />
+    </Frame>
+  </Tab>
+  
+  <Tab title="While fetching">
+    <Frame>
+    <img src="/images/kbs/create-from-kb-step-3-while-fetch.png" alt="Active fetching process showing real-time scraping logs and progress" />
+    </Frame>
+  </Tab>
+  
+  </Tabs>
+  
+  **Scraping process:**
+  - **Content discovery**: System discovers and crawls web pages, extracting content from each page
+  - **Data processing**: Cleans and organizes extracted content for optimal training preparation
+  
+  <Warning>
+  The fetching process may take several minutes depending on the size of your website and the number of pages to scrape.
+  </Warning>
+</Step>
+
+<Step title="Train the knowledge base" stepNumber={5}>
+  After content is successfully fetched, click `Train` to process and train your knowledge base.
+  
+  <Tabs>
+  <Tab title="Pre-training">
+    <Frame>
+    <img src="/images/kbs/create-from-kb-step-3-pre-train.png" alt="Pre-training state showing content ready for knowledge base training" />
+    </Frame>
+    
+    **Page selection options:**
+    - Select the pages you want to train
+    - Deselect the pages you don't need
+    - View metadata about the number of words fetched for each page
+  </Tab>
+  
+  <Tab title="While training">
+    <Frame>
+    <img src="/images/kbs/create-from-kb-step-3-while-train.png" alt="Active training process showing real-time training progress and logs" />
+    </Frame>
+    
+    Monitor the training progress as the system:
+    - Processes and indexes the scraped content
+    - Creates searchable knowledge embeddings
+    - Optimizes the content for AI understanding
+    - Shows detailed training logs and progress
+  </Tab>
+  <Tab title="Post-training">
+    <Frame>
+    <img src="/images/kbs/create-from-kb-step-3-post-train.png" alt="Post-training state showing completed training with content ready for agent creation" />
+    </Frame>
+    
+    **Training completed:**
+    - View the content that has been trained in the knowledge base
+    - See the pages and content the agent now has knowledge of
+    - Training is complete and ready for agent creation
+  </Tab>
+  </Tabs>
+  
+  **Training process:**
+  - **Vector storage**: Content is converted to vector embeddings and stored in vector databases for fast retrieval
+  - **Index optimization**: Creates efficient search and retrieval system for AI responses
+</Step>
+
+<Step title="Agent creation complete" stepNumber={6}>
+  Your knowledge-powered agent is now ready!
+  
+  <Frame>
+  <img src="/images/kbs/create-from-kb-step-4.png" alt="Completed agent creation showing the new agent with knowledge base gambit connected" />
+  </Frame>
+  
+  **What happens automatically:**
+  - **Agent creation**: Agent is created with your specified name and knowledge base gambit connected
+  - **Ready to use**: Agent can immediately answer questions based on your website content
+</Step>
