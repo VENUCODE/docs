@@ -1,29 +1,219 @@
-## Create from PDF Documents
+Create a knowledge base from PDF documents by uploading files and training them for AI agent use.
 
-**Upload and process PDF documents to build knowledge bases**
+## Creating PDF Knowledge Base
 
-Transform your PDF documents into searchable knowledge bases that can answer questions and provide information from your document content.
+<Steps>
+<Step title="Click PDF Card" icon="file-pdf">
+  Click on the `Documents (PDF)` card to start creating a knowledge base from PDF files.
+<Frame>
+<img src="/images/dashboard/knowledge/pdf/step-1-click-pdf-card.png" alt="Knowledge Base page showing PDF card option" />
+</Frame>
+  
+  
+  This opens the "Add Knowledge Base" modal where you can configure your PDF knowledge base.
+</Step>
 
-### What you get
+<Step title="Configure Knowledge Base" icon="gear">
+  In the modal, set up your knowledge base details:
+  <Frame>
+    <img
+      src="/images/dashboard/knowledge/pdf/step-2-kb-details-modal-opens.png"
+      alt="Add Knowledge Base modal with PDF configuration"
+    />
+  </Frame>
+  **Required Information:** - **Name**: Enter a name for your knowledge base
+  (e.g., "pdf knowledge") - **Upload Resources**: Add your PDF files to the
+  knowledge base **File Upload Options:** - Drag and drop PDF files into the
+  upload area - Click "browse files" to select files from your computer -
+  Multiple PDF files can be uploaded simultaneously
+  <Info>
+    **File Requirements**: Only PDF files are supported. Ensure your PDFs
+    contain readable text for optimal processing.
+  </Info>
+</Step>
 
-- **Text extraction** from PDF documents with high accuracy
-- **Table processing** for structured data within PDFs
-- **Multi-page support** for comprehensive document processing
-- **Content organization** and automatic indexing
-- **Search optimization** for quick information retrieval
+<Step title="Upload Files" icon="upload">
+  After adding files , click the green `Upload files` button to upload them to
+  the platform.
+  <Frame>
+    <img
+      src="/images/dashboard/knowledge/pdf/step-3-add-files-and-upload.png"
+      alt="Files selected and ready for upload"
+    />
+  </Frame>
+  **Upload Process:** - Files are uploaded to cloud storage(aws-s3) - Upload
+  progress is shown with percentage and time remaining - Individual files can be
+  paused or cancelled during upload - All files must be uploaded before creating
+  the knowledge base
+  <Check>
+    **Upload Status**: Wait for all files to complete uploading before
+    proceeding to the next step.
+  </Check>
+</Step>
 
-### Perfect for
+<Step title="Monitor Upload Progress" icon="spinner">
+  Track the upload progress of your PDF files.
+  <Frame>
+    <img
+      src="/images/dashboard/knowledge/pdf/step-4-while-files-upload.png"
+      alt="Upload progress showing percentage and time remaining"
+    />
+  </Frame>
+  **Upload Controls:** - **Progress Bar**: Shows overall upload progress -
+  **File Status**: Individual file upload status with pause/cancel options -
+  **Time Remaining**: Estimated time to complete upload - **Cancel Options**:
+  Pause or cancel individual files or entire upload
+  <Warning>
+    **Upload Interruption**: Cancelling uploads will require you to restart the
+    file upload process.
+  </Warning>
+</Step>
 
-- **Product manuals** and technical documentation
-- **Research papers** and academic content
-- **Legal documents** and contracts
-- **Training materials** and guides
-- **Reports** and white papers
+<Step title="Upload Complete" icon="check">
+  Once all files are uploaded successfully, you can proceed to create the
+  knowledge base.
+  <Frame>
+    <img
+      src="/images/dashboard/knowledge/pdf/step-4-after-files-upload.png"
+      alt="Upload complete with all files ready"
+    />
+  </Frame>
+  **Upload Confirmation:** - All files show green checkmarks indicating
+  successful upload - "Upload complete" status is displayed - Files can still be
+  removed using the 'X' icon if needed - Click `Add Knowledge Base` to create
+  the knowledge base
+  <Check>
+    **Ready to Create**: All files are now uploaded and ready for knowledge base
+    creation.
+  </Check>
+</Step>
 
-### Supported features
+<Step title="Knowledge Base Created" icon="plus">
+  After clicking `Add Knowledge Base`, you're redirected to the knowledge base
+  configuration page.
+  <Frame>
+    <img
+      src="/images/dashboard/knowledge/pdf/step-5-kb-train-page.png"
+      alt="Knowledge base configuration page with training options"
+    />
+  </Frame>
+  **Configuration Page Features:** - **Data Resources**: Shows your uploaded PDF
+  files - **Training Status**: Displays "Not Trained" status for new files -
+  **Add Resource**: Button to add more PDF files - **Start Training**: Button to
+  begin training the knowledge base - **Delete Option**: Three dots menu to
+  delete individual resources
+  <Info>
+    **Training Required**: Your knowledge base must be trained before it can be
+    used by AI agents.
+  </Info>
+</Step>
 
-- **Multi-page documents** with automatic page processing
-- **Table extraction** for structured data
-- **Image text recognition** (OCR) for scanned documents
-- **Metadata extraction** for document organization
-- **Content chunking** for optimal AI processing
+<Step title="Start Training" icon="play">
+  Click the `Start Training` button to begin processing your PDF files.
+  <Frame>
+    <img
+      src="/images/dashboard/knowledge/pdf/step-6-while-training.png"
+      alt="Training progress with percentage and status"
+    />
+  </Frame>
+  **Training Process:** - **Progress Bar**: Shows training completion percentage
+  - **Status**: "Training..." with hourglass icon - **Time Estimate**: "This may
+  take a few minutes" - **Resource Processing**: Files are being analyzed and
+  indexed
+  <Check>
+    **Training in Progress**: Wait for training to complete before using the
+    knowledge base.
+  </Check>
+</Step>
+
+<Step title="Training Complete" icon="circle-check">
+  Once training is finished, your knowledge base is ready for use.
+  <Frame>
+    <img
+      src="/images/dashboard/knowledge/pdf/step-7-after-train-meta-data.png"
+      alt="Training complete with file details and word counts"
+    />
+  </Frame>
+  **Training Results:** - **Status**: "Trained" with green indicator - **File
+  Details**: Shows all processed files with URLs - **Word Count**: Displays
+  extracted word count from each file - **Success Message**: "All resources have
+  been successfully trained" - **Progress Bar**: Shows 100% completion
+  <Check>
+    **Knowledge Base Ready**: Your PDF knowledge base is now trained and ready
+    to be used by AI agents.
+  </Check>
+</Step>
+
+<Step title="Add More Resources (Optional)" icon="plus">
+  You can add additional PDF files to your existing knowledge base.
+  <Frame>
+    <img
+      src="/images/dashboard/knowledge/pdf/step-8-optional-add-more-data-resources.png"
+      alt="Add more data resources to existing knowledge base"
+    />
+  </Frame>
+  **Adding Resources:** - Click `+ Add Resource` to add more PDF files - Same
+  upload process as initial file upload - New files will show "Not Trained"
+  status - Multiple resources can be added to the same knowledge base
+  <Info>
+    **Resource Management**: Each resource can be managed individually with its
+    own training status.
+  </Info>
+</Step>
+
+<Step title="Retrain Knowledge Base" icon="rotate">
+  After adding new resources, retrain the knowledge base to include the new
+  files.
+  <Frame>
+    <img
+      src="/images/dashboard/knowledge/pdf/step-9-retrain-after-new-data-resource.png"
+      alt="Retraining process with new resources"
+    />
+  </Frame>
+  **Retraining Process:** - **Start Training**: Button appears after adding new
+  resources - **Training Progress**: Shows progress for all resources - **Status
+  Updates**: Individual resource status updates during training -
+  **Completion**: All resources show "Trained" status when complete
+  <Tip>
+    **Refresh Page**: If the "Start Training" button doesn't appear, refresh the
+    page to see the updated interface.
+  </Tip>
+</Step>
+
+<Step title="Training Complete" icon="check-double">
+  Final training completion with all resources successfully processed.
+  <Frame>
+    <img
+      src="/images/dashboard/knowledge/pdf/step-10-training-complete.png"
+      alt="All resources trained successfully"
+    />
+  </Frame>
+  **Final Status:** - **All Resources Trained**: Green indicators for all files
+  - **Training Complete**: 100% progress bar - **Success Message**: "All
+  resources have been successfully trained" - **Ready for Use**: Knowledge base
+  is fully operational
+  <Check>
+    **Knowledge Base Complete**: Your PDF knowledge base is now fully trained
+    and ready for AI agent integration.
+  </Check>
+</Step>
+
+<Step title="View in Dashboard" icon="eye">
+  Your knowledge base is now available in the main Knowledge Base dashboard.
+  
+  <Frame>
+  <img src="/images/dashboard/knowledge/pdf/step-11-see-new-kb-in-my-kbs.png" alt="Knowledge base visible in dashboard with configure option" />
+  </Frame>
+  
+  **Dashboard View:**
+  - **Knowledge Base Card**: Shows your created knowledge base
+  - **Resource Count**: Displays number of data sources
+  - **Last Updated**: Shows creation/update timestamp
+  - **Training Status**: "Trained" indicator
+  - **Configure Button**: Click to access the knowledge base configuration page
+  
+  <Info>
+  **Access Configuration**: Click the "Configure" button to return to the training and management page for your knowledge base.
+  </Info>
+</Step>
+</Steps>

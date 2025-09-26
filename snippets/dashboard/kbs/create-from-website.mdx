@@ -1,4 +1,3 @@
-
 **Automatically scrape and process content from websites**
 
 Transform your website content into intelligent knowledge bases that power your AI agents. This method automatically discovers, scrapes, and processes web pages to create comprehensive knowledge repositories.
@@ -25,195 +24,217 @@ Transform your website content into intelligent knowledge bases that power your 
 
     <Step title="Select Website data source">
       Navigate to the Create Knowledge Base section and click on the `Website URL` card to begin creating a website-based knowledge base.
-      
+
       <Frame>
-        <img src="/images/dashboard/knowledge/website/step-1.png" alt="Create Knowledge Base page showing Website URL card selection" />
+        <img src="/images/dashboard/agent/knowledge/website/step-1.png" alt="Create Knowledge Base page showing Website URL card selection" />
       </Frame>
-      
+
       <Check>
         This opens the knowledge base configuration modal where you can set up your website scraping parameters.
       </Check>
     </Step>
 
-  
 <Step title="Configure basic settings">
-  Set up the fundamental information for your knowledge base in the basic configuration section.
-  
+  Set up the fundamental information for your knowledge base in the basic
+  configuration section.
   <Frame>
-  <img src="/images/dashboard/knowledge/website/step-2-basic.png" alt="Basic configuration showing knowledge base name and URL fields" />
+    <img
+      src="/images/dashboard/agent/knowledge/website/step-2-basic.png"
+      alt="Basic configuration showing knowledge base name and URL fields"
+    />
   </Frame>
-  
-  **Required fields:**
-  - **Knowledge Base Name**: Enter a descriptive name for your knowledge base
-  - **Website Base URL**: Provide the base URL of the website you want to scrape
-  
+  **Required fields:** - **Knowledge Base Name**: Enter a descriptive name for
+  your knowledge base - **Website Base URL**: Provide the base URL of the
+  website you want to scrape
   <Info>
-  The system will use this URL as the starting point for content discovery and crawling.
+    The system will use this URL as the starting point for content discovery and
+    crawling.
   </Info>
 </Step>
 
 <Step title="Configure advanced scraping settings">
   Customize the scraping behavior and parameters for optimal content extraction.
-  
   <Frame>
-  <img src="/images/dashboard/knowledge/website/step-2-advanced.png" alt="Advanced settings showing scraping configuration options" />
+    <img
+      src="/images/dashboard/agent/knowledge/website/step-2-advanced.png"
+      alt="Advanced settings showing scraping configuration options"
+    />
   </Frame>
-  
-  **Advanced configuration options:**
-  - **Number of URLs to scrape**: Set maximum pages to crawl (default: 200, maximum: 10,000)
-  - **Number of levels deep**: Define crawl depth in website hierarchy (default: 20, maximum: 100)
-  - **Custom user agent**: Optional custom identification string for web requests
-  - **Crawl using only base URLs**: Restrict crawling to single level, ignoring depth setting
-  - **Use browser**: Enable browser-rendered content for dynamic JavaScript sites
-  - **Use legacy scraper**: Choose between Scrapy (legacy) and Crawl4AI (modern) engines
-  
+  **Advanced configuration options:** - **Number of URLs to scrape**: Set
+  maximum pages to crawl (default: 200, maximum: 10,000) - **Number of levels
+  deep**: Define crawl depth in website hierarchy (default: 20, maximum: 100) -
+  **Custom user agent**: Optional custom identification string for web requests
+  - **Crawl using only base URLs**: Restrict crawling to single level, ignoring
+  depth setting - **Use browser**: Enable browser-rendered content for dynamic
+  JavaScript sites - **Use legacy scraper**: Choose between Scrapy (legacy) and
+  Crawl4AI (modern) engines
   <Tip>
-  **Optimal Settings**: For most websites, default settings work well. Use browser rendering for JavaScript-heavy sites and adjust depth based on your site structure.
+    **Optimal Settings**: For most websites, default settings work well. Use
+    browser rendering for JavaScript-heavy sites and adjust depth based on your
+    site structure.
   </Tip>
 </Step>
 
 <Step title="Add knowledge base">
-  Click the `Add Knowledge Base` button to create your knowledge base with the configured settings.
-  
+  Click the `Add Knowledge Base` button to create your knowledge base with the
+  configured settings.
   <Frame>
-  <img src="/images/dashboard/knowledge/website/step-3-add-knowledge.png" alt="Add Knowledge Base button to proceed with creation" />
+    <img
+      src="/images/dashboard/agent/knowledge/website/step-3-add-knowledge.png"
+      alt="Add Knowledge Base button to proceed with creation"
+    />
   </Frame>
-  
   <Check>
-  Your knowledge base is created and you're redirected to the configuration page where you can manage data resources.
+    Your knowledge base is created and you're redirected to the configuration
+    page where you can manage data resources.
   </Check>
 </Step>
 
 <Step title="Review knowledge base configuration">
-  View your newly created knowledge base configuration page with the added data resource.
-  
+  View your newly created knowledge base configuration page with the added data
+  resource.
   <Frame>
-  <img src="/images/dashboard/knowledge/website/step-4-overview.png" alt="Knowledge base configuration page showing added data source" />
+    <img
+      src="/images/dashboard/agent/knowledge/website/step-4-overview.png"
+      alt="Knowledge base configuration page showing added data source"
+    />
   </Frame>
-  
-  **Configuration overview:**
-  - **Data resources**: View the website base URL you've added
-  - **Fetch Links**: Button to begin the scraping process
-  - **Indexing Type**: Sentence-based or Page-based indexing (default: Sentence-based)
-  - **Training status**: Current processing state of your knowledge base
-  - **Load method**: Direct request or Browser environment (default: Direct request if `Use browser` is disabled)
-  - **Menu Actions**: Access to Delete the added data resource
-  
+  **Configuration overview:** - **Data resources**: View the website base URL
+  you've added - **Fetch Links**: Button to begin the scraping process -
+  **Indexing Type**: Sentence-based or Page-based indexing (default:
+  Sentence-based) - **Training status**: Current processing state of your
+  knowledge base - **Load method**: Direct request or Browser environment
+  (default: Direct request if `Use browser` is disabled) - **Menu Actions**:
+  Access to Delete the added data resource
   <Info>
-  This page serves as your central hub for managing all aspects of your knowledge base.
+    This page serves as your central hub for managing all aspects of your
+    knowledge base.
   </Info>
 </Step>
 
 <Step title="Initiate content fetching">
   Click the `Fetch Links` button to begin the web scraping process.
-  
   <Frame>
-  <img src="/images/dashboard/knowledge/website/step-5-while-fetch.png" alt="Active fetching process showing real-time scraping progress and logs" />
+    <img
+      src="/images/dashboard/agent/knowledge/website/step-5-while-fetch.png"
+      alt="Active fetching process showing real-time scraping progress and logs"
+    />
   </Frame>
-  
-  **Fetching process:**
-  - **Content discovery**: System discovers and crawls web pages
-  - **Text extraction**: Extracts content from each discovered page
-  - **Data processing**: Cleans and organizes extracted content
-  - **Progress monitoring**: Real-time logs show scraping activity and status
-  
+  **Fetching process:** - **Content discovery**: System discovers and crawls web
+  pages - **Text extraction**: Extracts content from each discovered page -
+  **Data processing**: Cleans and organizes extracted content - **Progress
+  monitoring**: Real-time logs show scraping activity and status
   <Warning>
-  **Scraping Time**: The fetching process may take several minutes depending on website size and complexity. Monitor the progress logs for detailed status updates.
+    **Scraping Time**: The fetching process may take several minutes depending
+    on website size and complexity. Monitor the progress logs for detailed
+    status updates.
   </Warning>
 </Step>
 
 <Step title="Review and Select Pages">
-  After fetching completes, review the extracted content and select pages for training.
-  
+  After fetching completes, review the extracted content and select pages for
+  training.
   <Frame>
-  <img src="/images/dashboard/knowledge/website/step-7-pre-train.png" alt="Post-fetch state showing completed scraping with content ready for training" />
+    <img
+      src="/images/dashboard/agent/knowledge/website/step-7-pre-train.png"
+      alt="Post-fetch state showing completed scraping with content ready for training"
+    />
   </Frame>
-  
-  **Review and Selection:**
-  - **Extracted pages**: View a list of all discovered and scraped web pages with clickable links to each page
-  - **Word count**: See the number of words extracted from each page
-  - **Page selection**: Choose specific pages to include in the training process
-  - **Pre-filtering**: Filter pages based on content relevance and word count for optimal training preparation
-  
+  **Review and Selection:** - **Extracted pages**: View a list of all discovered
+  and scraped web pages with clickable links to each page - **Word count**: See
+  the number of words extracted from each page - **Page selection**: Choose
+  specific pages to include in the training process - **Pre-filtering**: Filter
+  pages based on content relevance and word count for optimal training
+  preparation
   <Check>
-  All content has been successfully extracted, and you can now select the desired pages for the training phase.
+    All content has been successfully extracted, and you can now select the
+    desired pages for the training phase.
   </Check>
 </Step>
 
 <Step title="Training and Monitoring">
-  Initiate the training process and monitor the real-time progress as your content is processed and indexed.
-  
+  Initiate the training process and monitor the real-time progress as your
+  content is processed and indexed.
   <Frame>
-  <img src="/images/dashboard/knowledge/website/step-7-post-train.png" alt="Pre-training state showing content ready for knowledge base training" />
+    <img
+      src="/images/dashboard/agent/knowledge/website/step-7-post-train.png"
+      alt="Pre-training state showing content ready for knowledge base training"
+    />
   </Frame>
-  
-  **Training Phase:**
-  - **Content validation**: Verify all extracted content is accurate and complete
-  - **Training parameters**: Review settings for optimal knowledge base creation
-  - **Ready to train**: Click the `Train` button to begin AI processing
-  - **Content processing**: AI analyzes and structures your content
-  - **Embedding creation**: Generates searchable knowledge vectors
-  - **Index optimization**: Creates efficient search and retrieval system
-  - **Quality validation**: Ensures knowledge base accuracy and completeness
-  
+  **Training Phase:** - **Content validation**: Verify all extracted content is
+  accurate and complete - **Training parameters**: Review settings for optimal
+  knowledge base creation - **Ready to train**: Click the `Train` button to
+  begin AI processing - **Content processing**: AI analyzes and structures your
+  content - **Embedding creation**: Generates searchable knowledge vectors -
+  **Index optimization**: Creates efficient search and retrieval system -
+  **Quality validation**: Ensures knowledge base accuracy and completeness
   <Check>
-  Training completion creates a fully functional knowledge base ready for AI agent integration.
+    Training completion creates a fully functional knowledge base ready for AI
+    agent integration.
   </Check>
 </Step>
 
 <Step title="View Extracted Content">
-  If you wish to see the content of the training after the post-train phase, click on the particular link that is fetched to view the extracted content.
-  
+  If you wish to see the content of the training after the post-train phase,
+  click on the particular link that is fetched to view the extracted content.
   <Frame>
-  <img src="/images/dashboard/knowledge/website/step-7-pre-view-content.png" alt="Preview of content ready for review" />
+    <img
+      src="/images/dashboard/agent/knowledge/website/step-7-pre-view-content.png"
+      alt="Preview of content ready for review"
+    />
   </Frame>
-  
   <Frame>
-  <img src="/images/dashboard/knowledge/website/step-7-extracted-content.png" alt="Detailed view of extracted content" />
+    <img
+      src="/images/dashboard/agent/knowledge/website/step-7-extracted-content.png"
+      alt="Detailed view of extracted content"
+    />
   </Frame>
-  
-  **Content Viewing:**
-  - **Preview content**: Click links to view detailed content extracted from each page
-  - **Content analysis**: Assess the quality and relevance of the extracted data for further refinement
+  **Content Viewing:** - **Preview content**: Click links to view detailed content
+  extracted from each page - **Content analysis**: Assess the quality and relevance
+  of the extracted data for further refinement
 </Step>
 
 <Step title="Add additional data sources (optional)">
   Optionally add more data sources to expand your knowledge base content.
-  
   <Frame>
-  <img src="/images/dashboard/knowledge/website/step-8-new-datasource.png" alt="Add new data source option for expanding knowledge base" />
+    <img
+      src="/images/dashboard/agent/knowledge/website/step-8-new-datasource.png"
+      alt="Add new data source option for expanding knowledge base"
+    />
   </Frame>
-  
-  **Additional data sources:**
-  - **Add data resource**: Click to add more websites or content sources
-  - **Same configuration**: Use the same modal interface for additional sources
-  - **Multiple sources**: Combine content from multiple websites or URLs
-  - **Unified knowledge**: All sources contribute to a single comprehensive knowledge base
-  
+  **Additional data sources:** - **Add data resource**: Click to add more
+  websites or content sources - **Same configuration**: Use the same modal
+  interface for additional sources - **Multiple sources**: Combine content from
+  multiple websites or URLs - **Unified knowledge**: All sources contribute to a
+  single comprehensive knowledge base
   <Tip>
-  **Expanding Content**: Adding multiple data sources creates more comprehensive knowledge bases with broader coverage of your domain.
+    **Expanding Content**: Adding multiple data sources creates more
+    comprehensive knowledge bases with broader coverage of your domain.
   </Tip>
 </Step>
 
 <Step title="Train additional content">
-  Process and train any newly added data sources to integrate them into your knowledge base.
-  
+  Process and train any newly added data sources to integrate them into your
+  knowledge base.
   <Frame>
-  <img src="/images/dashboard/knowledge/website/step-9-fetch-and-train-new.png" alt="Training process for newly added data sources" />
+    <img
+      src="/images/dashboard/agent/knowledge/website/step-9-fetch-and-train-new.png"
+      alt="Training process for newly added data sources"
+    />
   </Frame>
-  
-  **Multi-source training:**
-  - **Fetch new content**: Scrape additional data sources
-  - **Integrate content**: Combine with existing knowledge base
-  - **Retrain system**: Update embeddings with new content
-  - **Unified knowledge**: All sources work together seamlessly
-  
+  **Multi-source training:** - **Fetch new content**: Scrape additional data
+  sources - **Integrate content**: Combine with existing knowledge base -
+  **Retrain system**: Update embeddings with new content - **Unified
+  knowledge**: All sources work together seamlessly
   <Frame>
-  <img src="/images/dashboard/knowledge/website/step-9-trained-new.png" alt="Completed training for all data sources" />
+    <img
+      src="/images/dashboard/agent/knowledge/website/step-9-trained-new.png"
+      alt="Completed training for all data sources"
+    />
   </Frame>
-  
   <Check>
-  All data sources have been successfully trained and integrated into your knowledge base.
+    All data sources have been successfully trained and integrated into your
+    knowledge base.
   </Check>
 </Step>
 
@@ -221,7 +242,7 @@ Transform your website content into intelligent knowledge bases that power your 
   Your website-based knowledge base is now complete and available in your knowledge bases library.
   
   <Frame>
-  <img src="/images/dashboard/knowledge/website/step-10-kb-added-to-my-kbs.png" alt="Completed knowledge base showing in My Knowledge Bases with status and data sources" />
+  <img src="/images/dashboard/agent/knowledge/website/step-10-kb-added-to-my-kbs.png" alt="Completed knowledge base showing in My Knowledge Bases with status and data sources" />
   </Frame>
   
   **Knowledge base details:**

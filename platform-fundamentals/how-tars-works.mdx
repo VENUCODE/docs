@@ -14,30 +14,30 @@ graph TB
         C[Direct Links]
         D[Website Embedding]
     end
-    
+
     subgraph "Core Platform Components"
         E[AI Agents]
         F[Knowledge Bases]
         G[Tools Integration]
     end
-    
+
     subgraph "Conditional Workflows"
         H[Live Chat Handoff]
         I[API Integrations]
         J[Custom Workflows]
     end
-    
+
     A --> E
     B --> E
     C --> E
     D --> E
-    
+
     E <--> F
     E <--> G
     E -.-> H
     E -.-> I
     E -.-> J
-    
+
     style H fill:#f9f,stroke:#333,stroke-dasharray: 5 5
     style I fill:#f9f,stroke:#333,stroke-dasharray: 5 5
     style J fill:#f9f,stroke:#333,stroke-dasharray: 5 5
@@ -56,12 +56,11 @@ Tars operates through six main components that work together to deliver intellig
     - Automatic tool selection and workflow execution
   </Card>
 
-  <Card title="Data Collector" icon="filter" href="/data-collector/overview">
-    **User Query Extraction**
-    - Extracts relevant information from user queries
-    - Enhances understanding of user intent
-    - Supports dynamic conversation routing
-  </Card>
+{" "}
+<Card title="Data Collector" icon="filter" href="/data-collector/overview">
+  **User Query Extraction** - Extracts relevant information from user queries -
+  Enhances understanding of user intent - Supports dynamic conversation routing
+</Card>
 
   <Card title="Categorizer" icon="split" href="/categorizer/overview">
     **Query Categorization**
@@ -91,7 +90,6 @@ Tars operates through six main components that work together to deliver intellig
   </Card>
 </CardGroup>
 
-
 ### Agentic workflow
 
 Tars agents handle conversations through sophisticated AI processing where the LMS brain internally manages all processing paths:
@@ -99,24 +97,24 @@ Tars agents handle conversations through sophisticated AI processing where the L
 ```mermaid
 flowchart TD
     A[User Input] --> B[AI Agent]
-    
+
     B --> C[Knowledge Retrieval]
     B --> D[Tool Action Execution]
-    
+
     C --> E[Vector Database Search]
     E --> F[Context & Information]
-    
+
     D --> G[Tool Selection]
     G --> H[600+ Native Tools]
     G --> I[Custom Integrations]
     H --> J[Action Results]
     I --> J
-    
+
     F --> K[Data Aggregation]
     J --> K
     K --> L[Response Generation]
     L --> M[Contextual Response]
-    
+
     style A fill:#e1f5fe
     style B fill:#fff3e0
     style C fill:#f3e5f5
@@ -133,21 +131,21 @@ The Question Answering Workflow uses the same agentic workflow but focuses only 
 ```mermaid
 flowchart TD
     A(User Input) --> B[AI Agent]
-    
+
     B --> C(Knowledge Required?)
-    
+
     C -->|Yes| D[RAG Retrieval]
     C -->|No| E[Skip Knowledge]
-    
+
     D --> F[Retrieve]
     F --> G[Augment]
     G --> K[Response Generation]
     K --> I[Contextual Response]
-    
+
     E --> J[Data Aggregation]
     J --> K[Response Generation]
-  
-    
+
+
     style A fill:#e1f5fe
     style B fill:#fff3e0
     style C fill:#fff3e0
@@ -166,11 +164,13 @@ flowchart TD
 </Step>
 
 <Step title="Retrieve">
-  Performs vector database search using semantic similarity to find relevant knowledge from the knowledge base.
+  Performs vector database search using semantic similarity to find relevant
+  knowledge from the knowledge base.
 </Step>
 
 <Step title="Augment">
-  Combines retrieved knowledge with conversation context and user history for comprehensive understanding.
+  Combines retrieved knowledge with conversation context and user history for
+  comprehensive understanding.
 </Step>
 
 <Step title="Generate">
@@ -181,30 +181,34 @@ flowchart TD
 ### Conditional Workflows
 
 **Intelligent Escalation & Routing**
+
 - **Live Chat Handoff**: Seamless transition to human agents when AI cannot resolve queries
 - **Custom Workflows**: Conditional logic for complex business processes
 - **API Integrations**: Real-time data exchange with external systems
-
 
 ## Knowledge Base Architecture
 
 ### Vector Database Technology
 
 <CardGroup cols={2}>
-  <Card title="Knowledge Bases" icon="database" href="/knowledge-bases/knowledge-fundamentals/what-are-knowledge-bases">
-    **Semantic Search Technology**
-    - Content ingestion from multiple sources
-    - Vector embeddings for meaning-based search
-    - Context-aware retrieval and ranking
-    - Real-time knowledge access
+  <Card
+    title="Knowledge Bases"
+    icon="database"
+    href="/knowledge-bases/knowledge-fundamentals/what-are-knowledge-bases"
+  >
+    **Semantic Search Technology** - Content ingestion from multiple sources -
+    Vector embeddings for meaning-based search - Context-aware retrieval and
+    ranking - Real-time knowledge access
   </Card>
-  
-  <Card title="Vector Databases" icon="server" href="/ai-technology/understanding-llms">
-    **Weaviate & Qdrant Integration**
-    - Mathematical content representations
-    - Fast semantic search capabilities
-    - Scalable storage and retrieval
-    - Performance optimization
+
+  <Card
+    title="Vector Databases"
+    icon="server"
+    href="/ai-technology/understanding-llms"
+  >
+    **Weaviate & Qdrant Integration** - Mathematical content representations -
+    Fast semantic search capabilities - Scalable storage and retrieval -
+    Performance optimization
   </Card>
 </CardGroup>
 
@@ -216,15 +220,18 @@ flowchart TD
 </Step>
 
 <Step title="Indexing & Embedding">
-  Content conversion to searchable vector embeddings that capture semantic meaning and relationships.
+  Content conversion to searchable vector embeddings that capture semantic
+  meaning and relationships.
 </Step>
 
 <Step title="Vector Database Storage">
-  Processed embeddings stored in Weaviate and Qdrant for fast, scalable semantic search.
+  Processed embeddings stored in Weaviate and Qdrant for fast, scalable semantic
+  search.
 </Step>
 
 <Step title="Semantic Search">
-  Real-time retrieval of relevant content based on conversation context and user intent.
+  Real-time retrieval of relevant content based on conversation context and user
+  intent.
 </Step>
 
 <Step title="Contextual Response">
@@ -237,20 +244,24 @@ flowchart TD
 ### Platform Integration Types
 
 <CardGroup cols={2}>
-  <Card title="Pre-Built Tools (600+)" icon="plug" href="/tools-integration/tools-fundamentals/available-tools-gallery">
-    **Native Platform Integrations**
-    - CRM, productivity, and communication platforms
-    - One-click setup with guided configuration
-    - Multiple actions per platform
-    - Automatic updates and maintenance
+  <Card
+    title="Pre-Built Tools (600+)"
+    icon="plug"
+    href="/tools-integration/tools-fundamentals/available-tools-gallery"
+  >
+    **Native Platform Integrations** - CRM, productivity, and communication
+    platforms - One-click setup with guided configuration - Multiple actions per
+    platform - Automatic updates and maintenance
   </Card>
-  
-  <Card title="Custom & 3rd Party" icon="code" href="/tools-integration/individual-tools/api-gambit/api-configuration">
-    **API Integrations**
-    - REST API support for any system
-    - Secure credential storage (API keys, OAuth)
-    - Custom data transformation and mapping
-    - Webhook support for real-time updates
+
+  <Card
+    title="Custom & 3rd Party"
+    icon="code"
+    href="/tools-integration/individual-tools/api-gambit/api-configuration"
+  >
+    **API Integrations** - REST API support for any system - Secure credential
+    storage (API keys, OAuth) - Custom data transformation and mapping - Webhook
+    support for real-time updates
   </Card>
 </CardGroup>
 
@@ -259,16 +270,19 @@ flowchart TD
 ### Channel Flexibility
 
 **Website Integration**
+
 - Embeddable chat widgets with full customization
 - Custom domain hosting for professional deployment
 - Cross-browser compatibility and mobile responsiveness
 
 **WhatsApp Business Platform**
+
 - Native WhatsApp Business API integration
 - Rich media messaging and broadcast capabilities
 - Business number setup and verification
 
 **Direct Access**
+
 - Shareable agent links for campaigns and social media
 - QR code generation for offline-to-online engagement
 - Custom branding and analytics tracking
@@ -278,12 +292,14 @@ flowchart TD
 ### Performance & Scalability
 
 **Infrastructure Design**
+
 - Auto-scaling for traffic spikes and high volume
 - Global CDN deployment for worldwide low latency
 - 99.9% uptime SLA with automatic failover
 - Real-time monitoring and performance alerts
 
 **Response Optimization**
+
 - < 200ms for simple conversations
 - < 1 second for knowledge base searches
 - < 3 seconds for complex integrations
@@ -292,6 +308,7 @@ flowchart TD
 ### Security & Compliance
 
 **Enterprise-Grade Protection**
+
 - End-to-end encryption for all communications
 - SOC 2 Type II certified security controls
 - GDPR and CCPA compliant data processing
@@ -300,23 +317,37 @@ flowchart TD
 ## Next Steps
 
 <CardGroup cols={2}>
-  <Card title="Key Concepts" icon="lightbulb" href="/platform-fundamentals/key-concepts">
+  <Card
+    title="Key Concepts"
+    icon="lightbulb"
+    href="/platform-fundamentals/key-concepts"
+  >
     Master essential terminology and platform relationships
   </Card>
-  
-  <Card title="Development Lifecycle" icon="cycle" href="/introduction-to-development/development-lifecycle-overview">
+
+  <Card
+    title="Development Lifecycle"
+    icon="cycle"
+    href="/introduction-to-development/development-lifecycle-overview"
+  >
     Understand the complete Make → Test → Deploy → Analyze → Iterate process
   </Card>
-  
+
   <Card title="Start Building" icon="rocket" href="/quickstart">
     Create your first agent with our step-by-step tutorial
   </Card>
-  
-  <Card title="Explore Components" icon="puzzle-piece" href="/ai-agents/understanding-ai-agents/what-are-ai-agents">
+
+  <Card
+    title="Explore Components"
+    icon="puzzle-piece"
+    href="/ai-agents/understanding-ai-agents/what-are-ai-agents"
+  >
     Dive deep into individual platform components
   </Card>
 </CardGroup>
 
 <Note>
-**Want technical details?** Visit our [Technical Deep Dive](/ai-technology/understanding-llms) section for in-depth information about AI models, vector embeddings, and system architecture.
+  **Want technical details?** Visit our [Technical Deep
+  Dive](/ai-technology/understanding-llms) section for in-depth information
+  about AI models, vector embeddings, and system architecture.
 </Note>

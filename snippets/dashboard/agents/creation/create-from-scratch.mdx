@@ -1,20 +1,16 @@
+Creating an agent from scratch gives you complete control over every aspect of your AI agent's behavior, personality, and capabilities. This approach uses the visual builder to design custom conversation flows and configure advanced settings.
 
-Creating an agent from scratch gives you complete control over every aspect of your AI agent's behavior, personality, and capabilities.
-
-<Frame>
-<img src="/images/dashboard/create-agent-scratch.png" alt="Create agent from scratch interface showing blank canvas and customization options" />
-</Frame>
-
-### What you get
+## What you get
 
 **Complete customization control**
+
 - **Custom personality**: Define your agent's tone, style, and communication approach
 - **Flexible workflow**: Design conversation flows that match your specific use case
 - **Custom responses**: Craft unique responses for different scenarios
 - **Integration flexibility**: Connect any tools or knowledge bases you need
 - **Brand alignment**: Ensure your agent perfectly represents your brand voice
 
-### Perfect for
+## Perfect for
 
 - **Unique use cases**: When you have specific requirements not covered by templates
 - **Brand-specific agents**: When you need complete control over personality and tone
@@ -22,48 +18,205 @@ Creating an agent from scratch gives you complete control over every aspect of y
 - **Custom integrations**: When you need to connect specific tools or systems
 - **Learning purposes**: When you want to understand how agents work from the ground up
 
-### How it works
+## Step-by-step creation process
 
 <Steps>
-<Step title="Start with a blank canvas">
-  - Click **"Create from Scratch"** from the agent creation options
-  - Choose a name and description for your agent
-  - Select your agent's primary purpose and industry
+<Step title="Click Create from Scratch card">
+  Navigate to the Create Agent page and click on the `Create from Scratch` card to begin the process.
+  
+  <Frame>
+  <img src="/images/dashboard/agent/scratch/step-1-click-card.png" alt="Create Agent page showing the Create from Scratch card option" />
+  </Frame>
+  
+  <Check>
+  This opens a modal dialog where you can configure your custom agent.
+  </Check>
 </Step>
 
-<Step title="Design the personality">
-  - Define your agent's tone (professional, friendly, casual, etc.)
-  - Set communication style preferences
-  - Configure response length and detail level
-  - Add any specific personality traits or characteristics
+<Step title="Configure basic details">
+  In the modal, provide the essential information for your agent:
+  <Frame>
+    <img
+      src="/images/dashboard/agent/scratch/step-2-basic-details.png"
+      alt="Agent configuration modal with name, description, and icon options"
+    />
+  </Frame>
+  **Required fields:** - **Agent Name**: Enter a descriptive name for your agent
+  - **Description**: Provide a brief description of your agent's purpose -
+  **Icon**: Click the `shuffle` button to cycle through available icons or keep
+  the default
+  <Info>
+    Choose a name and description that clearly communicate your agent's purpose
+    to users.
+  </Info>
+  Once configured, click `Create Agent` to proceed to the builder canvas.
 </Step>
 
-<Step title="Build the workflow">
-  - Create conversation flows using the visual builder
-  - Add decision points and branching logic
-  - Define how your agent handles different user inputs
-  - Set up fallback responses for unexpected queries
+<Step title="Access the builder canvas">
+  After clicking Create Agent, you'll be redirected to the Make section's
+  builder canvas.
+  <Frame>
+    <img
+      src="/images/dashboard/agent/scratch/step-2-redirect-to-builder-canvas.png"
+      alt="Builder canvas interface showing the visual workflow designer"
+    />
+  </Frame>
+  <Check>
+    The builder canvas provides a visual interface for designing your agent's
+    conversation flow.
+  </Check>
 </Step>
 
-<Step title="Add capabilities">
-  - Connect knowledge bases for information retrieval
-  - Integrate tools for external actions
-  - Configure data collection and form handling
-  - Set up escalation paths for complex queries
+<Step title="Add gambits to your workflow">
+  Click the `+ (plus)` icon in the top-left corner of the builder canvas to open
+  the gambits panel.
+  <Frame>
+    <img
+      src="/images/dashboard/agent/scratch/step-3-click-add-gambit-button.png"
+      alt="Builder canvas with plus button highlighted to add gambits"
+    />
+  </Frame>
+  <Check>
+    This opens a panel containing all available gambits for building your
+    agent's workflow.
+  </Check>
 </Step>
 
-<Step title="Test and refine">
-  - Use the built-in testing interface to try different scenarios
-  - Refine responses based on test results
-  - Optimize conversation flows for better user experience
-  - Deploy when ready for production use
+<Step title="Select and add Agent gambit">
+  In the gambits panel, you'll see various gambit types. For a simple agent
+  flow, select the `Agent gambit`.
+  <Frame>
+    <img
+      src="/images/dashboard/agent/scratch/step-4-gambits-panel-opens-up.png"
+      alt="Gambits panel showing different gambit types including Agent gambit"
+    />
+  </Frame>
+  **Available gambit types:** - `Agent gambit`: Core conversation logic and AI
+  behavior - `Integration gambit`: Connect external services and APIs - `Tool
+  gambit`: Add specific functionality and actions - `Knowledge gambit`: Connect
+  to knowledge bases and information retrieval - `User input gambit`: Handle
+  user interactions and data collection
+  <Tip>
+    **Explore Gambits**: For detailed information about all gambit types and
+    their capabilities, visit our [Gambits Mastery Guide](/gambits-mastery) to
+    learn best practices and advanced usage patterns.
+  </Tip>
+  You can either: - **Click** the `Agent gambit` to add it to the canvas -
+  **Drag** the `Agent gambit` from the panel to your desired location on the
+  canvas
+  <Frame>
+    <img
+      src="/images/dashboard/agent/scratch/step-4-drag-or-click-agent-gambit.png"
+      alt="Agent gambit being dragged from panel to canvas"
+    />
+  </Frame>
+  <Frame>
+    <img
+      src="/images/dashboard/agent/scratch/step-4-drop-agent-in-canvas.png"
+      alt="Agent gambit successfully added to the builder canvas"
+    />
+  </Frame>
+  <Check>The Agent gambit is now added to your workflow canvas and ready for configuration.</Check>
+</Step>
+
+<Step title="Configure the Agent gambit">
+  Click on the Agent gambit in your canvas to open the configuration modal.
+  <Frame>
+    <img
+      src="/images/dashboard/agent/scratch/step-4-agent-added-to-canvas.png"
+      alt="Agent gambit configuration modal with various settings options"
+    />
+  </Frame>
+  <Frame>
+    <img
+      src="/images/dashboard/agent/scratch/step-5-click-agent-configuration.png"
+      alt="Agent gambit configuration modal with various settings options"
+    />
+  </Frame>
+  **Configuration options include:** - `Welcome Message`: Define how your agent greets
+  users - `Prompt`: Set the core instructions and personality for your agent - `LLM
+  Model`: Choose the language model that powers your agent - `Advanced Settings`:
+  Configure chat history, temperature, markdown support, and more
+  <Info>
+    **Advanced Configuration**: For detailed information about all Agent gambit
+    configuration options, including welcome messages, prompts, model selection,
+    and advanced settings, see our [Agent Gambit Configuration
+    Guide](/agent-gambit-configuration).
+  </Info>
+  <Note>**Quick Start**: You can use the default settings to get started quickly and customize your agent later as needed.</Note>
+</Step>
+
+<Step title="Publish your agent">
+  Once you've configured your agent, click the `Publish` button in the top-right
+  corner of the builder canvas.
+  <Frame>
+    <img
+      src="/images/dashboard/agent/scratch/step-5-publish-agent.png"
+      alt="Publish button highlighted in the builder canvas interface"
+    />
+  </Frame>
+  <Check>
+    Publishing makes your agent live and ready for user interactions.
+  </Check>
+</Step>
+
+<Step title="Test and launch your agent">
+  <Tabs>
+    <Tab title="Preview in Builder">
+      Click the `Preview` button to open the chatbot window on the right side of the builder canvas.
+      
+      <Frame>
+      <img src="/images/dashboard/agent/scratch/step-6-click-preview.png" alt="Preview button highlighted next to the publish button" />
+      </Frame>
+      
+      <Frame>
+      <img src="/images/dashboard/agent/scratch/step-6-preview-opened.png" alt="Chatbot preview window opened on the right side of the builder" />
+      </Frame>
+    </Tab>
+    
+    <Tab title="Launch in New Tab">
+      Click the `Launch` button to open your agent in a new browser tab.
+      
+      <Frame>
+      <img src="/images/dashboard/agent/scratch/step-6-launch-agent-in-new-tab.png" alt="Launch button highlighted next to the preview button" />
+      </Frame>
+      
+      <Frame>
+      <img src="/images/dashboard/agent/scratch/step-6-agent-opened-in-new-tab.png" alt="Agent opened in a new browser tab for full interaction" />
+      </Frame>
+    </Tab>
+  </Tabs>
+  
+  <Check>
+  Both options allow you to interact with your agent in real-time to test its responses and behavior.
+  </Check>
 </Step>
 </Steps>
 
+## Next steps
+
+After creating your agent from scratch:
+
+1. **Test thoroughly**: Use both preview and launch options to test different conversation scenarios
+2. **Refine configuration**: Adjust the Agent gambit settings based on your testing results
+3. **Add more gambits**: Expand your workflow with additional gambits for complex interactions
+4. **Monitor performance**: Track user interactions and optimize based on real usage patterns
+
 <Tip>
-**Start Simple**: Begin with basic conversation flows and gradually add complexity. You can always enhance your agent's capabilities over time.
+  **Start Simple**: Begin with a basic Agent gambit configuration and gradually
+  add complexity. You can always enhance your agent's capabilities by adding
+  more gambits and fine-tuning settings.
 </Tip>
 
+<Warning>
+  **Testing is Essential**: Always test your agent thoroughly before deploying
+  to production. Use both preview and launch options to ensure your agent
+  behaves as expected across different scenarios.
+</Warning>
+
 <Note>
-**Full Control**: Creating from scratch requires more time and effort but gives you complete control over your agent's behavior and capabilities.
+  **Full Control**: Creating from scratch requires more time and effort but
+  gives you complete control over your agent's behavior and capabilities. For
+  detailed guidance on all available gambits and advanced configurations,
+  explore our [Gambits Mastery Guide](/gambits-mastery).
 </Note>

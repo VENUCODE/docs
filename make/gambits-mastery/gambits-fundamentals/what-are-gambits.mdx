@@ -10,14 +10,18 @@ Gambits are the core building blocks of Tars conversations. Think of them as ind
 ## What Makes Gambits Powerful
 
 ### Modular Design
+
 Each gambit has a specific purpose and can be combined with others to create complex conversations:
+
 - **Reusable**: Use the same gambit type in multiple places
 - **Configurable**: Customize each gambit for its specific context
 - **Connectable**: Link gambits together to create conversation flows
 - **Testable**: Validate each gambit individually
 
 ### AI-Powered Intelligence
+
 Modern gambits leverage artificial intelligence to understand and respond naturally:
+
 - **Context Awareness**: Understand what happened earlier in the conversation
 - **Intent Recognition**: Figure out what users really want to accomplish
 - **Natural Language**: Handle variations in how users express themselves
@@ -26,70 +30,73 @@ Modern gambits leverage artificial intelligence to understand and respond natura
 ## Types of Gambits
 
 ### AI-Powered Gambits
+
 Handle intelligent conversation processing:
 
 <Columns cols={2}>
   <Card title="Intent Detection" icon="brain">
-    **Purpose**: Understand what users want to accomplish
-    **Use Case**: "I need help with my order" → Detect customer service intent
-    **Benefit**: Route users to appropriate conversation paths
+    **Purpose**: Understand what users want to accomplish **Use Case**: "I need
+    help with my order" → Detect customer service intent **Benefit**: Route
+    users to appropriate conversation paths
   </Card>
   <Card title="Data Extraction" icon="database">
-    **Purpose**: Pull specific information from user messages
-    **Use Case**: Extract order numbers, dates, contact info
-    **Benefit**: Gather structured data from natural conversation
+    **Purpose**: Pull specific information from user messages **Use Case**:
+    Extract order numbers, dates, contact info **Benefit**: Gather structured
+    data from natural conversation
   </Card>
   <Card title="Q&A Gambit" icon="question-circle">
-    **Purpose**: Answer questions using knowledge base
-    **Use Case**: "What are your business hours?" → Search and respond
-    **Benefit**: Provide accurate, up-to-date information instantly
+    **Purpose**: Answer questions using knowledge base **Use Case**: "What are
+    your business hours?" → Search and respond **Benefit**: Provide accurate,
+    up-to-date information instantly
   </Card>
   <Card title="AI Agent" icon="robot">
-    **Purpose**: Handle complex, multi-turn conversations
-    **Use Case**: Complete customer service or sales interactions
-    **Benefit**: Human-like conversation capabilities
+    **Purpose**: Handle complex, multi-turn conversations **Use Case**: Complete
+    customer service or sales interactions **Benefit**: Human-like conversation
+    capabilities
   </Card>
 </Columns>
 
 ### User Input Gambits
+
 Collect information from users in various formats:
 
 <Columns cols={2}>
   <Card title="Text Input" icon="keyboard">
-    **Purpose**: Collect typed responses from users
-    **Use Case**: Names, feedback, detailed questions
-    **Benefit**: Flexible input for any type of information
+    **Purpose**: Collect typed responses from users **Use Case**: Names,
+    feedback, detailed questions **Benefit**: Flexible input for any type of
+    information
   </Card>
   <Card title="Multiple Choice" icon="list">
-    **Purpose**: Present options for users to select
-    **Use Case**: Menu selections, preferences, categories
-    **Benefit**: Guide users and ensure valid responses
+    **Purpose**: Present options for users to select **Use Case**: Menu
+    selections, preferences, categories **Benefit**: Guide users and ensure
+    valid responses
   </Card>
   <Card title="File Upload" icon="upload">
-    **Purpose**: Allow users to share documents or images
-    **Use Case**: Support tickets, applications, verification
-    **Benefit**: Handle rich media and documents
+    **Purpose**: Allow users to share documents or images **Use Case**: Support
+    tickets, applications, verification **Benefit**: Handle rich media and
+    documents
   </Card>
   <Card title="Location Sharing" icon="map-pin">
-    **Purpose**: Collect geographic information
-    **Use Case**: Store finder, delivery addresses, service areas
-    **Benefit**: Location-based services and routing
+    **Purpose**: Collect geographic information **Use Case**: Store finder,
+    delivery addresses, service areas **Benefit**: Location-based services and
+    routing
   </Card>
 </Columns>
 
 ### Integration Gambits
+
 Connect with external systems and services:
 
 <Columns cols={2}>
   <Card title="API Gambit" icon="plug">
-    **Purpose**: Make calls to external systems
-    **Use Case**: Check inventory, create records, send notifications
-    **Benefit**: Real-time data access and automation
+    **Purpose**: Make calls to external systems **Use Case**: Check inventory,
+    create records, send notifications **Benefit**: Real-time data access and
+    automation
   </Card>
   <Card title="Tool Integration" icon="wrench">
-    **Purpose**: Use pre-built integrations
-    **Use Case**: CRM updates, calendar booking, email sending
-    **Benefit**: No-code integration with popular platforms
+    **Purpose**: Use pre-built integrations **Use Case**: CRM updates, calendar
+    booking, email sending **Benefit**: No-code integration with popular
+    platforms
   </Card>
 </Columns>
 
@@ -99,26 +106,22 @@ Connect with external systems and services:
 
 <Steps>
   <Step title="Welcome Gambit">
-    **Type**: AI Agent
-    **Purpose**: Greet user and understand their needs
+    **Type**: AI Agent **Purpose**: Greet user and understand their needs
     **Output**: User intent and initial context
   </Step>
-  
+
   <Step title="Information Collection">
-    **Type**: Text Input or Multiple Choice
-    **Purpose**: Gather specific details needed
-    **Output**: Structured data for processing
+    **Type**: Text Input or Multiple Choice **Purpose**: Gather specific details
+    needed **Output**: Structured data for processing
   </Step>
-  
+
   <Step title="System Integration">
-    **Type**: API Gambit
-    **Purpose**: Look up information or create records
+    **Type**: API Gambit **Purpose**: Look up information or create records
     **Output**: Results from external system
   </Step>
-  
+
   <Step title="Response Generation">
-    **Type**: AI Agent
-    **Purpose**: Provide helpful response with next steps
+    **Type**: AI Agent **Purpose**: Provide helpful response with next steps
     **Output**: Natural language response to user
   </Step>
 </Steps>
@@ -126,16 +129,19 @@ Connect with external systems and services:
 ### Advanced Flow Features
 
 **Conditional Branching**:
+
 ```
 User Response → Analysis → Different Path Based on Content
 ```
 
 **Data Persistence**:
+
 ```
 Gambit 1 Collects Data → Store in Memory → Gambit 5 Uses Data
 ```
 
 **Error Handling**:
+
 ```
 Integration Fails → Fallback Gambit → Alternative Response
 ```
@@ -145,12 +151,14 @@ Integration Fails → Fallback Gambit → Alternative Response
 ### Every Gambit Has:
 
 **Core Settings**:
+
 - **Name and Description**: For team organization
 - **Input Requirements**: What data is needed
 - **Processing Logic**: How the gambit works
 - **Output Format**: What data is provided to next steps
 
 **Advanced Options**:
+
 - **Conditional Logic**: When this gambit should execute
 - **Error Handling**: What to do if something goes wrong
 - **Validation Rules**: Ensure data quality
@@ -160,44 +168,50 @@ Integration Fails → Fallback Gambit → Alternative Response
 
 <Steps>
   <Step title="Clear Naming">
-    Use descriptive names that explain the gambit's purpose
-    Example: "collect-contact-info" vs "gambit-3"
+    Use descriptive names that explain the gambit's purpose Example:
+    "collect-contact-info" vs "gambit-3"
   </Step>
-  
+
   <Step title="Comprehensive Error Handling">
-    Plan for what happens when things go wrong
-    Have fallback responses and alternative paths
+    Plan for what happens when things go wrong Have fallback responses and
+    alternative paths
   </Step>
-  
+
   <Step title="User-Friendly Messages">
-    Write clear instructions and helpful prompts
-    Test with real users to ensure understanding
+    Write clear instructions and helpful prompts Test with real users to ensure
+    understanding
   </Step>
-  
+
   <Step title="Validation and Feedback">
-    Confirm user inputs and provide immediate feedback
-    Let users know when actions are successful
+    Confirm user inputs and provide immediate feedback Let users know when
+    actions are successful
   </Step>
 </Steps>
 
 ## Design Principles
 
 ### User-Centric Design
+
 **Always think from the user's perspective**:
+
 - What do they want to accomplish?
 - What information do they need to provide?
 - How can we make the interaction as smooth as possible?
 - What happens if they make a mistake?
 
 ### Progressive Disclosure
+
 **Don't overwhelm users with complexity**:
+
 - Ask for one piece of information at a time
 - Build complexity gradually through the conversation
 - Provide context about why information is needed
 - Allow users to skip optional steps
 
 ### Conversation Flow
+
 **Create natural, logical progressions**:
+
 - Start with broad questions, narrow down to specifics
 - Confirm understanding before taking actions
 - Provide clear next steps and options
@@ -206,21 +220,25 @@ Integration Fails → Fallback Gambit → Alternative Response
 ## Common Gambit Patterns
 
 ### Information Gathering Pattern
+
 ```
 Greeting → Understanding Needs → Collecting Details → Confirmation → Action
 ```
 
 ### Support Ticket Pattern
+
 ```
 Problem Description → Category Classification → Detail Collection → Ticket Creation → Follow-up
 ```
 
 ### Lead Qualification Pattern
+
 ```
 Interest Detection → Needs Assessment → Contact Collection → Qualification Scoring → Handoff
 ```
 
 ### Booking Pattern
+
 ```
 Service Selection → Availability Check → Time Selection → Contact Info → Confirmation
 ```
@@ -230,11 +248,13 @@ Service Selection → Availability Check → Time Selection → Contact Info →
 ### Gambit Performance Factors
 
 **Response Speed**:
+
 - AI gambits: 200ms - 2 seconds
 - Integration gambits: 500ms - 5 seconds
 - User input gambits: Instant display
 
 **Accuracy Rates**:
+
 - Intent detection: 85-95%
 - Data extraction: 90-98%
 - Knowledge base queries: 80-95%
@@ -245,15 +265,15 @@ Service Selection → Availability Check → Time Selection → Contact Info →
   <Step title="Monitor Performance">
     Track response times and accuracy rates for each gambit
   </Step>
-  
+
   <Step title="Optimize Based on Usage">
     Focus improvement efforts on most-used gambits
   </Step>
-  
+
   <Step title="A/B Test Variations">
     Test different prompts and configurations
   </Step>
-  
+
   <Step title="Continuous Improvement">
     Regular updates based on user feedback and performance data
   </Step>
@@ -281,20 +301,39 @@ Service Selection → Availability Check → Time Selection → Contact Info →
 ### Next Steps
 
 <CardGroup cols={2}>
-  <Card title="Gambit Types Overview" icon="grid" href="/make/gambits-mastery/gambits-fundamentals/gambit-types-overview">
+  <Card
+    title="Gambit Types Overview"
+    icon="grid"
+    href="/make/gambits-mastery/gambits-fundamentals/gambit-types-overview"
+  >
     Explore all available gambit types and their capabilities
   </Card>
-  <Card title="Flow Logic Basics" icon="sitemap" href="/make/gambits-mastery/gambits-fundamentals/flow-logic-basics">
+  <Card
+    title="Flow Logic Basics"
+    icon="sitemap"
+    href="/make/gambits-mastery/gambits-fundamentals/flow-logic-basics"
+  >
     Learn how to connect gambits into effective conversation flows
   </Card>
-  <Card title="Visual Builder Tutorial" icon="mouse-pointer" href="/make/builder-interface/canvas-overview">
+  <Card
+    title="Visual Builder Tutorial"
+    icon="mouse-pointer"
+    href="/make/builder-interface/canvas-overview"
+  >
     Master the drag-and-drop interface for building with gambits
   </Card>
-  <Card title="AI Gambits Deep Dive" icon="brain" href="/make/gambits-mastery/ai-gambits/intent-detection/configuration-guide">
+  <Card
+    title="AI Gambits Deep Dive"
+    icon="brain"
+    href="/make/gambits-mastery/ai-gambits/intent-detection/configuration-guide"
+  >
     Understand how to configure and optimize AI-powered gambits
   </Card>
 </CardGroup>
 
 <Note>
-  **Key Concept**: Think of gambits as LEGO blocks for conversations. Each piece has a specific function, but the real magic happens when you combine them thoughtfully to create something amazing. Start simple, test often, and build complexity gradually.
+  **Key Concept**: Think of gambits as LEGO blocks for conversations. Each piece
+  has a specific function, but the real magic happens when you combine them
+  thoughtfully to create something amazing. Start simple, test often, and build
+  complexity gradually.
 </Note>

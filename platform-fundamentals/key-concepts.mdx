@@ -57,23 +57,23 @@ graph TB
         A[User Input]
         B[Agent Response]
     end
-    
+
     subgraph "AI Processing"
         C[AI Agent]
         D[Knowledge Search]
         E[Tool Execution]
     end
-    
+
     subgraph "Conditional Workflows"
         F[Live Chat Handoff]
         G[Custom Workflows]
     end
-    
+
     subgraph "Data Sources"
         H[Vector Databases<br/>Weaviate/Qdrant]
         I[External APIs<br/>600+ Tools]
     end
-    
+
     A --> C
     C --> D
     C --> E
@@ -86,7 +86,7 @@ graph TB
     F -.-> C
     G -.-> C
     C --> B
-    
+
     style F fill:#f9f,stroke:#333,stroke-dasharray: 5 5
     style G fill:#f9f,stroke:#333,stroke-dasharray: 5 5
 ```
@@ -96,18 +96,22 @@ graph TB
 ### Implementation Planning
 
 <CardGroup cols={2}>
-  <Card title="Decision Framework" icon="compass" href="/platform-fundamentals/decision-framework">
-    **Strategic Planning Guide**
-    - Platform selection criteria
-    - Integration requirements assessment
-    - Development approach recommendations
+  <Card
+    title="Decision Framework"
+    icon="compass"
+    href="/platform-fundamentals/decision-framework"
+  >
+    **Strategic Planning Guide** - Platform selection criteria - Integration
+    requirements assessment - Development approach recommendations
   </Card>
-  
-  <Card title="Choosing Your Path" icon="map" href="/platform-fundamentals/choosing-your-path">
-    **Personalized Guidance**
-    - User journey recommendations
-    - Technical requirements evaluation
-    - Resource and timeline planning
+
+  <Card
+    title="Choosing Your Path"
+    icon="map"
+    href="/platform-fundamentals/choosing-your-path"
+  >
+    **Personalized Guidance** - User journey recommendations - Technical
+    requirements evaluation - Resource and timeline planning
   </Card>
 </CardGroup>
 
@@ -116,18 +120,22 @@ graph TB
 ### Strategic Planning
 
 <CardGroup cols={2}>
-  <Card title="Implementation Strategy" icon="strategy" href="/introduction-to-development/getting-started-with-workflow">
-    **Development Best Practices**
-    - Goal-oriented development approach
-    - User-centered design principles
-    - Quality assurance guidelines
+  <Card
+    title="Implementation Strategy"
+    icon="strategy"
+    href="/introduction-to-development/getting-started-with-workflow"
+  >
+    **Development Best Practices** - Goal-oriented development approach -
+    User-centered design principles - Quality assurance guidelines
   </Card>
-  
-  <Card title="Success Guidelines" icon="target" href="/platform-fundamentals/platform-tour">
-    **Platform Tour & Guidelines**
-    - Interactive platform walkthrough
-    - Feature exploration and understanding
-    - Best practice recommendations
+
+  <Card
+    title="Success Guidelines"
+    icon="target"
+    href="/platform-fundamentals/platform-tour"
+  >
+    **Platform Tour & Guidelines** - Interactive platform walkthrough - Feature
+    exploration and understanding - Best practice recommendations
   </Card>
 </CardGroup>
 
@@ -136,27 +144,41 @@ graph TB
 Ready to apply these concepts to your specific use case?
 
 <CardGroup cols={2}>
-  <Card title="Development Lifecycle" icon="code" href="/introduction-to-development/development-lifecycle-overview">
-    **Complete Development Process**<br/>
+  <Card
+    title="Development Lifecycle"
+    icon="code"
+    href="/introduction-to-development/development-lifecycle-overview"
+  >
+    **Complete Development Process**
+    <br />
     Understand the Make → Test → Deploy → Analyze → Iterate workflow
   </Card>
-  
+
   <Card title="Start Building" icon="rocket" href="/quickstart">
-    **Quick Tutorial**
-    Create your first agent with our step-by-step guide
+    **Quick Tutorial** Create your first agent with our step-by-step guide
   </Card>
-  
-  <Card title="Explore Components" icon="puzzle-piece" href="/ai-agents/understanding-ai-agents/what-are-ai-agents">
-    **Deep Dive into Components**
-    Detailed configuration and setup for each platform component
+
+  <Card
+    title="Explore Components"
+    icon="puzzle-piece"
+    href="/ai-agents/understanding-ai-agents/what-are-ai-agents"
+  >
+    **Deep Dive into Components** Detailed configuration and setup for each
+    platform component
   </Card>
-  
-  <Card title="Use Case Examples" icon="lightbulb" href="/use-case-examples/customer-support/helpdesk-automation">
-    **Real-World Examples**
-    Industry-specific implementations and success stories
+
+  <Card
+    title="Use Case Examples"
+    icon="lightbulb"
+    href="/use-case-examples/customer-support/helpdesk-automation"
+  >
+    **Real-World Examples** Industry-specific implementations and success
+    stories
   </Card>
 </CardGroup>
 
 <Note>
-**Questions about implementation?** Join our [Community Forum](/community-support/community-forum) to connect with other Tars users and get expert guidance from our team.
+  **Questions about implementation?** Join our [Community
+  Forum](/community-support/community-forum) to connect with other Tars users
+  and get expert guidance from our team.
 </Note>

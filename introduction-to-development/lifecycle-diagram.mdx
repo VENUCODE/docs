@@ -16,35 +16,35 @@ graph TB
         B[Use Case Definition]
         C[Success Metrics Planning]
     end
-    
+
     subgraph "Development Cycle"
         D[Make]
-        E[Test] 
+        E[Test]
         F[Deploy]
         G[Analyze]
         H[Iterate]
     end
-    
+
     subgraph "Outcomes"
         I[User Satisfaction]
         J[Business Value]
         K[Continuous Improvement]
     end
-    
+
     A --> B
     B --> C
     C --> D
-    
+
     D --> E
     E --> F
     F --> G
     G --> H
     H --> D
-    
+
     F --> I
     G --> J
     H --> K
-    
+
     style D fill:#6D33AA,stroke:#fff,color:#fff
     style E fill:#8BF76D,stroke:#333,color:#333
     style F fill:#6D33AA,stroke:#fff,color:#fff
@@ -65,12 +65,12 @@ graph LR
         D[Visual Customization]
         E[AI Training]
     end
-    
+
     A --> B
     B --> C
     C --> D
     D --> E
-    
+
     style A fill:#BFA3E6,stroke:#333,color:#333
     style B fill:#BFA3E6,stroke:#333,color:#333
     style C fill:#BFA3E6,stroke:#333,color:#333
@@ -79,6 +79,7 @@ graph LR
 ```
 
 **Key Activities:**
+
 - Design conversation flows using gambits
 - Configure AI personality and behavior
 - Set up knowledge bases and content
@@ -96,12 +97,12 @@ graph LR
         D[Performance Testing]
         E[Optimization]
     end
-    
+
     A --> B
     B --> C
     C --> D
     D --> E
-    
+
     style A fill:#8BF76D,stroke:#333,color:#333
     style B fill:#8BF76D,stroke:#333,color:#333
     style C fill:#8BF76D,stroke:#333,color:#333
@@ -110,6 +111,7 @@ graph LR
 ```
 
 **Key Activities:**
+
 - Test individual gambits and flows
 - Validate system integrations
 - Gather stakeholder feedback
@@ -127,12 +129,12 @@ graph LR
         D[Go-Live]
         E[Initial Monitoring]
     end
-    
+
     A --> B
     B --> C
     C --> D
     D --> E
-    
+
     style A fill:#6D33AA,stroke:#fff,color:#fff
     style B fill:#6D33AA,stroke:#fff,color:#fff
     style C fill:#6D33AA,stroke:#fff,color:#fff
@@ -141,6 +143,7 @@ graph LR
 ```
 
 **Key Activities:**
+
 - Set up production environment
 - Configure deployment channels
 - Execute launch checklist
@@ -158,12 +161,12 @@ graph LR
         D[Report Generation]
         E[Insight Extraction]
     end
-    
+
     A --> B
     B --> C
     C --> D
     D --> E
-    
+
     style A fill:#8BF76D,stroke:#333,color:#333
     style B fill:#8BF76D,stroke:#333,color:#333
     style C fill:#8BF76D,stroke:#333,color:#333
@@ -172,6 +175,7 @@ graph LR
 ```
 
 **Key Activities:**
+
 - Collect conversation data and metrics
 - Analyze response accuracy and speed
 - Study user interaction patterns
@@ -189,12 +193,12 @@ graph LR
         D[Implementation]
         E[Validation]
     end
-    
+
     A --> B
     B --> C
     C --> D
     D --> E
-    
+
     style A fill:#6D33AA,stroke:#fff,color:#fff
     style B fill:#6D33AA,stroke:#fff,color:#fff
     style C fill:#6D33AA,stroke:#fff,color:#fff
@@ -203,6 +207,7 @@ graph LR
 ```
 
 **Key Activities:**
+
 - Identify performance gaps
 - Plan improvements and new features
 - Prioritize changes based on impact
@@ -219,22 +224,22 @@ graph TB
     B -->|Pass| C[Move to Test]
     B -->|Fail| D[Revise Design]
     D --> A
-    
+
     C[Test Complete] --> E{Quality Check}
     E -->|Pass| F[Move to Deploy]
     E -->|Fail| G[Fix Issues]
     G --> C
-    
+
     F[Deploy Complete] --> H{Launch Success}
     H -->|Success| I[Move to Analyze]
     H -->|Issues| J[Emergency Fix]
     J --> C
-    
+
     I[Analyze Complete] --> K{Performance OK}
     K -->|Good| L[Move to Iterate]
     K -->|Poor| M[Immediate Optimization]
     M --> C
-    
+
     L[Iterate Complete] --> N{Continue Development}
     N -->|Yes| A
     N -->|No| O[Maintenance Mode]
@@ -244,16 +249,14 @@ graph TB
 
 <Columns cols={2}>
   <Card title="Stakeholder Feedback" icon="users">
-    **When**: End of Make and Test stages
-    **What**: Design validation, user experience review
-    **Impact**: Feature adjustments, flow improvements
+    **When**: End of Make and Test stages **What**: Design validation, user
+    experience review **Impact**: Feature adjustments, flow improvements
     **Timeline**: 1-2 days review cycle
   </Card>
   <Card title="User Feedback" icon="message-circle">
-    **When**: Post-deployment, ongoing
-    **What**: Real usage patterns, satisfaction scores
-    **Impact**: Major feature decisions, optimization priorities
-    **Timeline**: Weekly analysis, monthly planning
+    **When**: Post-deployment, ongoing **What**: Real usage patterns,
+    satisfaction scores **Impact**: Major feature decisions, optimization
+    priorities **Timeline**: Weekly analysis, monthly planning
   </Card>
 </Columns>
 
@@ -261,17 +264,18 @@ graph TB
 
 ### Typical Development Cycle
 
-| Stage | Duration | Key Deliverables |
-|-------|----------|------------------|
-| **Make** | 1-3 weeks | Functional agent, configured integrations |
-| **Test** | 3-5 days | Validated flows, performance benchmarks |
-| **Deploy** | 1-2 days | Live agent, monitoring setup |
-| **Analyze** | Ongoing | Performance reports, user insights |
-| **Iterate** | 1-2 weeks | Optimized agent, new features |
+| Stage       | Duration  | Key Deliverables                          |
+| ----------- | --------- | ----------------------------------------- |
+| **Make**    | 1-3 weeks | Functional agent, configured integrations |
+| **Test**    | 3-5 days  | Validated flows, performance benchmarks   |
+| **Deploy**  | 1-2 days  | Live agent, monitoring setup              |
+| **Analyze** | Ongoing   | Performance reports, user insights        |
+| **Iterate** | 1-2 weeks | Optimized agent, new features             |
 
 ### Factors Affecting Timeline
 
 **Complexity Factors:**
+
 - Number of conversation flows
 - Integration requirements
 - Custom feature needs
@@ -279,6 +283,7 @@ graph TB
 - Stakeholder availability
 
 **Acceleration Factors:**
+
 - Using proven templates
 - Leveraging existing integrations
 - Clear requirements definition
@@ -299,45 +304,54 @@ graph TB
 
 <CardGroup cols={3}>
   <Card title="Make Tools" icon="hammer">
-    - Visual Flow Builder
-    - Knowledge Base Editor
-    - Integration Configurator
-    - Brand Customizer
-    - Preview Mode
+    - Visual Flow Builder - Knowledge Base Editor - Integration Configurator -
+    Brand Customizer - Preview Mode
   </Card>
   <Card title="Test Tools" icon="flask">
-    - Conversation Simulator
-    - Load Testing Suite
-    - A/B Testing Framework
-    - Performance Monitor
-    - Feedback Collector
+    - Conversation Simulator - Load Testing Suite - A/B Testing Framework -
+    Performance Monitor - Feedback Collector
   </Card>
   <Card title="Deploy Tools" icon="rocket">
-    - Channel Manager
-    - Environment Controller
-    - Launch Checklist
-    - Monitoring Dashboard
-    - Alert System
+    - Channel Manager - Environment Controller - Launch Checklist - Monitoring
+    Dashboard - Alert System
   </Card>
 </CardGroup>
 
 ## Next Steps
 
 <CardGroup cols={2}>
-  <Card title="Detailed Stage Guide" icon="layers" href="/introduction-to-development/workflow-stages-explained">
+  <Card
+    title="Detailed Stage Guide"
+    icon="layers"
+    href="/introduction-to-development/workflow-stages-explained"
+  >
     Learn about each stage in comprehensive detail
   </Card>
-  <Card title="Start Building" icon="play" href="/introduction-to-development/getting-started-with-workflow">
+  <Card
+    title="Start Building"
+    icon="play"
+    href="/introduction-to-development/getting-started-with-workflow"
+  >
     Begin your first development cycle with guided steps
   </Card>
-  <Card title="Make Phase" icon="hammer" href="/make/builder-interface/canvas-overview">
+  <Card
+    title="Make Phase"
+    icon="hammer"
+    href="/make/builder-interface/canvas-overview"
+  >
     Dive into the visual builder and start creating
   </Card>
-  <Card title="Testing Guide" icon="vial" href="/test/testing-fundamentals/testing-importance">
+  <Card
+    title="Testing Guide"
+    icon="vial"
+    href="/test/testing-fundamentals/testing-importance"
+  >
     Master the testing methodology for quality agents
   </Card>
 </CardGroup>
 
 <Note>
-  **Remember**: This is a cycle, not a linear process. The best agents are those that go through multiple iterations, getting better with each cycle based on real user feedback and performance data.
+  **Remember**: This is a cycle, not a linear process. The best agents are those
+  that go through multiple iterations, getting better with each cycle based on
+  real user feedback and performance data.
 </Note>

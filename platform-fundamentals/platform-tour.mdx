@@ -5,20 +5,22 @@ description: "Discover the Tars platform step by step - from creating your accou
 icon: "map"
 ---
 
-import AgentsSection from '/snippets/dashboard/agents/agents.mdx';
-import Navigation from '/snippets/dashboard/navigation.mdx';
-import ToolsOverview from '/snippets/dashboard/tools/tools-overview-simple.mdx';
-import FeaturedTools from '/snippets/dashboard/tools/featured-tools.mdx';
-import KBOverview from '/snippets/dashboard/kbs/kb-overview.mdx';
-import MyKnowledge from '/snippets/dashboard/kbs/my-knowledge.mdx';
-import AddKnowledge from '/snippets/dashboard/kbs/add-knowledge.mdx';
+import AgentsSection from "/snippets/dashboard/agents/agents.mdx";
+import Navigation from "/snippets/dashboard/navigation.mdx";
+import ToolsOverview from "/snippets/dashboard/tools/tools-overview-simple.mdx";
+import FeaturedTools from "/snippets/dashboard/tools/featured-tools.mdx";
+import KBOverview from "/snippets/dashboard/kbs/kb-overview.mdx";
+import MyKnowledge from "/snippets/dashboard/kbs/my-knowledge.mdx";
+import AddKnowledge from "/snippets/dashboard/kbs/add-knowledge.mdx";
+import ProfileSetting from "/snippets/dashboard/settings/index.mdx";
+import Support from "/snippets/dashboard/support/index.mdx";
 
 You're about to discover a powerful platform where you can create intelligent AI agents that help your business. This tour will guide you through everything you need to know about Tars, showing you how to navigate and use all the features available to you.
 
 <Note>
-**First time here?** Don't worry! This tour is designed for complete beginners. We'll walk through everything together, step by step.
+  **First time here?** Don't worry! This tour is designed for complete
+  beginners. We'll walk through everything together, step by step.
 </Note>
-
 
 ## Getting started - creating your account
 
@@ -69,16 +71,16 @@ You're about to discover a powerful platform where you can create intelligent AI
 
 ## Exploring the dashboard
 
-
 🎉 **Congratulations** on creating your account and logging in! You're now on the onboarding landing page, which introduces you to your personal workspace with a helpful video guide.
 
 <Frame>
-<img src="/images/landing.png" alt="Onboarding landing page with video guide" />
+  <img
+    src="/images/landing.png"
+    alt="Onboarding landing page with video guide"
+  />
 </Frame>
 
 Next, you'll see your main dashboard. This is your central hub where you can manage AI agents, knowledge bases, and tool integrations.
-
-
 
 ### <Icon icon="grid-2-plus" size="30"/> Dashboard sections
 
@@ -87,15 +89,18 @@ Here, you'll have the opportunity to create AI agents, manage your knowledge bas
 
 <Tabs>
 
-<Tab title="Agents" icon="user-robot">  
-  <AgentsSection/>
+<Tab title="Agents" icon="user-robot">
+  <AgentsSection />
 </Tab>
 
 <Tab title="Tools" icon="wrench">
-<Frame>
-<img src="/images/dashboard/tools-overview.png" alt="Tools overview dashboard showing all available tools" />
-</Frame>
-<ToolsOverview />
+  <Frame>
+    <img
+      src="/images/dashboard/tools/tools-overview.png"
+      alt="Tools overview dashboard showing all available tools"
+    />
+  </Frame>
+  <ToolsOverview />
 </Tab>
 
 <Tab title="Knowledge" icon="book">
@@ -112,92 +117,32 @@ Here, you'll have the opportunity to create AI agents, manage your knowledge bas
 </Tabs>
 </Tab>
 
-<Tab title="Profile Settings" icon="user-gear">
-**Account & Team Management**
-
-Profile Settings is your control center for account management, team collaboration, and platform preferences.
-
-<Frame>
-<img src="/images/profile-settings.png" alt="Profile settings dashboard showing account management options" />
-</Frame>
-
-**What you can do here:**
-- **Manage Your Profile**: Update personal information, preferences, and security settings
-- **Team Collaboration**: Invite team members and manage permissions
-- **Billing & Subscriptions**: Handle payments, upgrade plans, and view usage
-- **Platform Preferences**: Customize notifications, themes, and default settings
-
-**Key subsections:**
-- **Personal Profile**: Account information, avatar, and contact details
-- **Team Management**: Invite members, assign roles, and manage permissions
-- **Billing Center**: Subscription details, payment methods, and usage tracking
-- **Security Settings**: Password management, two-factor authentication, and access logs
-- **Preferences**: Notification settings, theme selection, and default configurations
-
-**Available actions:**
-- Update profile information
-- Change password and security settings
-- Invite team members
-- Manage subscription and billing
-- Configure notification preferences
-- Set up two-factor authentication
-- View account activity logs
-- Export account data
+<Tab title="Settings" icon="user-gear">
+  <ProfileSetting />
 </Tab>
 
-<Tab title="FAQs & Support" icon="circle-question">
-**Help & Learning Center**
-
-The FAQs & Support section provides comprehensive help resources, community access, and direct support channels.
-
-<Frame>
-<img src="/images/support-dashboard.png" alt="Support dashboard showing help resources and contact options" />
-</Frame>
-
-**What you can do here:**
-- **Find Quick Answers**: Browse frequently asked questions and common solutions
-- **Access Documentation**: Comprehensive guides, tutorials, and API references
-- **Join Community**: Connect with other users, share experiences, and get peer support
-- **Contact Support**: Get direct help from our technical support team
-
-**Key subsections:**
-- **FAQ Library**: Searchable database of common questions and solutions
-- **Documentation Hub**: Complete guides, tutorials, and best practices
-- **Community Forum**: User discussions, feature requests, and peer support
-- **Video Tutorials**: Step-by-step visual guides for platform features
-- **Support Tickets**: Direct communication with our support team
-- **Feature Requests**: Submit ideas and vote on platform improvements
-
-**Available actions:**
-- Search FAQ database
-- Browse documentation
-- Join community discussions
-- Submit support tickets
-- Watch video tutorials
-- Request new features
-- Access live chat support
-- Download resources and guides
+<Tab title="Support" icon="circle-question">
+<Support/>
 </Tab>
 </Tabs>
 
-
-<Check>
-**Congratulations!** You've completed the Tars platform tour and learned the essential navigation and features.
-</Check>
-
-### What you've learned
-- Platform navigation and dashboard organization
-- Three approaches to agent creation
-- Knowledge base setup and management
-- Tools integration capabilities
-- Testing and deployment options
-
 ### Ready to build?
 
-<Card title="Start creating your agent" icon="play-circle" href="/quickstart/index">
-    **Take the next step**: Use what you've learned to build your first functional AI agent with our guided quickstart tutorial.
+<Card
+  title="Start creating your agent"
+  icon="circle-play"
+  href="/quickstart/index"
+>
+  **Take the next step**: Use what you've learned to build your first functional
+  AI agent with our guided quickstart tutorial.
 </Card>
 
 <Note>
-**Need to reference this tour again?** Bookmark this page or access it anytime from the Help menu in your dashboard. You can also restart the interactive platform tour from your dashboard settings.
+  **Need to reference this tour again?** Bookmark this page or access it anytime
+  from the Help menu in your dashboard. You can also restart the interactive
+  platform tour from your dashboard settings.
 </Note>
+
+<a href="#dashboard-sections" className="underline float-right">
+  Back to top
+</a>
