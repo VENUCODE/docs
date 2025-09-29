@@ -1,6 +1,21 @@
-Create a knowledge base from PDF documents by uploading files and training them for AI agent use.
+## PDF data source
+Transform your PDF documents into intelligent knowledge bases that power your AI agents. This method processes and organizes PDF content to create comprehensive knowledge repositories.
 
-## Creating PDF Knowledge Base
+### What you get
+
+- **Text extraction** from PDF documents
+- **Content organization** and indexing for optimal search
+- **Support for multiple PDF files** in a single knowledge base
+- **Efficient processing** for large document collections
+
+### Perfect for
+
+- **Technical manuals** and product documentation
+- **Research papers** and academic publications
+- **Legal documents** and contracts
+- **Training materials** and educational content
+
+### Step-by-step creation process
 
 <Steps>
 <Step title="Click PDF Card" icon="file-pdf">
@@ -21,11 +36,14 @@ Create a knowledge base from PDF documents by uploading files and training them 
       alt="Add Knowledge Base modal with PDF configuration"
     />
   </Frame>
-  **Required Information:** - **Name**: Enter a name for your knowledge base
-  (e.g., "pdf knowledge") - **Upload Resources**: Add your PDF files to the
-  knowledge base **File Upload Options:** - Drag and drop PDF files into the
-  upload area - Click "browse files" to select files from your computer -
-  Multiple PDF files can be uploaded simultaneously
+  **Required Information:**
+  - **Name**: Enter a name for your knowledge base (e.g., "pdf knowledge").
+  - **Upload Resources**: Add your PDF files to the knowledge base.
+
+  **File Upload Options:**
+  - Drag and drop PDF files into the upload area.
+  - Click "browse files" to select files from your computer.
+  - Multiple PDF files can be uploaded simultaneously.
   <Info>
     **File Requirements**: Only PDF files are supported. Ensure your PDFs
     contain readable text for optimal processing.
@@ -41,10 +59,11 @@ Create a knowledge base from PDF documents by uploading files and training them 
       alt="Files selected and ready for upload"
     />
   </Frame>
-  **Upload Process:** - Files are uploaded to cloud storage(aws-s3) - Upload
-  progress is shown with percentage and time remaining - Individual files can be
-  paused or cancelled during upload - All files must be uploaded before creating
-  the knowledge base
+  **Upload Process:**
+  - Files are uploaded to cloud storage (AWS S3).
+  - Upload progress is displayed with percentage and time remaining.
+  - Individual files can be paused or canceled during upload.
+  - All files must be uploaded before creating the knowledge base.
   <Check>
     **Upload Status**: Wait for all files to complete uploading before
     proceeding to the next step.
@@ -59,10 +78,11 @@ Create a knowledge base from PDF documents by uploading files and training them 
       alt="Upload progress showing percentage and time remaining"
     />
   </Frame>
-  **Upload Controls:** - **Progress Bar**: Shows overall upload progress -
-  **File Status**: Individual file upload status with pause/cancel options -
-  **Time Remaining**: Estimated time to complete upload - **Cancel Options**:
-  Pause or cancel individual files or entire upload
+  **Upload Controls:**
+  - **Progress Bar**: Displays the overall upload progress.
+  - **File Status**: Shows the status of individual file uploads with options to pause or cancel.
+  - **Time Remaining**: Provides an estimate of the time left to complete the upload.
+  - **Cancel Options**: Allows you to pause or cancel individual files or the entire upload.
   <Warning>
     **Upload Interruption**: Cancelling uploads will require you to restart the
     file upload process.
@@ -78,10 +98,11 @@ Create a knowledge base from PDF documents by uploading files and training them 
       alt="Upload complete with all files ready"
     />
   </Frame>
-  **Upload Confirmation:** - All files show green checkmarks indicating
-  successful upload - "Upload complete" status is displayed - Files can still be
-  removed using the 'X' icon if needed - Click `Add Knowledge Base` to create
-  the knowledge base
+  **Upload Confirmation:**
+  - All files display green checkmarks, indicating successful upload.
+  - "Upload complete" status is shown.
+  - Files can still be removed using the 'X' icon if needed.
+  - Click `Add Knowledge Base` to create the knowledge base.
   <Check>
     **Ready to Create**: All files are now uploaded and ready for knowledge base
     creation.
@@ -97,11 +118,12 @@ Create a knowledge base from PDF documents by uploading files and training them 
       alt="Knowledge base configuration page with training options"
     />
   </Frame>
-  **Configuration Page Features:** - **Data Resources**: Shows your uploaded PDF
-  files - **Training Status**: Displays "Not Trained" status for new files -
-  **Add Resource**: Button to add more PDF files - **Start Training**: Button to
-  begin training the knowledge base - **Delete Option**: Three dots menu to
-  delete individual resources
+  **Configuration Page Features:**
+  - **Data Resources**: Displays your uploaded PDF files.
+  - **Training Status**: Shows "Not Trained" status for new files.
+  - **Add Resource**: Button to add more PDF files.
+  - **Start Training**: Button to initiate training of the knowledge base.
+  - **Delete Option**: Three dots menu to delete individual resources.
   <Info>
     **Training Required**: Your knowledge base must be trained before it can be
     used by AI agents.
@@ -116,10 +138,13 @@ Create a knowledge base from PDF documents by uploading files and training them 
       alt="Training progress with percentage and status"
     />
   </Frame>
-  **Training Process:** - **Progress Bar**: Shows training completion percentage
-  - **Status**: "Training..." with hourglass icon - **Time Estimate**: "This may
-  take a few minutes" - **Resource Processing**: Files are being analyzed and
-  indexed
+ **Training Phase:**
+  - **Initiate Training**: Begin by clicking the `Train` button to start the AI processing.
+  - **Data Reading**: The system reads and imports the stored data resources for processing.
+  - **Text Chunking**: The text is divided into smaller, manageable chunks for efficient processing.
+  - **Embedding Generation**: These text chunks are converted into vector embeddings using AI models.
+  - **Vector Storage**: The generated embeddings are stored in vector databases like Qdrant and Weaviate for efficient retrieval.
+  - **Index Optimization**: The system optimizes the index to enhance search and retrieval performance.
   <Check>
     **Training in Progress**: Wait for training to complete before using the
     knowledge base.
@@ -134,10 +159,12 @@ Create a knowledge base from PDF documents by uploading files and training them 
       alt="Training complete with file details and word counts"
     />
   </Frame>
-  **Training Results:** - **Status**: "Trained" with green indicator - **File
-  Details**: Shows all processed files with URLs - **Word Count**: Displays
-  extracted word count from each file - **Success Message**: "All resources have
-  been successfully trained" - **Progress Bar**: Shows 100% completion
+  **Training Results:**
+  - **Status**: "Trained" with a green indicator
+  - **File Details**: Displays all processed files with their URLs
+  - **Word Count**: Shows the extracted word count from each file
+  - **Success Message**: "All resources have been successfully trained"
+  - **Progress Bar**: Indicates 100% completion
   <Check>
     **Knowledge Base Ready**: Your PDF knowledge base is now trained and ready
     to be used by AI agents.
@@ -152,9 +179,11 @@ Create a knowledge base from PDF documents by uploading files and training them 
       alt="Add more data resources to existing knowledge base"
     />
   </Frame>
-  **Adding Resources:** - Click `+ Add Resource` to add more PDF files - Same
-  upload process as initial file upload - New files will show "Not Trained"
-  status - Multiple resources can be added to the same knowledge base
+  **Adding Resources:**
+  - Click `+ Add Resource` to add more PDF files.
+  - Follow the same upload process as the initial file upload.
+  - New files will display a "Not Trained" status.
+  - You can add multiple resources to the same knowledge base.
   <Info>
     **Resource Management**: Each resource can be managed individually with its
     own training status.
@@ -170,10 +199,11 @@ Create a knowledge base from PDF documents by uploading files and training them 
       alt="Retraining process with new resources"
     />
   </Frame>
-  **Retraining Process:** - **Start Training**: Button appears after adding new
-  resources - **Training Progress**: Shows progress for all resources - **Status
-  Updates**: Individual resource status updates during training -
-  **Completion**: All resources show "Trained" status when complete
+  **Retraining Process:**
+  - **Start Training**: The button appears after adding new resources.
+  - **Training Progress**: Displays progress for all resources.
+  - **Status Updates**: Provides individual resource status updates during training.
+  - **Completion**: All resources display a "Trained" status when complete.
   <Tip>
     **Refresh Page**: If the "Start Training" button doesn't appear, refresh the
     page to see the updated interface.
@@ -188,10 +218,11 @@ Create a knowledge base from PDF documents by uploading files and training them 
       alt="All resources trained successfully"
     />
   </Frame>
-  **Final Status:** - **All Resources Trained**: Green indicators for all files
-  - **Training Complete**: 100% progress bar - **Success Message**: "All
-  resources have been successfully trained" - **Ready for Use**: Knowledge base
-  is fully operational
+  **Final Status:**
+  - **All Resources Trained**: Green indicators for all files
+  - **Training Complete**: 100% progress bar
+  - **Success Message**: "All resources have been successfully trained"
+  - **Ready for Use**: Knowledge base is fully operational
   <Check>
     **Knowledge Base Complete**: Your PDF knowledge base is now fully trained
     and ready for AI agent integration.

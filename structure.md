@@ -82,7 +82,7 @@ _[Foundation Phase - Building Confidence & Understanding]_
 │   └── next-steps-guide              # Logical progression paths
 │
 └── getting-help/                      # Support & community resources
-    ├── quick-faqs                     # Most common questions
+    ├── account-setup                  # Account setup guide
     ├── video-tutorials               # Essential video content
     └── community-forum              # Link to community resources
 ```

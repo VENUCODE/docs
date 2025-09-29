@@ -37,21 +37,20 @@
             ]
           },
           {
-            "group": "Understanding Tars",
+            "group": "Platform Fundamentals",
             "description": "Learn how Tars works and key concepts",
             "pages": [
               "platform-fundamentals/how-tars-works",
               "platform-fundamentals/key-concepts",
+              "platform-fundamentals/choosing-your-path",
               "platform-fundamentals/platform-tour"
             ]
           },
           {
-            "group": "Your First Agent",
-            "description": "Create and configure your first AI agent",
+            "group": "Quick guide",
+            "description": "Explain about different components like AI agents, knowledge bases, tools integration, live chat handoff, whatsapp platform, etc.",
             "pages": [
-              "platform-fundamentals/choosing-your-path",
-              "quickstart/understanding-your-agent",
-              "quickstart/next-steps-guide"
+              "quickstart/your-first-agent"
             ]
           },
           {
@@ -59,7 +58,6 @@
             "description": "Support resources and community",
             "pages": [
               "getting-help/account-setup",
-              "getting-help/quick-faqs",
               "getting-help/video-tutorials",
               "getting-help/community-forum"
             ]
@@ -802,8 +800,9 @@
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/hellotars",
-      "linkedin": "https://linkedin.com/company/hellotars",
+      "x": "https://x.com/hellotars_ai",
+      "linkedin": "https://www.linkedin.com/company/tars",
+      "instagram": "https://www.instagram.com/hellotars/",
       "youtube": "https://youtube.com/@hellotars"
     }
   }

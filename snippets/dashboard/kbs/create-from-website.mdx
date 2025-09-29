@@ -1,4 +1,4 @@
-**Automatically scrape and process content from websites**
+## Website data source
 
 Transform your website content into intelligent knowledge bases that power your AI agents. This method automatically discovers, scrapes, and processes web pages to create comprehensive knowledge repositories.
 
@@ -18,7 +18,7 @@ Transform your website content into intelligent knowledge bases that power your 
 - **Documentation sites** and wikis
 - **E-commerce sites** with product catalogs
 
-## Step-by-step creation process
+### Step-by-step creation process
 
 <Steps>
 
@@ -43,9 +43,9 @@ Transform your website content into intelligent knowledge bases that power your 
       alt="Basic configuration showing knowledge base name and URL fields"
     />
   </Frame>
-  **Required fields:** - **Knowledge Base Name**: Enter a descriptive name for
-  your knowledge base - **Website Base URL**: Provide the base URL of the
-  website you want to scrape
+  **Required fields:** 
+  - **Knowledge Base Name**: Enter a descriptive name for your knowledge base 
+  - **Website Base URL**: Provide the base URL of the website you want to scrape
   <Info>
     The system will use this URL as the starting point for content discovery and
     crawling.
@@ -60,14 +60,14 @@ Transform your website content into intelligent knowledge bases that power your 
       alt="Advanced settings showing scraping configuration options"
     />
   </Frame>
-  **Advanced configuration options:** - **Number of URLs to scrape**: Set
-  maximum pages to crawl (default: 200, maximum: 10,000) - **Number of levels
-  deep**: Define crawl depth in website hierarchy (default: 20, maximum: 100) -
-  **Custom user agent**: Optional custom identification string for web requests
-  - **Crawl using only base URLs**: Restrict crawling to single level, ignoring
-  depth setting - **Use browser**: Enable browser-rendered content for dynamic
-  JavaScript sites - **Use legacy scraper**: Choose between Scrapy (legacy) and
-  Crawl4AI (modern) engines
+**Advanced Configuration Options:**
+
+- **Number of URLs to Scrape**: Specify the maximum number of pages to crawl. The default is 200, with a maximum limit of 10,000.
+- **Crawl Depth**: Set the number of levels deep to crawl within the website hierarchy. The default is 20, with a maximum of 100.
+- **Custom User Agent**: Provide an optional custom identification string for web requests.
+- **Base URL Crawling**: Limit crawling to a single level by using only base URLs, ignoring the depth setting.
+- **Browser Rendering**: Enable this option to render content using a browser for sites with dynamic JavaScript.
+- **Scraper Engine**: Choose between the legacy Scrapy engine and the modern Crawl4AI engine.
   <Tip>
     **Optimal Settings**: For most websites, default settings work well. Use
     browser rendering for JavaScript-heavy sites and adjust depth based on your
@@ -99,13 +99,13 @@ Transform your website content into intelligent knowledge bases that power your 
       alt="Knowledge base configuration page showing added data source"
     />
   </Frame>
-  **Configuration overview:** - **Data resources**: View the website base URL
-  you've added - **Fetch Links**: Button to begin the scraping process -
-  **Indexing Type**: Sentence-based or Page-based indexing (default:
-  Sentence-based) - **Training status**: Current processing state of your
-  knowledge base - **Load method**: Direct request or Browser environment
-  (default: Direct request if `Use browser` is disabled) - **Menu Actions**:
-  Access to Delete the added data resource
+  **Configuration Overview:**
+  - **Data Resources**: Displays the base URL of the website you have added.
+  - **Fetch Links**: Initiates the scraping process.
+  - **Indexing Type**: Choose from Sentence level Indexing or Section level Indexing. The default is Sentence level Indexing.
+  - **Training Status**: Shows the current processing state of your knowledge base.
+  - **Load Method**: Choose how the system retrieves web content. Select between Direct request, which fetches data directly from the server, or Browser environment, which simulates a browser to render and extract content. The default is Direct request if `Use browser` is disabled.
+  - **Menu Actions**: Provides options to delete the added data resource.
   <Info>
     This page serves as your central hub for managing all aspects of your
     knowledge base.
@@ -120,10 +120,11 @@ Transform your website content into intelligent knowledge bases that power your 
       alt="Active fetching process showing real-time scraping progress and logs"
     />
   </Frame>
-  **Fetching process:** - **Content discovery**: System discovers and crawls web
-  pages - **Text extraction**: Extracts content from each discovered page -
-  **Data processing**: Cleans and organizes extracted content - **Progress
-  monitoring**: Real-time logs show scraping activity and status
+  **Fetching Process:**
+  - **Content Discovery**: The system identifies and navigates through web pages.
+  - **Text Extraction**: Content is extracted from each identified page.
+  - **Data Processing**: Extracted content is cleaned and organized.
+  - **Progress Monitoring**: Real-time logs display scraping activity and status updates.
   <Warning>
     **Scraping Time**: The fetching process may take several minutes depending
     on website size and complexity. Monitor the progress logs for detailed
@@ -140,12 +141,11 @@ Transform your website content into intelligent knowledge bases that power your 
       alt="Post-fetch state showing completed scraping with content ready for training"
     />
   </Frame>
-  **Review and Selection:** - **Extracted pages**: View a list of all discovered
-  and scraped web pages with clickable links to each page - **Word count**: See
-  the number of words extracted from each page - **Page selection**: Choose
-  specific pages to include in the training process - **Pre-filtering**: Filter
-  pages based on content relevance and word count for optimal training
-  preparation
+  **Review and Selection:**
+  - **Extracted Pages**: Access a list of all discovered and scraped web pages, each with clickable links.
+  - **Word Count**: Review the number of words extracted from each page.
+  - **Page Selection**: Select specific pages to include in the training process.
+  - **Pre-filtering**: Filter pages based on content relevance and word count to optimize training preparation.
   <Check>
     All content has been successfully extracted, and you can now select the
     desired pages for the training phase.
@@ -161,16 +161,16 @@ Transform your website content into intelligent knowledge bases that power your 
       alt="Pre-training state showing content ready for knowledge base training"
     />
   </Frame>
-  **Training Phase:** - **Content validation**: Verify all extracted content is
-  accurate and complete - **Training parameters**: Review settings for optimal
-  knowledge base creation - **Ready to train**: Click the `Train` button to
-  begin AI processing - **Content processing**: AI analyzes and structures your
-  content - **Embedding creation**: Generates searchable knowledge vectors -
-  **Index optimization**: Creates efficient search and retrieval system -
-  **Quality validation**: Ensures knowledge base accuracy and completeness
+  **Training Phase:**
+  - **Initiate Training**: Begin by clicking the `Train` button to start the AI processing.
+  - **Data Reading**: The system reads and imports the stored data resources for processing.
+  - **URL Filtering**: Unnecessary URLs are filtered out to ensure only relevant data is processed.
+  - **Text Chunking**: The text is divided into smaller, manageable chunks for efficient processing.
+  - **Embedding Generation**: These text chunks are converted into vector embeddings using AI models.
+  - **Vector Storage**: The generated embeddings are stored in vector databases like Qdrant and Weaviate for efficient retrieval.
+  - **Index Optimization**: The system optimizes the index to enhance search and retrieval performance.
   <Check>
-    Training completion creates a fully functional knowledge base ready for AI
-    agent integration.
+    Once the training is complete, your knowledge base will be fully functional and ready for integration with AI agents.
   </Check>
 </Step>
 
@@ -189,9 +189,9 @@ Transform your website content into intelligent knowledge bases that power your 
       alt="Detailed view of extracted content"
     />
   </Frame>
-  **Content Viewing:** - **Preview content**: Click links to view detailed content
-  extracted from each page - **Content analysis**: Assess the quality and relevance
-  of the extracted data for further refinement
+  **Content Viewing:**
+  - **Preview Content**: Click on the links to view detailed content extracted from each page.
+  - **Content Analysis**: Evaluate the quality and relevance of the extracted data for further refinement.
 </Step>
 
 <Step title="Add additional data sources (optional)">
@@ -202,11 +202,11 @@ Transform your website content into intelligent knowledge bases that power your 
       alt="Add new data source option for expanding knowledge base"
     />
   </Frame>
-  **Additional data sources:** - **Add data resource**: Click to add more
-  websites or content sources - **Same configuration**: Use the same modal
-  interface for additional sources - **Multiple sources**: Combine content from
-  multiple websites or URLs - **Unified knowledge**: All sources contribute to a
-  single comprehensive knowledge base
+    **Additional Data Sources:**
+    - **Add Data Resource**: Click to add more websites or content sources.
+    - **Same Configuration**: Use the same modal interface for additional sources.
+    - **Multiple Sources**: Combine content from multiple websites or URLs.
+    - **Unified Knowledge**: All sources contribute to a single comprehensive knowledge base.
   <Tip>
     **Expanding Content**: Adding multiple data sources creates more
     comprehensive knowledge bases with broader coverage of your domain.
@@ -222,10 +222,11 @@ Transform your website content into intelligent knowledge bases that power your 
       alt="Training process for newly added data sources"
     />
   </Frame>
-  **Multi-source training:** - **Fetch new content**: Scrape additional data
-  sources - **Integrate content**: Combine with existing knowledge base -
-  **Retrain system**: Update embeddings with new content - **Unified
-  knowledge**: All sources work together seamlessly
+  **Multi-source training:**
+  - **Fetch new content**: Scrape additional data sources.
+  - **Integrate content**: Combine with the existing knowledge base.
+  - **Retrain system**: Update embeddings with new content.
+  - **Unified knowledge**: All sources work together seamlessly.
   <Frame>
     <img
       src="/images/dashboard/agent/knowledge/website/step-9-trained-new.png"

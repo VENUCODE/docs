@@ -1,3 +1,4 @@
+## CSV data source
 Create a knowledge base from CSV files by uploading structured data and training it for AI agent use.
 
 <Info>
@@ -8,7 +9,7 @@ Create a knowledge base from CSV files by uploading structured data and training
 Both follow the same training process and workflow described below.
 </Info>
 
-## Creating CSV Knowledge Base
+### Creating CSV Knowledge Base
 
 <Steps>
 <Step title="Click Table CSV Card" icon="table">
@@ -70,11 +71,17 @@ Both follow the same training process and workflow described below.
   <img src="/images/dashboard/knowledge/csv/step-3-while-training.png" alt="Training progress with percentage and status" />
   </Frame>
   
-  **Training Process:**
-  - **Progress Bar**: Shows training completion percentage
-  - **Status**: "Training..." with hourglass icon
-  - **Time Estimate**: "This may take a few minutes"
-  - **Resource Processing**: CSV file is being analyzed and indexed
+  **Training Phase:**
+  - **Initiate Training**: Click the `Start Training` button to begin AI processing.
+  - **Data Reading**: The system reads and imports the CSV file for processing.
+  - **Resource Processing**: The CSV file is being analyzed and indexed.
+  - **Text Chunking**: The data is divided into smaller, manageable chunks for efficient processing.
+  - **Embedding Generation**: These chunks are converted into vector embeddings using AI models.
+  - **Vector Storage**: The generated embeddings are stored in vector databases like Qdrant and Weaviate for efficient retrieval.
+  - **Index Optimization**: The system optimizes the index to enhance search and retrieval performance.
+  - **Progress Bar**: Displays the percentage of training completion.
+  - **Status**: Indicates "Training..." with an hourglass icon.
+  - **Time Estimate**: "This process may take a few minutes."
   
   <Check>
   **Training in Progress**: Wait for training to complete before using the knowledge base.

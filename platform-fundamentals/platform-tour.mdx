@@ -9,9 +9,7 @@ import AgentsSection from "/snippets/dashboard/agents/agents.mdx";
 import Navigation from "/snippets/dashboard/navigation.mdx";
 import ToolsOverview from "/snippets/dashboard/tools/tools-overview-simple.mdx";
 import FeaturedTools from "/snippets/dashboard/tools/featured-tools.mdx";
-import KBOverview from "/snippets/dashboard/kbs/kb-overview.mdx";
-import MyKnowledge from "/snippets/dashboard/kbs/my-knowledge.mdx";
-import AddKnowledge from "/snippets/dashboard/kbs/add-knowledge.mdx";
+import KBOverview from "/snippets/dashboard/kbs/overview.mdx";
 import ProfileSetting from "/snippets/dashboard/settings/index.mdx";
 import Support from "/snippets/dashboard/support/index.mdx";
 
@@ -43,24 +41,24 @@ You're about to discover a powerful platform where you can create intelligent AI
   You'll see a simple form where you can enter your information to create your account.
   
   <Tabs>
-  <Tab title="I'm completely new">
-  <Frame>
-  <img src="/images/signup.png" alt="Tars account creation page showing the signup form" />
-  </Frame>
-  **Creating Your First Account**
-  - Choose your preferred signup method: Gmail, Outlook, LinkedIn, SSO, or name-email-phone
-  - Follow the prompts to complete the signup process
-  </Tab>
-  
-  <Tab title="I've been here before">
-  <Frame>
-  <img src="/images/login.png" alt="Tars account creation page showing the login form" />
-  </Frame>
-  **Welcome Back!**
-  - Choose your login method: Gmail, Outlook, LinkedIn, SSO, or name-email-phone
-  - Enter your credentials
-  - Reset your password if you've forgotten it
-  </Tab>
+    <Tab title="I'm completely new">
+      <Frame>
+        <img src="/images/signup.png" alt="Tars account creation page showing the signup form" />
+      </Frame>
+      **Creating Your First Account**
+      - Choose your preferred signup method: Gmail, Outlook, LinkedIn, SSO, or name-email-phone
+      - Follow the prompts to complete the signup process
+    </Tab>
+    
+    <Tab title="I've been here before">
+      <Frame>
+        <img src="/images/login.png" alt="Tars account creation page showing the login form" />
+      </Frame>
+      **Welcome Back!**
+      - Choose your login method: Gmail, Outlook, LinkedIn, SSO, or name-email-phone
+      - Enter your credentials
+      - Reset your password if you've forgotten it
+    </Tab>
   </Tabs>
 
   <Card title="Need help with account setup?" icon="user-plus" href="/getting-help/account-setup">
@@ -82,51 +80,40 @@ You're about to discover a powerful platform where you can create intelligent AI
 
 Next, you'll see your main dashboard. This is your central hub where you can manage AI agents, knowledge bases, and tool integrations.
 
-### <Icon icon="grid-2-plus" size="30"/> Dashboard sections
+## <Icon icon="grid-2-plus" size="30"/> Dashboard sections
 
 Your dashboard is divided into distinct sections, each designed for a specific function. Let's delve into each section to understand its role:
 Here, you'll have the opportunity to create AI agents, manage your knowledge base, and integrate various tools. We'll go through each component together to ensure you grasp how everything operates.
 
 <Tabs>
+  <Tab title="Agents" icon="user-robot">
+    <AgentsSection />
+  </Tab>
 
-<Tab title="Agents" icon="user-robot">
-  <AgentsSection />
-</Tab>
+  <Tab title="Tools" icon="wrench">
+    <Frame>
+      <img
+        src="/images/dashboard/tools/tools-overview.png"
+        alt="Tools overview dashboard showing all available tools"
+      />
+    </Frame>
+    <ToolsOverview />
+  </Tab>
 
-<Tab title="Tools" icon="wrench">
-  <Frame>
-    <img
-      src="/images/dashboard/tools/tools-overview.png"
-      alt="Tools overview dashboard showing all available tools"
-    />
-  </Frame>
-  <ToolsOverview />
-</Tab>
+  <Tab title="Knowledge" icon="book">
+    <KBOverview />
+  </Tab>
 
-<Tab title="Knowledge" icon="book">
-<KBOverview />
+  <Tab title="Settings" icon="user-gear">
+    <ProfileSetting />
+  </Tab>
 
-<Tabs>
-<Tab title="My Knowledge">
-  <MyKnowledge />
-</Tab>
-
-<Tab title="Add Knowledge">
-  <AddKnowledge />
-</Tab>
-</Tabs>
-</Tab>
-
-<Tab title="Settings" icon="user-gear">
-  <ProfileSetting />
-</Tab>
-
-<Tab title="Support" icon="circle-question">
-<Support/>
-</Tab>
+  <Tab title="Support" icon="circle-question">
+    <Support/>
+  </Tab>
 </Tabs>
 
-### Ready to build?
+## Ready to build?
 
 <Card
   title="Start creating your agent"
