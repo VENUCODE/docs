@@ -1,0 +1,350 @@
+## Create Your Agent
+
+Now let's build your AI agent from scratch and configure it step by step.
+
+### <Icon icon="plus" size="30" /> Create Agent from Scratch
+
+1. Navigate to the **Create Agents** page in your Tars dashboard: [https://app.hellotars.com/agents?tab=create-agent](https://app.hellotars.com/agents?tab=create-agent)
+2. Click the **Create from Scratch** card
+3. Enter **agent details**:
+   - **Name:** CloudFlow Support Agent
+   - **Description:** AI-powered customer support assistant
+   - **Icon:** Choose or shuffle for a custom icon
+4. Click **Create Agent**
+  
+<Tip>
+Not sure? Revisit [Platform Tour](/platform-fundamentals/platform-tour#create-agent)
+</Tip>
+
+<Frame>
+    <img src="/images/quickstart/create-agent-modal.png" alt="Create agent modal with name and description fields" />
+</Frame>
+
+### <Icon icon="paintbrush" size="30" /> Enter Builder Canvas
+
+You'll be redirected to the Builder Canvas. This is where all the workflow of your agent is built.To get started, add the Agent Gambit from the gambits panel.
+
+<Frame>
+  <img src="/images/quickstart/gifs/add-agent-to-canvas.gif" alt="Adding agent gambit to builder canvas" />
+</Frame>
+
+### <Icon icon="play" size="30" /> Basic Agent Publish and Preview
+
+Click `Publish` and then `Preview` to test your basic agent setup.
+
+<Frame>
+  <img src="/images/quickstart/gifs/basic-agent-preview.gif" alt="Publishing agent and opening preview window" />
+</Frame>
+You will notice that the conversation has ended after single message, this is because the flow has come out of the agent gambit. To keep the conversation going, you need to self-loop the agent gambit.
+### <Icon icon="arrows-rotate" size="30" /> Self-Loop the Agent
+
+Connect the agent output back to itself to allow multiple questions in one session.
+
+<Frame>
+  <img src="/images/quickstart/gifs/self-loop.gif" alt="Creating self-loop for continuous conversation" />
+</Frame>
+
+### <Icon icon="play" size="30" /> Publish and Preview
+
+Click `Publish` and then `Preview` to test your agent setup.Now you can see that the conversation is continuing and you can ask as many questions as you want.
+
+<Frame>
+  <img src="/images/quickstart/gifs/test-basic-agent-publish-preview.gif" alt="Publishing agent and opening preview window" />
+</Frame>
+  
+### <Icon icon="database" size="30" /> Add Knowledge Base
+
+Now that our agent is is ready to answer, we should give the agent some knowledge to answer from. For this, we will add the `Knowledge` gambit to the canvas.
+Drag the `Knowledge` gambit onto the canvas and select "Tars Docs" from the dropdown.
+
+<Frame>
+  <img src="/images/quickstart/gifs/add-kb-to-canvas.gif" alt="Adding knowledge base to canvas" />
+</Frame>
+The `Knowledge` gambit will now be added and you could see a pulsating indicator on the gambit.This shows that the Knowledge gambit
+
+### <Icon icon="check" size="30" /> Select Knowledge Base
+
+Now, we have to select the knowledge source in the knowledge base gambit modal. This will set the configuration for this Knowledge Base gambit with the selected, trained Knowledge Base.
+
+<Frame>
+  <img src="/images/quickstart/gifs/select-knowledgebase.gif" alt="Selecting knowledge base from dropdown" />
+</Frame>
+
+### <Icon icon="link" size="30" /> Connect Knowledge Base
+
+Connect the Knowledge Base output to the Agent Gambit to enable access.
+
+<Frame>
+  <img src="/images/quickstart/gifs/connect-kb-to-agent.gif" alt="Connecting knowledge base to agent gambit" />
+</Frame>
+
+### <Icon icon="flask" size="30" /> Test with Knowledge
+
+Publish and test by asking questions from your knowledge base.
+
+<Frame>
+  <img src="/images/quickstart/gifs/interact-with-agent-with-kb.gif" alt="Testing agent with knowledge base questions" />
+</Frame>
+  
+### <Icon icon="envelope" size="30" /> Add Gmail Tool
+
+Drag the Tool gambit onto the canvas and select your configured Gmail tool.
+
+<Frame>
+  <img src="/images/quickstart/gifs/add-gmail-to-canvas.gif" alt="Adding Gmail tool to canvas" />
+</Frame>
+
+### <Icon icon="check" size="30" /> Select Gmail Tool
+
+Choose your connected Gmail tool from the dropdown and configure email settings.
+
+<Frame>
+  <img src="/images/quickstart/gifs/select-desired-gmail-tool.gif" alt="Selecting Gmail tool from dropdown" />
+</Frame>
+
+### <Icon icon="link" size="30" /> Connect Gmail Tool
+
+Connect the Tool output to the Agent Gambit to enable email functionality.
+
+<Frame>
+  <img src="/images/quickstart/gifs/connect-gmail-to-agent.gif" alt="Connecting Gmail tool to agent gambit" />
+</Frame>
+### <Icon icon="gear" size="30" /> Configure Agent Settings
+
+Click on the Agent Gambit to open configuration panel and customize your agent's behavior.
+
+<Tabs>
+      <Tab title="Welcome Message">
+        **Welcome Message** is displayed when users first engage with the agent or transition from another gambit.
+        
+        - Initiates the conversation
+        - Not repeated in continuous interactions
+        - Provides a friendly greeting and sets the context
+        
+        **Example:**
+        ```
+        Welcome to **Tars Guide AI!👋** I'm here to help you with any questions related to Tars and provide guidance. How can I assist you today?
+        ```
+  </Tab>
+  
+      <Tab title="Basic Settings">
+        Configure the core agent behavior and AI model settings.
+        
+        **LLM Model Selection:**
+        Choose from over 60 models available through subscription, each offering unique capabilities to suit your needs.
+        - **GPT-4o-Mini**: Choosing the default model for this tutorial
+        
+        **Temperature:**
+        - Range: 0.0 to 1.0
+        - **0.7**: Balanced creativity and consistency (recommended)
+        - Lower values = More focused and deterministic
+        - Higher values = More creative and varied
+  </Tab>
+  
+      <Tab title="Advanced Settings">
+        Fine-tune agent behavior with advanced configurations.
+        <Frame>
+          <img src="/images/quickstart/make/agent-advanced-settings.png" alt="Advanced settings for agent" className="h-[300px]" />
+        </Frame>
+        **Available Options:**
+        - **Chat History**: Enable to maintain conversation context
+        - **Support Markdown**: Allow formatted responses with bold, lists, etc.
+        - **Show Tool Call Events**: Display when agent uses tools
+        - **View Sources**: Show knowledge base citations
+        - **Get User Feedback**: Enable satisfaction tracking
+        
+        <Tip>
+          Enable all options for the best user experience and transparency.
+        </Tip>
+  </Tab>
+  
+      <Tab title="Jump Logic">
+        Define success criteria for agent responses.
+        
+        **Success Prompt:**
+        - Define what constitutes a successful answer
+        - Agent marks conversation as resolved when criteria is met
+        - Anything outside success criteria is considered unanswered
+        
+        **Configuration:**
+        - Set success conditions based on your use case
+        - Helps track agent performance and resolution rates
+        
+        <Info>
+          For this tutorial, we'll configure success as providing relevant information from the knowledge base.
+        </Info>
+  </Tab>
+</Tabs>
+
+### <Icon icon="wand-magic-sparkles" size="30" /> Customize Agent Prompt
+
+Configure the agent's system prompt to define personality, answer criteria, and behavior guidelines.
+    
+    <Tabs>
+      <Tab title="Complete Prompt">
+        Copy and paste these prompt sections into your agent's system prompt field:
+        
+        **1. Introduction & Role Definition:**
+        ```text
+        You are **Tars Guide AI**, the official representative of Tars. Your role is to provide accurate, concise, and well-structured guidance based on the official Tars helpdocs. Always maintain a professional yet friendly tone, and use **Markdown formatting** to make responses visually clear and easy to follow.
+        ```
+        
+        **2. Personality & Tone:**
+        ```text
+        ### **1. Personality & Tone**
+
+        As Tars Guide AI, you represent the company with professionalism and clarity.  
+        - Keep answers short, precise, and easy to read.  
+        - Maintain a friendly, approachable voice while staying authoritative.  
+        - Use **bold text**, *italics*, bullet points, and headers for clarity.  
+        - Avoid unnecessary length or off-topic replies.  
+        ```
+        
+        **3. Knowledge Retrieval & Response Rules:**
+        ```text
+        ### **2. Knowledge Retrieval & Response Rules**
+
+        - For answering questions related to Tars and its product, always use the **knowledge_retrieve** tool.  
+        - Provide responses only from the retrieved knowledge base.  
+        - If no relevant answer is found, politely inform the user that the information is not available in the helpdocs.  
+        - Responses should be concise, structured, and easy to follow.  
+        - Use **step-by-step formatting** only if necessary or requested.  
+        - Always speak as **we** (Tars company representative).  
+        ```
+        
+        **4. Escalation Conditions:**
+        ```text
+        ### **3. Escalation & Support Process**
+
+        At the end of **every response**, politely suggest:  
+        *"If you'd like, I can also connect you with our support team for further assistance."*  
+
+        If the user requests support:  
+
+        #### **Switch to Support Mode**  
+        - From this point, do **not** attempt to answer their queries.  
+        - Treat user inputs only as **support information to collect**.  
+
+        #### **Step-by-Step Collection**  
+        1. Ask for **Full Name**  
+        2. Then ask for **Email ID**  
+        3. Finally, ask for **One key question or issue**  
+           - Do **not** answer this question.  
+
+        #### **Email Escalation**  
+        Once all details are collected, prepare and send an email using the Gmail tool with this format , don't show the user input and the processing step to the user: 
+        ```
+        
+        **5. Support Email Template:**
+        ```json
+        {
+          "recipient_email": "{{user_email}}",
+          "subject": "We've received your support request – Tars Platform",
+          "body": "<!DOCTYPE html>
+        <html>
+          <body style='font-family: Arial, sans-serif; color: #333; line-height: 1.6;'>
+            <div style='max-width: 600px; margin: auto; padding: 20px; border: 1px solid #eee; border-radius: 10px;'>
+              <h2 style='color: #4A90E2;'>Hi {{username}},</h2>
+              <p>Thank you for reaching out to the <strong>Tars Support Team</strong>. We've received your request and our team will get back to you shortly.</p>
+              
+              <h3 style='color: #4A90E2;'>Your Request Details:</h3>
+              <ul>
+                <li><strong>Name:</strong> {{username}}</li>
+                <li><strong>Email:</strong> {{user_email}}</li>
+                <li><strong>Issue/Question:</strong> {{user_question}}</li>
+              </ul>
+              
+              <p>Our support specialists will review your request and respond within the next 24–48 hours.</p>
+              
+              <p>If you need to add more details, feel free to reply directly to this email.</p>
+              
+              <br/>
+              <p style='color: #555;'>Best Regards,<br/>Tars Support Team</p>
+            </div>
+          </body>
+        </html>",
+          "is_html": true
+        }
+        ```
+        
+        **6. User Confirmation Message:**
+        ```text
+        After sending the email, politely confirm to the user:
+
+        > *"Your request has been forwarded to our support team. They will get in touch with you shortly via email."*
+        ```
+        
+        **7. Key Guidelines:**
+        ```text
+        ### **4. Key Guidelines**
+
+        * **Tone:** Friendly, professional, and concise.
+        * **Format:** Always use Markdown for readability.
+        * **Scope:** Answer only from Tars helpdocs and platform documentation.
+        * **Escalation:** End every response by asking if the user would like team support. If yes, follow the support process above.
+        ```
+        
+        <Tip>
+          Copy each section in order and paste them all together into your agent's system prompt field for the complete prompt.
+        </Tip>
+      </Tab>
+  
+      <Tab title="Prompt Breakdown">
+        Understanding why each section matters for your agent's success:
+        
+        <Steps>
+          <Step title="Personality & Tone" icon="user-tie">
+            **What it does:** Defines your agent's character and communication style.
+            
+            **Why it matters:** This section establishes how users perceive your brand and company. By setting clear guidelines for being professional yet friendly, using Markdown formatting, and keeping responses concise, you ensure every interaction reflects your company's values. This consistency builds trust and makes users feel they're talking to a knowledgeable, helpful representative rather than a robotic chatbot.
+          </Step>
+          
+          <Step title="Knowledge Retrieval & Response Rules" icon="brain">
+            **What it does:** Controls how your agent finds and delivers information.
+            
+            **Why it matters:** This is the brain of your agent - it determines accuracy and reliability. The rule to always use the `knowledge_retrieve` tool ensures your agent only provides accurate, up-to-date information from your official documentation. This prevents hallucinations and keeps responses grounded in facts. The fallback mechanism (politely acknowledging when no answer is found) maintains user trust by being honest about limitations rather than making up answers.
+          </Step>
+          
+          <Step title="Enhanced Support Flow" icon="life-ring">
+            **What it does:** Handles situations when your agent can't provide an answer with a clear "Support Mode".
+            
+            **Why it matters:** This section is your safety net for customer satisfaction. The new "Support Mode" prevents the agent from trying to answer questions once support is requested, ensuring a clean handoff to human support. The structured data collection (name, email, question) and professional HTML email system means your human support team gets all the context they need to provide personalized help quickly. This seamless handoff prevents frustrated users and maintains service quality.
+          </Step>
+          
+          <Step title="Professional Email Template" icon="envelope">
+            **What it does:** Provides a beautifully formatted HTML email template for support escalations.
+            
+            **Why it matters:** Customers receive professional, branded emails that reflect well on your company. The template includes proper styling, all necessary information, and sets clear expectations for response time (24-48 hours). This professional presentation enhances your brand image and improves customer satisfaction.
+          </Step>
+          
+          <Step title="Key Guidelines" icon="shield-check">
+            **What it does:** Sets the guardrails that keep your agent focused and effective.
+            
+            **Why it matters:** These guidelines ensure consistent behavior across all interactions, maintain your brand voice, and keep the agent from going off-topic. The emphasis on Markdown formatting makes responses more readable and professional, while the scope limitation to Tars helpdocs prevents the agent from discussing unrelated topics that could confuse users or damage your brand reputation.
+          </Step>
+        </Steps>
+        </Tab>
+      
+
+    </Tabs>
+    
+    <Tip>
+      This prompt ensures your agent maintains consistent brand voice, provides accurate information, and handles escalations professionally.
+    </Tip>
+
+### <Icon icon="flask" size="30" /> Final Testing
+
+Publish and test the complete workflow with all configurations.
+- First ask any question related to knowledge source you have added.
+- Then ask for any help or support.
+- The agent would ask your details and send you an email with the details.
+<Frame>
+  <img src="/images/quickstart/gifs/test-complete-workflow.gif" alt="Final testing in preview window" />
+</Frame>
+<Frame>
+  <img src="/images/quickstart/gifs/test-complete-workflow-2.gif" alt="Final testing in preview window" />
+</Frame>
+
+<Check>
+  **Agent Complete!** Your agent now has knowledge base integration and tool functionality.
+</Check>

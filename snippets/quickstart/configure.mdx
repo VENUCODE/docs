@@ -1,0 +1,141 @@
+## Configure Your Agent
+
+Now that your agent is created, let's configure its metadata and advanced settings to customize its behavior, appearance, and integrations.
+
+### <Icon icon="gear" size="30" /> Navigate to Configuration
+
+Access the agent's configuration settings using the side panel from the builder canvas.
+
+1. Open your **agent** in the builder (you'll see the canvas with your agent workflow)
+2. Look for the **double arrow icon** (`>>`) on the left side of the canvas
+3. Click the **double arrow** (`>>`) to open the side panel
+4. View the **"Build Agent" section** with options: Make, Configure, Design, Distribute/Share
+5. Click **"Configure"** to expand the configuration options
+6. Select from the **configuration tabs**:
+   - **General** - Basic agent information and settings
+   - **SEO Settings** - Meta information and search optimization
+   - **Email Notifications** - Notification preferences
+   - **Goal Settings** - Success metrics and analytics
+   - **Voice & Audio** - Speech and audio configurations
+
+<Frame>
+  <img src="/images/quickstart/configure/configuration-navigation.gif" alt="Opening configuration side panel and accessing settings" />
+</Frame>
+  
+### <Icon icon="user" size="30" /> General Settings
+
+Configure the basic information and identity of your agent.
+
+#### Agent Configuration
+- **Robot Avatar:** Upload or select a custom avatar for your agent (shows a robot character)
+- **Title:** Set the agent's display name (e.g., "Tars Guide AI")
+- **Description:** Write a detailed description of what the agent does
+- **Subdomain:** Configure a custom URL slug (default format: `<slug>.hellotars.com/conv/xxxxxx` the default value of slug is `agent` if not configured)
+- **Language:** Select the primary language for the agent (dropdown with English options)
+
+<Tip>
+  The subdomain allows you to create a memorable URL for your agent. Choose something that reflects your agent's purpose.
+</Tip>
+
+<Frame>
+  <img src="/images/quickstart/configure/general-settings.png" alt="General settings configuration interface" />
+</Frame>
+  
+### <Icon icon="magnifying-glass" size="30" /> SEO Settings
+
+Optimize your agent's discoverability and social media sharing.
+
+#### Meta Information
+- **Meta Image:** Upload an image for social media previews and thumbnails
+- **Meta Title:** Set the page title that appears in search results (e.g., "Tars Guide AI | TARS")
+
+#### Favicon Configuration
+- **Favicon:** Upload a custom favicon that appears in browser tabs
+  - Shows preview of how it will appear in the browser
+  - Toggle to use Meta Image as favicon
+
+#### Agent Description
+- **Industry:** Select from dropdown (e.g., "AI Agents")
+- **Use Case:** Define the specific use case for your agent
+- **Description:** Write a detailed description of what the agent does
+
+<Frame>
+  <img src="/images/quickstart/configure/seo-settings.png" alt="SEO settings configuration" />
+</Frame>
+  
+### <Icon icon="envelope" size="30" /> Email Notification Settings
+
+Configure email triggers, update the email subject and add recipients.
+
+#### Email Notification Configuration
+- **Email Subject:** Customize the subject line for notification emails (e.g., "Someone Filled: Tars Guide AI")
+- **Email ID:** Set the recipient email address for notifications (supports multiple addresses separated by comma or space)
+
+<Info>
+  You can add multiple email addresses to receive notifications about agent interactions.
+</Info>
+
+<Frame>
+  <img src="/images/quickstart/configure/email-notification.png" alt="Email notification settings" />
+</Frame>
+  
+### <Icon icon="bullseye-arrow" size="30" /> Goal Settings
+
+Define success metrics and integrate analytics for your agent.
+
+#### Goal Gambit Configuration
+- **Goal Gambits:** Search and select gambits that represent successful conversation outcomes
+- Used to calculate Agent Goal Completions and Agent Conversion Rate in Data Analysis
+- Multiple gambits can be selected from the dropdown
+
+#### Third Party Analytics
+Analyze user behaviour and conversions with third party tools like Google Analytics, Google Ads & Facebook Pixel.
+
+##### Google Analytics Configuration
+- **GA4 Code:** Enter your Google Analytics 4 measurement ID (format: G-XXXXXXXXX)
+- **Event Tracking:** Choose from dropdown options:
+  - Send no events to GA
+  - Send all user responses as events to GA
+  - Send only Goal Gambit user responses as events to GA
+
+##### Google Ads Configuration
+- **Remarketing/Conversion ID:** Enter your Google Ads conversion ID (format: AW-XXXXXXXXX)
+- **Conversion Label:** Set the conversion label for tracking
+- **Google Tag Manager Code:** Enter your GTM container ID (format: GTM-XXXXXXX)
+
+##### Facebook Configuration
+- **Facebook Pixel ID:** Enter your Facebook Pixel ID for tracking conversions and user behavior
+
+<Info>
+  Each analytics platform requires specific configuration IDs and tracking codes for proper integration.
+</Info>
+
+<Frame>
+  <img src="/images/quickstart/configure/goal-settings.png" alt="Goal settings and analytics configuration" />
+</Frame>
+  
+### <Icon icon="microphone" size="30" /> Voice & Audio Settings
+
+Enable and configure speech-to-text and text-to-speech features for voice interactions.
+
+#### Text-to-Speech (TTS) Configuration:
+- **Text-To-Speech:** Toggle to enable reading messages aloud in the selected voice
+- **TTS Streaming:** Enable for real-time audio streaming
+- **Select Voice:** Choose from available voice options (e.g., "Alloy")
+- Includes audio preview functionality
+
+#### Speech-to-Text (STT) Configuration:
+- **Speech-to-Text:** Toggle to enable automatic transcription to text
+- **Max Voice Record Time:** Set maximum recording duration (e.g., "2 Mins")
+
+<Tip>
+  Voice features enhance accessibility and provide a more interactive user experience for your agent.
+</Tip>
+
+<Frame>
+  <img src="/images/quickstart/configure/voice-audio.png" alt="Voice and audio settings configuration" />
+</Frame>
+
+<Check>
+  **Configuration Complete!** Your agent is now fully configured with custom metadata and advanced settings.
+</Check>
