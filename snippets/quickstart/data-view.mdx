@@ -1,0 +1,136 @@
+## View conversation data & debug issues
+
+Now that your agent is live, let's explore how to view conversation history, track where conversations come from, and debug issues using execution logs.
+
+### <Icon icon="chart-line" size="30" /> Navigate to Data View
+
+Access your agent's conversation history and debugging tools through the data dashboard.
+
+1. Navigate to the **View & Export** section in your agent's side panel
+2. Click **View & Export** to open the data view dashboard
+3. View the **conversation history** with detailed interaction logs
+4. Access **debugging tools** and conversation source information
+
+<Frame>
+  <img src="/images/quickstart/data-view/step-1-navigate-to-date-view-and-overview.gif" alt="Navigating to data view and analytics overview" />
+</Frame>
+
+### <Icon icon="messages" size="30" /> View conversation history
+
+See all conversations your agent has had with users, including complete message exchanges and timestamps.
+
+#### What you can see
+- **Conversation List**: All user sessions listed chronologically with timestamps
+- **Conversation ID**: Unique identifier for each session (#1, #2, #3, etc.)
+- **Complete Messages**: Full conversation between user and agent
+- **Timestamps**: Exact date and time when each conversation occurred
+
+#### How to use
+- Click any **conversation** to view the complete message exchange
+- See what **users asked** and how your **agent responded**
+- Review **conversation flow** to understand user interactions
+
+<Frame>
+  <img src="/images/quickstart/data-view/step-2-conversation-history-overview.png" alt="Conversation history overview with detailed interaction logs" />
+</Frame>
+
+### <Icon icon="circle-info" size="30" /> Track conversation sources
+
+See where your conversations are coming from and get user details for each interaction.
+
+Hover the **Details** button on any conversation to see:
+<Frame>
+  <img src="/images/quickstart/data-view/step-3-hover-details.png" alt="Detailed conversation metadata showing user information and analytics" />
+</Frame>
+#### Conversation source information
+- **IP Address**: User's location (e.g., 185.183.33.218)
+- **Device Type**: What device they used (Desktop, Mobile, Tablet)
+- **Visited From**: The URL where the conversation started
+- **Referred From**: What page or site led them to your agent
+- **Interaction Time**: Exact timestamp when they started chatting
+
+#### Why this matters
+- **Track Traffic Sources**: See which pages or sites send you the most users
+- **Device Usage**: Know if users prefer mobile or desktop
+- **User Journey**: Understand how people find and use your agent
+
+
+
+### <Icon icon="calendar" size="30" /> Filter conversations by date
+
+View conversations from specific time periods to find what you're looking for.
+
+#### How to filter by date
+1. Click the **date range selector** in the top-right corner
+2. Select **custom dates** using the calendar picker
+3. View conversations from your **selected time period**
+
+#### Useful for
+- **Weekly Reviews**: Check last week's user interactions
+- **Monthly Analysis**: Review a full month of conversations
+
+<Frame>
+  <img src="/images/quickstart/data-view/step-4-date-range-filter.png" alt="Date range filter with calendar selection for analytics" />
+</Frame>
+
+### <Icon icon="code" size="30" /> Debug with Gambit Execution Logs
+
+See exactly how your agent processed each conversation to debug issues and understand what happened behind the scenes.
+
+#### How to view Execution Logs
+1. Click the **Gambit Execution Log** tab for any conversation
+2. Select which **gambit** to examine (Agent, Knowledge, Tools) from the dropdown
+3. View the **Input** data that was sent to the gambit
+4. View the **Output** data that the gambit produced
+
+#### What input shows you
+- **User's Message**: What the user actually typed
+- **Previous Context**: Earlier messages in the conversation
+- **System Settings**: How your agent was configured for this interaction
+
+<Frame>
+  <img src="/images/quickstart/data-view/step-5-gambit-execution-logs-gambit-input.png" alt="Gambit execution logs showing input data and processing details" />
+</Frame>
+
+#### What output shows you
+- **Agent's Response**: The exact response your agent generated
+- **Tool Actions**: If your agent sent emails or used other tools
+- **Knowledge Used**: What information your agent found and used
+- **Success/Errors**: Whether everything worked correctly or if there were issues
+
+<Frame>
+  <img src="/images/quickstart/data-view/step-5-gambit-execution-logs-gambit-output.png" alt="Gambit execution logs showing output data and response generation" />
+</Frame>
+
+#### Understanding the three execution stages
+
+Each gambit execution goes through three distinct stages that you can examine:
+
+**1. User Interaction Stage**
+- **Purpose**: Displays information to the user and collects user inputs
+- **What you see**: The messages shown to users and any input they provided
+- **Debug use**: Check if users saw the right information and provided expected inputs
+
+**2. Post Stage**
+- **Purpose**: Does the main processing work of the gambit
+- **What you see**: Internal processing, data transformations, external API calls, and core functionality execution
+- **Debug use**: See exactly how the gambit processed inputs and what operations it performed
+
+**3. Jump Stage**
+- **Purpose**: Defines which gambit to move to next in the conversation flow
+- **What you see**: The logic that determines the next step in the workflow
+- **Debug use**: Understand why the conversation moved to a specific gambit or direction
+
+<Frame>
+  <img src="/images/quickstart/data-view/step-5.1-gambit-execution-logs-explain.png" alt="Three stages of gambit execution: User Interaction, Post Stage, and Jump Stage" />
+</Frame>
+
+#### Why this helps you debug
+- **Find problems**: See exactly which stage failed and why
+- **Check processing**: Verify if the gambit's main functionality worked correctly in the Post Stage
+- **Understand flow**: See why the conversation moved to specific gambits in the Jump Stage
+- **Fix issues**: Identify whether problems are in user interaction, core processing, or flow logic
+
+<Check>
+  **Data View Complete!** You now know how to view conversation history, track where conversations come from, and debug issues using execution logs.
+</Check>

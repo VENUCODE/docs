@@ -7,23 +7,23 @@ graph TB
     USER(User)
     AGENT(AI Agent)
     KNOWLEDGE(Knowledge Source)
-    TOOLS(Tools)
+    TOOL(Tool)
     
     USER --> AGENT
     AGENT --> KNOWLEDGE
-    AGENT --> TOOLS
+    AGENT --> TOOL
     
     style USER fill:#e1f5fe
     style AGENT fill:#f3e5f5
     style KNOWLEDGE fill:#e8f5e8
-    style TOOLS fill:#fff3e0
+    style TOOL fill:#fff3e0
 ```
 
 **How it works:**
 1. **User asks a question** - The AI agent receives the question
 2. **Agent searches knowledge** - Retrieves relevant information from your knowledge base
 3. **Agent provides answer** - Responds based on the knowledge found
-4. **If user needs more help** - Agent uses tools to create support tickets and send emails
+4. **If user needs more help** - Agent collects user details and sends email confirmations
 5. **Support team gets notified** - Both user and team receive confirmations
 
 ---
