@@ -48,6 +48,9 @@ window.addEventListener("popstate", () => {
   // console.log("[popstate fired]", window.location.href);
   delayedOverride();
 });
+
+
+//function to add the chatbot to docs
 (function () {
   var js,
     fs,
@@ -64,3 +67,6 @@ window.addEventListener("popstate", () => {
   }
 })();
 window.tarsSettings = { convid: "1sfwNs" };
+
+//trigger chatbot open when clicking on other elements
+

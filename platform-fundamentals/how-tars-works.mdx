@@ -5,89 +5,38 @@ icon: "cloud-question"
 ---
 
 Tars is a **comprehensive conversational AI platform** that enables you to build intelligent agents through a complete development lifecycle. The platform combines AI-powered conversation handling with visual flow building, extensive integrations, and robust analytics to create dynamic conversational experiences that replace static forms and landing pages.
-
-```mermaid
-graph TB
-    subgraph "User Interfaces"
-        A[Web Chat Widget]
-        B[WhatsApp Business]
-        C[Direct Links]
-        D[Website Embedding]
-    end
-
-    subgraph "Core Platform Components"
-        E[AI Agents]
-        F[Knowledge Bases]
-        G[Tools Integration]
-    end
-
-    subgraph "Conditional Workflows"
-        H[Live Chat Handoff]
-        I[API Integrations]
-        J[Custom Workflows]
-    end
-
-    A --> E
-    B --> E
-    C --> E
-    D --> E
-
-    E <--> F
-    E <--> G
-    E -.-> H
-    E -.-> I
-    E -.-> J
-
-    style H fill:#f9f,stroke:#333,stroke-dasharray: 5 5
-    style I fill:#f9f,stroke:#333,stroke-dasharray: 5 5
-    style J fill:#f9f,stroke:#333,stroke-dasharray: 5 5
-```
+<Frame>
+<img src="/images/key_concepts.svg"/>
+</Frame>
 
 ## Core Platform Components
 
 Tars operates through six main components that work together to deliver intelligent conversational experiences:
 
 <CardGroup cols={2}>
-  <Card title="AI Agents" icon="robot" href="/ai-agents/understanding-ai-agents/what-are-ai-agents">
-    **Intelligent Conversation Handlers**
-    - Human-like conversation understanding and context awareness
-    - Natural language processing with personality customization
-    - Multi-turn conversation management with memory
-    - Automatic tool selection and workflow execution
+  <Card title="AI Agents" icon="robot" >
+    - Intelligent Conversation Handlers. Human-like conversation understanding and context awareness.Automatic tool selection and workflow execution
   </Card>
-
-  <Card title="Data Collector" icon="filter" href="/data-collector/overview">
-    **User Query Extraction**
-    - Extracts relevant information from user queries
-    - Enhances understanding of user intent
-    - Supports dynamic conversation routing
-  </Card>
-
-  <Card title="Categorizer" icon="split" href="/categorizer/overview">
-    **Query Categorization**
-    - Categorizes user queries into different branches
-    - Facilitates targeted response generation
-    - Improves conversation flow management
-  </Card>
-  
-  <Card title="Knowledge Bases" icon="database" href="/knowledge-bases/knowledge-fundamentals/what-are-knowledge-bases">
-    **Intelligent Information Retrieval**
+  <Card title="Knowledge Bases" icon="database">
+    - Intelligent Information Retrieval
     - Vector-based semantic search using Weaviate and Qdrant
     - Multiple content source support with automatic processing
-    - Context-aware answer generation with source attribution
-    - Real-time content updates and optimization
   </Card>
   
-  <Card title="Tools Integration" icon="wrench" href="/tools-integration/tools-fundamentals/what-are-tools">
-    **External System Connectivity**
-    - 600+ pre-built integrations for business platforms
-    - Custom API connections with secure authentication
-    - Real-time data synchronization and workflow automation
-    - Enterprise-grade security and compliance
+  <Card title="Tools Integration" icon="wrench">
+    - External System Connectivity. 600+ pre-built integrations for business platforms
   </Card>
-  <Card title="User-input" icon="pen-field" href="/user-input/overview">
-    **User-input**
-    - Handles user input for different types of input
+
+  <Card title="Data Collector" icon="filter">
+    - User Query Extraction. Extracts relevant information from user queries
+  </Card>
+
+  <Card title="Categorizer" icon="split">
+    - Query Categorization. Categorizes user queries into different branches.Facilitates targeted response generation.Improves conversation flow management
+  </Card>
+  
+  <Card title="User-input" icon="pen-field">
+    - Flexible Input Collection. Supports diverse input types including text, star ratings, buttons, interactive cards, auto-suggestions, calendar/time selection, file uploads, geolocation, language selection, and auto page redirection.
   </Card>
 </CardGroup>
 
@@ -195,25 +144,15 @@ flowchart TD
   <Card
     title="Knowledge Bases"
     icon="database"
-    href="/knowledge-bases/knowledge-fundamentals/what-are-knowledge-bases"
   >
-    **Semantic Search Technology**
-    - Content ingestion from multiple sources
-    - Vector embeddings for meaning-based search
-    - Context-aware retrieval and ranking
-    - Real-time knowledge access
+    ***Semantic Search Technology*** enables content ingestion from multiple sources, utilizes vector embeddings for meaning-based search, provides context-aware retrieval and ranking, and offers real-time knowledge access.
   </Card>
 
   <Card
     title="Vector Databases"
     icon="server"
-    href="/ai-technology/understanding-llms"
   >
-    **Weaviate & Qdrant Integration**
-    - Mathematical content representations
-    - Fast semantic search capabilities
-    - Scalable storage and retrieval
-    - Performance optimization
+    ***Weaviate & Qdrant Integration*** involves mathematical content representations, fast semantic search capabilities, scalable storage and retrieval, and performance optimization.
   </Card>
 </CardGroup>
 
@@ -252,25 +191,16 @@ flowchart TD
   <Card
     title="Pre-Built Tools (600+)"
     icon="plug"
-    href="/tools-integration/tools-fundamentals/available-tools-gallery"
   >
-    **Native Platform Integrations**
-    - CRM, productivity, and communication platforms
-    - One-click setup with guided configuration
-    - Multiple actions per platform
-    - Automatic updates and maintenance
+    **Native Platform Integrations** Connect CRM, productivity, and communication platforms with one-click setup and guided configuration, support multiple actions per platform, and include automatic updates and maintenance.
   </Card>
 
   <Card
     title="Custom & 3rd Party"
     icon="code"
-    href="/tools-integration/individual-tools/api-gambit/api-configuration"
   >
-    **API Integrations**
-    - REST API support for any system
-    - Secure credential storage (API keys, OAuth)
-    - Custom data transformation and mapping
-    - Webhook support for real-time updates
+    **API Integrations** 
+    - Provide REST API support for any system, secure credential storage for API keys and OAuth, custom data transformation and mapping.
   </Card>
 </CardGroup>
 
@@ -296,25 +226,7 @@ flowchart TD
 - QR code generation for offline-to-online engagement
 - Custom branding and analytics tracking
 
-## Platform Architecture
-
-### Performance & Scalability
-
-**Infrastructure Design**
-
-- Auto-scaling for traffic spikes and high volume
-- Global CDN deployment for worldwide low latency
-- 99.9% uptime SLA with automatic failover
-- Real-time monitoring and performance alerts
-
-**Response Optimization**
-
-- < 200ms for simple conversations
-- < 1 second for knowledge base searches
-- < 3 seconds for complex integrations
-- Intelligent caching and performance tuning
-
-### Security & Compliance
+## Security & Compliance
 
 **Enterprise-Grade Protection**
 
@@ -334,24 +246,8 @@ flowchart TD
     Master essential terminology and platform relationships
   </Card>
 
-  <Card
-    title="Development Lifecycle"
-    icon="cycle"
-    href="/introduction-to-development/development-lifecycle-overview"
-  >
-    Understand the complete Make → Test → Deploy → Analyze → Iterate process
-  </Card>
-
-  <Card title="Start Building" icon="rocket" href="/quickstart">
+  <Card title="Start Building" icon="rocket" href="/quickstart/your-first-agent">
     Create your first agent with our step-by-step tutorial
-  </Card>
-
-  <Card
-    title="Explore Components"
-    icon="puzzle-piece"
-    href="/ai-agents/understanding-ai-agents/what-are-ai-agents"
-  >
-    Dive deep into individual platform components
   </Card>
 </CardGroup>
 

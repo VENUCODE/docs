@@ -6,8 +6,6 @@ icon: "route"
 ---
 
 
-Welcome to TARS! You're about to create your first intelligent AI agent. We offer multiple approaches to suit different needs, technical levels, and use cases. Each path provides the same powerful customization capabilities - you can always modify and enhance your agent after creation.
-
 <Info>
 **Flexibility First**: No matter which path you choose, you'll have full control to customize workflows, add integrations, and modify your agent's behavior to perfectly match your requirements.
 </Info>
@@ -30,7 +28,7 @@ Select the approach that best fits your needs, technical comfort level, and proj
   - Perfect for customer support and FAQ automation
   - Automatic knowledge extraction and organization
 
-  **Difficulty**: Intermediate | **Time**: 20-45 minutes
+  **Difficulty**: Intermediate | **Time**: 5-15 minutes
 
   <a href="/platform-fundamentals/platform-tour#create-agent" className="btn btn-primary">
     Start creating agent with knowledge →
@@ -50,7 +48,7 @@ Select the approach that best fits your needs, technical comfort level, and proj
   - Automated workflows and data synchronization
   - Enterprise-grade connectivity
 
-  **Difficulty**: Advanced | **Time**: 30-90 minutes
+  **Difficulty**: Advanced | **Time**: 5-15 minutes
 
   <a href="/platform-fundamentals/platform-tour#create-agent" className="btn btn-primary">
     Start creating agent with tools →
@@ -70,7 +68,7 @@ Select the approach that best fits your needs, technical comfort level, and proj
   - Perfect for unique use cases and specific requirements
   - Complete understanding of agent architecture
 
-  **Difficulty**: Advanced | **Time**: 30-60 minutes
+  **Difficulty**: Advanced | **Time**: 5-20 minutes
 
   <a href="/platform-fundamentals/platform-tour#create-agent" className="btn btn-primary">
     Start creating agent from scratch →
@@ -90,7 +88,7 @@ Select the approach that best fits your needs, technical comfort level, and proj
   - Fast deployment (15-30 minutes)
   - Industry-specific optimizations
 
-  **Difficulty**: Beginner | **Time**: 15-30 minutes
+  **Difficulty**: Beginner | **Time**: 2-5 minutes
 
   <a href="/platform-fundamentals/platform-tour#agents" className="btn btn-primary">
     Start creating agent from template →
@@ -126,7 +124,14 @@ After choosing your creation method, you'll be guided through the platform tour 
   Connect with other TARS users and get advice on choosing the right approach for your project.
 </Card>
 
-<Card title="Live Chat Support" icon="headset" href="/getting-help/live-chat">
+<Card title="Live Chat Support" icon="headset" onClick={() => {
+    const chatbotIcon = document.querySelector('.convbot.convbot-open');
+    if (chatbotIcon) {
+      chatbotIcon.click();
+    } else {
+      console.warn('Chatbot icon not found.');
+    }
+  }}>
   Get immediate help from our support team to choose the best path for your specific needs.
 </Card>
 </CardGroup>

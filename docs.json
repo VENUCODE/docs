@@ -12,15 +12,6 @@
     "appearance": "light",
     "background": "/images/background.png"
   },
-  "head": [
-    {
-      "tag": "link",
-      "attributes": {
-        "rel": "stylesheet",
-        "href": "/style.css"
-      }
-    }
-  ],
   "navigation": {
     "tabs": [
       {
@@ -29,7 +20,6 @@
         "groups": [
           {
             "group": "Tars overview",
-            "description": "Introduction to Tars platform and getting oriented",
             "pages": [
               "welcome-to-tars/index",
               "welcome-to-tars/who-uses-tars",
@@ -38,7 +28,6 @@
           },
           {
             "group": "Platform Fundamentals",
-            "description": "Learn how Tars works and key concepts",
             "pages": [
               "platform-fundamentals/how-tars-works",
               "platform-fundamentals/key-concepts",
@@ -48,14 +37,12 @@
           },
           {
             "group": "Quick guide",
-            "description": "Explain about different components like AI agents, knowledge bases, tools integration, live chat handoff, whatsapp platform, etc.",
             "pages": [
               "quickstart/your-first-agent"
             ]
           },
           {
             "group": "Getting Help",
-            "description": "Support resources and community",
             "pages": [
               "getting-help/account-setup",
               "getting-help/video-tutorials",
@@ -63,24 +50,195 @@
             ]
           }
         ]
-      }
+      },
+      {
+        "tab": "Core Platform",
+        "icon": "microchip",
+        "menu": [
+            {
+                "item": "AI Agents",
+                "icon": "robot",
+                "description": "Create and manage AI agents",
+                "groups": [
+                    {
+                        "group": "Understanding AI Agents",
+                        "pages": [
+                            "ai-agents/understanding-ai-agents/what-are-ai-agents",
+                            "ai-agents/understanding-ai-agents/vs-traditional-chatbots",
+                            "ai-agents/understanding-ai-agents/when-to-use-agents"
+                        ]
+                    },
+                    {
+                        "group": "Agent Configuration",
+                        "pages": [
+                            "ai-agents/agent-configuration/creating-your-agent",
+                            "ai-agents/agent-configuration/personality-settings",
+                            "ai-agents/agent-configuration/response-optimization"
+                        ]
+                    },
+                    {
+                        "group": "Testing and FAQs",
+                        "pages": [
+                            "ai-agents/testing-agents",
+                            "ai-agents/faqs"
+                        ]
+                    }
+                ]
+            },
+            {
+                "item": "Knowledge Bases",
+                "icon": "database",
+                "description": "Build and manage knowledge repositories",
+                "groups": [
+                    {
+                        "group": "Knowledge Fundamentals",
+                        "pages": [
+                            "knowledge-bases/knowledge-fundamentals/what-are-knowledge-bases",
+                            "knowledge-bases/knowledge-fundamentals/content-sources-overview",
+                            "knowledge-bases/knowledge-fundamentals/quality-best-practices"
+                        ]
+                    },
+                    {
+                        "group": "Content Ingestion",
+                        "pages": [
+                            "knowledge-bases/content-ingestion/website-scraping",
+                            "knowledge-bases/content-ingestion/document-upload",
+                            "knowledge-bases/content-ingestion/structured-data",
+                            "knowledge-bases/content-ingestion/manual-entry"
+                        ]
+                    },
+                    {
+                        "group": "Knowledge Processing",
+                        "pages": [
+                            "knowledge-bases/knowledge-processing/data-fetching",
+                            "knowledge-bases/knowledge-processing/training-process",
+                            "knowledge-bases/knowledge-processing/training-parameters",
+                            "knowledge-bases/knowledge-processing/training-optimization"
+                        ]
+                    },
+                    {
+                        "group": "Using with Agents",
+                        "pages": [
+                            "knowledge-bases/using-with-agents/quick-integration-guide",
+                            "knowledge-bases/using-with-agents/search-configuration",
+                            "knowledge-bases/using-with-agents/response-customization",
+                            "knowledge-bases/search-performance",
+                            "knowledge-bases/faqs"
+                        ]
+                    }
+                ]
+            },
+            {
+                "item": "Tools Integration",
+                "icon": "plug",
+                "description": "Connect external tools and services",
+                "groups": [
+                    {
+                        "group": "Tools Fundamentals",
+                        "pages": [
+                            "tools-integration/tools-fundamentals/what-are-tools",
+                            "tools-integration/tools-fundamentals/available-tools-gallery",
+                            "tools-integration/tools-fundamentals/common-tool-actions"
+                        ]
+                    },
+                    {
+                        "group": "HubSpot Integration",
+                        "pages": [
+                            "tools-integration/individual-tools/hubspot/getting-credentials",
+                            "tools-integration/individual-tools/hubspot/configuration-guide",
+                            "tools-integration/individual-tools/hubspot/available-actions"
+                        ]
+                    },
+                    {
+                        "group": "Google Sheets Integration",
+                        "pages": [
+                            "tools-integration/individual-tools/google-sheets/getting-credentials",
+                            "tools-integration/individual-tools/google-sheets/configuration-guide",
+                            "tools-integration/individual-tools/google-sheets/available-actions"
+                        ]
+                    },
+                    {
+                        "group": "Salesforce Integration",
+                        "pages": [
+                            "tools-integration/individual-tools/salesforce/getting-credentials",
+                            "tools-integration/individual-tools/salesforce/configuration-guide",
+                            "tools-integration/individual-tools/salesforce/available-actions"
+                        ]
+                    },
+                    {
+                        "group": "Security & FAQs",
+                        "pages": [
+                            "tools-integration/security-considerations",
+                            "tools-integration/faqs"
+                        ]
+                    }
+                ]
+            },
+            {
+                "item": "Live Chat Handoff",
+                "icon": "comments",
+                "description": "Seamlessly transfer to human agents",
+                "groups": [
+                    {
+                        "group": "Handoff Configuration",
+                        "pages": [
+                            "live-chat-handoff/when-to-use-handoff",
+                            "live-chat-handoff/handoff-configuration/trigger-setup",
+                            "live-chat-handoff/handoff-configuration/agent-assignment",
+                            "live-chat-handoff/handoff-configuration/transition-messages",
+                            "live-chat-handoff/handoff-configuration/agent-dashboard-basics",
+                            "live-chat-handoff/faqs"
+                        ]
+                    }
+                ]
+            },
+            {
+                "item": "WhatsApp Platform",
+                "icon": "whatsapp",
+                "description": "Deploy agents on WhatsApp Business",
+                "groups": [
+                    {
+                        "group": "WhatsApp Fundamentals",
+                        "pages": [
+                            "whatsapp-platform/whatsapp-fundamentals/whatsapp-vs-web",
+                            "whatsapp-platform/whatsapp-fundamentals/business-requirements",
+                            "whatsapp-platform/whatsapp-fundamentals/credits-system"
+                        ]
+                    },
+                    {
+                        "group": "Setup Guide",
+                        "pages": [
+                            "whatsapp-platform/setup-guide/business-number-setup",
+                            "whatsapp-platform/setup-guide/verification-process",
+                            "whatsapp-platform/setup-guide/agent-assignment",
+                            "whatsapp-platform/setup-guide/testing-deployment"
+                        ]
+                    },
+                    {
+                        "group": "WhatsApp Features",
+                        "pages": [
+                            "whatsapp-platform/whatsapp-features/media-messaging",
+                            "whatsapp-platform/whatsapp-features/quick-replies",
+                            "whatsapp-platform/whatsapp-features/broadcast-campaigns",
+                            "whatsapp-platform/faqs"
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
     ],
     "global": {
       "anchors": [
         {
-          "anchor": "Tars Platform",
+          "anchor": "Explore Tars",
           "href": "https://hellotars.com",
-          "icon": "robot"
+          "icon": "/images/tars_icon.png"
         },
-        {
-          "anchor": "Help Center",
-          "href": "https://help.hellotars.com",
-          "icon": "life-ring"
-        },
-        {
-          "anchor": "Get Started",
-          "href": "https://hellotars.com/signup",
-          "icon": "rocket"
+        {  
+          "anchor": "Start building",
+          "href": "https://app.hellotars.com",
+          "icon": "block-brick"
         }
       ]
     }
@@ -92,14 +250,15 @@
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@hellotars.com"
+        "label": "v1 Docs",
+        "href": "https://help.hellotars.com",
+        "icon":"book"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Get Started",
-      "href": "https://app.hellotars.com"
+      "label": "Schedule a Demo",
+      "href": "https://hellotars.com/demo"
     }
   },
   "contextual": {
@@ -119,8 +278,8 @@
       "dark": "#1A1A1A"
     }
   },
-  "interation": {
-    "drilldown": false
+  "interaction": {
+    "drilldown": true
   },
   "integrations": {
     "posthog": {
