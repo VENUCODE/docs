@@ -21,16 +21,16 @@
             {
               "group": "Quick guide",
               "pages": [
+                "key-concepts",
                 "index"
               ]
             },
             {
                 "group": "Platform Fundamentals",
                 "pages": [
+                    "platform-fundamentals/platform-tour",
                     "platform-fundamentals/how-tars-works",
-                    "platform-fundamentals/key-concepts",
-                    "platform-fundamentals/choosing-your-path",
-                    "platform-fundamentals/platform-tour"
+                    "platform-fundamentals/choosing-your-path"
                 ]
             },
             {
