@@ -21,6 +21,7 @@
             {
               "group": "Quick guide",
               "pages": [
+                "introduction",
                 "key-concepts",
                 "index"
               ]
