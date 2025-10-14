@@ -1,12 +1,12 @@
-## <Icon icon="plus" size="30" /> Create Your Agent
+## <Icon icon="plus" size="30" /> Create your AI Agent
 
-Now let's build your AI agent from scratch and configure it step by step.
+Now let's build your AI Agent from scratch and configure it step by step.
 <AccordionGroup>
-<Accordion title="1. Create Agent from Scratch" defaultOpen="true">
+<Accordion title="Step 1: Create Agent from Scratch" defaultOpen="true">
 
 1. Navigate to the [Create Agents](https://app.hellotars.com/agents?tab=create-agent) page in your Tars dashboard: 
 2. Click the **Create from Scratch** card
-3. Enter **agent details**:
+3. Enter **Agent details**:
    - **Name:** Tars Guide AI
    - **Icon:** Choose or shuffle for a custom icon
 4. Click **Create Agent**
@@ -21,19 +21,19 @@ Not sure? Revisit [Platform Tour](/platform-fundamentals/platform-tour#create-ag
 
 </Accordion>
 
-<Accordion title="2. Basic Agent Publish and Preview">
+<Accordion title="Step 2: Basic Agent Publish and Preview">
 
-Click `Publish` and then `Preview` to test your basic agent setup.
+Click `Publish` and then `Preview` to test your basic Agent setup.
 
 <Frame>
-  <img src="/images/quickstart/gifs/basic-agent-preview.gif" alt="Publishing agent and opening preview window" />
+  <img src="/images/quickstart/gifs/basic-agent-preview.gif" alt="Publishing Agent and opening preview window" />
 </Frame>
-You will notice that the conversation has ended after single message, this is because the flow has come out of the agent gambit. To keep the conversation going, you need to self-loop the agent gambit.
+You will notice that the conversation has ended after single message, this is because the flow has come out of the Agent gambit. To keep the conversation going, you need to self-loop the Agent gambit.
 
 </Accordion>
-<Accordion title="3. Self-Loop the Agent">
+<Accordion title="Step 3: Self-Loop the Agent">
 
-Connect the agent output back to itself to allow multiple questions in one session.
+Connect the Agent output back to itself to allow multiple questions in one session.
 
 <Frame>
   <img src="/images/quickstart/gifs/self-loop.gif" alt="Creating self-loop for continuous conversation" />
@@ -41,19 +41,19 @@ Connect the agent output back to itself to allow multiple questions in one sessi
 
 </Accordion>
 
-<Accordion title="4. Publish and Preview">
+<Accordion title="Step 4: Publish and Preview">
 
-Click `Publish` and then `Preview` to test your agent setup.Now you can see that the conversation is continuing and you can ask as many questions as you want.
+Click `Publish` and then `Preview` to test your Agent setup.Now you can see that the conversation is continuing and you can ask as many questions as you want.
 
 <Frame>
-  <img src="/images/quickstart/gifs/test-basic-agent-publish-preview.gif" alt="Publishing agent and opening preview window" />
+  <img src="/images/quickstart/gifs/test-basic-agent-publish-preview.gif" alt="Publishing Agent and opening preview window" />
 </Frame>
   
 
 </Accordion>
-<Accordion title="5. Add Knowledge Base">
+<Accordion title="Step 5: Add Knowledge Base">
 
-Now that our agent is is ready to answer, we should give the agent some knowledge to answer from. For this, we will add the `Knowledge` gambit to the canvas.
+Now that our Agent is is ready to answer, we should give the Agent some knowledge to answer from. For this, we will add the `Knowledge` gambit to the canvas.
 Drag the `Knowledge` gambit onto the canvas and select "Tars Docs" from the dropdown.
 
 <Frame>
@@ -63,7 +63,7 @@ The `Knowledge` gambit will now be added and you could see a pulsating indicator
 
 </Accordion>
 
-<Accordion title="6. Select Knowledge Base">
+<Accordion title="Step 6: Select Knowledge Base">
 
 Now, we have to select the knowledge source in the knowledge base gambit modal. This will set the configuration for this Knowledge Base gambit with the selected, trained Knowledge Base.
 
@@ -73,27 +73,27 @@ Now, we have to select the knowledge source in the knowledge base gambit modal. 
 
 </Accordion>
 
-<Accordion title="7. Connect Knowledge Base">
+<Accordion title="Step 7: Connect Knowledge Base to Agent">
 
 Connect the Knowledge Base output to the Agent Gambit to enable access.
 
 <Frame>
-  <img src="/images/quickstart/gifs/connect-kb-to-agent.gif" alt="Connecting knowledge base to agent gambit" />
+  <img src="/images/quickstart/gifs/connect-kb-to-agent.gif" alt="Connecting knowledge base to Agent gambit" />
 </Frame>
 
 </Accordion>
 
-<Accordion title="8. Test with Knowledge">
+<Accordion title="Step 8: Test with Knowledge">
 
 Publish and test by asking questions from your knowledge base.
 
 <Frame>
-  <img src="/images/quickstart/gifs/interact-with-agent-with-kb.gif" alt="Testing agent with knowledge base questions" />
+  <img src="/images/quickstart/gifs/interact-with-agent-with-kb.gif" alt="Testing Agent with knowledge base questions" />
 </Frame>
   
 
 </Accordion>
-<Accordion title="9. Add Gmail Tool">
+<Accordion title="Step 9: Add Gmail Tool">
 
 Drag the Tool gambit onto the canvas and select your configured Gmail tool.
 
@@ -103,7 +103,7 @@ Drag the Tool gambit onto the canvas and select your configured Gmail tool.
 
 </Accordion>
 
-<Accordion title="10. Select Gmail Tool">
+<Accordion title="Step 10: Select Gmail Tool">
 
 Choose your connected Gmail tool from the dropdown and configure email settings.
 
@@ -113,22 +113,22 @@ Choose your connected Gmail tool from the dropdown and configure email settings.
 
 </Accordion>
 
-<Accordion title="11. Connect Gmail Tool">
+<Accordion title="Step 11: Connect Gmail Tool">
 
 Connect the Tool output to the Agent Gambit to enable email functionality.
 
 <Frame>
-  <img src="/images/quickstart/gifs/connect-gmail-to-agent.gif" alt="Connecting Gmail tool to agent gambit" />
+  <img src="/images/quickstart/gifs/connect-gmail-to-agent.gif" alt="Connecting Gmail tool to Agent gambit" />
 </Frame>
 
 </Accordion>
-<Accordion title="12. Configure Agent Settings">
+<Accordion title="Step 12: Configure Agent Settings">
 
-Click on the Agent Gambit to open configuration panel and customize your agent's behavior.
+Click on the Agent Gambit to open configuration panel and customize your Agent's behavior.
 
 <Tabs>
       <Tab title="Welcome Message">
-        **Welcome Message** is displayed when users first engage with the agent or transition from another gambit.
+        **Welcome Message** is displayed when users first engage with the Agent or transition from another gambit.
         
         - Initiates the conversation
         - Not repeated in continuous interactions
@@ -141,7 +141,7 @@ Click on the Agent Gambit to open configuration panel and customize your agent's
   </Tab>
   
       <Tab title="Basic Settings">
-        Configure the core agent behavior and AI model settings.
+        Configure the core Agent behavior and AI model settings.
         
         **LLM Model Selection:**
         Choose from over 60 models available through subscription, each offering unique capabilities to suit your needs.
@@ -155,14 +155,14 @@ Click on the Agent Gambit to open configuration panel and customize your agent's
   </Tab>
   
       <Tab title="Advanced Settings">
-        Fine-tune agent behavior with advanced configurations.
+        Fine-tune Agent behavior with advanced configurations.
         <Frame>
-          <img src="/images/quickstart/make/agent-advanced-settings.png" alt="Advanced settings for agent" className="h-[300px]" />
+          <img src="/images/quickstart/make/agent-advanced-settings.png" alt="Advanced settings for Agent" className="h-[300px]" />
         </Frame>
         **Available Options:**
         - **Chat History**: Enable to maintain conversation context
         - **Support Markdown**: Allow formatted responses with bold, lists, etc.
-        - **Show Tool Call Events**: Display when agent uses tools
+        - **Show Tool Call Events**: Display when Agent uses tools
         - **View Sources**: Show knowledge base citations
         - **Get User Feedback**: Enable satisfaction tracking
         
@@ -172,7 +172,7 @@ Click on the Agent Gambit to open configuration panel and customize your agent's
   </Tab>
   
       <Tab title="Jump Logic">
-        Define success criteria for agent responses.
+        Define success criteria for Agent responses.
         
         **Success Prompt:**
         - Define what constitutes a successful answer
@@ -181,7 +181,7 @@ Click on the Agent Gambit to open configuration panel and customize your agent's
         
         **Configuration:**
         - Set success conditions based on your use case
-        - Helps track agent performance and resolution rates
+        - Helps track Agent performance and resolution rates
         
         <Info>
           For this tutorial, we'll configure success as providing relevant information from the knowledge base.
@@ -191,13 +191,13 @@ Click on the Agent Gambit to open configuration panel and customize your agent's
 
 </Accordion>
 
-<Accordion title="13. Customize Agent Prompt">
+<Accordion title="Step 13: Customize Agent Prompt">
 
-Configure the agent's system prompt to define personality, answer criteria, and behavior guidelines.
+Configure the Agent's system prompt to define personality, answer criteria, and behavior guidelines.
     
     <Tabs>
       <Tab title="Complete Prompt">
-        Copy and paste these prompt sections into your agent's system prompt field:
+        Copy and paste these prompt sections into your Agent's system prompt field:
         
         **1. Introduction & Role Definition:**
         ```text
@@ -300,30 +300,30 @@ Configure the agent's system prompt to define personality, answer criteria, and 
         ```
         
         <Tip>
-          Copy each section in order and paste them all together into your agent's system prompt field for the complete prompt.
+          Copy each section in order and paste them all together into your Agent's system prompt field for the complete prompt.
         </Tip>
       </Tab>
   
       <Tab title="Prompt Breakdown">
-        Understanding why each section matters for your agent's success:
+        Understanding why each section matters for your Agent's success:
         
         <Steps>
           <Step title="Personality & Tone" icon="user-tie">
-            **What it does:** Defines your agent's character and communication style.
+            **What it does:** Defines your Agent's character and communication style.
             
             **Why it matters:** This section establishes how users perceive your brand and company. By setting clear guidelines for being professional yet friendly, using Markdown formatting, and keeping responses concise, you ensure every interaction reflects your company's values. This consistency builds trust and makes users feel they're talking to a knowledgeable, helpful representative rather than a robotic chatbot.
           </Step>
           
           <Step title="Knowledge Retrieval & Response Rules" icon="brain">
-            **What it does:** Controls how your agent finds and delivers information.
+            **What it does:** Controls how your Agent finds and delivers information.
             
-            **Why it matters:** This is the brain of your agent - it determines accuracy and reliability. The rule to always use the `knowledge_retrieve` tool ensures your agent only provides accurate, up-to-date information from your official documentation. This prevents hallucinations and keeps responses grounded in facts. The fallback mechanism (politely acknowledging when no answer is found) maintains user trust by being honest about limitations rather than making up answers.
+            **Why it matters:** This is the brain of your Agent - it determines accuracy and reliability. The rule to always use the `knowledge_retrieve` tool ensures your Agent only provides accurate, up-to-date information from your official documentation. This prevents hallucinations and keeps responses grounded in facts. The fallback mechanism (politely acknowledging when no answer is found) maintains user trust by being honest about limitations rather than making up answers.
           </Step>
           
           <Step title="Enhanced Support Flow" icon="life-ring">
-            **What it does:** Handles situations when your agent can't provide an answer with a clear "Support Mode".
+            **What it does:** Handles situations when your Agent can't provide an answer with a clear "Support Mode".
             
-            **Why it matters:** This section is your safety net for customer satisfaction. The new "Support Mode" prevents the agent from trying to answer questions once support is requested, ensuring a clean handoff to human support. The structured data collection (name, email, question) and professional HTML email system means your human support team gets all the context they need to provide personalized help quickly. This seamless handoff prevents frustrated users and maintains service quality.
+            **Why it matters:** This section is your safety net for customer satisfaction. The new "Support Mode" prevents the Agent from trying to answer questions once support is requested, ensuring a clean handoff to human support. The structured data collection (name, email, question) and professional HTML email system means your human support team gets all the context they need to provide personalized help quickly. This seamless handoff prevents frustrated users and maintains service quality.
           </Step>
           
           <Step title="Professional Email Template" icon="envelope">
@@ -333,9 +333,9 @@ Configure the agent's system prompt to define personality, answer criteria, and 
           </Step>
           
           <Step title="Key Guidelines" icon="shield-check">
-            **What it does:** Sets the guardrails that keep your agent focused and effective.
+            **What it does:** Sets the guardrails that keep your Agent focused and effective.
             
-            **Why it matters:** These guidelines ensure consistent behavior across all interactions, maintain your brand voice, and keep the agent from going off-topic. The emphasis on Markdown formatting makes responses more readable and professional, while the scope limitation to Tars helpdocs prevents the agent from discussing unrelated topics that could confuse users or damage your brand reputation.
+            **Why it matters:** These guidelines ensure consistent behavior across all interactions, maintain your brand voice, and keep the Agent from going off-topic. The emphasis on Markdown formatting makes responses more readable and professional, while the scope limitation to Tars helpdocs prevents the Agent from discussing unrelated topics that could confuse users or damage your brand reputation.
           </Step>
         </Steps>
         </Tab>
@@ -343,17 +343,17 @@ Configure the agent's system prompt to define personality, answer criteria, and 
     </Tabs>
     
     <Tip>
-      This prompt ensures your agent maintains consistent brand voice, provides accurate information, and handles escalations professionally.
+      This prompt ensures your Agent maintains consistent brand voice, provides accurate information, and handles escalations professionally.
     </Tip>
 
 </Accordion>
 
-<Accordion title="14. Final Testing">
+<Accordion title="Step 14: Final Testing">
 
 Publish and test the complete workflow with all configurations.
 - First ask any question related to knowledge source you have added.
 - Then ask for any help or support.
-- The agent would ask your details and send you an email with the details.
+- The Agent would ask your details and send you an email with the details.
 <Frame>
   <img src="/images/quickstart/gifs/test-complete-workflow.gif" alt="Final testing in preview window" />
 </Frame>
@@ -362,7 +362,7 @@ Publish and test the complete workflow with all configurations.
 </Frame>
 
 <Check>
-  **Agent Complete!** Your agent now has knowledge base integration and tool functionality.
+  **Agent Complete!** Your Agent now has knowledge base integration and tool functionality.
 </Check>
 
 </Accordion>

@@ -53,7 +53,7 @@ _[Foundation Phase - Building Confidence & Understanding]_
 │
 ├── platform-fundamentals/             # Essential concepts before building
 │   ├── how-tars-works                 # High-level system architecture
-│   │   ├── agent-conversation-flow    # How conversations are processed
+│   │   ├── Agent-conversation-flow    # How conversations are processed
 │   │   ├── knowledge-retrieval-process # How agents find answers
 │   │   └── integration-workflow       # How tools connect and execute
 │   ├── key-concepts                   # Terminology & component relationships
@@ -72,13 +72,13 @@ _[Foundation Phase - Building Confidence & Understanding]_
 │       └── template-vs-build-from-scratch # Starting point selection
 │
 ├── quickstart-tutorial/               # Complete end-to-end success path
-│   ├── your-first-agent              # 15-minute guided experience
+│   ├── your-first-Agent              # 15-minute guided experience
 │   │   ├── step-1-account-setup      # Account & workspace configuration
 │   │   ├── step-2-choose-template    # Template selection & preview
-│   │   ├── step-3-basic-config       # Essential agent settings
-│   │   ├── step-4-test-preview       # Testing your agent
+│   │   ├── step-3-basic-config       # Essential Agent settings
+│   │   ├── step-4-test-preview       # Testing your Agent
 │   │   └── step-5-deploy-share       # Publishing & sharing
-│   ├── understanding-your-agent      # Explaining what was created
+│   ├── understanding-your-Agent      # Explaining what was created
 │   └── next-steps-guide              # Logical progression paths
 │
 └── getting-help/                      # Support & community resources
@@ -99,8 +99,8 @@ _[Learning Phase - Understanding Components]_
 │   │   │   └── **Traditional chatbots: Series of text inputs/outputs**
 │   │   │   └── **AI Agents: Intelligent black box for human-like interaction**
 │   │   └── when-to-use-agents        # Use case decision guide
-│   ├── agent-configuration/
-│   │   ├── creating-your-agent       # Step-by-step setup
+│   ├── Agent-configuration/
+│   │   ├── creating-your-Agent       # Step-by-step setup
 │   │   ├── personality-settings      # Tone, style, behavior
 │   │   └── response-optimization     # Quality & accuracy tuning
 │   ├── testing-agents/               # Validation & improvement
@@ -154,13 +154,13 @@ _[Learning Phase - Understanding Components]_
 │   ├── security-considerations/      # Best practices & compliance
 │   └── faqs                          # Tools integration troubleshooting
 │
-├── live-chat-handoff/                 # Human agent escalation
+├── live-chat-handoff/                 # Human Agent escalation
 │   ├── when-to-use-handoff           # Escalation scenarios & triggers
 │   ├── handoff-configuration/
 │   │   ├── trigger-setup             # When to escalate
-│   │   ├── agent-assignment          # Routing rules
+│   │   ├── Agent-assignment          # Routing rules
 │   │   ├── transition-messages       # Handoff communication
-│   │   └── agent-dashboard-basics    # Human agent interface overview
+│   │   └── Agent-dashboard-basics    # Human Agent interface overview
 │   └── faqs                          # Live chat troubleshooting
 │
 └── whatsapp-platform/                # WhatsApp Business integration
@@ -171,7 +171,7 @@ _[Learning Phase - Understanding Components]_
     ├── setup-guide/
     │   ├── business-number-setup     # Getting WhatsApp Business number
     │   ├── verification-process      # Account verification steps
-    │   ├── agent-assignment          # Connecting chatbot to WhatsApp number
+    │   ├── Agent-assignment          # Connecting chatbot to WhatsApp number
     │   └── testing-deployment        # Validation before going live
     ├── whatsapp-features/
     │   ├── media-messaging           # Images, documents, videos
@@ -198,7 +198,7 @@ _[Implementation Phase - Complete Development Process]_
 │   ├── getting-started-with-workflow # First-time user guidance
 │   └── faqs                          # Workflow-related questions
 │
-├── make/                             # Building your agent
+├── make/                             # Building your Agent
 │   ├── builder-interface/
 │   │   ├── canvas-overview           # Workspace navigation
 │   │   ├── nodes-panel-guide         # Available components
@@ -229,7 +229,7 @@ _[Implementation Phase - Complete Development Process]_
 │   │   │   │   ├── input-handling    # Question processing
 │   │   │   │   ├── data-access       # Answer formatting & delivery
 │   │   │   │   └── best-practices    # Response quality optimization
-│   │   │   └── ai-agent/
+│   │   │   └── ai-Agent/
 │   │   │       ├── configuration-guide # Advanced AI setup
 │   │   │       ├── use-cases         # Complex conversation scenarios
 │   │   │       ├── input-handling    # Context & conversation management
@@ -290,8 +290,8 @@ _[Implementation Phase - Complete Development Process]_
 │   │       ├── positioning-options   # Page placement
 │   │       └── trigger-behaviors     # Interaction initiation
 │   ├── configuration-management/
-│   │   ├── general-settings          # Basic agent configuration
-│   │   │   ├── agent-name-description
+│   │   ├── general-settings          # Basic Agent configuration
+│   │   │   ├── Agent-name-description
 │   │   │   ├── language-settings
 │   │   │   └── timezone-configuration
 │   │   ├── account-settings          # User profile customization
@@ -353,7 +353,7 @@ _[Implementation Phase - Complete Development Process]_
 │   │   ├── deployment-strategies     # Different approaches
 │   │   └── deployment-best-practices # Launch guidelines
 │   ├── deployment-options/
-│   │   ├── direct-link-sharing       # Standalone agent URLs
+│   │   ├── direct-link-sharing       # Standalone Agent URLs
 │   │   │   ├── link-generation
 │   │   │   ├── sharing-strategies
 │   │   │   └── access-controls

@@ -1,12 +1,12 @@
 # Tars Documentation
 
-Welcome to the official documentation for Tars - the AI agent platform that helps businesses create intelligent conversational agents.
+Welcome to the official documentation for Tars - the AI Agent platform that helps businesses create intelligent conversational agents.
 
-This documentation covers everything you need to know about building, deploying, and managing AI agents on the Tars platform.
+This documentation covers everything you need to know about building, deploying, and managing AI Agents on the Tars platform.
 
 ## What is Tars?
 
-Tars is a comprehensive AI agent platform that enables businesses to create intelligent conversational agents for customer support, sales, and automation. Our platform combines:
+Tars is a comprehensive AI Agent platform that enables businesses to create intelligent conversational agents for customer support, sales, and automation. Our platform combines:
 
 - **AI Agents**: Intelligent conversational entities powered by advanced language models
 - **Knowledge Bases**: Vector-based information storage for semantic search and retrieval
@@ -18,7 +18,7 @@ Tars is a comprehensive AI agent platform that enables businesses to create inte
 Our documentation is organized into the following main sections:
 
 - **Welcome to Tars**: Introduction, success stories, and platform overview
-- **Quickstart Guide**: Get up and running with your first AI agent
+- **Quickstart Guide**: Get up and running with your first AI Agent
 - **Platform Fundamentals**: Core concepts, how Tars works, and platform tour
 - **AI Agents**: Creating, configuring, and managing your agents
 - **Knowledge Bases**: Building and managing your content libraries
@@ -54,7 +54,7 @@ Our documentation is organized into the following main sections:
 
 - **Website Embedding**: Customizable chat widgets for web integration
 - **WhatsApp Business**: Direct integration with WhatsApp Business API
-- **Direct Links**: Standalone agent URLs with custom domains
+- **Direct Links**: Standalone Agent URLs with custom domains
 - **Multi-platform**: Web, mobile, and messaging app support
 
 ## Development
@@ -82,7 +82,7 @@ View your local preview at `http://localhost:3000`.
 1. **Create Your Account**: Sign up at [hellotars.com](https://hellotars.com)
 2. **Take the Platform Tour**: Interactive guided tour to learn the basics
 3. **Build Your First Agent**: Follow our quickstart guide
-4. **Deploy and Test**: Launch your agent and monitor performance
+4. **Deploy and Test**: Launch your Agent and monitor performance
 
 ### For Developers
 

@@ -6,7 +6,7 @@
             {
                 "item": "AI Agents",
                 "icon": "robot",
-                "description": "Create and manage AI agents",
+                "description": "Create and manage AI Agents",
                 "groups": [
                     {
                         "group": "Understanding AI Agents",

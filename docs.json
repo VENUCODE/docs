@@ -24,9 +24,8 @@
             {
               "group": "Quick guide",
               "pages": [
-                "introduction",
-                "key-concepts",
-                "index"
+                "index",
+                "build-agent"
               ]
             },
             {
@@ -64,25 +63,19 @@
   "navbar": {
     "links": [
       {
-        "label": "v1 Docs",
+        "label": "Tars 1.0 Docs",
         "href": "https://help.hellotars.com",
         "icon":"book"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Schedule a Demo",
-      "href": "https://hellotars.com/demo"
+      "label": "Login",
+      "href": "https://app.hellotars.com"
     }
   },
   "contextual": {
     "options": [
-      {
-        "title": "Reach out to us",
-        "description": "Reach out to us for any questions or support",
-        "icon": "envelope",
-        "href": "mailto:hi@hellotars.com"
-      }
     ]
   },
   "background": {
@@ -96,10 +89,6 @@
     "drilldown": true
   },
   "integrations": {
-    "posthog": {
-      "apiKey": "phc_VS1g3T1Pzsy9ogSEe2jXprF1wPEcmMqtgZZH2kI12cN",
-      "apiHost": "https://us.i.posthog.com"
-    }
   },
   "footer": {
     "socials": {
