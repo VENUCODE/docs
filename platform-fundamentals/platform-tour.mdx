@@ -1,17 +1,9 @@
 ---
 title: "Welcome to your Tars journey"
-sidebarTitle: "Platform tour"
-description: "Discover the Tars platform step by step - from creating your account to building your first AI Agent"
+sidebarTitle: "Getting started"
+description: "Discover the Tars platform step by step - from creating your account to exploring the dashboard"
 icon: "map"
 ---
-
-import AgentsSection from "/snippets/dashboard/agents/agents.mdx";
-import Navigation from "/snippets/dashboard/navigation.mdx";
-import ToolsOverview from "/snippets/dashboard/tools/tools-overview-simple.mdx";
-import FeaturedTools from "/snippets/dashboard/tools/featured-tools.mdx";
-import KBOverview from "/snippets/dashboard/kbs/overview.mdx";
-import ProfileSetting from "/snippets/dashboard/settings/index.mdx";
-import Support from "/snippets/dashboard/support/index.mdx";
 
 <Note>
   **First time here?** Don't worry! This tour is designed for complete
@@ -34,33 +26,9 @@ import Support from "/snippets/dashboard/support/index.mdx";
 </Step>
 
 <Step title="Creating your account">
-  **Let's Get You Set Up**
-  
   You'll see a simple form where you can enter your information to create your account.
-  
-  <Tabs>
-    <Tab title="I'm completely new">
-      <Frame>
-        <img src="/images/signup.png" alt="Tars account creation page showing the signup form" />
-      </Frame>
-      **Creating your first account**
-      - Choose your preferred signup method: Gmail, Outlook, LinkedIn, SSO, or name-email-phone
-      - Follow the prompts to complete the signup process
-    </Tab>
-    
-    <Tab title="I've been here before">
-      <Frame>
-        <img src="/images/login.png" alt="Tars account creation page showing the login form" />
-      </Frame>
-      **Welcome back!**
-      - Choose your login method: Gmail, Outlook, LinkedIn, SSO, or name-email-phone
-      - Enter your credentials
-      - Reset your password if you've forgotten it
-    </Tab>
-  </Tabs>
-
-  <Card title="Need help with account setup?" icon="user-plus" href="/getting-help/account-setup">
-    **Don't worry if you're unsure!** We have a detailed guide that will help you create your account step by step.
+  <Card title="Need help with account setup?" icon="user-plus" href="/getting-help/account-setup" arrow="true">
+    **Don't worry if you're unsure!** -- We have a detailed guide that will help you create your account step by step.
   </Card>
 </Step>
 </Steps>
@@ -78,45 +46,32 @@ import Support from "/snippets/dashboard/support/index.mdx";
 
 Next, you'll see your main dashboard. This is your central hub where you can manage AI Agents, knowledge bases, and tool integrations.
 
-## <Icon icon="grid-2-plus" size="30"/> Dashboard sections
+## Next steps
 
-Your dashboard is divided into distinct sections, each designed for a specific function. Let's delve into each section to understand its role:
-Here, you'll have the opportunity to create AI Agents, manage your knowledge base, and integrate various tools. We'll go through each component together to ensure you grasp how everything operates.
+Now that you're logged in, explore the different sections of your dashboard:
 
-<Tabs>
-  <Tab title="Agents" icon="user-robot">
-    <AgentsSection />
-  </Tab>
+<CardGroup cols={2}>
+  <Card title="Agents Section" icon="robot" href="/platform-fundamentals/platform-tour/agents">
+    Create and manage your AI Agents
+  </Card>
+  <Card title="Tools Integration" icon="wrench" href="/platform-fundamentals/platform-tour/tools">
+    Connect external tools to your agents
+  </Card>
 
-  <Tab title="Tools" icon="wrench">
-    <Frame>
-      <img
-        src="/images/dashboard/tools/tools-overview.png"
-        alt="Tools overview dashboard showing all available tools"
-      />
-    </Frame>
-    <ToolsOverview />
-  </Tab>
+  <Card title="Knowledge Bases" icon="database" href="/platform-fundamentals/platform-tour/knowledge-bases">
+    Build and manage your content libraries
+  </Card>
 
-  <Tab title="Knowledge" icon="book">
-    <KBOverview />
-  </Tab>
-
-  <Tab title="Settings" icon="user-gear">
-    <ProfileSetting />
-  </Tab>
-
-  <Tab title="Support" icon="circle-question">
-    <Support/>
-  </Tab>
-</Tabs>
+  <Card title="Settings & Profile" icon="cog" href="/platform-fundamentals/platform-tour/settings">
+    Configure your account preferences
+  </Card>
+</CardGroup>
+  <Card title="Support Resources" icon="circle-question" href="/platform-fundamentals/platform-tour/support" horizontal>
+    Get help and access tutorials
+  </Card>
 
 <Note>
   **Need to reference this tour again?** Bookmark this page or access it anytime
   from the Help menu in your dashboard. You can also restart the interactive
   platform tour from your dashboard settings.
 </Note>
-
-<a href="#dashboard-sections" className="underline float-right">
-  Back to top
-</a>

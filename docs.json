@@ -31,7 +31,90 @@
             {
                 "group": "Platform Fundamentals",
                 "pages": [
-                    "platform-fundamentals/platform-tour",
+                  {
+                    "group": "Platform tour",
+                    "icon": "map",
+                    "pages": [
+                      "platform-fundamentals/platform-tour",
+                      {
+                        "group": "Agents",
+                        "icon": "robot",
+                        "pages": [
+                          "platform-fundamentals/platform-tour/agents",
+                          {
+                            "group": "Create Agent",
+                            "icon": "hammer",
+                            "pages": [
+                              "platform-fundamentals/platform-tour/agents/create-agent",
+                              {
+                                "group": "From Knowledge",
+                                "icon": "database",
+                                "pages": [
+                                  "platform-fundamentals/platform-tour/agents/create-from-knowledge",
+                                  "platform-fundamentals/platform-tour/agents/create-agent-from-website-knowledge",
+                                  "platform-fundamentals/platform-tour/agents/create-agent-from-pdf-knowledge"
+                                ]
+                              },
+                              "platform-fundamentals/platform-tour/agents/create-from-tool",
+                              "platform-fundamentals/platform-tour/agents/create-from-scratch",
+                              "platform-fundamentals/platform-tour/agents/create-from-template"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "group": "Knowledge Bases",
+                        "icon": "database",
+                        "pages": [
+                          "platform-fundamentals/platform-tour/knowledge-bases/index",
+                          "platform-fundamentals/platform-tour/knowledge-bases/my-knowledge",
+                          {
+                            "group": "Add Knowledge",
+                            "icon":"plus",
+                            "pages": [
+                              "platform-fundamentals/platform-tour/knowledge-bases/add-knowledge",
+                              "platform-fundamentals/platform-tour/knowledge-bases/create-from-website",
+                              "platform-fundamentals/platform-tour/knowledge-bases/create-from-pdf",
+                              "platform-fundamentals/platform-tour/knowledge-bases/create-from-csv",
+                              "platform-fundamentals/platform-tour/knowledge-bases/create-from-other-sources"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "group": "Tools",
+                        "icon": "wrench",
+                        "pages": [
+                          "platform-fundamentals/platform-tour/tools/index",
+                          "platform-fundamentals/platform-tour/tools/browse-tools",
+                          "platform-fundamentals/platform-tour/tools/featured-tools"
+                        ]
+                      },
+                      {
+                        "group": "Settings",
+                        "icon": "cog",
+                        "pages": [
+                          "platform-fundamentals/platform-tour/settings/index",
+                          "platform-fundamentals/platform-tour/settings/general",
+                          "platform-fundamentals/platform-tour/settings/billing",
+                          "platform-fundamentals/platform-tour/settings/channels",
+                          "platform-fundamentals/platform-tour/settings/advanced"
+                        ]
+                      },
+                      {
+                        "group": "Support",
+                        "icon": "circle-question",
+                        "pages": [
+                          "platform-fundamentals/platform-tour/support/index",
+                          "platform-fundamentals/platform-tour/support/video-tutorials",
+                          "platform-fundamentals/platform-tour/support/live-chat",
+                          "platform-fundamentals/platform-tour/support/schedule-demo",
+                          "platform-fundamentals/platform-tour/support/agent-templates",
+                          "platform-fundamentals/platform-tour/support/community"
+                        ]
+                      }
+                    ]
+                  },
                     "platform-fundamentals/how-tars-works",
                     "platform-fundamentals/choosing-your-path"
                 ]
@@ -53,7 +136,7 @@
             ]
           }
         ]
-    }
+      }
     ]
   },
   "logo": {

@@ -39,9 +39,9 @@ Tars operates through six main components that work together to deliver intellig
   </Card>
 </CardGroup>
 
-### Agentic workflow
+### How does an AI Agent work in Tars?
 
-Tars agents handle conversations through sophisticated AI processing where the LMS brain internally manages all processing paths:
+AI Agents in Tars use advanced language models (LLMs) to intelligently manage conversations. The LLM dynamically decides whether to retrieve knowledge, execute tools, or generate direct responses based on user input:
 
 ```mermaid
 flowchart TD
@@ -64,13 +64,13 @@ flowchart TD
 
 ```
 
-### Question Answering workflow
+### How does a Question Answering Agent work in Tars?
 
-The Question Answering Workflow uses the same agentic workflow but focuses only on knowledge retrieval:
+A Question Answering Agent is a specialized agent optimized for information retrieval. It uses RAG (Retrieval-Augmented Generation) technology to search your knowledge base and provide accurate, context-aware answers:
 
 ```mermaid
 flowchart TD
-    A(User Input) --> B(AI Agent)
+    A(User Input) --> B(Question Answering Agent)
 
     B --> C(Knowledge Required?)
 
@@ -106,7 +106,7 @@ flowchart TD
 </Step>
 </Steps>
 
-## How does the Knowledge Base work?
+## How does the Knowledge Base work in Tars?
 
 The Knowledge Base System transforms unstructured content from various sources into intelligent, searchable knowledge that your **AI Agent** can access instantly.
 
@@ -166,7 +166,7 @@ The system operates in three phases: `Load`-> `Index`-> `Retrieve`.
   **Fast & scalable:** The system processes 500-1,000 chunks per minute during indexing and delivers search results in under 500ms, supporting millions of vectors across multiple knowledge bases.
 </Note>
 
-## How tool execution works?
+## How tool execution is done in Tars?
 
 Tool execution at Tars is managed through a configured **AI Agent**, which interacts with connected external systems securely and intelligently. The architecture ensures that all actions, authentications, and data exchanges happen entirely within backend systems, keeping credentials and sensitive information fully protected.
 
@@ -226,7 +226,7 @@ The tool execution system is built on three key principles:
   **Security first:** Tool execution at Tars is secure, backend-driven, and fully agent-controlled. Each execution is logged for transparency, monitoring, and governance, ensuring that sensitive data never leaves trusted backend environments.
 </Note>
 
-## How does WhatsApp integration work?
+## How does WhatsApp integration work in Tars?
 
 TARS enables businesses to deploy **AI Agents** on WhatsApp through a seamless integration architecture. The system abstracts provider differences, normalizes message formats, and ensures reliable, sequential message delivery while maintaining conversation context and state.
 
@@ -291,7 +291,7 @@ The integration is built on **three key abstraction layers** that work together 
 
 
 
-## How does Livechat work?
+## How does Livechat work in Tars?
 
 Tars provides a standalone Livechat feature that enables direct conversations between users and human agents. The platform includes a **native Livechat dashboard** where human agents can manage and respond to conversations in real-time.
 <Frame>

@@ -52,11 +52,7 @@ window.addEventListener("popstate", () => {
 
 //function to add the chatbot to docs
 (function () {
-  var js,
-    fs,
-    d = document,
-    id = "tars-widget-script",
-    b = "https://tars-file-upload.s3.amazonaws.com/bulb/";
+  var js,fs,d = document,id = "tars-widget-script",b = "https://tars-file-upload.s3.amazonaws.com/bulb/";
   if (!d.getElementById(id)) {
     js = d.createElement("script");
     js.id = id;
