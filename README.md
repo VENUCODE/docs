@@ -10,52 +10,64 @@ Tars is a comprehensive AI Agent platform that enables businesses to create inte
 
 - **AI Agents**: Intelligent conversational entities powered by advanced language models
 - **Knowledge Bases**: Vector-based information storage for semantic search and retrieval
-- **Tools Integration**: 600+ native tools and custom integrations for enhanced capabilities
-- **Multi-channel Deployment**: Web, WhatsApp, and direct link sharing options
+- **Tools Integration**: Connected tools for enhanced agent capabilities
+- **Multi-channel Deployment**: Web, WhatsApp Business, and direct link sharing options
 
 ## Documentation Structure
 
-Our documentation is organized into the following main sections:
+Our documentation is organized into the following sections:
 
-- **Welcome to Tars**: Introduction, success stories, and platform overview
-- **Quickstart Guide**: Get up and running with your first AI Agent
-- **Platform Fundamentals**: Core concepts, how Tars works, and platform tour
-- **AI Agents**: Creating, configuring, and managing your agents
-- **Knowledge Bases**: Building and managing your content libraries
-- **Tools Integration**: Connecting external services and APIs
-- **Testing & Deployment**: Validating and launching your agents
-- **Use Case Examples**: Real-world implementations and best practices
-- **Getting Help**: Support resources and troubleshooting
+### Quick Guide
+- **Welcome to Tars**: Introduction and getting started
+- **Build Your First Agent**: Step-by-step guide to creating your first AI Agent
+
+### Platform Fundamentals
+- **Platform Tour**: Interactive walkthrough of key features and interfaces
+- **How Tars Works**: Deep dive into AI Agent architecture, workflows, WhatsApp integration, and Livechat
+- **Choosing Your Path**: Decision guide for selecting the right approach for your use case
+
+### Tars Overview
+- **Introduction**: Platform overview and key capabilities
+- **Who Uses Tars**: Industry applications and user personas
+- **Success Stories**: Real-world case studies and implementations
+
+### Getting Help
+- **Account Setup**: Getting started with your Tars account
+- **Video Tutorials**: Step-by-step visual guides
+- **Community Forum**: Connect with other users and get support
 
 ## Key Features
 
-### AI Agent Creation
+### AI Agent Workflows
 
-- **Three Creation Paths**: Knowledge-based, action-oriented, or custom development
-- **LMS Brain**: Advanced language model system for natural language understanding
-- **Intent Detection**: Automatic categorization of user queries
-- **Data Collection**: Structured information extraction from conversations
+- **Agentic Workflow**: AI-driven decision making with knowledge retrieval and tool execution
+- **Question Answering**: RAG-based responses using vector search and knowledge bases
+- **Conversation Processing**: Multi-turn conversations with context preservation and state management
 
-### Knowledge Management
+### Knowledge Base System
 
-- **Vector Databases**: PV8/Quadrant integration for semantic search
-- **Multiple Sources**: Website scraping, document upload, manual entry, CSV import
-- **RAG Technology**: Retrieval-Augmented Generation for accurate responses
+- **Vector Search**: Semantic search using vector embeddings for accurate information retrieval
+- **Multiple Sources**: Website scraping, document upload, and structured content
+- **RAG Technology**: Retrieval-Augmented Generation for contextual responses
 - **Content Processing**: Automatic chunking, embedding, and indexing
 
-### Tools & Integrations
+### Tools & Actions
 
-- **600+ Native Tools**: Pre-built integrations with popular business applications
-- **Custom Integrations**: API-based connections for proprietary systems
-- **Categories**: CRM, productivity, e-commerce, communication tools
-- **Real-time Sync**: Webhook and API-based data synchronization
+- **Connected Tools**: Attach tools to AI Agents for enhanced capabilities
+- **Tool Selection**: AI-driven tool selection and execution based on user intent
+- **Action Functions**: Execute pre/post action functions during conversation flow
 
-### Deployment Options
+### Multi-Platform Deployment
 
-- **Website Embedding**: Customizable chat widgets for web integration
-- **WhatsApp Business**: Direct integration with WhatsApp Business API
-- **Direct Links**: Standalone Agent URLs with custom domains
-- **Multi-platform**: Web, mobile, and messaging app support
+- **Website Integration**: Deploy agents on websites with customizable interfaces
+- **WhatsApp Business**: Full WhatsApp integration via 360Dialog provider
+  - Message transformation and delivery
+  - Sequential message queue
+  - Conversation state management
+- **Livechat Integration**: Seamless handoff to human agents
+  - Native Livechat dashboard
+  - Real-time conversation routing
+  - Session management with Livechat Server
 
 ## Development
 
@@ -79,17 +91,17 @@ View your local preview at `http://localhost:3000`.
 
 ### For New Users
 
-1. **Create Your Account**: Sign up at [hellotars.com](https://hellotars.com)
-2. **Take the Platform Tour**: Interactive guided tour to learn the basics
-3. **Build Your First Agent**: Follow our quickstart guide
-4. **Deploy and Test**: Launch your Agent and monitor performance
+1. **Explore the Platform**: Start with the [Welcome to Tars](welcome-to-tars/index) introduction
+2. **Take the Platform Tour**: Learn about key features and interfaces
+3. **Build Your First Agent**: Follow the [Build Agent](build-agent) quickstart guide
+4. **Understand How Tars Works**: Deep dive into AI Agent workflows, WhatsApp, and Livechat
 
-### For Developers
+### Choosing Your Approach
 
-1. **Explore the API**: Learn about our REST API and webhook integrations
-2. **Custom Integrations**: Build custom tools and connections
-3. **Advanced Configuration**: Dive into gambits, conversation flows, and custom logic
-4. **Testing Framework**: Comprehensive testing and validation tools
+The [Choosing Your Path](platform-fundamentals/choosing-your-path) guide helps you decide:
+- **Knowledge-based Agents**: Best for answering questions using documentation
+- **Action-oriented Agents**: Best for task automation and tool integration
+- **Custom Development**: Best for complex workflows and specific business logic
 
 ## Publishing Changes
 
@@ -107,24 +119,28 @@ We welcome contributions to improve our documentation! Here's how you can help:
 ### Documentation Updates
 
 - Fix typos or improve clarity
-- Add new examples or use cases
+- Add diagrams and visual aids
 - Update outdated information
-- Enhance code examples
-
-### New Content
-
-- Write guides for new features
-- Create video tutorials
-- Develop troubleshooting guides
-- Add industry-specific examples
+- Enhance workflow explanations
+- Add real-world examples
 
 ### How to Contribute
 
 1. Fork this repository
-2. Create a feature branch
-3. Make your changes
+2. Create a feature branch (`git checkout -b feature/your-improvement`)
+3. Make your changes following the existing structure
 4. Test locally with `mint dev`
-5. Submit a pull request
+5. Commit your changes (`git commit -m "Description"`)
+6. Push to your branch (`git push origin feature/your-improvement`)
+7. Submit a pull request
+
+### Documentation Guidelines
+
+- Use clear, concise language
+- Follow the existing formatting style
+- Include visual aids (diagrams, screenshots) when helpful
+- Bold important terms and interface elements for scannability
+- Test all code examples and links before submitting
 
 ## Need Help?
 
@@ -143,10 +159,18 @@ We welcome contributions to improve our documentation! Here's how you can help:
 ### Support Resources
 
 - **Tars Platform**: [hellotars.com](https://hellotars.com)
-- **Help Center**: Built-in documentation and guides
-- **Community Forum**: User discussions and peer support
+- **Login to Dashboard**: [app.hellotars.com](https://app.hellotars.com)
+- **Tars 1.0 Documentation**: [help.hellotars.com](https://help.hellotars.com)
+- **Community Forum**: Connect with users and get peer support
 - **Video Tutorials**: Step-by-step visual guides
-- **Contact Support**: Direct assistance from our team
+- **Account Setup Help**: Getting started documentation
+
+### Connect With Us
+
+- **X (Twitter)**: [@hellotars_ai](https://x.com/hellotars_ai)
+- **LinkedIn**: [Tars Company](https://www.linkedin.com/company/tars)
+- **Instagram**: [@hellotars](https://www.instagram.com/hellotars/)
+- **YouTube**: [Tars Tutorials](https://youtube.com/@hellotars)
 
 ## License
 
