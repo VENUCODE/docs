@@ -67,7 +67,6 @@
                         "icon": "database",
                         "pages": [
                           "platform-fundamentals/platform-tour/knowledge-bases/index",
-                          "platform-fundamentals/platform-tour/knowledge-bases/my-knowledge",
                           {
                             "group": "Add Knowledge",
                             "icon":"plus",
@@ -81,15 +80,8 @@
                           }
                         ]
                       },
-                      {
-                        "group": "Tools",
-                        "icon": "wrench",
-                        "pages": [
-                          "platform-fundamentals/platform-tour/tools/index",
-                          "platform-fundamentals/platform-tour/tools/browse-tools",
-                          "platform-fundamentals/platform-tour/tools/featured-tools"
-                        ]
-                      },
+                      "platform-fundamentals/platform-tour/tools/index",
+                     
                       {
                         "group": "Settings",
                         "icon": "cog",
