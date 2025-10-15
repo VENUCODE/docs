@@ -1,10 +1,9 @@
 ---
-title: "How Tars Works"
+title: "How Tars works"
 description: "Understand the core architecture and technology behind Tars AI Agents and conversational intelligence"
 icon: "cloud-question"
 ---
 
-Tars is a **comprehensive conversational AI platform** that enables you to build intelligent agents through a complete development lifecycle. The platform combines AI-powered conversation handling with visual flow building, extensive integrations, and robust analytics to create dynamic conversational experiences that replace static forms and landing pages.
 <Frame>
 <img src="/images/key_concepts.svg"/>
 </Frame>
@@ -46,32 +45,23 @@ Tars agents handle conversations through sophisticated AI processing where the L
 
 ```mermaid
 flowchart TD
-    A[User Input] --> B[AI Agent]
+    A(User Input) --> B(AI Agent)
 
-    B --> C[Knowledge Retrieval]
-    B --> D[Tool Action Execution]
+    B --> C(Knowledge Retrieval)
+    B --> D(Tool Selection)
+    
+    C --> E(Vector Database Search)
+    E --> F(Context & Information)
 
-    C --> E[Vector Database Search]
-    E --> F[Context & Information]
+    D --> G(Connected Tools)
+    G --> H(Tool Execution)
+    H --> I(Action Results)
 
-    D --> G[Tool Selection]
-    G --> H[600+ Native Tools]
-    G --> I[Custom Integrations]
-    H --> J[Action Results]
+    F --> J(Data Aggregation)
     I --> J
+    J --> K(Response Generation)
+    K --> L(Contextual Response)
 
-    F --> K[Data Aggregation]
-    J --> K
-    K --> L[Response Generation]
-    L --> M[Contextual Response]
-
-    style A fill:#e1f5fe
-    style B fill:#fff3e0
-    style C fill:#f3e5f5
-    style D fill:#e8f5e8
-    style K fill:#fce4ec
-    style L fill:#e3f2fd
-    style M fill:#e0f2f1
 ```
 
 ### Question Answering workflow
@@ -80,32 +70,20 @@ The Question Answering Workflow uses the same agentic workflow but focuses only 
 
 ```mermaid
 flowchart TD
-    A(User Input) --> B[AI Agent]
+    A(User Input) --> B(AI Agent)
 
     B --> C(Knowledge Required?)
 
-    C -->|Yes| D[RAG Retrieval]
-    C -->|No| E[Skip Knowledge]
+    C -->|Yes| D(RAG Retrieval)
+    C -->|No| E(Skip Knowledge)
 
-    D --> F[Retrieve]
-    F --> G[Augment]
-    G --> K[Response Generation]
-    K --> I[Contextual Response]
+    D --> F(Retrieve)
+    F --> G(Augment)
+    G --> K(Response Generation)
+    K --> I(Contextual Response)
 
-    E --> J[Data Aggregation]
-    J --> K[Response Generation]
-
-
-    style A fill:#e1f5fe
-    style B fill:#fff3e0
-    style C fill:#fff3e0
-    style D fill:#e8f5e8
-    style E fill:#e8f5e8
-    style F fill:#e8f5e8
-    style G fill:#e8f5e8
-    style I fill:#e0f2f1
-    style J fill:#fce4ec
-    style K fill:#e3f2fd
+    E --> J(Data Aggregation)
+    J --> K(Response Generation)
 ```
 
 <Steps>
@@ -128,131 +106,264 @@ flowchart TD
 </Step>
 </Steps>
 
-### Conditional workflows
+## How does the Knowledge Base work?
 
-**Intelligent Escalation & Routing**
+The Knowledge Base System transforms unstructured content from various sources into intelligent, searchable knowledge that your **AI Agent** can access instantly.
 
-- **Live Chat Handoff**: Seamless transition to human agents when AI cannot resolve queries
-- **Custom Workflows**: Conditional logic for complex business processes
-- **API Integrations**: Real-time data exchange with external systems
+The system operates in three phases: `Load`-> `Index`-> `Retrieve`.
+<Frame>
+<img src="/images/dashboard/knowledge/knowledge_architecture.svg"/>
+</Frame>
 
-## Knowledge Base Architecture
-
-### Vector database technology
-
-<CardGroup cols={2}>
   <Card
-    title="Knowledge Bases"
-    icon="database"
+    title="Load Phase"
+    icon="download"
   >
-    ***Semantic Search Technology*** enables content ingestion from multiple sources, utilizes vector embeddings for meaning-based search, provides context-aware retrieval and ranking, and offers real-time knowledge access.
+    ***Data Ingestion*** Connect to 12+ data sources including websites, PDFs, Slack, Notion, Confluence, and more. Content is extracted, cleaned, and stored for processing.
+  </Card>
+<CardGroup cols={2}>
+
+  <Card
+    title="Index Phase"
+    icon="layer-group"
+  >
+    ***Embedding Creation*** Documents are split into optimal chunks and converted into vector embeddings using OpenAI's models, then stored in dual vector databases (Qdrant & Weaviate).
   </Card>
 
   <Card
-    title="Vector Databases"
-    icon="server"
+    title="Retrieve Phase"
+    icon="magnifying-glass"
   >
-    ***Weaviate & Qdrant Integration*** involves mathematical content representations, fast semantic search capabilities, scalable storage and retrieval, and performance optimization.
+    ***Semantic Search*** User queries are converted to vectors and matched against stored embeddings. AI-powered reranking returns the top 4 most relevant results in under 500ms.
   </Card>
 </CardGroup>
 
 ### Knowledge processing workflow
 
 <Steps>
-<Step title="Data import">
-  Content ingestion from websites, documents, APIs, and manual entry with automatic cleaning and formatting.
+<Step title="Content ingestion">
+  Your data sources (websites, PDFs, Slack channels, Notion pages, etc.) are connected and content is extracted using specialized loaders. Raw content is cleaned and prepared for processing.
 </Step>
 
-<Step title="Indexing & embedding"> 
-  Content conversion to searchable vector embeddings that capture semantic
-  meaning and relationships.
+<Step title="Text chunking & embedding">
+  Documents are split into 1,000-character chunks with overlap to maintain context. Each chunk is converted into a 1,536-dimensional vector using OpenAI's embedding model, capturing semantic meaning.
 </Step>
 
-<Step title="Vector database storage">
-  Processed embeddings stored in Weaviate and Qdrant for fast, scalable semantic
-  search.
-</Step> 
-
-<Step title="Semantic search">
-  Real-time retrieval of relevant content based on conversation context and user
-  intent.
+<Step title="Vector storage">
+  Generated embeddings are stored in both **Qdrant** and **Weaviate** vector databases with metadata (source URL, document ID). Multi-tenant isolation ensures your data remains private and secure.
 </Step>
 
-<Step title="Contextual response">
-  Integration of retrieved knowledge into natural Agent responses with source attribution.
+<Step title="Query processing">
+  When users ask questions, queries are converted into the same vector format and compared against millions of stored vectors using semantic similarity search.
+</Step>
+
+<Step title="AI reranking & response">
+  Retrieved chunks are reranked using Cohere's AI model to evaluate relevance. The top 4 results are returned with source attribution, enabling your Agent to provide accurate, contextual answers.
 </Step>
 </Steps>
 
-## Integration framework
+<Note>
+  **Fast & scalable:** The system processes 500-1,000 chunks per minute during indexing and delivers search results in under 500ms, supporting millions of vectors across multiple knowledge bases.
+</Note>
 
-### Platform integration types
+## How tool execution works?
 
+Tool execution at Tars is managed through a configured **AI Agent**, which interacts with connected external systems securely and intelligently. The architecture ensures that all actions, authentications, and data exchanges happen entirely within backend systems, keeping credentials and sensitive information fully protected.
+
+### Tool execution architecture
+<Frame>
+<img src="/images/dashboard/tools/tool_architecture.svg"/>
+</Frame>
+
+The tool execution system is built on three key principles:
+
+  <Card
+    title="Backend-Only Execution"
+    icon="server"
+  >
+    ***Secure Processing*** All tool interactions and processing occur exclusively within backend systems. Tool credentials remain encrypted in backend databases and are never exposed to frontend clients.
+  </Card>
 <CardGroup cols={2}>
   <Card
-    title="Pre-Built Tools (600+)"
+    title="AI-Driven Intelligence"
+    icon="brain"
+  >
+    ***Smart Tool Selection*** The AI Agent automatically determines which tools to use based on user intent and connected tool capabilities, executing actions within the LangGraph workflow.
+  </Card>
+  <Card
+    title="Encrypted Communication"
+    icon="shield-halved"
+  >
+    ***End-to-End Security*** Every payload transmitted between services is encrypted, and the AI Agent can only execute tools that are explicitly connected and authorized.
+  </Card>
+</CardGroup>
+
+### Tool execution workflow
+
+<Steps>
+<Step title="User interaction">
+  The user interacts with the **CX Agent** interface, submitting queries or requests that may require tool execution.
+</Step>
+
+<Step title="Backend parsing & payload preparation">
+  The **Chatbot Backend** receives the user input, parses it, and prepares a structured payload. All sensitive data within the payload is securely encrypted before being sent to the **AI Service Backend**.
+</Step>
+
+<Step title="AI Agent execution">
+  Inside the **AI Service Backend**, the configured AI Agent processes the request. If the agent has connected tools, it executes the appropriate tool action within the **LangGraph workflow**. If no tools are connected, the agent continues reasoning and generates a response without performing any tool action.
+</Step>
+
+<Step title="Response handling">
+  The **AI Service Backend** processes the tool output (if any) and formulates the final agent response. This response is securely returned to the **Chatbot Backend**, which parses and extracts only the necessary information for display.
+</Step>
+
+<Step title="User display">
+  The processed response is sent to the **CX Agent** interface, where it's shown to the user. Throughout the flow, raw credentials or sensitive data are never exposed.
+</Step>
+</Steps>
+
+<Note>
+  **Security first:** Tool execution at Tars is secure, backend-driven, and fully agent-controlled. Each execution is logged for transparency, monitoring, and governance, ensuring that sensitive data never leaves trusted backend environments.
+</Note>
+
+## How does WhatsApp integration work?
+
+TARS enables businesses to deploy **AI Agents** on WhatsApp through a seamless integration architecture. The system abstracts provider differences, normalizes message formats, and ensures reliable, sequential message delivery while maintaining conversation context and state.
+
+### WhatsApp integration architecture
+
+The integration is built on **three key abstraction layers** that work together to deliver AI-powered conversations on WhatsApp:
+
+<Frame>
+<img src="/images/dashboard/whatsapp_architecture.svg"/>
+</Frame>
+  <Card
+    title="360Dialog Provider"
     icon="plug"
   >
-    **Native Platform Integrations** Connect CRM, productivity, and communication platforms with one-click setup and guided configuration, support multiple actions per platform, and include automatic updates and maintenance.
+    ***WhatsApp API Integration*** Receives webhooks from WhatsApp Business API and delivers messages back to users.
+  </Card>
+
+<CardGroup cols={2}>
+
+  <Card
+    title="Tars Chatbot Backend"
+    icon="server"
+  >
+    ***Message Orchestration*** Handles API routing, validation, credit checking, message transformation (inbound/outbound), conversation engine processing, and response delivery.
   </Card>
 
   <Card
-    title="Custom & 3rd Party"
-    icon="code"
+    title="AI Service"
+    icon="brain"
   >
-    **API Integrations** 
-    - Provide REST API support for any system, secure credential storage for API keys and OAuth, custom data transformation and mapping.
+    ***AI Agent Processing*** Handles AI Agent dependent requests from the Chatbot Backend, processes with AI logic, and returns intelligent responses.
   </Card>
 </CardGroup>
+
+### WhatsApp integration workflow
+
+<Steps>
+<Step title="Webhook reception">
+  A user sends a message via WhatsApp. The message is received by **360Dialog** and forwarded to the **Tars Chatbot Backend** via webhook.
+</Step>
+
+<Step title="Validation & transformation">
+  The **Tars Chatbot Backend** validates credentials, checks credits, and transforms the WhatsApp message into Tars internal format.
+</Step>
+
+<Step title="Conversation processing">
+  The **Conversation Engine** (within Chatbot backend) processes the message, executes action functions, and determines the next gambit. If AI Agent processing is needed, the request is sent to the **AI Service**.
+</Step>
+
+<Step title="AI processing (if needed)">
+  The **AI Service** handles AI Agent dependent requests, processes with AI logic, and returns the intelligent response back to the **Tars Chatbot Backend**.
+</Step>
+
+<Step title="Response transformation & delivery">
+  The **Tars Chatbot Backend** transforms the response into WhatsApp-compatible format (including buttons, lists, media), queues it in **Redis** for sequential delivery, updates conversation state in **MongoDB**, and sends it to the user via **360Dialog** and WhatsApp.
+</Step>
+</Steps>
+
+<Note>
+  **Seamless integration:** The system supports multi-turn conversations, media handling, interactive elements, live chat handover, and automatic error handling with retry logic.
+</Note>
+
+
+
+## How does Livechat work?
+
+Tars provides a standalone Livechat feature that enables direct conversations between users and human agents. The platform includes a **native Livechat dashboard** where human agents can manage and respond to conversations in real-time.
+<Frame>
+<img src="/images/dashboard/livechat.svg"/>
+</Frame>
+
+### Livechat components
+
+  <Card
+    title="AI Agent Interface"
+    icon="user"
+    horizontal
+  >
+    Users interact through the AI Agent interface. Messages flow to the Chatbot backend for processing.
+  </Card>
+<CardGroup cols={2}>
+
+  <Card
+    title="Tars Chatbot Backend"
+    icon="server"
+  >
+     When a Livechat Gambit is triggered, the backend coordinates the handoff to the Livechat Server and handles session management.
+  </Card>
+
+  <Card
+    title="Livechat Server"
+    icon="comments"
+  >
+    Creates livechat sessions, notifies agents via the Admin Dashboard, and routes messages between users and human agents.
+  </Card>
+</CardGroup>
+
+  <Card
+    title="Admin Dashboard"
+    icon="desktop"
+    horizontal
+  >
+    Human agents receive notifications, view conversations, and respond to users in real-time through the native dashboard.
+  </Card>
+
+### Livechat workflow
+
+<Steps>
+<Step title="User message">
+  A user sends a message through the **AI Agent Interface**, which forwards it to the **Tars Chatbot Backend** for processing.
+</Step>
+
+<Step title="Livechat Gambit triggered">
+  When the conversation reaches a **Livechat Gambit**, the **Tars Chatbot Backend** triggers the handoff process and sends the conversation to the **Livechat Server**.
+</Step>
+
+<Step title="Session creation & agent notification">
+  The **Livechat Server** creates a new livechat session and notifies human agents through the **Admin Dashboard**.
+</Step>
+
+<Step title="Human agent response">
+  Human agents view the conversation in the **Admin Dashboard** and respond. The response flows back through the **Livechat Server** to the **AI Agent Interface**.
+</Step>
+
+<Step title="Response delivery">
+  The **AI Agent Interface** displays the human agent's response to the user. The conversation continues with real-time message exchange between user and agent.
+</Step>
+
+<Step title="Session end">
+  When the conversation is resolved, the human agent can end the session from the **Admin Dashboard**, returning control to the automated flow.
+</Step>
+</Steps>
+
+<Note>
+  **Standalone capability:** Livechat operates independently from AI Agent flows. You can build conversation paths that lead directly to human agents using the Livechat Gambit, or keep it completely separate from automated workflows.
+</Note>
 
 ## Multi-platform deployment
 
-### Channel flexibility
-
-**Website Integration**
-
-- Embeddable chat widgets with full customization
-- Custom domain hosting for professional deployment
-- Cross-browser compatibility and mobile responsiveness
-
-**WhatsApp Business Platform**
-
-- Native WhatsApp Business API integration
-- Rich media messaging and broadcast capabilities
-- Business number setup and verification
-
-**Direct Access**
-
-- Shareable Agent links for campaigns and social media
-- QR code generation for offline-to-online engagement
-- Custom branding and analytics tracking
-
-## Security and compliance
-
-**Enterprise-Grade Protection**
-
-- End-to-end encryption for all communications
-- SOC 2 Type II certified security controls
-- GDPR and CCPA compliant data processing
-- Role-based access control with audit logging
-
-## Next steps
-
-<CardGroup cols={2}>
-  <Card
-    title="Key Concepts"
-    icon="lightbulb"
-    href="/platform-fundamentals/key-concepts"
-  >
-    Master essential terminology and platform relationships
-  </Card>
-
-  <Card title="Start Building" icon="rocket" href="/">
-    Create your first Agent with our step-by-step tutorial
-  </Card>
-</CardGroup>
-
-<Note>
-  **Want technical details?** Visit our [Technical Deep
-  Dive](/ai-technology/understanding-llms) section for in-depth information
-  about AI models, vector embeddings, and system architecture.
-</Note>
+Tars Agents can be deployed across multiple channels including websites, WhatsApp Business, and direct shareable links—ensuring your users can engage wherever they are. [Learn how to distribute your AI Agent &rarr;](/build-agent#distribute-your-ai-agent)

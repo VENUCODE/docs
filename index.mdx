@@ -4,27 +4,25 @@ description: "Essential building blocks of the Tars platform - understand these 
 icon: "lightbulb"
 ---
 
-Before diving into building your first **AI Agent**, let's understand the fundamental concepts that power the **Tars** platform. This page will give you the foundation you need to create intelligent, conversational experiences.
-
-
+Before diving into building your first **AI Agent**, let's understand the fundamental concepts that power **Tars**. 
 
 ## What is Tars?
 
 Tars is a visual, no-code platform that empowers anyone to build sophisticated **conversational AI Agents (CX Agents)** without writing a single line of code. Using an intuitive **drag-and-drop interface**, you can design conversation flows just like creating a flowchart.
 
-## What is a gambit in Tars?
+## What are Gambits in Tars?
 
-A gambit represents one single **back-and-forth conversation** between the **Agent** and **User**. 
-- It's the fundamental unit of interaction in **Tars**, where each gambit contains the messages your Agent sends and the input options users have to respond. 
-- You build conversations by adding **gambits** to your canvas and connecting them to define the **conversation flow**. 
-- A series of connected **gambits** creates the complete user journey through your **AI Agent**. 
-- **Gambits** must be connected to each other for the conversation to flow. An unconnected gambit will never be executed.
+A Gambit represents one single **back-and-forth conversation** between the **Agent** and **User**. 
+- It's the fundamental unit of interaction in **Tars**, where each Gambit contains the messages your Agent sends and the input options users have to respond. 
+- You build conversations by adding **Gambits** to your canvas and connecting them to define the **conversation flow**. 
+- A series of connected **Gambits** creates the complete user journey through your **AI Agent**. 
+- **Gambits** must be connected to each other for the conversation to flow. An unconnected Gambit will never be executed.
 
-## What are the different types of gambits?
+## What are the different types of Gambits?
 
-### User input gambits
+### User input Gambits
 
-User input gambits collect specific information from users through structured inputs like text fields, buttons, date pickers, and ratings. Use them to gather validated data such as emails or preferences for personalized interactions.
+User input Gambits collect specific information from users through structured inputs like text fields, buttons, date pickers, and ratings. Use them to gather validated data such as emails or preferences for personalized interactions.
 
 | Gambit | Description |
 |--------|-------------|
@@ -37,9 +35,9 @@ User input gambits collect specific information from users through structured in
 | File upload | Allow users to share documents, images, or other files (coming soon) |
 | Location | Capture user location data (coming soon) |
 
-### AI powered gambits
+### AI powered Gambits
 
-AI-powered gambits use artificial intelligence for dynamic responses, natural language understanding, and tasks like answering FAQs or extracting data. Ideal for flexible scenarios like customer support, they create adaptive conversations that feel human-like.
+AI-powered Gambits use artificial intelligence for dynamic responses, natural language understanding, and tasks like answering FAQs or extracting data. Ideal for flexible scenarios like customer support, they create adaptive conversations that feel human-like.
 
 |Gambit |Description |
 |--------|-------------|
@@ -49,17 +47,17 @@ AI-powered gambits use artificial intelligence for dynamic responses, natural la
 | Categorizer | Understands what the user wants to accomplish from their message |
 
 
-### Tool gambits
+### Tool Gambits
 
-Tool gambits enable your AI Agent to perform real-time actions by connecting to external tools and services. When a tool gambit is linked to an AI Agent gambit, it allows the Agent to execute tasks like updating CRM records or scheduling appointments using over 600+ pre-built integrations.
+Tool Gambits enable your AI Agent to perform real-time actions by connecting to external tools and services. When a tool Gambit is linked to an AI Agent Gambit, it allows the Agent to execute tasks like updating CRM records or scheduling appointments using over 600+ pre-built integrations.
 
-### API gambit
+### API Gambit
 
-The API gambit is a flexible integration tool executed in the conversation workflow. It allows making HTTP requests to any REST API endpoint with custom data, ideal when pre-built tools don't meet your requirements.
+The API Gambit is a flexible integration tool executed in the conversation workflow. It allows making HTTP requests to any REST API endpoint with custom data, ideal when pre-built tools don't meet your requirements.
 
 ### Livechat handoff
 
-Livechat handoff enables escalation to human agents for complex queries or issues AI can't handle. Set conditional rules based on keywords or sentiment to trigger automatic transfers, preserving conversation history for seamless support.
+Livechat handoff enables escalation to human agents for complex queries or issues AI can't handle.You can set conditional workflows based on the user's message content, sentiment, or other criteria to trigger a livechat handoff.
 
 ## What is an AI Agent?
 
@@ -68,81 +66,105 @@ An **AI Agent** in **Tars** is a dynamic, goal-driven, and tool-enabled system t
 What does that mean? It means the AI Agent can:
 - Understand and pursue specific goals during conversations
 - Use built-in tools to fetch data, send emails, or update systems
-- Handle multi-step processes autonomously
 - Adapt its approach based on user responses and context
 
 For example, instead of just answering questions, it can book a meeting, check inventory, and follow up—all in one chat. This makes it ideal for customer service, sales, or any scenario needing smart, proactive assistance.
 
 
-## What is a Knowledge Base?
+## What is a knowledge Base?
 
-A **Knowledge Base** in **Tars** is a repository of information that your **AI Agent** can reference to answer user questions accurately. **Tars** converts your content into a **vector database** optimized for **semantic search**, meaning your Agent understands the meaning and context of questions to find relevant information even when phrased differently than your source content. You can build **knowledge bases** from **website scraping**, **document uploads**, **structured data files**, or **manual Q&A entry**.
+A **knowledge Base** in **Tars** is a repository of information that your **AI Agent** can tap into to provide accurate and informative responses to user queries. By performing semantic searches over this knowledge base, the Agent can retrieve relevant content and generate responses that are grounded in factual information.
 
-To use a **Knowledge Base**, you connect it as a **"knowledge tool"** to your **AI Agent gambit** in the **AI tools** section. When users ask questions, the **AI Agent** references this tool to retrieve relevant information and formulate accurate responses. This provides **dynamic retrieval** from thousands of documents, keeps information current without rebuilding your Agent, prevents **AI hallucination** by using actual source content, and ensures consistent answers across all conversations.
+The benefits of using a knowledge Base include:
 
+- Dynamic retrieval from trained content
+- Consistent, fact-based answers across all conversations
+- Prevention of AI hallucination by relying on real content
 
 
 ## Tools
 
-**Tools** in **Tars** are integrations that connect your **AI Agent** to external systems, databases, and services. They transform your Agent from a conversation handler into an action-taker that can interact with your business systems in real-time. **Tars** offers 600+ **pre-built integrations** including **CRM systems** like HubSpot and Salesforce, **productivity tools** like Google Sheets, **communication services**, **calendars**, **payment processing**, and **custom API connections**.
+A **Tool** in **Tars** is an integration that allows your AI Agent to interact with external systems, databases, or services.
 
-You add **tools** in the **AI tools** section of your gambit configuration, similar to how you add **knowledge tools**. The **AI Agent** understands when to use which tool based on your **base prompt** instructions. This enables reading data like fetching customer information or checking availability, and writing data like creating CRM records, booking appointments, or sending emails. While **knowledge bases** provide information, **tools** enable action - together they make your Agent both knowledgeable and capable of executing real business workflows.
+Tools empower your Agent to:
+- Fetch, create, update, or delete data in connected platforms
+- Go beyond conversation and perform real-world tasks
+
+Common tool integrations include:
+- **CRM systems** (like HubSpot and Salesforce)
+- **Productivity tools** (such as Google Sheets)
+- **Communication services**
+- **Calendars**
+- **Payment processors**
 
 
+## Conversation Flow: The Flowchart Analogy
 
-## Conversation flow
+Visualize your TARS conversation flow as a flowchart. Each **node** is a **Gambit**, and connections between nodes define the possible conversation paths.
 
-A **conversation flow** is the path users take through your Agent, defined by how you connect your **gambits** together using **pipes**. **Gambits** execute sequentially where the user enters and triggers the first gambit, the gambit displays content, the user provides input if required, data is captured in the gambit's variable called **varid**, and then the next gambit triggers following your pipe connection. Data flows between **gambits** through these variables - you reference user responses using `{{ursp.gambit_name}}` and API responses using `{{pre.gambit_name}}` where gambit_name is the **varid** you assigned.
+### Starting the Conversation
+- The **first Gambit** you add to the canvas becomes the **Start Gambit** and is assigned Gambit number **1**.
+- Every Gambit has a **single input socket** at the top (where the flow enters) and **one or more output sockets** at the bottom.
+- **Abandoned Gambits** are those not connected to any flow—they will never execute even if perfectly configured.
 
-You can create **linear flows** where each gambit leads to the next, **conditional branching** using **branching mode** on button gambits to create separate paths for each option, or **conditional jumps** that evaluate user responses and route to different gambits based on whether conditions are met. Each **pipe connection** represents a decision point in your conversation, and unconnected **gambits** will never execute even if perfectly configured.
+<img src="/images/quickstart/intro/start_and_abandoned.png" alt="Start and Abandoned Gambits" />
 
+### Gambit Execution Phases
+Each Gambit executes in three phases:
+1. **Pre Phase:** Renders agent content to the user (e.g., greeting, info).
+2. **Post Phase:** Collects and processes user input.
+3. **Jump (Exit) Phase:** Determines which Gambit to go to next.
 
+### Flow Patterns
 
-## <Icon icon="triangle-exclamation" size="30" /> Common beginner mistakes
+#### Linear Flow
+A simple, straight-line conversation where one Gambit leads directly to the next.
 
-### Not connecting **gambits**
+<img src="/images/quickstart/intro/linear_flow.png" alt="Linear Flow Example" />
 
-**Gambits** left unconnected will never execute regardless of configuration. After adding a gambit, immediately connect it with a **pipe** to the previous step and use **preview mode** to verify all paths are accessible.
+#### Branching Flow
+Multiple output sockets create different conversation paths based on user choices or logic.
+<Columns cols={2}>
+<img src="/images/quickstart/intro/branching_flow.png" alt="Button Branching Example"/>
+<img src="/images/quickstart/intro/agent_branching.png" alt="Agent Branching Example" />
+</Columns>
 
-### Using too many **gambits**
+#### Cyclic Flow
+Connect a Gambit's output back to itself or to a previous Gambit to create loops for repeated interactions.
 
-Overcomplicating flows with unnecessary **gambits** makes your Agent harder to maintain. Start with the minimum number needed - a simple conversation might only need three to five **gambits**. Add complexity only when necessary.
+<img src="/images/quickstart/intro/cyclic_flows.png" alt="Cyclic Flow Example" />
 
-### Vague **AI Agent** instructions
+### Ending the Conversation
+- If a Gambit has no connected output socket, the conversation ends.
 
-The **AI Agent** gambit needs detailed **base prompt** instructions including the Agent's role and purpose, what information sources to use, tone and personality guidelines, and what it should and should not do. Vague instructions lead to generic or unpredictable responses.
+## Common beginner mistak
 
-### Skipping **Knowledge Base** setup
+<AccordionGroup>
+  <Accordion title="Why aren't my Gambits executing?">
+**Gambits** left unconnected will never execute regardless of configuration. After adding a Gambit, immediately connect it with a **pipe** to the previous step and use **preview mode** to verify all paths are accessible.
+  </Accordion>
 
+  <Accordion title="How many Gambits should I use?">
+Overcomplicating flows with unnecessary **Gambits** makes your Agent harder to maintain. Start with the minimum number needed - a simple conversation might only need three to five **Gambits**. Add complexity only when necessary.
+  </Accordion>
+
+  <Accordion title="Why are my AI Agent responses generic or unpredictable?">
+The **AI Agent** Gambit needs detailed **base prompt** instructions including the Agent's role and purpose, what information sources to use, tone and personality guidelines, and what it should and should not do. Vague instructions lead to generic or unpredictable responses.
+  </Accordion>
+
+  <Accordion title="Why is my AI Agent making up answers?">
 Without a **Knowledge Base**, your **AI Agent** either makes up answers or gives generic responses. Before deploying customer-facing Agents, create a comprehensive **Knowledge Base** with your documentation, FAQs, and key information.
+  </Accordion>
 
-### Not testing thoroughly
+  <Accordion title="How should I test my conversation flows?">
+Test every possible **conversation path** using **preview mode**. Try different user responses and verify that **data flows** correctly between **Gambits** before deployment.
+  </Accordion>
 
-Test every possible **conversation path** using **preview mode**. Try different user responses and verify that **data flows** correctly between **gambits** before deployment.
+  <Accordion title="How do I reference data between Gambits?">
+Use proper syntax when referencing **data**: `{{ursp.gambit_name}}` for user responses and `{{pre.gambit_name}}` for API data. Avoid spaces in **Gambit varids** - use underscores like `user_email` instead of `user email`.
+  </Accordion>
 
-### Incorrect **data referencing**
-
-Use proper syntax when referencing **data**: `{{ursp.gambit_name}}` for user responses and `{{pre.gambit_name}}` for API data. Avoid spaces in **gambit varids** - use underscores like `user_email` instead of `user email`.
-
-### Over-relying on **AI** alone
-
-Use **AI Agent gambits** for natural conversation and understanding, but switch to **structured gambits** with validation when you need exact data formats like phone numbers or credit card information. This hybrid approach provides natural conversation with reliable data collection.
-
-
-
-## <Icon icon="circle-check" /> Ready to build
-
-Now that you understand **gambits**, **conversation flows**, **AI Agents**, **knowledge bases**, and **tools**, you're equipped to start building. Remember to start with simple flows, test frequently, and expand capabilities as you become comfortable with the platform.
-
-<Card title="Build your first Agent" icon="rocket" href="/quickstart/your-first-Agent">
-  Ready to put these concepts into practice? Follow our 15-minute quickstart guide to create your first **AI Agent**.
-</Card>
-
-<CardGroup cols={2}>
-  <Card title="Explore gambit types" icon="puzzle-piece" href="/make/gambits-mastery/gambits-fundamentals/what-are-gambits">
-    Deep dive into each gambit category and learn when to use each type
-  </Card>
-  <Card title="Platform tour" icon="compass" href="/platform-fundamentals/platform-tour">
-    Take a visual walkthrough of the Tars builder interface
-  </Card>
-</CardGroup>
+  <Accordion title="Should I use AI for all data collection?">
+Use **AI Agent Gambits** for natural conversation and understanding, but switch to **structured Gambits** with validation when you need exact data formats like phone numbers or credit card information. This hybrid approach provides natural conversation with reliable data collection.
+  </Accordion>
+</AccordionGroup>
