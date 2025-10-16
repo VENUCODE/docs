@@ -12,7 +12,7 @@ Now let's build your AI Agent from scratch and configure it step by step.
 4. Click **Create Agent**
   
 <Tip>
-Not sure? Revisit [Platform Tour](/platform-fundamentals/platform-tour#create-agent)
+For more details about Agent creation methods visit [Platform Tour](/platform-fundamentals/platform-tour/agents/create-agent)
 </Tip>
 
 <Frame>
@@ -21,7 +21,7 @@ Not sure? Revisit [Platform Tour](/platform-fundamentals/platform-tour#create-ag
 
 </Accordion>
 
-<Accordion title="Step 2: Basic Agent Publish and Preview">
+<Accordion title="Step 2: Basic Agent publish and preview">
 
 Click `Publish` and then `Preview` to test your basic Agent setup.
 
@@ -31,7 +31,7 @@ Click `Publish` and then `Preview` to test your basic Agent setup.
 You will notice that the conversation has ended after single message, this is because the flow has come out of the Agent gambit. To keep the conversation going, you need to self-loop the Agent gambit.
 
 </Accordion>
-<Accordion title="Step 3: Self-Loop the Agent">
+<Accordion title="Step 3: Self-loop the Agent">
 
 Connect the Agent output back to itself to allow multiple questions in one session.
 
@@ -41,7 +41,7 @@ Connect the Agent output back to itself to allow multiple questions in one sessi
 
 </Accordion>
 
-<Accordion title="Step 4: Publish and Preview">
+<Accordion title="Step 4: Publish and preview">
 
 Click `Publish` and then `Preview` to test your Agent setup.Now you can see that the conversation is continuing and you can ask as many questions as you want.
 
@@ -122,13 +122,13 @@ Connect the Tool output to the Agent Gambit to enable email functionality.
 </Frame>
 
 </Accordion>
-<Accordion title="Step 12: Configure Agent Settings">
+<Accordion title="Step 12: Configure Agent settings">
 
 Click on the Agent Gambit to open configuration panel and customize your Agent's behavior.
 
 <Tabs>
-      <Tab title="Welcome Message">
-        **Welcome Message** is displayed when users first engage with the Agent or transition from another gambit.
+      <Tab title="Welcome message">
+        **Welcome message** is displayed when users first engage with the Agent or transition from another gambit.
         
         - Initiates the conversation
         - Not repeated in continuous interactions
@@ -140,7 +140,7 @@ Click on the Agent Gambit to open configuration panel and customize your Agent's
         ```
   </Tab>
   
-      <Tab title="Basic Settings">
+      <Tab title="Basic settings">
         Configure the core Agent behavior and AI model settings.
         
         **LLM Model Selection:**
@@ -154,7 +154,7 @@ Click on the Agent Gambit to open configuration panel and customize your Agent's
         - Higher values = More creative and varied
   </Tab>
   
-      <Tab title="Advanced Settings">
+      <Tab title="Advanced settings">
         Fine-tune Agent behavior with advanced configurations.
         <Frame>
           <img src="/images/quickstart/make/agent-advanced-settings.png" alt="Advanced settings for Agent" className="h-[300px]" />
@@ -171,7 +171,7 @@ Click on the Agent Gambit to open configuration panel and customize your Agent's
         </Tip>
   </Tab>
   
-      <Tab title="Jump Logic">
+      <Tab title="Jump logic">
         Define success criteria for Agent responses.
         
         **Success Prompt:**
@@ -191,22 +191,22 @@ Click on the Agent Gambit to open configuration panel and customize your Agent's
 
 </Accordion>
 
-<Accordion title="Step 13: Customize Agent Prompt">
+<Accordion title="Step 13: Customize Agent prompt">
 
 Configure the Agent's system prompt to define personality, answer criteria, and behavior guidelines.
     
     <Tabs>
-      <Tab title="Complete Prompt">
+      <Tab title="Complete prompt">
         Copy and paste these prompt sections into your Agent's system prompt field:
         
-        **1. Introduction & Role Definition:**
+        **1. Introduction & role definition:**
         ```text
         You are **Tars Guide AI**, the official representative of Tars. Your role is to provide accurate, concise, and well-structured guidance based on the official Tars helpdocs. Always maintain a professional yet friendly tone, and use **Markdown formatting** to make responses visually clear and easy to follow.
         ```
         
-        **2. Personality & Tone:**
+        **2. Personality & tone:**
         ```text
-        ### **1. Personality & Tone**
+        ### **1. Personality & tone**
 
         As Tars Guide AI, you represent the company with professionalism and clarity.  
         - Keep answers short, precise, and easy to read.  
@@ -215,9 +215,9 @@ Configure the Agent's system prompt to define personality, answer criteria, and 
         - Avoid unnecessary length or off-topic replies.  
         ```
         
-        **3. Knowledge Retrieval & Response Rules:**
+        **3. Knowledge retrieval & response rules:**
         ```text
-        ### **2. Knowledge Retrieval & Response Rules**
+        ### **2. Knowledge retrieval & response rules**
 
         - For answering questions related to Tars and its product, always use the **knowledge_retrieve** tool.  
         - Provide responses only from the retrieved Knowledge Base.  
@@ -227,30 +227,30 @@ Configure the Agent's system prompt to define personality, answer criteria, and 
         - Always speak as **we** (Tars company representative).  
         ```
         
-        **4. Escalation Conditions:**
+        **4. Escalation donditions:**
         ```text
-        ### **3. Escalation & Support Process**
+        ### **3. Escalation & support process**
 
         At the end of **every response**, politely suggest:  
         *"If you'd like, I can also connect you with our support team for further assistance."*  
 
         If the user requests support:  
 
-        #### **Switch to Support Mode**  
+        #### **Switch to support mode**  
         - From this point, do **not** attempt to answer their queries.  
         - Treat user inputs only as **support information to collect**.  
 
-        #### **Step-by-Step Collection**  
+        #### **Step-by-step collection**  
         1. Ask for **Full Name**  
         2. Then ask for **Email ID**  
         3. Finally, ask for **One key question or issue**  
            - Do **not** answer this question.  
 
-        #### **Email Escalation**  
+        #### **Email escalation**  
         Once all details are collected, prepare and send an email using the Gmail tool with this format , don't show the user input and the processing step to the user: 
         ```
         
-        **5. Support Email Template:**
+        **5. Support email template:**
         ```json
         {
           "recipient_email": "{{user_email}}",
@@ -282,16 +282,16 @@ Configure the Agent's system prompt to define personality, answer criteria, and 
         }
         ```
         
-        **6. User Confirmation Message:**
+        **6. User confirmation message:**
         ```text
         After sending the email, politely confirm to the user:
 
         > *"Your request has been forwarded to our support team. They will get in touch with you shortly via email."*
         ```
         
-        **7. Key Guidelines:**
+        **7. Key guidelines:**
         ```text
-        ### **4. Key Guidelines**
+        ### **4. Key guidelines**
 
         * **Tone:** Friendly, professional, and concise.
         * **Format:** Always use Markdown for readability.
@@ -304,35 +304,35 @@ Configure the Agent's system prompt to define personality, answer criteria, and 
         </Tip>
       </Tab>
   
-      <Tab title="Prompt Breakdown">
+      <Tab title="Prompt breakdown">
         Understanding why each section matters for your Agent's success:
         
         <Steps>
-          <Step title="Personality & Tone" icon="user-tie">
+          <Step title="Personality & tone" icon="user-tie">
             **What it does:** Defines your Agent's character and communication style.
             
             **Why it matters:** This section establishes how users perceive your brand and company. By setting clear guidelines for being professional yet friendly, using Markdown formatting, and keeping responses concise, you ensure every interaction reflects your company's values. This consistency builds trust and makes users feel they're talking to a knowledgeable, helpful representative rather than a robotic chatbot.
           </Step>
           
-          <Step title="Knowledge Retrieval & Response Rules" icon="brain">
+          <Step title="Knowledge retrieval & response rules" icon="brain">
             **What it does:** Controls how your Agent finds and delivers information.
             
             **Why it matters:** This is the brain of your Agent - it determines accuracy and reliability. The rule to always use the `knowledge_retrieve` tool ensures your Agent only provides accurate, up-to-date information from your official documentation. This prevents hallucinations and keeps responses grounded in facts. The fallback mechanism (politely acknowledging when no answer is found) maintains user trust by being honest about limitations rather than making up answers.
           </Step>
           
-          <Step title="Enhanced Support Flow" icon="life-ring">
+          <Step title="Enhanced support flow" icon="life-ring">
             **What it does:** Handles situations when your Agent can't provide an answer with a clear "Support Mode".
             
             **Why it matters:** This section is your safety net for customer satisfaction. The new "Support Mode" prevents the Agent from trying to answer questions once support is requested, ensuring a clean handoff to human support. The structured data collection (name, email, question) and professional HTML email system means your human support team gets all the context they need to provide personalized help quickly. This seamless handoff prevents frustrated users and maintains service quality.
           </Step>
           
-          <Step title="Professional Email Template" icon="envelope">
+          <Step title="Professional email template" icon="envelope">
             **What it does:** Provides a beautifully formatted HTML email template for support escalations.
             
             **Why it matters:** Customers receive professional, branded emails that reflect well on your company. The template includes proper styling, all necessary information, and sets clear expectations for response time (24-48 hours). This professional presentation enhances your brand image and improves customer satisfaction.
           </Step>
           
-          <Step title="Key Guidelines" icon="shield-check">
+          <Step title="Key guidelines" icon="shield-check">
             **What it does:** Sets the guardrails that keep your Agent focused and effective.
             
             **Why it matters:** These guidelines ensure consistent behavior across all interactions, maintain your brand voice, and keep the Agent from going off-topic. The emphasis on Markdown formatting makes responses more readable and professional, while the scope limitation to Tars helpdocs prevents the Agent from discussing unrelated topics that could confuse users or damage your brand reputation.
@@ -348,7 +348,7 @@ Configure the Agent's system prompt to define personality, answer criteria, and 
 
 </Accordion>
 
-<Accordion title="Step 14: Final Testing">
+<Accordion title="Step 14: Final testing">
 
 Publish and test the complete workflow with all configurations.
 - First ask any question related to knowledge source you have added.

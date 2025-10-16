@@ -122,7 +122,29 @@
           {
             "group": "Getting Help",
             "pages": [
-              "getting-help/account-setup",
+              {
+                "group": "Account Setup",
+                "icon": "user-plus",
+                "pages": [
+                  "getting-help/account-setup/index",
+                  {
+                    "group": "New User",
+                    "icon": "sparkles",
+                    "pages": [
+                      "getting-help/account-setup/new-user",
+                      "getting-help/account-setup/social-signup"
+                    ]
+                  },
+                  {
+                    "group": "Existing User",
+                    "icon": "right-to-bracket",
+                    "pages": [
+                      "getting-help/account-setup/existing-user",
+                      "getting-help/account-setup/social-login"
+                    ]
+                  }
+                ]
+              },
               "getting-help/video-tutorials",
               "getting-help/community-forum"
             ]
