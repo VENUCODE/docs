@@ -1,17 +1,9 @@
 ---
 title: "Welcome to your Tars journey"
-sidebarTitle: "Platform tour"
-description: "Discover the Tars platform step by step - from creating your account to building your first AI Agent"
-icon: "map"
+sidebarTitle: "Getting started"
+description: "Discover the Tars platform step by step - from creating your account to exploring the dashboard"
+icon: "grid-round-2"
 ---
-
-import AgentsSection from "/snippets/dashboard/agents/agents.mdx";
-import Navigation from "/snippets/dashboard/navigation.mdx";
-import ToolsOverview from "/snippets/dashboard/tools/tools-overview-simple.mdx";
-import FeaturedTools from "/snippets/dashboard/tools/featured-tools.mdx";
-import KBOverview from "/snippets/dashboard/kbs/overview.mdx";
-import ProfileSetting from "/snippets/dashboard/settings/index.mdx";
-import Support from "/snippets/dashboard/support/index.mdx";
 
 <Note>
   **First time here?** Don't worry! This tour is designed for complete
@@ -22,44 +14,48 @@ import Support from "/snippets/dashboard/support/index.mdx";
 
 <Steps>
 <Step title="Your first visit to Tars">
-  
+
   When you visit [https://hellotars.com](https://hellotars.com), you'll see our homepage that introduces you to the world of AI Agents and what they can do for your business.
-  
+
   <Frame>
   <img src="/images/homepage.png" alt="Tars landing page showing the welcoming interface" />
   </Frame>
-  
+
   You'll see a **Sign Up** button that will take you to the account creation page. Click it to begin setting up your account and start your journey with Tars.
-  
+
 </Step>
 
 <Step title="Creating your account">
-  **Let's Get You Set Up**
-  
   You'll see a simple form where you can enter your information to create your account.
-  
-  <Tabs>
-    <Tab title="I'm completely new">
-      <Frame>
-        <img src="/images/signup.png" alt="Tars account creation page showing the signup form" />
-      </Frame>
-      **Creating your first account**
-      - Choose your preferred signup method: Gmail, Outlook, LinkedIn, SSO, or name-email-phone
-      - Follow the prompts to complete the signup process
-    </Tab>
-    
-    <Tab title="I've been here before">
-      <Frame>
-        <img src="/images/login.png" alt="Tars account creation page showing the login form" />
-      </Frame>
-      **Welcome back!**
-      - Choose your login method: Gmail, Outlook, LinkedIn, SSO, or name-email-phone
-      - Enter your credentials
-      - Reset your password if you've forgotten it
-    </Tab>
-  </Tabs>
 
-  <Card title="Need help with account setup?" icon="user-plus" href="/getting-help/account-setup">
+  Choose from multiple sign upmethods that work best for you:
+
+  ### Quick Social Signup
+  import SocialSignup from "/snippets/account/social-signup.mdx";
+
+  <SocialSignup />
+
+  ### Manual Email Signup
+  For users who prefer traditional registration:
+
+  <Steps>
+  <Step title="Enter personal details">
+    - **First Name** and **Last Name**
+  </Step>
+
+  <Step title="Add contact information">
+    - **Work Email** address
+    - **Phone Number** with country code
+  </Step>
+
+  <Step title="Create account">
+    - Click **"Start my free trial now"**
+    - Set up your password when prompted
+    - Sign in with your new credentials
+  </Step>
+  </Steps>
+
+  <Card title="Need help with account setup?" icon="user-plus" href="/getting-help/account-setup" arrow="true">
     **Don't worry if you're unsure!** We have a detailed guide that will help you create your account step by step.
   </Card>
 </Step>
@@ -78,45 +74,57 @@ import Support from "/snippets/dashboard/support/index.mdx";
 
 Next, you'll see your main dashboard. This is your central hub where you can manage AI Agents, knowledge bases, and tool integrations.
 
-## <Icon icon="grid-2-plus" size="30"/> Dashboard sections
+## Sign in options for existing users
 
-Your dashboard is divided into distinct sections, each designed for a specific function. Let's delve into each section to understand its role:
-Here, you'll have the opportunity to create AI Agents, manage your knowledge base, and integrate various tools. We'll go through each component together to ensure you grasp how everything operates.
+If you already have a Tars account, you can sign in using:
 
-<Tabs>
-  <Tab title="Agents" icon="user-robot">
-    <AgentsSection />
-  </Tab>
+### Social Login
+import SocialLogin from "/snippets/account/social-login.mdx";
 
-  <Tab title="Tools" icon="wrench">
-    <Frame>
-      <img
-        src="/images/dashboard/tools/tools-overview.png"
-        alt="Tools overview dashboard showing all available tools"
-      />
-    </Frame>
-    <ToolsOverview />
-  </Tab>
+<SocialLogin />
 
-  <Tab title="Knowledge" icon="book">
-    <KBOverview />
-  </Tab>
+### Email & Password Login
+For traditional login:
 
-  <Tab title="Settings" icon="user-gear">
-    <ProfileSetting />
-  </Tab>
+<Steps>
+<Step title="Enter credentials">
+  - Your registered email address
+  - Your password
+</Step>
 
-  <Tab title="Support" icon="circle-question">
-    <Support/>
-  </Tab>
-</Tabs>
+<Step title="Forgot password?">
+  - Click "Forgot Password?" link
+  - Check your email for reset instructions
+  - Create a new secure password
+</Step>
+</Steps>
+
+## Next steps
+
+Now that you're logged in, explore the different sections of your dashboard:
+
+<CardGroup cols={2}>
+  <Card title="Agents Section" icon="robot" href="/platform-fundamentals/platform-tour/agents">
+    Create and manage your AI Agents
+  </Card>
+  <Card title="Tools Integration" icon="wrench" href="/platform-fundamentals/platform-tour/tools">
+    Connect external tools to your agents
+  </Card>
+
+  <Card title="Knowledge Bases" icon="database" href="/platform-fundamentals/platform-tour/knowledge-bases">
+    Build and manage your content libraries
+  </Card>
+
+  <Card title="Settings & Profile" icon="cog" href="/platform-fundamentals/platform-tour/settings">
+    Configure your account preferences
+  </Card>
+</CardGroup>
+  <Card title="Support Resources" icon="circle-question" href="/platform-fundamentals/platform-tour/support" horizontal>
+    Get help and access tutorials
+  </Card>
 
 <Note>
   **Need to reference this tour again?** Bookmark this page or access it anytime
   from the Help menu in your dashboard. You can also restart the interactive
   platform tour from your dashboard settings.
 </Note>
-
-<a href="#dashboard-sections" className="underline float-right">
-  Back to top
-</a>

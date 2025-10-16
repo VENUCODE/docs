@@ -7,7 +7,7 @@
     "light": "#BFA3E6",
     "dark": "#4A1F75"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/logo/favicon.svg",
   "thumbnails": {
     "appearance": "light",
     "background": "/images/background.png"
@@ -25,13 +25,88 @@
               "group": "Quick guide",
               "pages": [
                 "index",
-                "build-agent"
+                "build-agent/index"
               ]
             },
             {
                 "group": "Platform Fundamentals",
                 "pages": [
-                    "platform-fundamentals/platform-tour",
+                  {
+                    "group": "Platform tour",
+                    "icon": "map",
+                    "pages": [
+                      "platform-fundamentals/platform-tour",
+                      {
+                        "group": "Agents",
+                        "icon": "robot",
+                        "pages": [
+                          "platform-fundamentals/platform-tour/agents",
+                          {
+                            "group": "Create Agent",
+                            "icon": "hammer",
+                            "pages": [
+                              "platform-fundamentals/platform-tour/agents/create-agent",
+                              {
+                                "group": "From Knowledge",
+                                "icon": "database",
+                                "pages": [
+                                  "platform-fundamentals/platform-tour/agents/create-from-knowledge",
+                                  "platform-fundamentals/platform-tour/agents/create-agent-from-website-knowledge",
+                                  "platform-fundamentals/platform-tour/agents/create-agent-from-pdf-knowledge"
+                                ]
+                              },
+                              "platform-fundamentals/platform-tour/agents/create-from-tool",
+                              "platform-fundamentals/platform-tour/agents/create-from-scratch",
+                              "platform-fundamentals/platform-tour/agents/create-from-template"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "group": "Knowledge Bases",
+                        "icon": "database",
+                        "pages": [
+                          "platform-fundamentals/platform-tour/knowledge-bases/index",
+                          {
+                            "group": "Add Knowledge",
+                            "icon":"plus",
+                            "pages": [
+                              "platform-fundamentals/platform-tour/knowledge-bases/add-knowledge",
+                              "platform-fundamentals/platform-tour/knowledge-bases/create-from-website",
+                              "platform-fundamentals/platform-tour/knowledge-bases/create-from-pdf",
+                              "platform-fundamentals/platform-tour/knowledge-bases/create-from-csv",
+                              "platform-fundamentals/platform-tour/knowledge-bases/create-from-other-sources"
+                            ]
+                          }
+                        ]
+                      },
+                      "platform-fundamentals/platform-tour/tools/index",
+                     
+                      {
+                        "group": "Settings",
+                        "icon": "cog",
+                        "pages": [
+                          "platform-fundamentals/platform-tour/settings/index",
+                          "platform-fundamentals/platform-tour/settings/general",
+                          "platform-fundamentals/platform-tour/settings/billing",
+                          "platform-fundamentals/platform-tour/settings/channels",
+                          "platform-fundamentals/platform-tour/settings/advanced"
+                        ]
+                      },
+                      {
+                        "group": "Support",
+                        "icon": "circle-question",
+                        "pages": [
+                          "platform-fundamentals/platform-tour/support/index",
+                          "platform-fundamentals/platform-tour/support/video-tutorials",
+                          "platform-fundamentals/platform-tour/support/live-chat",
+                          "platform-fundamentals/platform-tour/support/schedule-demo",
+                          "platform-fundamentals/platform-tour/support/agent-templates",
+                          "platform-fundamentals/platform-tour/support/community"
+                        ]
+                      }
+                    ]
+                  },
                     "platform-fundamentals/how-tars-works",
                     "platform-fundamentals/choosing-your-path"
                 ]
@@ -40,20 +115,41 @@
               "group": "Tars overview",
               "pages": [
                 "welcome-to-tars/index",
-                "welcome-to-tars/who-uses-tars",
-                "welcome-to-tars/success-stories"
+                "welcome-to-tars/who-uses-tars"
               ]
             },
           {
             "group": "Getting Help",
             "pages": [
-              "getting-help/account-setup",
+              {
+                "group": "Account Setup",
+                "icon": "user-plus",
+                "pages": [
+                  "getting-help/account-setup/index",
+                  {
+                    "group": "New user",
+                    "icon": "sparkles",
+                    "pages": [
+                      "getting-help/account-setup/new-user",
+                      "getting-help/account-setup/social-signup"
+                    ]
+                  },
+                  {
+                    "group": "Existing user",
+                    "icon": "right-to-bracket",
+                    "pages": [
+                      "getting-help/account-setup/existing-user",
+                      "getting-help/account-setup/social-login"
+                    ]
+                  }
+                ]
+              },
               "getting-help/video-tutorials",
               "getting-help/community-forum"
             ]
           }
         ]
-    }
+      }
     ]
   },
   "logo": {

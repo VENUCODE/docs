@@ -28,7 +28,7 @@ User input Gambits collect specific information from users through structured in
 |--------|-------------|
 | Text | Collect free-form text responses with validation options (email, phone, full name, etc.) |
 | Button | Predefined options users can tap to select |
-| Date time | Enable appointment scheduling with calendar integration |
+| Date time | Allows users to pick date and time with better UI |
 | Star rating | Gather satisfaction scores or feedback with star ratings or scales |
 | No input | Display content without requiring user response |
 | Cards | Visual cards users can choose from with images and descriptions (coming soon) |
@@ -55,9 +55,9 @@ Tool Gambits enable your AI Agent to perform real-time actions by connecting to 
 
 The API Gambit is a flexible integration tool executed in the conversation workflow. It allows making HTTP requests to any REST API endpoint with custom data, ideal when pre-built tools don't meet your requirements.
 
-### Livechat handoff
+### Live Chat handoff
 
-Livechat handoff enables escalation to human agents for complex queries or issues AI can't handle.You can set conditional workflows based on the user's message content, sentiment, or other criteria to trigger a livechat handoff.
+Live Chat handoff enables escalation to human agents for complex queries or issues AI can't handle.You can set conditional workflows based on the user's message content, sentiment, or other criteria to trigger a Live Chat handoff.
 
 ## What is an AI Agent?
 
@@ -158,13 +158,5 @@ Without a **Knowledge Base**, your **AI Agent** either makes up answers or gives
 
   <Accordion title="How should I test my conversation flows?">
 Test every possible **conversation path** using **preview mode**. Try different user responses and verify that **data flows** correctly between **Gambits** before deployment.
-  </Accordion>
-
-  <Accordion title="How do I reference data between Gambits?">
-Use proper syntax when referencing **data**: `{{ursp.gambit_name}}` for user responses and `{{pre.gambit_name}}` for API data. Avoid spaces in **Gambit varids** - use underscores like `user_email` instead of `user email`.
-  </Accordion>
-
-  <Accordion title="Should I use AI for all data collection?">
-Use **AI Agent Gambits** for natural conversation and understanding, but switch to **structured Gambits** with validation when you need exact data formats like phone numbers or credit card information. This hybrid approach provides natural conversation with reliable data collection.
   </Accordion>
 </AccordionGroup>

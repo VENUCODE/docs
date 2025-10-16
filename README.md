@@ -23,7 +23,7 @@ Our documentation is organized into the following sections:
 
 ### Platform Fundamentals
 - **Platform Tour**: Interactive walkthrough of key features and interfaces
-- **How Tars Works**: Deep dive into AI Agent architecture, workflows, WhatsApp integration, and Livechat
+- **How Tars Works**: Deep dive into AI Agent architecture, workflows, WhatsApp integration, and Live Chat
 - **Choosing Your Path**: Decision guide for selecting the right approach for your use case
 
 ### Tars Overview
@@ -64,10 +64,10 @@ Our documentation is organized into the following sections:
   - Message transformation and delivery
   - Sequential message queue
   - Conversation state management
-- **Livechat Integration**: Seamless handoff to human agents
-  - Native Livechat dashboard
+- **Live Chat Integration**: Seamless handoff to human agents
+  - Native Live Chat dashboard
   - Real-time conversation routing
-  - Session management with Livechat Server
+  - Session management with Live Chat Server
 
 ## Development
 
@@ -94,7 +94,7 @@ View your local preview at `http://localhost:3000`.
 1. **Explore the Platform**: Start with the [Welcome to Tars](welcome-to-tars/index) introduction
 2. **Take the Platform Tour**: Learn about key features and interfaces
 3. **Build Your First Agent**: Follow the [Build Agent](build-agent) quickstart guide
-4. **Understand How Tars Works**: Deep dive into AI Agent workflows, WhatsApp, and Livechat
+4. **Understand How Tars Works**: Deep dive into AI Agent workflows, WhatsApp, and Live Chat
 
 ### Choosing Your Approach
 

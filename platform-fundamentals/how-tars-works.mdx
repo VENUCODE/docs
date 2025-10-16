@@ -39,9 +39,9 @@ Tars operates through six main components that work together to deliver intellig
   </Card>
 </CardGroup>
 
-### Agentic workflow
+### How does an AI Agent work in Tars?
 
-Tars agents handle conversations through sophisticated AI processing where the LMS brain internally manages all processing paths:
+AI Agents in Tars use advanced language models (LLMs) to intelligently manage conversations. The LLM dynamically decides whether to retrieve knowledge, execute tools, or generate direct responses based on user input:
 
 ```mermaid
 flowchart TD
@@ -64,13 +64,13 @@ flowchart TD
 
 ```
 
-### Question Answering workflow
+### How does a Question Answering Agent work in Tars?
 
-The Question Answering Workflow uses the same agentic workflow but focuses only on knowledge retrieval:
+A Question Answering Agent is a specialized agent optimized for information retrieval. It uses RAG (Retrieval-Augmented Generation) technology to search your knowledge base and provide accurate, context-aware answers:
 
 ```mermaid
 flowchart TD
-    A(User Input) --> B(AI Agent)
+    A(User Input) --> B(Question Answering Agent)
 
     B --> C(Knowledge Required?)
 
@@ -106,7 +106,7 @@ flowchart TD
 </Step>
 </Steps>
 
-## How does the Knowledge Base work?
+## How does the Knowledge Base work in Tars?
 
 The Knowledge Base System transforms unstructured content from various sources into intelligent, searchable knowledge that your **AI Agent** can access instantly.
 
@@ -166,7 +166,7 @@ The system operates in three phases: `Load`-> `Index`-> `Retrieve`.
   **Fast & scalable:** The system processes 500-1,000 chunks per minute during indexing and delivers search results in under 500ms, supporting millions of vectors across multiple knowledge bases.
 </Note>
 
-## How tool execution works?
+## How tool execution is done in Tars?
 
 Tool execution at Tars is managed through a configured **AI Agent**, which interacts with connected external systems securely and intelligently. The architecture ensures that all actions, authentications, and data exchanges happen entirely within backend systems, keeping credentials and sensitive information fully protected.
 
@@ -226,7 +226,7 @@ The tool execution system is built on three key principles:
   **Security first:** Tool execution at Tars is secure, backend-driven, and fully agent-controlled. Each execution is logged for transparency, monitoring, and governance, ensuring that sensitive data never leaves trusted backend environments.
 </Note>
 
-## How does WhatsApp integration work?
+## How does WhatsApp integration work in Tars?
 
 TARS enables businesses to deploy **AI Agents** on WhatsApp through a seamless integration architecture. The system abstracts provider differences, normalizes message formats, and ensures reliable, sequential message delivery while maintaining conversation context and state.
 
@@ -291,14 +291,14 @@ The integration is built on **three key abstraction layers** that work together 
 
 
 
-## How does Livechat work?
+## How does Live Chat work in Tars?
 
-Tars provides a standalone Livechat feature that enables direct conversations between users and human agents. The platform includes a **native Livechat dashboard** where human agents can manage and respond to conversations in real-time.
+Tars provides a standalone Live Chat feature that enables direct conversations between users and human agents. The platform includes a **native Live Chat dashboard** where human agents can manage and respond to conversations in real-time.
 <Frame>
-<img src="/images/dashboard/livechat.svg"/>
+<img src="/images/dashboard/Live Chat.svg"/>
 </Frame>
 
-### Livechat components
+### Live Chat components
 
   <Card
     title="AI Agent Interface"
@@ -313,14 +313,14 @@ Tars provides a standalone Livechat feature that enables direct conversations be
     title="Tars Chatbot Backend"
     icon="server"
   >
-     When a Livechat Gambit is triggered, the backend coordinates the handoff to the Livechat Server and handles session management.
+     When a Live Chat Gambit is triggered, the backend coordinates the handoff to the Live Chat Server and handles session management.
   </Card>
 
   <Card
-    title="Livechat Server"
+    title="Live Chat Server"
     icon="comments"
   >
-    Creates livechat sessions, notifies agents via the Admin Dashboard, and routes messages between users and human agents.
+    Creates Live Chat sessions, notifies agents via the Admin Dashboard, and routes messages between users and human agents.
   </Card>
 </CardGroup>
 
@@ -332,23 +332,23 @@ Tars provides a standalone Livechat feature that enables direct conversations be
     Human agents receive notifications, view conversations, and respond to users in real-time through the native dashboard.
   </Card>
 
-### Livechat workflow
+### Live Chat workflow
 
 <Steps>
 <Step title="User message">
   A user sends a message through the **AI Agent Interface**, which forwards it to the **Tars Chatbot Backend** for processing.
 </Step>
 
-<Step title="Livechat Gambit triggered">
-  When the conversation reaches a **Livechat Gambit**, the **Tars Chatbot Backend** triggers the handoff process and sends the conversation to the **Livechat Server**.
+<Step title="Live Chat Gambit triggered">
+  When the conversation reaches a **Live Chat Gambit**, the **Tars Chatbot Backend** triggers the handoff process and sends the conversation to the **Live Chat Server**.
 </Step>
 
 <Step title="Session creation & agent notification">
-  The **Livechat Server** creates a new livechat session and notifies human agents through the **Admin Dashboard**.
+  The **Live Chat Server** creates a new Live Chat session and notifies human agents through the **Admin Dashboard**.
 </Step>
 
 <Step title="Human agent response">
-  Human agents view the conversation in the **Admin Dashboard** and respond. The response flows back through the **Livechat Server** to the **AI Agent Interface**.
+  Human agents view the conversation in the **Admin Dashboard** and respond. The response flows back through the **Live Chat Server** to the **AI Agent Interface**.
 </Step>
 
 <Step title="Response delivery">
@@ -361,7 +361,7 @@ Tars provides a standalone Livechat feature that enables direct conversations be
 </Steps>
 
 <Note>
-  **Standalone capability:** Livechat operates independently from AI Agent flows. You can build conversation paths that lead directly to human agents using the Livechat Gambit, or keep it completely separate from automated workflows.
+  **Standalone capability:** Live Chat operates independently from AI Agent flows. You can build conversation paths that lead directly to human agents using the Live Chat Gambit, or keep it completely separate from automated workflows.
 </Note>
 
 ## Multi-platform deployment
