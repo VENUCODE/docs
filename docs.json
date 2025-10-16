@@ -7,7 +7,7 @@
     "light": "#BFA3E6",
     "dark": "#4A1F75"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/logo/favicon.svg",
   "thumbnails": {
     "appearance": "light",
     "background": "/images/background.png"
@@ -25,7 +25,7 @@
               "group": "Quick guide",
               "pages": [
                 "index",
-                "build-agent"
+                "build-agent/index"
               ]
             },
             {
@@ -127,7 +127,7 @@
                 "pages": [
                   "getting-help/account-setup/index",
                   {
-                    "group": "New User",
+                    "group": "New user",
                     "icon": "sparkles",
                     "pages": [
                       "getting-help/account-setup/new-user",
@@ -135,7 +135,7 @@
                     ]
                   },
                   {
-                    "group": "Existing User",
+                    "group": "Existing user",
                     "icon": "right-to-bracket",
                     "pages": [
                       "getting-help/account-setup/existing-user",
