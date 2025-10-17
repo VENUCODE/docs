@@ -1,6 +1,6 @@
 
 <Info>
-**CSV Knowledge Base Options**: You can create knowledge bases from two types of CSV files:
+**CSV Knowledge Base options**: You can create knowledge bases from two types of CSV files:
 - **Table (CSV)**: For structured tabular data with multiple columns
 - **Questions & Answers (CSV)**: For Q&A pairs with two columns (Question, Answer)
 
@@ -40,53 +40,53 @@ Both follow the same training process and workflow described below.
   - View example CSV file format for reference
   
   <Info>
-  **CSV Format**: Ensure your CSV file contains structured tabular data with proper headers for optimal processing.
+  **CSV format**: Ensure your CSV file contains structured tabular data with proper headers for optimal processing.
   </Info>
 </Step>
 
-<Step title="Knowledge Base Created" icon="plus">
+<Step title="Knowledge Base created" icon="plus">
   After clicking `Add Knowledge Base`, you're redirected to the Knowledge Base configuration page.
   
   <Frame>
   <img src="/images/dashboard/knowledge/csv/step-3-pre-training.png" alt="Knowledge base configuration page with training options" />
   </Frame>
   
-  **Configuration Page Features:**
-  - **Data Resources**: Shows your uploaded CSV file
-  - **Training Status**: Displays "Not Trained" status for new file
-  - **Add Resource**: Button to add more CSV files
-  - **Start Training**: Button to begin training the Knowledge Base
+  **Configuration page features:**
+  - **Data resources**: Shows your uploaded CSV file
+  - **Training status**: Displays "Not trained" status for new file
+  - **Add resource**: Button to add more CSV files
+  - **Start training**: Button to begin training the Knowledge Base
   
   <Info>
-  **Training Required**: Your Knowledge Base must be trained before it can be used by AI Agents.
+  **Training required**: Your Knowledge Base must be trained before it can be used by AI Agents.
   </Info>
 </Step>
 
-<Step title="Start Training" icon="play">
-  Click the `Start Training` button to begin processing your CSV file.
+<Step title="Start training" icon="play">
+  Click the `Start training` button to begin processing your CSV file.
   
   <Frame>
   <img src="/images/dashboard/knowledge/csv/step-3-while-training.png" alt="Training progress with percentage and status" />
   </Frame>
   
-  **Training Phase:**
-  - **Initiate Training**: Click the `Start Training` button to begin AI processing.
-  - **Data Reading**: The system reads and imports the CSV file for processing.
-  - **Resource Processing**: The CSV file is being analyzed and indexed.
-  - **Text Chunking**: The data is divided into smaller, manageable chunks for efficient processing.
-  - **Embedding Generation**: These chunks are converted into vector embeddings using AI models.
-  - **Vector Storage**: The generated embeddings are stored in vector databases like Qdrant and Weaviate for efficient retrieval.
-  - **Index Optimization**: The system optimizes the index to enhance search and retrieval performance.
-  - **Progress Bar**: Displays the percentage of training completion.
+  **Training phase:**
+  - **Initiate training**: Click the `Start training` button to begin AI processing.
+  - **Data reading**: The system reads and imports the CSV file for processing.
+  - **Resource processing**: The CSV file is being analyzed and indexed.
+  - **Text chunking**: The data is divided into smaller, manageable chunks for efficient processing.
+  - **Embedding generation**: These chunks are converted into vector embeddings using AI models.
+  - **Vector storage**: The generated embeddings are stored in vector databases like Qdrant and Weaviate for efficient retrieval.
+  - **Index optimization**: The system optimizes the index to enhance search and retrieval performance.
+  - **Progress bar**: Displays the percentage of training completion.
   - **Status**: Indicates "Training..." with an hourglass icon.
-  - **Time Estimate**: "This process may take a few minutes."
+  - **Time estimate**: "This process may take a few minutes."
   
   <Check>
   **Training in Progress**: Wait for training to complete before using the Knowledge Base.
   </Check>
 </Step>
 
-<Step title="Training Complete" icon="circle-check">
+<Step title="Training complete" icon="circle-check">
   Once training is finished, your Knowledge Base is ready for use.
   
   <Frame>
@@ -104,7 +104,7 @@ Both follow the same training process and workflow described below.
   </Check>
 </Step>
 
-<Step title="Add More Resources (Optional)" icon="plus">
+<Step title="Add more resources (optional)" icon="plus">
   You can add additional CSV files to your existing Knowledge Base.
   
   <Frame>
@@ -129,10 +129,10 @@ Both follow the same training process and workflow described below.
   <img src="/images/dashboard/knowledge/csv/step-5-re-train-for-new-data-source.png" alt="Retraining process with new resources" />
   </Frame>
   
-  **Retraining Process:**
-  - **Start Training**: Button appears after adding new resources
-  - **Training Progress**: Shows progress for all resources
-  - **Status Updates**: Individual resource status updates during training
+  **Retraining process:**
+  - **Start training**: Button appears after adding new resources
+  - **Training progress**: Shows progress for all resources
+  - **Status updates**: Individual resource status updates during training
   - **Completion**: All resources show "Trained" status when complete
   
   <Tip>
@@ -147,28 +147,28 @@ Both follow the same training process and workflow described below.
   <img src="/images/dashboard/knowledge/csv/step-7-find-new-kb-in-my-kbs.png" alt="Knowledge base visible in dashboard with configure option" />
   </Frame>
   
-  **Dashboard View:**
-  - **Knowledge Base Card**: Shows your created Knowledge Base
-  - **Resource Count**: Displays number of data sources
-  - **Last Updated**: Shows creation/update timestamp
-  - **Training Status**: "Trained" indicator
-  - **Configure Button**: Click to access the Knowledge Base configuration page
+  **Dashboard view:**
+  - **Knowledge Base card**: Shows your created Knowledge Base
+  - **Resource count**: Displays number of data sources
+  - **Last updated**: Shows creation/update timestamp
+  - **Training status**: "Trained" indicator
+  - **Configure button**: Click to access the Knowledge Base configuration page
   
   <Info>
   **Access Configuration**: Click the "Configure" button to return to the training and management page for your Knowledge Base.
   </Info>
 </Step>
 
-<Step title="Questions & Answers CSV Format" icon="circle-question">
+<Step title="Questions & Answers CSV format" icon="circle-question">
   For Q&A format CSV files, follow the same process using the `Questions & Answers (CSV)` card.
   
-  **Q&A CSV Format Requirements:**
-  - **Two Columns Only**: Question and Answer columns
-  - **Header Row**: First row should contain "Question" and "Answer" headers
-  - **Sample Format**: Download the sample CSV file to see the exact format
-  - **Training Process**: Same upload and training workflow as Table CSV
+  **Q&A CSV format requirements:**
+  - **Two columns only**: Question and Answer columns
+  - **Header row**: First row should contain "Question" and "Answer" headers
+  - **Sample format**: Download the sample CSV file to see the exact format
+  - **Training process**: Same upload and training workflow as Table CSV
   
-  **Q&A CSV Benefits:**
+  **Q&A CSV benefits:**
   - Direct question-answer pairs for immediate knowledge access
   - Perfect for FAQ databases and support knowledge
   - Optimized for conversational AI responses

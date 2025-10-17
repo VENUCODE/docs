@@ -18,7 +18,7 @@ Transform your PDF documents into intelligent knowledge bases that power your AI
 ### Step-by-step creation process
 
 <Steps>
-<Step title="Click PDF Card" icon="file-pdf">
+<Step title="Click PDF card" icon="file-pdf">
   Click on the `Documents (PDF)` card to start creating a Knowledge Base from PDF files.
 <Frame>
 <img src="/images/dashboard/knowledge/pdf/step-1-click-pdf-card.png" alt="Knowledge Base page showing PDF card option" />
@@ -36,21 +36,21 @@ Transform your PDF documents into intelligent knowledge bases that power your AI
       alt="Add Knowledge Base modal with PDF configuration"
     />
   </Frame>
-  **Required Information:**
+  **Required information:**
   - **Name**: Enter a name for your Knowledge Base (e.g., "pdf knowledge").
-  - **Upload Resources**: Add your PDF files to the Knowledge Base.
+  - **Upload resources**: Add your PDF files to the Knowledge Base.
 
-  **File Upload Options:**
+  **File upload options:**
   - Drag and drop PDF files into the upload area.
   - Click "browse files" to select files from your computer.
   - Multiple PDF files can be uploaded simultaneously.
   <Info>
-    **File Requirements**: Only PDF files are supported. Ensure your PDFs
+    **File requirements**: Only PDF files are supported. Ensure your PDFs
     contain readable text for optimal processing.
   </Info>
 </Step>
 
-<Step title="Upload Files" icon="upload">
+<Step title="Upload files" icon="upload">
   After adding files , click the green `Upload files` button to upload them to
   the platform.
   <Frame>
@@ -59,7 +59,7 @@ Transform your PDF documents into intelligent knowledge bases that power your AI
       alt="Files selected and ready for upload"
     />
   </Frame>
-  **Upload Process:**
+  **Upload process:**
   - Files are uploaded to cloud storage (AWS S3).
   - Upload progress is displayed with percentage and time remaining.
   - Individual files can be paused or canceled during upload.
@@ -78,11 +78,11 @@ Transform your PDF documents into intelligent knowledge bases that power your AI
       alt="Upload progress showing percentage and time remaining"
     />
   </Frame>
-  **Upload Controls:**
-  - **Progress Bar**: Displays the overall upload progress.
-  - **File Status**: Shows the status of individual file uploads with options to pause or cancel.
-  - **Time Remaining**: Provides an estimate of the time left to complete the upload.
-  - **Cancel Options**: Allows you to pause or cancel individual files or the entire upload.
+  **Upload controls:**
+  - **Progress bar**: Displays the overall upload progress.
+  - **File status**: Shows the status of individual file uploads with options to pause or cancel.
+  - **Time remaining**: Provides an estimate of the time left to complete the upload.
+  - **Cancel options**: Allows you to pause or cancel individual files or the entire upload.
   <Warning>
     **Upload Interruption**: Cancelling uploads will require you to restart the
     file upload process.
@@ -98,13 +98,13 @@ Transform your PDF documents into intelligent knowledge bases that power your AI
       alt="Upload complete with all files ready"
     />
   </Frame>
-  **Upload Confirmation:**
+  **Upload confirmation:**
   - All files display green checkmarks, indicating successful upload.
   - "Upload complete" status is shown.
   - Files can still be removed using the 'X' icon if needed.
   - Click `Add Knowledge Base` to create the Knowledge Base.
   <Check>
-    **Ready to Create**: All files are now uploaded and ready for Knowledge Base
+    **Ready to create**: All files are now uploaded and ready for Knowledge Base
     creation.
   </Check>
 </Step>
@@ -118,12 +118,12 @@ Transform your PDF documents into intelligent knowledge bases that power your AI
       alt="Knowledge base configuration page with training options"
     />
   </Frame>
-  **Configuration Page Features:**
-  - **Data Resources**: Displays your uploaded PDF files.
-  - **Training Status**: Shows "Not Trained" status for new files.
-  - **Add Resource**: Button to add more PDF files.
-  - **Start Training**: Button to initiate training of the Knowledge Base.
-  - **Delete Option**: Three dots menu to delete individual resources.
+  **Configuration page features:**
+  - **Data resources**: Displays your uploaded PDF files.
+  - **Training status**: Shows "Not Trained" status for new files.
+  - **Add resource**: Button to add more PDF files.
+  - **Start training**: Button to initiate training of the Knowledge Base.
+  - **Delete option**: Three dots menu to delete individual resources.
   <Info>
     **Training Required**: Your Knowledge Base must be trained before it can be
     used by AI Agents.
@@ -138,12 +138,12 @@ Transform your PDF documents into intelligent knowledge bases that power your AI
       alt="Training progress with percentage and status"
     />
   </Frame>
- **Training Phase:**
-  - **Initiate Training**: Begin by clicking the `Train` button to start the AI processing.
-  - **Data Reading**: The system reads and imports the stored data resources for processing.
-  - **Text Chunking**: The text is divided into smaller, manageable chunks for efficient processing.
-  - **Embedding Generation**: These text chunks are converted into vector embeddings using AI models.
-  - **Vector Storage**: The generated embeddings are stored in vector databases like Qdrant and Weaviate for efficient retrieval.
+ **Training phase:**
+  - **Initiate training**: Begin by clicking the `Train` button to start the AI processing.
+  - **Data reading**: The system reads and imports the stored data resources for processing.
+  - **Text chunking**: The text is divided into smaller, manageable chunks for efficient processing.
+  - **Embedding generation**: These text chunks are converted into vector embeddings using AI models.
+  - **Vector storage**: The generated embeddings are stored in vector databases like Qdrant and Weaviate for efficient retrieval.
   - **Index Optimization**: The system optimizes the index to enhance search and retrieval performance.
   <Check>
     **Training in Progress**: Wait for training to complete before using the
@@ -159,12 +159,12 @@ Transform your PDF documents into intelligent knowledge bases that power your AI
       alt="Training complete with file details and word counts"
     />
   </Frame>
-  **Training Results:**
+  **Training results:**
   - **Status**: "Trained" with a green indicator
-  - **File Details**: Displays all processed files with their URLs
-  - **Word Count**: Shows the extracted word count from each file
-  - **Success Message**: "All resources have been successfully trained"
-  - **Progress Bar**: Indicates 100% completion
+  - **File details**: Displays all processed files with their URLs
+  - **Word count**: Shows the extracted word count from each file
+  - **Success message**: "All resources have been successfully trained"
+  - **Progress bar**: Indicates 100% completion
   <Check>
     **Knowledge Base Ready**: Your PDF Knowledge Base is now trained and ready
     to be used by AI Agents.
@@ -179,7 +179,7 @@ Transform your PDF documents into intelligent knowledge bases that power your AI
       alt="Add more data resources to existing Knowledge Base"
     />
   </Frame>
-  **Adding Resources:**
+  **Adding resources:**
   - Click `+ Add Resource` to add more PDF files.
   - Follow the same upload process as the initial file upload.
   - New files will display a "Not Trained" status.
@@ -199,10 +199,10 @@ Transform your PDF documents into intelligent knowledge bases that power your AI
       alt="Retraining process with new resources"
     />
   </Frame>
-  **Retraining Process:**
-  - **Start Training**: The button appears after adding new resources.
-  - **Training Progress**: Displays progress for all resources.
-  - **Status Updates**: Provides individual resource status updates during training.
+  **Retraining process:**
+  - **Start training**: The button appears after adding new resources.
+  - **Training progress**: Displays progress for all resources.
+  - **Status updates**: Provides individual resource status updates during training.
   - **Completion**: All resources display a "Trained" status when complete.
   <Tip>
     **Refresh Page**: If the "Start Training" button doesn't appear, refresh the
@@ -218,11 +218,11 @@ Transform your PDF documents into intelligent knowledge bases that power your AI
       alt="All resources trained successfully"
     />
   </Frame>
-  **Final Status:**
-  - **All Resources Trained**: Green indicators for all files
-  - **Training Complete**: 100% progress bar
-  - **Success Message**: "All resources have been successfully trained"
-  - **Ready for Use**: Knowledge base is fully operational
+  **Final status:**
+  - **All resources trained**: Green indicators for all files
+  - **Training complete**: 100% progress bar
+  - **Success message**: "All resources have been successfully trained"
+  - **Ready for use**: Knowledge base is fully operational
   <Check>
     **Knowledge Base Complete**: Your PDF Knowledge Base is now fully trained
     and ready for AI Agent integration.
@@ -236,15 +236,15 @@ Transform your PDF documents into intelligent knowledge bases that power your AI
   <img src="/images/dashboard/knowledge/pdf/step-11-see-new-kb-in-my-kbs.png" alt="Knowledge base visible in dashboard with configure option" />
   </Frame>
   
-  **Dashboard View:**
-  - **Knowledge Base Card**: Shows your created Knowledge Base
-  - **Resource Count**: Displays number of data sources
-  - **Last Updated**: Shows creation/update timestamp
-  - **Training Status**: "Trained" indicator
-  - **Configure Button**: Click to access the Knowledge Base configuration page
+  **Dashboard view:**
+  - **Knowledge Base card**: Shows your created Knowledge Base
+  - **Resource count**: Displays number of data sources
+  - **Last updated**: Shows creation/update timestamp
+  - **Training status**: "Trained" indicator
+  - **Configure button**: Click to access the Knowledge Base configuration page
   
   <Info>
-  **Access Configuration**: Click the "Configure" button to return to the training and management page for your Knowledge Base.
+  **Access configuration**: Click the "Configure" button to return to the training and management page for your Knowledge Base.
   </Info>
 </Step>
 </Steps>
