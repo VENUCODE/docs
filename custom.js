@@ -62,7 +62,6 @@ window.addEventListener("popstate", () => {
 //     fs.parentNode.insertBefore(js, fs);
 //   }
 // })();
-// window.tarsSettings = { convid: "1sfwNs" };
-
-//trigger chatbot open when clicking on other elements
-
+// window.tarsSettings = {
+//   "convid": "kqyuHl"
+// };

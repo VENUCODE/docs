@@ -119,10 +119,10 @@
               ]
             },
           {
-            "group": "Getting Help",
+            "group": "Getting help",
             "pages": [
               {
-                "group": "Account Setup",
+                "group": "Account setup",
                 "icon": "user-plus",
                 "pages": [
                   "getting-help/account-setup/index",
