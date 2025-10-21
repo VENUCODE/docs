@@ -44,4 +44,10 @@ td:first-child, th:first-child {
   text-wrap: nowrap;
   border-right: 2px dotted rgba(156, 163, 175, 0.7);
 }
-  
+.chat-assistant-floating-input{
+  display: none;
+}
+.chat-assistant-floating-input:parent,
+*:has(.chat-assistant-floating-input) {
+  display: none !important;
+}
