@@ -1,0 +1,169 @@
+---
+title: "Google Analytics (GA4)"
+sidebarTitle: "Google Analytics"
+description: "Track chatbot interactions and conversions in Google Analytics 4 by connecting your GA4 Measurement ID"
+icon: "chart-line"
+---
+
+You can track chatbot interactions in **Google Analytics 4 (GA4)** by connecting your GA4 Measurement ID inside the bot settings. This allows you to analyze user behavior and chatbot conversions directly in Google Analytics.
+
+---
+
+## Setting up Google Analytics tracking
+
+<Steps>
+
+<Step title="Navigate to Goal Settings">
+
+Open your **Agent**, then go to **Configure** → **Goal Settings**.
+
+You'll find the **Third Party Analytics** section at the bottom of the page.
+
+</Step>
+
+<Step title="Add your GA4 Measurement ID">
+
+Under **Third Party Analytics**, expand the **Google Analytics** section.
+
+You'll see two fields:
+- **GA4 Code** — Enter your GA4 Measurement ID here (e.g., `G-1234567890`)
+- **Event** — Choose how chatbot interactions are sent to GA
+
+<Frame>
+  <img
+    src="/images/core-platform/configure/goal-settings/third-party-analytics/step_2_ga4_code_field.jpg"
+    alt="Google Analytics section expanded showing the GA4 Code input field and Event dropdown"
+  />
+</Frame>
+
+<Note>
+  Your GA4 Measurement ID starts with **G-** followed by a string of numbers. You can find it in your Google Analytics account under **Admin** → **Data Streams** → **Web stream details**.
+</Note>
+
+</Step>
+
+<Step title="Select the event type">
+
+Open the **Event** dropdown and choose one of the following options:
+
+<Tabs>
+  <Tab title="Send no events">
+    **No chatbot events will be sent to Google Analytics.**
+
+    Use this if you only want to track page-level analytics without individual chatbot interaction events.
+  </Tab>
+
+  <Tab title="All user responses">
+    **Every user response in the chatbot will be sent to Google Analytics as an event.**
+
+    This is useful if you want to track **all chatbot interactions and engagement data** — giving you full visibility into how users interact with your Agent.
+  </Tab>
+
+  <Tab title="Goal Gambit responses only">
+    **Only responses related to Goal Gambits will be sent as events.**
+
+    This is useful when you want to track **conversion-related chatbot interactions** without the noise of every single message.
+  </Tab>
+</Tabs>
+
+<Frame>
+  <img
+    src="/images/core-platform/configure/goal-settings/third-party-analytics/step_3_event_type_dropdown.jpg"
+    alt="Event dropdown showing the three tracking options: no events, all responses, and goal gambit responses only"
+  />
+</Frame>
+
+</Step>
+
+<Step title="Save changes">
+
+Once you've added your GA4 Measurement ID and selected your event tracking preference, click **Save Changes** in the top right corner.
+
+Your chatbot will now start sending events to **Google Analytics 4**.
+
+</Step>
+
+</Steps>
+
+---
+
+## Verifying your setup
+
+After saving, you can confirm the integration is working by checking the **Realtime Overview** in Google Analytics.
+
+<Steps>
+
+<Step title="Check Realtime Overview">
+
+Open your Google Analytics account and navigate to the **Realtime Overview** page. Open your chatbot in another tab and interact with it — you should see a live user appear.
+
+<Frame>
+  <img
+    src="/images/core-platform/configure/goal-settings/third-party-analytics/step_5_realtime_overview.jpg"
+    alt="Google Analytics Realtime Overview showing a live user on the chatbot"
+  />
+</Frame>
+
+<Check>
+  If you see a live user on your bot link in Realtime, your Google Analytics code is working correctly.
+</Check>
+
+</Step>
+
+</Steps>
+
+---
+
+## Viewing chatbot data in Google Analytics
+
+### Viewing conversation sessions
+
+To see detailed chatbot activity across a specific time period:
+
+1. In Google Analytics, go to **Reports** → **Engagement** → **Pages and Screens**
+2. Copy your chatbot's ID from its URL — it's the last string of characters after the final `/` (e.g., `XFgTCI`)
+3. Search for that ID in the search box
+
+<Frame>
+  <img
+    src="/images/core-platform/configure/goal-settings/third-party-analytics/step_6_pages_and_screens.jpg"
+    alt="Google Analytics Pages and Screens report filtered by chatbot ID showing session activity"
+  />
+</Frame>
+
+### Viewing stored events
+
+Every action in your chatbot (messages exchanged between bot and user) sends a Google Analytics event with:
+- **Action** — The Gambit name
+- **Label** — The user's response to that particular Gambit
+
+<Frame>
+  <img
+    src="/images/core-platform/configure/goal-settings/third-party-analytics/step_7_stored_events.jpg"
+    alt="Google Analytics events view showing chatbot gambit actions and user response labels"
+  />
+</Frame>
+
+---
+
+## Frequently asked questions
+
+<AccordionGroup>
+
+<Accordion title="Where do I find my GA4 Measurement ID?">
+  In your Google Analytics account, go to **Admin** → **Data Streams** → select your web stream. The Measurement ID is displayed at the top and starts with `G-`.
+</Accordion>
+
+<Accordion title="What's the difference between 'All responses' and 'Goal Gambit only'?">
+  **All responses** tracks every single user interaction as an event — useful for detailed engagement analysis. **Goal Gambit only** tracks just the conversion-critical interactions, keeping your event data focused on what matters most for measuring ROI.
+</Accordion>
+
+<Accordion title="Why don't I see any data in Google Analytics?">
+  Give it a few minutes after saving. If data still doesn't appear, verify that your Measurement ID is correct and that your chatbot is published and accessible. Check Realtime Overview first, as historical reports can take up to 24 hours to populate.
+</Accordion>
+
+<Accordion title="Can I use Google Tag Manager instead?">
+  Currently, the integration uses the GA4 Measurement ID directly. If you need Google Tag Manager support, contact the Tars support team for guidance.
+</Accordion>
+
+</AccordionGroup>

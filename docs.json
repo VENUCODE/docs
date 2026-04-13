@@ -53,6 +53,28 @@
             ]
           }
         ]
+    },
+    {
+      "tab": "Core Platform",
+      "icon": "layer-group",
+      "groups": [
+        {
+          "group": "Configure",
+          "pages": [
+            {
+              "group": "Goal Settings",
+              "pages": [
+                {
+                  "group": "Third-Party Analytics",
+                  "pages": [
+                    "core-platform/configure/goal-settings/third-party-analytics/google-analytics"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
     ]
   },
