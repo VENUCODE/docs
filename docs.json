@@ -151,23 +151,13 @@
         ]
     },
     {
-      "tab": "Core Platform",
+      "tab": "Core platform",
       "icon": "layer-group",
       "groups": [
         {
-          "group": "Configure",
+          "group": "Third-Party Analytics",
           "pages": [
-            {
-              "group": "Goal Settings",
-              "pages": [
-                {
-                  "group": "Third-Party Analytics",
-                  "pages": [
-                    "core-platform/configure/goal-settings/third-party-analytics/google-analytics"
-                  ]
-                }
-              ]
-            }
+            "core-platform/configure/goal-settings/third-party-analytics/google-analytics"
           ]
         }
       ]
