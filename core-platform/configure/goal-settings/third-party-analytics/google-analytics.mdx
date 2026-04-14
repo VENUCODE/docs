@@ -125,18 +125,22 @@ On every action in your chatbot (meaning chat messages exchanged between the bot
 
 ## Frequently asked questions
 
-### Where do I find my GA4 Measurement ID?
+<AccordionGroup>
 
-In your Google Analytics account, go to **Admin** → **Data Streams** → select your web stream. The Measurement ID is displayed at the top and starts with `G-`.
+<Accordion title="Where do I find my GA4 Measurement ID?">
+  In your Google Analytics account, go to **Admin** → **Data Streams** → select your web stream. The Measurement ID is displayed at the top and starts with `G-`.
+</Accordion>
 
-### What's the difference between "All responses" and "Goal Gambit only"?
+<Accordion title="What's the difference between 'All responses' and 'Goal Gambit only'?">
+  **All responses** tracks every single user interaction as an event — useful for detailed engagement analysis. **Goal Gambit only** tracks just the conversion-critical interactions, keeping your event data focused on what matters most for measuring ROI.
+</Accordion>
 
-**All responses** tracks every single user interaction as an event — useful for detailed engagement analysis. **Goal Gambit only** tracks just the conversion-critical interactions, keeping your event data focused on what matters most for measuring ROI.
+<Accordion title="Why don't I see any data in Google Analytics?">
+  Give it a few minutes after saving. If data still doesn't appear, verify that your Measurement ID is correct and that your chatbot is published and accessible. Check Realtime Overview first, as historical reports can take up to 24 hours to populate.
+</Accordion>
 
-### Why don't I see any data in Google Analytics?
+<Accordion title="Can I use Google Tag Manager instead?">
+  Currently, the integration uses the GA4 Measurement ID directly. If you need Google Tag Manager support, contact the Tars support team for guidance.
+</Accordion>
 
-Give it a few minutes after saving. If data still doesn't appear, verify that your Measurement ID is correct and that your chatbot is published and accessible. Check Realtime Overview first, as historical reports can take up to 24 hours to populate.
-
-### Can I use Google Tag Manager instead?
-
-Currently, the integration uses the GA4 Measurement ID directly. If you need Google Tag Manager support, contact the Tars support team for guidance.
+</AccordionGroup>
