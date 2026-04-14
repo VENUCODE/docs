@@ -19,6 +19,13 @@ Open your **Agent**, then go to **Configure** → **Goal Settings**.
 
 You'll find the **Third Party Analytics** section at the bottom of the page.
 
+<Frame>
+  <img
+    src="/images/core-platform/configure/goal-settings/third-party-analytics/step_1_goal_settings_overview.png"
+    alt="Goal Settings page showing the Third Party Analytics section with Google Analytics, Google Ads, and Facebook options"
+  />
+</Frame>
+
 </Step>
 
 <Step title="Add your GA4 Measurement ID">
@@ -46,25 +53,11 @@ You'll see two fields:
 
 Open the **Event** dropdown and choose one of the following options:
 
-<Tabs>
-  <Tab title="Send no events">
-    **No chatbot events will be sent to Google Analytics.**
+**Send no events to GA** — No chatbot events will be sent to Google Analytics. Use this if you only want to track page-level analytics without individual chatbot interaction events.
 
-    Use this if you only want to track page-level analytics without individual chatbot interaction events.
-  </Tab>
+**Send all user responses as events to GA** — Every user response in the chatbot will be sent to Google Analytics as an event. This is useful if you want to track all chatbot interactions and engagement data, giving you full visibility into how users interact with your Agent.
 
-  <Tab title="All user responses">
-    **Every user response in the chatbot will be sent to Google Analytics as an event.**
-
-    This is useful if you want to track **all chatbot interactions and engagement data** — giving you full visibility into how users interact with your Agent.
-  </Tab>
-
-  <Tab title="Goal Gambit responses only">
-    **Only responses related to Goal Gambits will be sent as events.**
-
-    This is useful when you want to track **conversion-related chatbot interactions** without the noise of every single message.
-  </Tab>
-</Tabs>
+**Send only Goal Gambit user responses as events to GA** — Only responses related to Goal Gambits will be sent as events to Google Analytics. This is useful when you want to track conversion-related chatbot interactions without the noise of every single message.
 
 <Frame>
   <img
@@ -91,11 +84,9 @@ Your chatbot will now start sending events to **Google Analytics 4**.
 
 After saving, you can confirm the integration is working by checking the **Realtime Overview** in Google Analytics.
 
-<Steps>
-
-<Step title="Check Realtime Overview">
-
-Open your Google Analytics account and navigate to the **Realtime Overview** page. Open your chatbot in another tab and interact with it — you should see a live user appear.
+1. Open your Google Analytics account where you are tracking this Tars bot.
+2. Go to the **Realtime Overview** page.
+3. Open your chatbot in another tab and interact with it — you should see a live user appear.
 
 <Frame>
   <img
@@ -108,10 +99,6 @@ Open your Google Analytics account and navigate to the **Realtime Overview** pag
   If you see a live user on your bot link in Realtime, your Google Analytics code is working correctly.
 </Check>
 
-</Step>
-
-</Steps>
-
 ---
 
 ## Viewing chatbot data in Google Analytics
@@ -120,9 +107,9 @@ Open your Google Analytics account and navigate to the **Realtime Overview** pag
 
 To see detailed chatbot activity across a specific time period:
 
-1. In Google Analytics, go to **Reports** → **Engagement** → **Pages and Screens**
-2. Copy your chatbot's ID from its URL — it's the last string of characters after the final `/` (e.g., `XFgTCI`)
-3. Search for that ID in the search box
+1. In Google Analytics, go to **Reports** → **Engagement** → **Pages and Screens**.
+2. Copy your chatbot's ID from its URL — it's the last string of characters after the final `/` (e.g., `XFgTCI`).
+3. Search for that ID in the search box to filter results to just your chatbot's activity.
 
 <Frame>
   <img
@@ -133,9 +120,10 @@ To see detailed chatbot activity across a specific time period:
 
 ### Viewing stored events
 
-Every action in your chatbot (messages exchanged between bot and user) sends a Google Analytics event with:
-- **Action** — The Gambit name
-- **Label** — The user's response to that particular Gambit
+On every action in your chatbot (meaning chat messages exchanged between the bot and user), Tars sends a Google Analytics event with the following parameters:
+
+- **Action** — Represents the Gambit name.
+- **Label** — Represents the user's response to that particular Gambit.
 
 <Frame>
   <img
@@ -148,22 +136,18 @@ Every action in your chatbot (messages exchanged between bot and user) sends a G
 
 ## Frequently asked questions
 
-<AccordionGroup>
+### Where do I find my GA4 Measurement ID?
 
-<Accordion title="Where do I find my GA4 Measurement ID?">
-  In your Google Analytics account, go to **Admin** → **Data Streams** → select your web stream. The Measurement ID is displayed at the top and starts with `G-`.
-</Accordion>
+In your Google Analytics account, go to **Admin** → **Data Streams** → select your web stream. The Measurement ID is displayed at the top and starts with `G-`.
 
-<Accordion title="What's the difference between 'All responses' and 'Goal Gambit only'?">
-  **All responses** tracks every single user interaction as an event — useful for detailed engagement analysis. **Goal Gambit only** tracks just the conversion-critical interactions, keeping your event data focused on what matters most for measuring ROI.
-</Accordion>
+### What's the difference between "All responses" and "Goal Gambit only"?
 
-<Accordion title="Why don't I see any data in Google Analytics?">
-  Give it a few minutes after saving. If data still doesn't appear, verify that your Measurement ID is correct and that your chatbot is published and accessible. Check Realtime Overview first, as historical reports can take up to 24 hours to populate.
-</Accordion>
+**All responses** tracks every single user interaction as an event — useful for detailed engagement analysis. **Goal Gambit only** tracks just the conversion-critical interactions, keeping your event data focused on what matters most for measuring ROI.
 
-<Accordion title="Can I use Google Tag Manager instead?">
-  Currently, the integration uses the GA4 Measurement ID directly. If you need Google Tag Manager support, contact the Tars support team for guidance.
-</Accordion>
+### Why don't I see any data in Google Analytics?
 
-</AccordionGroup>
+Give it a few minutes after saving. If data still doesn't appear, verify that your Measurement ID is correct and that your chatbot is published and accessible. Check Realtime Overview first, as historical reports can take up to 24 hours to populate.
+
+### Can I use Google Tag Manager instead?
+
+Currently, the integration uses the GA4 Measurement ID directly. If you need Google Tag Manager support, contact the Tars support team for guidance.
