@@ -1,0 +1,115 @@
+---
+title: "Facebook Pixel"
+sidebarTitle: "Facebook Pixel"
+description: "Track chatbot conversions and build retargeting audiences using Facebook Pixel"
+icon: "meta"
+---
+
+This guide shows you how to integrate Facebook Pixel with your Tars chatbot to track conversions and build retargeting audiences.
+
+<Note>
+  In order to track conversions on Facebook Pixel, you need to set goal gambits in your bots. To set goal gambits, you need to configure your goal settings.
+</Note>
+
+---
+
+## Setting up Facebook Pixel
+
+<Steps>
+
+<Step title="Open Facebook Ad Manager">
+
+Open Facebook's website and navigate to the Ad Manager page by clicking the **Ad** link in the sidebar.
+
+<Frame>
+  <img
+    src="/images/core-platform/configure/goal-settings/third-party-analytics/facebook-pixel/step_1_facebook_sidebar.png"
+    alt="Facebook sidebar showing the Ad link at the bottom left"
+  />
+</Frame>
+
+</Step>
+
+<Step title="Navigate to Pixels">
+
+On the Facebook Ad Manager page, click on the **menu** in the top right of the screen and select the **Pixels** option under **Event Manager**.
+
+<Frame>
+  <img
+    src="/images/core-platform/configure/goal-settings/third-party-analytics/facebook-pixel/step_2_click_on_pixel.gif"
+    alt="Clicking the Pixels option under Event Manager in the Facebook Ad Manager menu"
+  />
+</Frame>
+
+</Step>
+
+<Step title="Create a Pixel">
+
+Once the Pixels page loads, click the **Create a Pixel** button at the bottom of the page.
+
+<Frame>
+  <img
+    src="/images/core-platform/configure/goal-settings/third-party-analytics/facebook-pixel/step_3_create_pixel.gif"
+    alt="Clicking the Create a Pixel button on the Pixels page"
+  />
+</Frame>
+
+</Step>
+
+<Step title="Name your Pixel">
+
+When the popup loads, rename your pixel and click **Create**.
+
+<Frame>
+  <img
+    src="/images/core-platform/configure/goal-settings/third-party-analytics/facebook-pixel/step_4_rename_pixel.gif"
+    alt="Renaming the pixel and clicking Create in the popup"
+  />
+</Frame>
+
+</Step>
+
+<Step title="Copy the Pixel ID">
+
+On the next page, close the popup and copy the **Pixel ID** from the top right.
+
+<Frame>
+  <img
+    src="/images/core-platform/configure/goal-settings/third-party-analytics/facebook-pixel/step_5_copy_pixel_id.gif"
+    alt="Copying the Pixel ID from the top right of the Pixels page"
+  />
+</Frame>
+
+</Step>
+
+<Step title="Add the Pixel ID to your chatbot">
+
+Open your Tars bot, go to **Configure** → **Goal Settings** → **Third Party Analytics**. Expand **Facebook** and paste the Pixel ID in the appropriate field.
+
+Click **Save Changes**.
+
+Your bot is now integrated with Facebook Pixel.
+
+</Step>
+
+</Steps>
+
+---
+
+## Frequently asked questions
+
+<AccordionGroup>
+
+<Accordion title="Where do I find my Facebook Pixel ID?">
+  In Facebook Ad Manager, go to **Event Manager** → **Pixels**. Your Pixel ID is displayed at the top right of the page. It's a numeric string like `123456789012345`.
+</Accordion>
+
+<Accordion title="Why aren't my conversions tracking?">
+  Make sure you have set up **Goal Gambits** in your bot's Goal Settings. Facebook Pixel conversion events only fire when a Goal Gambit is reached during a conversation. Also verify that your Pixel ID is correct and that you clicked Save Changes.
+</Accordion>
+
+<Accordion title="Can I use Facebook Pixel for retargeting?">
+  Yes. Once Facebook Pixel is installed on your chatbot, it automatically tracks all visitors. You can then create Custom Audiences in Facebook Ad Manager based on people who interacted with your chatbot and retarget them with ads.
+</Accordion>
+
+</AccordionGroup>
