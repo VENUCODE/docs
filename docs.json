@@ -157,7 +157,8 @@
         {
           "group": "Third-Party Analytics",
           "pages": [
-            "core-platform/configure/goal-settings/third-party-analytics/google-analytics"
+            "core-platform/configure/goal-settings/third-party-analytics/google-analytics",
+            "core-platform/configure/goal-settings/third-party-analytics/google-ads"
           ]
         }
       ]
