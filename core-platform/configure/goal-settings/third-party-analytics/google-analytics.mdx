@@ -1,9 +1,10 @@
 ---
 title: "Google Analytics (GA4)"
 sidebarTitle: "Google Analytics"
-description: "Track chatbot interactions and conversions in Google Analytics 4 by connecting your GA4 Measurement ID"
 icon: "chart-line"
 ---
+
+Track chatbot interactions and conversions in Google Analytics 4 by connecting your GA4 Measurement ID
 
 ## Setting up Google Analytics tracking
 
@@ -71,10 +72,10 @@ Your chatbot will now start sending events to **Google Analytics 4**.
 
 ## Verifying your setup
 
-After saving, you can confirm the integration is working by checking the **Realtime Overview** in Google Analytics.
+After saving, you can confirm the integration is working by checking the **Realtime overview** in Google Analytics.
 
 1. Open your Google Analytics account where you are tracking this Tars bot.
-2. Go to the **Realtime Overview** page.
+2. Go to the **Realtime overview** page.
 3. Open your chatbot in another tab and interact with it — you should see a live user appear.
 
 <Frame>
@@ -90,14 +91,14 @@ After saving, you can confirm the integration is working by checking the **Realt
 
 ---
 
-## Viewing chatbot data in Google Analytics
+## Viewing Agent's data in Google Analytics
+
+To see detailed Agent's activity across a specific time period:
 
 ### Viewing conversation sessions
 
-To see detailed chatbot activity across a specific time period:
-
 1. In Google Analytics, go to **Reports** → **Engagement** → **Pages and Screens**.
-2. Copy your chatbot's ID from its URL — it's the last string of characters after the final `/` (e.g., `XFgTCI`).
+2. Copy your Agent's ID from its URL — it's the last string of characters after the final `/` (e.g., `XFgTCI`).
 3. Search for that ID in the search box to filter results to just your chatbot's activity.
 
 <Frame>
@@ -109,7 +110,7 @@ To see detailed chatbot activity across a specific time period:
 
 ### Viewing stored events
 
-On every action in your chatbot (meaning chat messages exchanged between the bot and user), Tars sends a Google Analytics event with the following parameters:
+On every action in your Agent (meaning chat messages exchanged between the bot and user), Tars sends a Google Analytics event with the following parameters:
 
 - **Action** — Represents the Gambit name.
 - **Label** — Represents the user's response to that particular Gambit.
