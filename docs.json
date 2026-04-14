@@ -81,6 +81,13 @@
                         ]
                       },
                       "platform-fundamentals/platform-tour/tools/index",
+                      {
+                        "group": "LiveChat",
+                        "icon": "comments",
+                        "pages": [
+                          "platform-fundamentals/platform-tour/livechat/advanced-settings"
+                        ]
+                      },                    
                      
                       {
                         "group": "Settings",

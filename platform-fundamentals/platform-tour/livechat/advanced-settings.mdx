@@ -1,0 +1,183 @@
+---
+title: "Advanced Settings"
+sidebarTitle: "Advanced Settings"
+description: "Configure LiveChat notifications, canned responses, and manage agent accounts"
+icon: "sliders"
+---
+
+This guide covers everything under **Settings → LiveChat** in Tars. These settings control how your agents are notified about incoming conversations, what quick-reply shortcuts are available to them, and how agent accounts are managed.
+
+---
+
+## How to access LiveChat Settings
+
+1. Click on the **Profile icon → Settings** in the left sidebar.
+2. Under the **LiveChat** section in the left panel, you'll find three sub-sections: **Notifications**, **Canned Responses**, and **Users**.
+
+<Frame>
+  <img
+    src="/images/platform-fundamentals/livechat/advanced-settings/livechat_settings_overview.png"
+    alt="LiveChat Settings page showing the three sub-sections: Notifications, Canned Responses, and Users"
+  />
+</Frame>
+
+---
+
+## 1. Notifications
+
+The Notifications section lets agents control how they are alerted to new incoming conversations or messages. These settings are per-agent and apply only to the currently logged-in user.
+
+**Audio Notifications** — Plays a sound whenever a new message or conversation arrives. You can toggle this on or off, and use the **Test Sound** button to confirm your audio is working. The status field will show whether audio has been verified in your browser.
+
+<Note>
+  If the status shows "not yet verified", click **Test Sound**. Your browser may need permission to play audio.
+</Note>
+
+**Browser Notifications** — Shows a desktop push notification when a new message arrives while the Tars tab is in the background. Toggle it on and check that the permission status reads "Browser permission: granted."
+
+<Note>
+  If not granted, check your browser's site settings and ensure Tars has notification access.
+</Note>
+
+<Frame>
+  <img
+    src="/images/platform-fundamentals/livechat/advanced-settings/notifications_settings.png"
+    alt="Notifications settings showing Audio Notifications toggle and Browser Notifications toggle"
+  />
+</Frame>
+
+---
+
+## 2. Canned Responses
+
+Canned Responses are pre-written message templates that agents can quickly insert during a live chat using a shortcut keyword — helping maintain consistency and speeding up response time.
+
+### Viewing responses
+
+All canned responses are listed with their shortcut keyword and full message text. For example:
+
+- `/call` → Do you require a call back so that we can assist you?
+- `/hello` → Hello, Hope you are doing well.
+
+<Frame>
+  <img
+    src="/images/platform-fundamentals/livechat/advanced-settings/canned_responses_list.png"
+    alt="Canned Responses list showing shortcut keywords and their full message text"
+  />
+</Frame>
+
+### Adding a new response
+
+1. Click **+ Add Response** in the top-right corner.
+2. Enter a shortcut keyword (must start with `/`).
+3. Enter the full message text and save.
+
+<Frame>
+  <img
+    src="/images/platform-fundamentals/livechat/advanced-settings/add_canned_response.png"
+    alt="Add Response form with shortcut keyword and message text fields"
+  />
+</Frame>
+
+### Editing or deleting
+
+Use the **pencil icon** to edit or the **trash icon** to delete any existing response.
+
+### Importing responses in bulk via CSV
+
+If you have multiple canned responses to add at once, you can import them using a CSV file instead of adding them one by one.
+
+1. Click **Import CSV** in the top-right corner.
+2. In the modal that appears, upload a CSV file with exactly two columns: `short_code` and `content`. Maximum 100 rows.
+3. Drop your file into the upload area or click **browse** to select it. (.csv files only)
+4. Once uploaded, the responses will be imported automatically.
+
+<Note>
+  Not sure about the format? Click **Download template CSV** in the import modal to get a pre-formatted file you can fill in and upload.
+</Note>
+
+### Using in chat
+
+While in a live chat, type `/` followed by your shortcut. The matching response will appear as a suggestion — press Enter or click to insert it.
+
+<Frame>
+  <img
+    src="/images/platform-fundamentals/livechat/advanced-settings/using_canned_response_in_chat.png"
+    alt="Live chat showing a canned response suggestion appearing after typing a shortcut keyword"
+  />
+</Frame>
+
+---
+
+## 3. Users
+
+The Users section lets administrators manage agent accounts for LiveChat.
+
+### Active users
+
+Displays all agents who currently have access to LiveChat. For each user you can see:
+
+- Their name, email, and avatar initials
+- Their online status (green dot = online, grey dot = offline)
+- Their assigned role (Agent or Administrator)
+
+<Frame>
+  <img
+    src="/images/platform-fundamentals/livechat/advanced-settings/active_users_list.png"
+    alt="Active Users list showing agent names, emails, online status, and roles"
+  />
+</Frame>
+
+### Inviting a new agent
+
+1. Click **+ Invite Agent** in the top-right corner.
+2. Enter the agent's email address.
+3. Select a role — **Agent** or **Administrator**.
+4. Click **Send Invitation**.
+
+<Frame>
+  <img
+    src="/images/platform-fundamentals/livechat/advanced-settings/invite_agent.png"
+    alt="Invite Agent dialog with email field and role selection dropdown"
+  />
+</Frame>
+
+The invited agent will appear under **Pending Invitations** until they accept. If no invitations are pending, you'll see "No pending invitations."
+
+### Managing roles
+
+Admins can change any agent's role directly from the Active Users list using the role dropdown next to their name. Available roles:
+
+- **Agent** — can handle live chat conversations
+- **Administrator** — full access to LiveChat settings and conversations
+
+<Frame>
+  <img
+    src="/images/platform-fundamentals/livechat/advanced-settings/manage_roles.png"
+    alt="Active Users list showing the role dropdown with Agent and Administrator options"
+  />
+</Frame>
+
+### Removing an agent
+
+Click the **trash icon** next to any agent to remove them from the LiveChat workspace.
+
+---
+
+## Frequently asked questions
+
+<AccordionGroup>
+
+<Accordion title="Can agents customize their own notification settings?">
+  Yes. Notification settings (audio and browser) are per-agent. Each agent can toggle them independently without affecting other team members.
+</Accordion>
+
+<Accordion title="What happens when I remove an agent?">
+  The agent will immediately lose access to LiveChat. Any active conversations they were handling will need to be reassigned or will remain unassigned until another agent picks them up.
+</Accordion>
+
+<Accordion title="Is there a limit to how many canned responses I can create?">
+  There is no hard limit for manually added responses. For CSV imports, the maximum is 100 rows per upload. You can do multiple imports if you need more.
+</Accordion>
+
+</AccordionGroup>
