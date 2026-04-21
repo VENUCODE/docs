@@ -85,6 +85,8 @@
                         "group": "LiveChat",
                         "icon": "comments",
                         "pages": [
+                          "platform-fundamentals/platform-tour/livechat/agent-dashboard-configuration",
+                          "platform-fundamentals/platform-tour/livechat/analytics",
                           "platform-fundamentals/platform-tour/livechat/advanced-settings"
                         ]
                       },                    
