@@ -160,8 +160,8 @@
         ]
     },
     {
-      "tab": "Analytics",
-      "icon": "chart-line",
+      "tab": "Core Platform",
+      "icon": "layer-group",
       "groups": [
         {
           "group": "Third-Party Analytics",
